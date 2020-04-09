@@ -1,0 +1,51 @@
+p,
+ol,
+ul {
+  margin-bottom: var(--btcpay-space-s);
+}
+
+ol,
+ul {
+  margin-left: var(--btcpay-space-m);
+}
+
+li + li {
+  margin-top: var(--btcpay-space-xs);
+}
+
+table {
+  margin-bottom: var(--btcpay-space-xxl);
+}
+
+hr,
+pre,
+figure,
+details {
+  margin-bottom: var(--btcpay-space-xl);
+}
+
+hr {
+  margin-top: var(--btcpay-space-xl);
+  margin-bottom: var(--btcpay-space-xl);
+}
+
+pre,
+p,
+ul,
+ol,
+table,
+figure {
+  & + h2,
+  & + h3 {
+    margin-top: var(--btcpay-space-xxl);
+  }
+
+  & + h4,
+  & + h5 {
+    margin-top: var(--btcpay-space-xl);
+  }
+
+  & + h6 {
+    margin-top: var(--btcpay-space-l);
+  }
+}

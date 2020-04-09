@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+html {
+  font-family: var(--btcpay-font-family-base);
+  font-size: var(--btcpay-font-size-m);
+  font-weight: var(--btcpay-font-weight-normal);
+  line-height: 31px;
+}
+
+body {
+  color: var(--btcpay-color-neutral-900);
+  background-color: var(--btcpay-color-neutral-100);
+}
+
+h1 {
+  font-size: var(--btcpay-font-size-xxl);
+  font-weight: var(--btcpay-font-weight-bold);
+  line-height: 1.25;
+  margin-bottom: var(--btcpay-space-m);
+}
+
+h2, h3, h4, h5 {
+  font-weight: var(--btcpay-font-weight-semibold);
+  line-height: 1.33;
+  margin-bottom: var(--btcpay-space-m);
+}
+
+h2 {
+  font-size: var(--btcpay-font-size-xl);
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5   {
+  font-size: 24px;
+}
+
+h1, h2, h3, h4, h5 {
+  & a {
+    text-decoration: none;
+  }
+}
+
+pre,
+code {
+  font-family: var(--btcpay-font-family-monospace);
+  border-radius: var(--btcpay-border-radius);
+}
+
+a {
+  color: var(--btcpay-color-primary);
+}
+
+a:focus,
+a:hover {
+  color: var(--btcpay-color-primary-accent);
+}

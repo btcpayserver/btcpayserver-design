@@ -1,0 +1,41 @@
+{
+  "name": "btcpayserver-design",
+  "description": "BTCPayServer Design System",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Dennis Reimann <mail@dennisreimann.de>",
+  "homepage": "https://github.com/dennisreimann/btcpayserver-design",
+  "bugs": "https://github.com/dennisreimann/btcpayserver-design/issues",
+  "repository": "dennisreimann/btcpayserver-design",
+  "keywords": [
+    "BTCPayServer"
+  ],
+  "scripts": {
+    "clean": "rimraf dist && mkdir -p dist/styles",
+    "start": "npm run clean && npm-run-all -p 'start:*'",
+    "start:build": "npm-run-all -p 'build:* -- --serve --watch'",
+    "start:static": "onchange -k 'src/static/**' -- npm run build:static",
+    "build": "npm run clean && NODE_ENV=production npm-run-all -p 'build:*'",
+    "build:static": "cp -r src/static/* dist && :",
+    "build:patternlib": "uiengine build",
+    "build:styles": "postcss src/styles/index.css --output dist/styles/btcpayserver-main.css",
+    "optimize": "npm-run-all -p optimize:*",
+    "optimize:styles": "csso dist/styles/btcpayserver-main.css --output dist/styles/btcpayserver-main.css",
+    "prod": "npm-run-all build optimize"
+  },
+  "devDependencies": {
+    "@uiengine/adapter-html": "2.6.0",
+    "@uiengine/core": "2.6.1",
+    "autoprefixer": "9.7.6",
+    "csso-cli": "3.0.0",
+    "fast-glob": "3.1.1",
+    "import-fresh": "^3.2.1",
+    "npm-run-all": "4.1.5",
+    "onchange": "6.1.0",
+    "postcss-cli": "7.1.0",
+    "postcss-custom-properties": "9.1.1",
+    "postcss-import": "12.0.1",
+    "postcss-nesting": "7.0.1",
+    "rimraf": "3.0.2"
+  }
+}

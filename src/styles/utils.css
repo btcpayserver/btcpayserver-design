@@ -1,0 +1,23 @@
+.btcpay-space-xs {
+  margin-bottom: var(--btcpay-space-xs);
+}
+
+.btcpay-space-s {
+  margin-bottom: var(--btcpay-space-s);
+}
+
+.btcpay-space-m {
+  margin-bottom: var(--btcpay-space-m);
+}
+
+.btcpay-space-l {
+  margin-bottom: var(--btcpay-space-l);
+}
+
+.btcpay-space-xl {
+  margin-bottom: var(--btcpay-space-xl);
+}
+
+.btcpay-space-xxl {
+  margin-bottom: var(--btcpay-space-xxl);
+}
