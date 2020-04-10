@@ -33,6 +33,17 @@ module.exports = {
   // Here you can configure the template that the variant preview gets embeded in.
   template: 'patternlib.html',
 
+  themes: [
+    {
+      id: 'btcpay-light',
+      title: 'Light'
+    },
+    {
+      id: 'btcpay-dark',
+      title: 'Dark'
+    }
+  ],
+
   ui: {
     lang: 'en',
     customStylesFile: '/styles/patternlib-overrides.css',

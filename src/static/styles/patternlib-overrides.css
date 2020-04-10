@@ -57,9 +57,65 @@
   --uie-color-secondary-link: var(--btcpay-color-secondary);
   --uie-color-secondary-link-hover: var(--btcpay-color-secondary-accent);
 
+  --uie-color-contentheader-link-current: var(--btcpay-color-primary-accent);
+
   --uie-color-footer-bg: var(--btcpay-color-neutral-100);
 
   --uie-color-code-bg: var(--btcpay-color-neutral-900);
+}
+
+:root.btcpay-dark,
+:root[data-theme="btcpay-dark"] {
+  --uie-color-neutral-0: var(--btcpay-color-white);
+  --uie-color-neutral-10: var(--btcpay-color-neutral-100);
+  --uie-color-neutral-20: var(--btcpay-color-neutral-200);
+  --uie-color-neutral-50: var(--btcpay-color-neutral-500);
+  --uie-color-neutral-70: var(--btcpay-color-neutral-700);
+  --uie-color-neutral-80: var(--btcpay-color-neutral-800);
+  --uie-color-neutral-90: var(--btcpay-color-neutral-900);
+  --uie-color-neutral-100: var(--btcpay-color-neutral-950);
+
+  --uie-color-bg-light: var(--btcpay-color-neutral-800);
+  --uie-color-bg-medium: var(--btcpay-color-neutral-700);
+
+  --btcpay-border-color-medium: var(--btcpay-color-neutral-700);
+
+  --uie-color-border-light: var(--btcpay-color-neutral-800);
+  --uie-color-border-medium: var(--btcpay-color-neutral-700);
+
+  --uie-color-topbar-bg: var(--btcpay-color-neutral-950);
+  --uie-color-topbar-text: var(--btcpay-color-white);
+  --uie-color-topbar-text-hover: var(--btcpay-brand-secondary);
+
+  --uie-color-navigation-bg: var(--btcpay-color-neutral-900);
+  --uie-color-navigation-bg-subnav: var(--btcpay-color-neutral-900);
+  --uie-color-navigation-bg-current: var(--btcpay-color-neutral-800);
+  --uie-color-navigation-text: var(--btcpay-color-neutral-100);
+  --uie-color-navigation-text-hover: var(--btcpay-color-white);
+  --uie-color-navigation-text-subnav: var(--btcpay-color-neutral-200);
+  --uie-color-navigation-text-current: var(--btcpay-brand-secondary);
+
+  --uie-color-main-bg: var(--btcpay-color-neutral-900);
+  --uie-color-main-text: var(--btcpay-color-white);
+  --uie-color-main-link: var(--btcpay-color-primary);
+  --uie-color-main-link-hover: var(--btcpay-color-primary-accent);
+  --uie-color-secondary-text: var(--btcpay-color-neutral-500);
+  --uie-color-secondary-link: var(--btcpay-color-neutral-500);
+  --uie-color-secondary-link-hover: var(--btcpay-color-neutral-400);
+
+  --uie-color-contentheader-link-current: var(--btcpay-brand-secondary);
+  --uie-color-code-header-current: var(--btcpay-brand-secondary);
+
+  --uie-color-modal-text: var(--btcpay-color-neutral-200);
+  --uie-color-modal-text-hover: var(--btcpay-color-neutral-100);
+  --uie-color-modal-bg: var(--btcpay-color-neutral-800);
+  --uie-color-modal-bg-hover: var(--btcpay-color-neutral-700);
+
+  --uie-color-footer-bg: var(--btcpay-color-neutral-900);
+
+  --uie-color-code-bg: var(--btcpay-color-neutral-950);
+
+  --uie-color-border-preview: var(--btcpay-color-neutral-950);
 }
 
 .uie .layout {

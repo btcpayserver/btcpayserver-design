@@ -1,0 +1,6 @@
+.btcpay-dark {
+  & body {
+    color: var(--btcpay-color-white);
+    background-color: var(--btcpay-color-neutral-900);
+  }
+}
