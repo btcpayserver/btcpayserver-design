@@ -1,8 +1,8 @@
-# [BTCPayServer Design System](https://btcpayserver.uix.space/)
+# [BTCPayServer Design System](https://design.btcpayserver.org/)
 
 > Developers on brink of new UI for BTCPayServer
 
-![Node CI](https://github.com/dennisreimann/btcpayserver-design/workflows/Node%20CI/badge.svg)
+![Node CI](https://github.com/btcpayserver/btcpayserver-design/workflows/Node%20CI/badge.svg)
 
 ## 🛠 Development
 

@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "author": "Dennis Reimann <mail@dennisreimann.de>",
-  "homepage": "https://github.com/dennisreimann/btcpayserver-design",
-  "bugs": "https://github.com/dennisreimann/btcpayserver-design/issues",
-  "repository": "dennisreimann/btcpayserver-design",
+  "homepage": "https://github.com/btcpayserver/btcpayserver-design/",
+  "bugs": "https://github.com/btcpayserver/btcpayserver-design/issues",
+  "repository": "btcpayserver/btcpayserver-design",
   "keywords": [
     "BTCPayServer"
   ],

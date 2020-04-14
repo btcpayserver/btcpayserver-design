@@ -3,7 +3,7 @@
 ## Setup
 
 Dependencies are managed via npm.
-Once you have cloned [this repo](https://github.com/dennisreimann/btcpayserver-design/), you can setup the packages:
+Once you have cloned [this repo](https://github.com/btcpayserver/btcpayserver-design/), you can setup the packages:
 
 ```bash
 npm install
