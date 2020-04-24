@@ -25,6 +25,7 @@ module.exports = {
     html: {
       module: '@uiengine/adapter-html',
       options: {
+        basedir: './src/components',
         skipScaffold: false
       }
     }
@@ -35,11 +36,11 @@ module.exports = {
 
   themes: [
     {
-      id: 'btcpay-light',
+      id: 'light',
       title: 'Light'
     },
     {
-      id: 'btcpay-dark',
+      id: 'dark',
       title: 'Dark'
     }
   ],

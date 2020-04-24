@@ -1,8 +1,7 @@
-@import './dark-theme.css';
+@import './theme-variables.css';
 @import './fonts.css';
 @import './base.css';
-@import './spacings.css';
-@import './utils.css';
 
 /* components */
-@import 'Button/button.css';
+@import 'Header/header.css';
+@import 'Footer/footer.css';

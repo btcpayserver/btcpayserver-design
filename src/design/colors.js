@@ -18,6 +18,12 @@ module.exports = [
     value: '#1E7A44',
     variable: '--btcpay-brand-tertiary'
   },
+  {
+    category: 'Brand',
+    name: 'Brand Dark',
+    value: '#0F3B21',
+    variable: '--btcpay-brand-dark'
+  },
 
   // Neutral
   {

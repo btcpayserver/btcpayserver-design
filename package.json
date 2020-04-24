@@ -15,6 +15,7 @@
     "start": "npm run clean && npm-run-all -p 'start:*'",
     "start:build": "npm-run-all -p 'build:* -- --serve --watch'",
     "start:static": "onchange -k 'src/static/**' -- npm run build:static",
+    "start:styles": "onchange -k 'src/styles/**' -- npm run build:styles",
     "build": "npm run clean && NODE_ENV=production npm-run-all -p 'build:*'",
     "build:static": "cp -r src/static/* dist && :",
     "build:patternlib": "uiengine build",
@@ -25,7 +26,7 @@
   },
   "devDependencies": {
     "@uiengine/adapter-html": "3.0.0",
-    "@uiengine/core": "3.0.0",
+    "@uiengine/core": "3.0.1",
     "autoprefixer": "9.7.6",
     "csso-cli": "3.0.0",
     "import-fresh": "^3.2.1",

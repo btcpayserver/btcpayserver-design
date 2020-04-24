@@ -1,0 +1,16 @@
+.btcpay-header {
+  color: var(--btcpay-color-neutral-900);
+  background-color: var(--btcpay-color-white);
+
+  @nest .btcpay-theme--dark &, [data-btcpay-theme="dark"] & {
+    color: var(--btcpay-color-white);
+    background-color: var(--btcpay-color-neutral-950);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @nest :root:not(.btcpay-theme--light):not([data-btcpay-theme="light"]) & {
+      color: var(--btcpay-color-white);
+      background-color: var(--btcpay-color-neutral-950);
+    }
+  }
+}
