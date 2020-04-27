@@ -5,7 +5,6 @@
   --btcpay-border-color-medium: var(--btcpay-color-neutral-300);
 }
 
-:root.btcpay-theme--dark,
 :root[data-btcpay-theme="dark"] {
   --btcpay-color-primary-backdrop: #389725;
 
@@ -16,7 +15,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not(.btcpay-theme--light):not([data-btcpay-theme="light"]) {
+  :root:not([data-btcpay-theme="light"]) {
     --btcpay-color-primary-backdrop: #389725;
 
     --btcpay-bg-tile: var(--btcpay-color-neutral-950);

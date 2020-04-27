@@ -21,13 +21,13 @@ body {
   color: var(--btcpay-color-neutral-900);
   background-color: var(--btcpay-color-neutral-100) ;
 
-  @nest .btcpay-theme--dark &, [data-btcpay-theme="dark"] & {
+  @nest [data-btcpay-theme="dark"] & {
     color: var(--btcpay-color-white);
     background-color: var(--btcpay-color-neutral-900);
   }
 
   @media (prefers-color-scheme: dark) {
-    @nest :root:not(.btcpay-theme--light):not([data-btcpay-theme="light"]) & {
+    @nest :root:not([data-btcpay-theme="light"]) & {
       color: var(--btcpay-color-white);
       background-color: var(--btcpay-color-neutral-900);
     }

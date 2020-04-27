@@ -64,7 +64,6 @@
   --uie-color-code-bg: var(--btcpay-color-neutral-900);
 }
 
-:root.btcpay-theme--dark,
 :root[data-theme="dark"],
 :root[data-btcpay-theme="dark"] {
   --uie-color-neutral-0: var(--btcpay-color-white);

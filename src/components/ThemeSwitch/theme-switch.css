@@ -1,0 +1,65 @@
+.btcpay-theme-switch {
+  --btcpay-theme-switch-light-color: var(--btcpay-color-white);
+  --btcpay-theme-switch-dark-color: var(--btcpay-color-neutral-900);
+  --btcpay-theme-switch-icon-size: 1.25rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--btcpay-color-white);
+  background: none;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+
+  & svg {
+    height: var(--btcpay-theme-switch-icon-size);
+    width: var(--btcpay-theme-switch-icon-size);
+  }
+
+  & path {
+    stroke-width: .5px;
+    fill: none;
+  }
+
+  &:hover,
+  &:focus {
+    & .btcpay-theme-switch-light {
+      fill: var(--btcpay-theme-switch-light-color);
+    }
+
+    & .btcpay-theme-switch-dark {
+      fill: var(--btcpay-theme-switch-dark-color);
+    }
+  }
+}
+
+.btcpay-theme-switch-dark {
+  display: inline-block;
+  stroke: var(--btcpay-theme-switch-dark-color);
+
+  @nest :root[data-btcpay-theme="dark"] & {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @nest :root:not([data-btcpay-theme="dark"]) & {
+      display: inline-block;
+    }
+  }
+}
+
+.btcpay-theme-switch-light {
+  display: none;
+  stroke: var(--btcpay-theme-switch-light-color);
+
+  @nest :root[data-btcpay-theme="dark"] & {
+    display: inline-block;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @nest :root:not([data-btcpay-theme="light"]) & {
+      display: inline-block;
+    }
+  }
+}

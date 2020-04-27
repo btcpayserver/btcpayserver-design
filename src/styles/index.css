@@ -4,4 +4,5 @@
 
 /* components */
 @import 'Header/header.css';
+@import 'ThemeSwitch/theme-switch.css';
 @import 'Footer/footer.css';
