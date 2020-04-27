@@ -3,6 +3,7 @@ module.exports = {
     'design',
     'components',
     'views',
+    'resources',
     'development'
   ]
 }
