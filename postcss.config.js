@@ -12,7 +12,13 @@ const spaces = require('./src/design/spaces')
 const fonts = require('./src/design/fonts')
 
 // converts the meta format to custom property definition
-const metaToProp = (res, { variable, value }) => Object.assign(res, { [variable]: value })
+const metaToProp = collection =>
+  (res, token) => {
+    const { variable, value, reference } = token
+    const ref = reference ? collection.find(t => t.name === reference) : null
+    const val = ref ? `var(${ref.variable})` : value
+    return Object.assign(res, { [variable]: val })
+  }
 
 module.exports = {
   plugins: [
@@ -25,11 +31,11 @@ module.exports = {
       // https://github.com/postcss/postcss-custom-properties#importfrom
       importFrom: [
         () => {
-          const variableProperties = variables.reduce(metaToProp, {})
-          const colorProperties = colors.reduce(metaToProp, {})
-          const spaceProperties = spaces.reduce(metaToProp, {})
-          const fontFamilyProperties = fonts.families.reduce(metaToProp, {})
-          const fontSizeProperties = fonts.sizes.reduce(metaToProp, {})
+          const variableProperties = variables.reduce(metaToProp(variables), {})
+          const colorProperties = colors.reduce(metaToProp(colors), {})
+          const spaceProperties = spaces.reduce(metaToProp(spaces), {})
+          const fontFamilyProperties = fonts.families.reduce(metaToProp(fonts.families), {})
+          const fontSizeProperties = fonts.sizes.reduce(metaToProp(fonts.sizes), {})
           const fontWeightProperties = fonts.families.reduce((res, { weights }) => {
             weights.forEach(({ variable, value }) => {
               res[variable] = value

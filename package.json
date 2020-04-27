@@ -15,7 +15,7 @@
     "start": "npm run clean && npm-run-all -p 'start:*'",
     "start:build": "npm-run-all -p 'build:* -- --serve --watch'",
     "start:static": "onchange -k 'src/static/**' -- npm run build:static",
-    "start:styles": "onchange -k 'src/styles/**' -- npm run build:styles",
+    "start:styles": "onchange -k 'src/styles/**' 'src/design/**' -- npm run build:styles",
     "build": "npm run clean && NODE_ENV=production npm-run-all -p 'build:*'",
     "build:static": "cp -r src/static/* dist && :",
     "build:patternlib": "uiengine build",

@@ -1,9 +1,22 @@
+const brandPrimary = '#51b13e'
+const brandTertiary = '#1e7a44'
+const neutral200 = '#e9ecef'
+const neutral400 = '#ced4da'
+const neutral500 = '#8f979e'
+const neutral600 = '#6c757d'
+const neutral700 = '#495057'
+const neutral800 = '#343a40'
+const neutral900 = '#292929'
+const white = '#ffffff'
+const black = '#000000'
+const infoAccent = '#117a8b'
+
 module.exports = [
   // Brand
   {
     category: 'Brand',
     name: 'Brand Primary',
-    value: '#51B13E',
+    value: brandPrimary,
     variable: '--btcpay-brand-primary'
   },
   {
@@ -15,7 +28,7 @@ module.exports = [
   {
     category: 'Brand',
     name: 'Brand Tertiary',
-    value: '#1E7A44',
+    value: brandTertiary,
     variable: '--btcpay-brand-tertiary'
   },
   {
@@ -29,7 +42,7 @@ module.exports = [
   {
     category: 'Neutral',
     name: 'White',
-    value: '#fff',
+    value: white,
     variable: '--btcpay-color-white'
   },
   {
@@ -41,7 +54,7 @@ module.exports = [
   {
     category: 'Neutral',
     name: 'Neutral 200',
-    value: '#e9ecef',
+    value: neutral200,
     variable: '--btcpay-color-neutral-200',
   },
   {
@@ -53,25 +66,25 @@ module.exports = [
   {
     category: 'Neutral',
     name: 'Neutral 400',
-    value: '#ced4da',
+    value: neutral400,
     variable: '--btcpay-color-neutral-400'
   },
   {
     category: 'Neutral',
     name: 'Neutral 500',
-    value: '#8d8d8f',
+    value: neutral500,
     variable: '--btcpay-color-neutral-500'
   },
   {
     category: 'Neutral',
     name: 'Neutral 600',
-    value: '#6c757d',
+    value: neutral600,
     variable: '--btcpay-color-neutral-600',
   },
   {
     category: 'Neutral',
     name: 'Neutral 700',
-    value: '#495057',
+    value: neutral700,
     variable: '--btcpay-color-neutral-700'
   },
   {
@@ -83,7 +96,7 @@ module.exports = [
   {
     category: 'Neutral',
     name: 'Neutral 900',
-    value: '#292929',
+    value: neutral900,
     variable: '--btcpay-color-neutral-900'
   },
   {
@@ -103,14 +116,14 @@ module.exports = [
   {
     category: 'Primary',
     name: 'Primary',
-    value: '#51B13E',
+    value: brandPrimary,
     variable: '--btcpay-color-primary',
     reference: 'Brand Primary'
   },
   {
     category: 'Primary',
     name: 'Primary Accent',
-    value: '#1E7A44',
+    value: brandTertiary,
     variable: '--btcpay-color-primary-accent',
     reference: 'Brand Tertiary'
   },
@@ -120,28 +133,44 @@ module.exports = [
     value: '#D2E5CF',
     variable: '--btcpay-color-primary-backdrop'
   },
+  {
+    category: 'Primary',
+    name: 'Primary Text',
+    value: neutral900,
+    variable: '--btcpay-color-primary-text',
+    reference: 'Neutral 900',
+    description: 'Text color on primary backdrop'
+  },
 
   // Secondary
   {
     category: 'Secondary',
     name: 'Secondary',
-    value: '#6c757d',
+    value: neutral500,
     variable: '--btcpay-color-secondary',
-    reference: 'Neutral 600'
+    reference: 'Neutral 500'
   },
   {
     category: 'Secondary',
     name: 'Secondary Accent',
-    value: '#495057',
+    value: neutral700,
     variable: '--btcpay-color-secondary-accent',
     reference: 'Neutral 700'
   },
   {
     category: 'Secondary',
     name: 'Secondary Backdrop',
-    value: '#CED4DA',
+    value: neutral400,
     variable: '--btcpay-color-secondary-backdrop',
     reference: 'Neutral 400'
+  },
+  {
+    category: 'Secondary',
+    name: 'Secondary Text',
+    value: neutral700,
+    variable: '--btcpay-color-secondary-text',
+    reference: 'Neutral 700',
+    description: 'Text color on secondary backdrop'
   },
 
   // Success
@@ -154,7 +183,7 @@ module.exports = [
   {
     category: 'Success',
     name: 'Success Accent',
-    value: '#1E7A44',
+    value: brandTertiary,
     variable: '--btcpay-color-success-accent',
     reference: 'Brand Tertiary'
   },
@@ -163,6 +192,14 @@ module.exports = [
     name: 'Success Backdrop',
     value: '#389725',
     variable: '--btcpay-color-success-backdrop'
+  },
+  {
+    category: 'Success',
+    name: 'Success Text',
+    value: white,
+    variable: '--btcpay-color-success-text',
+    reference: 'White',
+    description: 'Text color on success backdrop'
   },
 
   // Info
@@ -175,7 +212,7 @@ module.exports = [
   {
     category: 'Info',
     name: 'Info Accent',
-    value: '#117a8b',
+    value: infoAccent,
     variable: '--btcpay-color-info-accent'
   },
   {
@@ -183,6 +220,14 @@ module.exports = [
     name: 'Info Backdrop',
     value: '#C8E7ED',
     variable: '--btcpay-color-info-backdrop'
+  },
+  {
+    category: 'Info',
+    name: 'Info Text',
+    value: infoAccent,
+    variable: '--btcpay-color-info-text',
+    reference: 'Info Accent',
+    description: 'Text color on info backdrop'
   },
 
   // Warning
@@ -204,6 +249,14 @@ module.exports = [
     value: '#ffc107',
     variable: '--btcpay-color-warning-backdrop'
   },
+  {
+    category: 'Warning',
+    name: 'Warning Text',
+    value: neutral900,
+    variable: '--btcpay-color-warning-text',
+    reference: 'Neutral 900',
+    description: 'Text color on warning backdrop'
+  },
 
   // Danger
   {
@@ -223,5 +276,75 @@ module.exports = [
     name: 'Danger Backdrop',
     value: '#E85442',
     variable: '--btcpay-color-danger-backdrop'
+  },
+  {
+    category: 'Danger',
+    name: 'Danger Text',
+    value: white,
+    variable: '--btcpay-color-danger-text',
+    reference: 'White',
+    description: 'Text color on danger backdrop'
+  },
+
+  // Light
+  {
+    category: 'Light',
+    name: 'Light',
+    value: neutral200,
+    variable: '--btcpay-color-light',
+    reference: 'Neutral 200'
+  },
+  {
+    category: 'Light',
+    name: 'Light Accent',
+    value: neutral400,
+    variable: '--btcpay-color-light-accent',
+    reference: 'Neutral 400'
+  },
+  {
+    category: 'Light',
+    name: 'Light Backdrop',
+    value: neutral200,
+    variable: '--btcpay-color-light-backdrop',
+    reference: 'Neutral 200'
+  },
+  {
+    category: 'Light',
+    name: 'Light Text',
+    value: neutral800,
+    variable: '--btcpay-color-light-text',
+    reference: 'Neutral 800',
+    description: 'Text color on light backdrop'
+  },
+
+  // Dark
+  {
+    category: 'Dark',
+    name: 'Dark',
+    value: neutral800,
+    variable: '--btcpay-color-dark',
+    reference: 'Neutral 800'
+  },
+  {
+    category: 'Dark',
+    name: 'Dark Accent',
+    value: black,
+    variable: '--btcpay-color-dark-accent',
+    reference: 'Black'
+  },
+  {
+    category: 'Dark',
+    name: 'Dark Backdrop',
+    value: neutral800,
+    variable: '--btcpay-color-dark-backdrop',
+    reference: 'Neutral 800'
+  },
+  {
+    category: 'Dark',
+    name: 'Dark Text',
+    value: neutral200,
+    variable: '--btcpay-color-dark-text',
+    reference: 'Neutral 200',
+    description: 'Text color on light backdrop'
   }
 ]
