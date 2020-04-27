@@ -1,7 +1,7 @@
 module.exports = {
   components: [
-    'Header',
-    'ThemeSwitch',
-    'Footer'
+    'header',
+    'theme-switch',
+    'footer'
   ]
 }

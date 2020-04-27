@@ -1,5 +1,5 @@
 module.exports = {
   variants: [
-    'ThemeSwitch.html'
+    'kitchensink.html'
   ]
 }

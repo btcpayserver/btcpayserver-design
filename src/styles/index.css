@@ -3,6 +3,6 @@
 @import './base.css';
 
 /* components */
-@import 'Header/header.css';
-@import 'ThemeSwitch/theme-switch.css';
-@import 'Footer/footer.css';
+@import 'header/header.css';
+@import 'theme-switch/theme-switch.css';
+@import 'footer/footer.css';

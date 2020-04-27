@@ -1,5 +1,5 @@
 module.exports = {
   variants: [
-    'Kitchensink.html'
+    'header.html'
   ]
 }

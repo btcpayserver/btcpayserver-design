@@ -1,5 +1,5 @@
 module.exports = {
   variants: [
-    'Header.html'
+    'footer.html'
   ]
 }

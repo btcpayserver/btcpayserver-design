@@ -30,7 +30,7 @@ The general approach regarding the themes is:
 
 * Light mode is the default
 * If the browser supports the [prefers-color-scheme media query](https://web.dev/prefers-color-scheme/), we use the users preference
-* Support an [explicit setting](/components/ThemeSwitch/) saved in the browsers `localStorage`, that the user can change via a switch
+* Support an [explicit setting](/components/theme-switch/) saved in the browsers `localStorage`, that the user can change via a switch
 
 📦 [btcpayserver-main.css](/styles/btcpayserver-main.css)
 

@@ -1,5 +1,5 @@
 module.exports = {
   variants: [
-    'Button.html'
+    'theme-switch.html'
   ]
 }
