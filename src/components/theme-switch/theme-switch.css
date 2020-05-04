@@ -11,6 +11,7 @@
   cursor: pointer;
   height: 40px;
   width: 40px;
+  border: 0;
 
   & svg {
     height: var(--btcpay-theme-switch-icon-size);
