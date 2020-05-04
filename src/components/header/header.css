@@ -1,16 +1,14 @@
 .btcpay-header {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-white);
+  color: var(--btcpay-header-color);
+  background-color: var(--btcpay-header-bg);
 
-  @nest :root[data-btcpay-theme="dark"] & {
-    color: var(--btcpay-color-white);
-    background-color: var(--btcpay-color-neutral-950);
+  & a {
+    color: var(--btcpay-header-color-link);
+    text-decoration: none;
   }
 
-  @media (prefers-color-scheme: dark) {
-    @nest :root:not([data-btcpay-theme="light"]) & {
-      color: var(--btcpay-color-white);
-      background-color: var(--btcpay-color-neutral-950);
-    }
+  & a:focus,
+  & a:hover {
+    color: var(--btcpay-header-color-link-accent);
   }
 }

@@ -1,16 +1,54 @@
 .btcpay-footer {
-  color: var(--btcpay-color-neutral-400);
-  background-color: var(--btcpay-brand-dark);
+  color: var(--btcpay-footer-color);
+  background-color: var(--btcpay-footer-bg);
 
-  @nest :root[data-btcpay-theme="dark"] & {
-    color: var(--btcpay-color-neutral-600);
-    background-color: var(--btcpay-color-neutral-950);
+  & a {
+    color: var(--btcpay-footer-color-link);
+    text-decoration: none;
   }
 
-  @media (prefers-color-scheme: dark) {
-    @nest :root:not([data-btcpay-theme="light"]) & {
-      color: var(--btcpay-color-neutral-600);
-      background-color: var(--btcpay-color-neutral-950);
+  & a:focus,
+  & a:hover {
+    color: var(--btcpay-footer-color-link-accent);
+  }
+}
+
+.btcpay-footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  & > * {
+    flex: 1 1 100%;
+    margin-bottom: var(--btcpay-space-m);
+  }
+
+  & h4,
+  & h5,
+  & h6 {
+    margin: var(--btcpay-space-m) 0;
+    font-weight: var(--btcpay-font-weight-bold);
+  }
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    & li {
+      padding: var(--btcpay-space-xs) 0;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .btcpay-footer-columns {
+    & > * {
+      flex: 1;
+    }
+
+    & > * + * {
+      margin-left: var(--btcpay-space-m);
     }
   }
 }
