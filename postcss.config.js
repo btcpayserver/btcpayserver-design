@@ -1,6 +1,7 @@
 const autoprefixer = require('autoprefixer')
 const importer = require('postcss-import')
 const nesting = require('postcss-nesting')
+const prettify = require('postcss-prettify')
 
 // https://github.com/michael-ciniawsky/postcss-load-config
 const customProperties = require('postcss-custom-properties')
@@ -56,6 +57,7 @@ module.exports = {
         }
       ],
       exportTo: 'dist/styles/btcpayserver-variables.css'
-    })
+    }),
+    prettify()
   ]
 }
