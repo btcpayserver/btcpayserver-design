@@ -20,10 +20,25 @@ body {
   background-color: var(--btcpay-body-bg) ;
 }
 
-pre,
 code {
   font-family: var(--btcpay-font-family-monospace);
   border-radius: var(--btcpay-border-radius);
+  padding: var(--btcpay-space-xs);
+  color: var(--btcpay-code-color);
+  background-color: var(--btcpay-code-bg);
+}
+
+pre {
+  font-family: var(--btcpay-font-family-monospace);
+  border-radius: var(--btcpay-border-radius);
+  padding: var(--btcpay-space-m);
+  color: var(--btcpay-color-white);
+  background-color: var(--btcpay-color-neutral-950);
+}
+
+pre code {
+  color: var(--btcpay-color-white);
+  background: transparent;
 }
 
 a {
