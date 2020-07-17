@@ -56,7 +56,7 @@ module.exports = {
           }
         }
       ],
-      exportTo: 'dist/styles/btcpayserver-variables.css'
+      exportTo: 'src/styles/variables/design.css'
     }),
     prettify()
   ]
