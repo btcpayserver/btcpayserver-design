@@ -22,7 +22,8 @@
     "build:styles": "postcss src/styles/index.css --output dist/styles/btcpayserver-main.css",
     "optimize": "npm-run-all -p optimize:*",
     "optimize:styles": "csso dist/styles/btcpayserver-main.css --output dist/styles/btcpayserver-main.css",
-    "prod": "npm-run-all build"
+    "prod": "npm-run-all build",
+    "generate-color-palette": "node ./tasks/generate-color-palette.js"
   },
   "devDependencies": {
     "@uiengine/adapter-html": "3.0.0",
