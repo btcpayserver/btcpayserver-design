@@ -16,7 +16,7 @@
     "start:build": "npm-run-all -p 'build:* -- --serve --watch'",
     "start:static": "onchange -k 'src/static/**' -- npm run build:static",
     "start:styles": "npm-run-all -p 'start:styles:*'",
-    "start:styles:main": "onchange -k 'src/styles/main/**' -- npm run build:styles:main",
+    "start:styles:main": "onchange -k 'src/styles/main/**' 'src/components/**/*.css' -- npm run build:styles:main",
     "start:styles:variables": "onchange -k 'src/styles/variables/**' 'src/design/**' -- npm run build:styles:variables",
     "build": "npm run clean && NODE_ENV=production npm-run-all -p 'build:*'",
     "build:static": "cp -r src/static/* dist && :",
