@@ -12,3 +12,15 @@
     color: var(--btcpay-header-color-link-accent);
   }
 }
+
+.btcpay-header-columns {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btcpay-header-logo {
+  height: 45px;
+}
