@@ -3,7 +3,8 @@ module.exports = {
   // Here you can overwrite it and add more custom properties.
   // For a detailed documentation of all the options in here see
   // https://uiengine.uix.space/basics/config/
-  name: 'BTCPayServer Design System',
+  name: 'BTCPay Server Design System',
+  logo: '/resources/design-files/btcpay-logo.svg',
 
   // Base directories for the input, your raw source files:
   // - components is the root of the directory containing the components

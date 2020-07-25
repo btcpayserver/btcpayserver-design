@@ -5,7 +5,7 @@ module.exports = [
     name: 'Border Radius',
     value: '4px',
     variable: '--btcpay-border-radius',
-    type: 'size'
+    type: 'border-radius'
   },
 
   // Transition
