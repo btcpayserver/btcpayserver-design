@@ -22,6 +22,8 @@
   --btcpay-pre-color: var(--btcpay-color-white);
   --btcpay-pre-bg: var(--btcpay-color-neutral-950);
 
+  --btcpay-bg-color-light: var(--btcpay-color-neutral-0);
+  --btcpay-bg-color-medium: var(--btcpay-color-neutral-300);
   --btcpay-border-color-light: var(--btcpay-color-neutral-200);
   --btcpay-border-color-medium: var(--btcpay-color-neutral-300);
 
@@ -63,6 +65,8 @@
 
   --btcpay-code-bg: var(--btcpay-bg-dark);
 
+  --btcpay-bg-color-light: var(--btcpay-color-neutral-800);
+  --btcpay-bg-color-medium: var(--btcpay-color-neutral-700);
   --btcpay-border-color-light: var(--btcpay-color-neutral-600);
   --btcpay-border-color-medium: var(--btcpay-color-neutral-700);
 

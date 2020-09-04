@@ -47,6 +47,13 @@ module.exports = [
   },
   {
     category: 'Neutral',
+    name: 'Neutral 0',
+    value: white,
+    variable: '--btcpay-color-neutral-0',
+    reference: 'White'
+  },
+  {
+    category: 'Neutral',
     name: 'Neutral 100',
     value: '#f8f9fa',
     variable: '--btcpay-color-neutral-100',
@@ -104,6 +111,13 @@ module.exports = [
     name: 'Neutral 950',
     value: '#222',
     variable: '--btcpay-color-neutral-950'
+  },
+  {
+    category: 'Neutral',
+    name: 'Neutral 1000',
+    value: black,
+    variable: '--btcpay-color-neutral-1000',
+    reference: 'Black'
   },
   {
     category: 'Neutral',
