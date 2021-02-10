@@ -56,7 +56,7 @@ module.exports = {
           }
         }
       ],
-      exportTo: 'src/styles/variables/design.css'
+      exportTo: 'generated/design.css'
     }),
     prettify()
   ]

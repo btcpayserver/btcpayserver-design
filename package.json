@@ -11,7 +11,7 @@
     "BTCPayServer"
   ],
   "scripts": {
-    "clean": "rimraf dist && mkdir -p dist/styles",
+    "clean": "rimraf dist generated && mkdir -p dist/styles generated",
     "start": "npm run clean && npm-run-all -p 'start:*'",
     "start:build": "npm-run-all -p 'build:* -- --serve --watch'",
     "start:static": "onchange -k 'src/static/**' -- npm run build:static",
@@ -23,7 +23,7 @@
     "build:patternlib": "uiengine build",
     "build:styles": "npm-run-all -s 'build:styles:main' 'build:styles:variables' && :",
     "build:styles:main": "postcss src/styles/main/index.css --output dist/styles/btcpayserver-main.css",
-    "build:styles:variables": "cat src/styles/variables/* > dist/styles/btcpayserver-variables.css",
+    "build:styles:variables": "cat generated/design.css src/styles/variables/* > dist/styles/btcpayserver-variables.css",
     "optimize": "npm-run-all -p optimize:*",
     "optimize:styles": "csso dist/styles/btcpayserver-main.css --output dist/styles/btcpayserver-main.css",
     "prod": "npm-run-all build",
