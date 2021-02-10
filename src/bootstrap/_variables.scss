@@ -1,0 +1,41 @@
+/*
+ * This file overrides the bootstrap variables with CSS custom properties
+ * that get defined in the root.scss file. Every variable we want to edit
+ * we need to set to a `--btcpay-` custom property and set it in the root.
+ *
+ * The patch-bootstrap script replaces the colors in the resulting build
+ * that need to be actual color values to work with the modifier functions.
+ */
+
+// Bootstrap
+
+// $gray-100: var(--btcpay-color-neutral-100);
+// $gray-200: var(--btcpay-color-neutral-200);
+// $gray-300: var(--btcpay-color-neutral-300);
+// $gray-400: var(--btcpay-color-neutral-400);
+// $gray-500: var(--btcpay-color-neutral-500);
+// $gray-600: var(--btcpay-color-neutral-600);
+// $gray-700: var(--btcpay-color-neutral-700);
+// $gray-800: var(--btcpay-color-neutral-800);
+// $gray-900: var(--btcpay-color-neutral-900);
+
+// $table-variants: (
+//   "primary":    var(--btcpay-color-secondary-backdrop),
+//   "secondary":  var(--btcpay-color-secondary-backdrop),
+//   "success":    var(--btcpay-color-success-backdrop),
+//   "info":       var(--btcpay-color-info-backdrop),
+//   "warning":    var(--btcpay-color-warning-backdrop),
+//   "danger":     var(--btcpay-color-danger-backdrop),
+//   "light":      var(--btcpay-color-light-backdrop),
+//   "dark":       var(--btcpay-color-dark-backdrop),
+// );
+
+// $form-file-button-hover-bg: $gray-300;
+
+// $dropdown-link-hover-color: $gray-900;
+
+$font-family-sans-serif: var(--btcpay-font-family-base);
+$font-family-monospace: var(--btcpay-font-family-monospace);
+
+$font-family-base: var(--btcpay-font-family-base);
+$font-family-code: var(--btcpay-font-family-monospace);
