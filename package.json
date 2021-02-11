@@ -20,7 +20,7 @@
     "start:styles:variables": "onchange -k 'src/styles/variables/**' 'src/design/**' -- npm run build:styles:variables",
     "start:bootstrap": "onchange -k 'src/bootstrap/**' 'tasks/generate-bootstrap.js' -- npm run build:bootstrap",
     "build": "npm run clean && NODE_ENV=production npm-run-all -p 'build:*'",
-    "build:static": "cp -r src/static/* dist && :",
+    "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts && :",
     "build:patternlib": "uiengine build",
     "build:styles": "npm-run-all -s 'build:styles:main' 'build:styles:variables' && :",
     "build:styles:main": "postcss src/styles/main/index.css --output dist/styles/btcpayserver-main.css",
