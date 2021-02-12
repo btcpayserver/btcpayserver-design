@@ -1,0 +1,39 @@
+a {
+  color: var(--btcpay-body-color-link);
+}
+
+a:hover {
+  color: var(--btcpay-body-color-link-accent);
+}
+
+
+code {
+  color: var(--btcpay-code-color);
+  background: var(--btcpay-code-bg);
+}
+
+pre,
+pre code {
+  color: var(--btcpay-pre-color);
+  background: var(--btcpay-pre-bg);
+}
+
+.alert-dismissible .btn-close {
+  color: inherit;
+}
+
+/* set color for text on background */
+.bg-primary,
+.bg-secondary,
+.bg-success,
+.bg-danger,
+.bg-dark {
+  color: var(--btcpay-color-white) !important; }
+
+.bg-info,
+.bg-warning,
+.bg-light {
+  color: var(--btcpay-color-black) !important; }
+
+.bg-body {
+  color: var(--btcpay-body-color) !important; }

@@ -24,7 +24,7 @@
     "build:patternlib": "uiengine build",
     "build:styles": "npm-run-all -s 'build:styles:main' 'build:styles:variables' && :",
     "build:styles:main": "postcss src/styles/main/index.css --output dist/styles/btcpayserver-main.css",
-    "build:styles:variables": "cat generated/design.css src/styles/variables/* > dist/styles/btcpayserver-variables.css",
+    "build:styles:variables": "echo '' | postcss && cat generated/design.css src/styles/variables/* > dist/styles/btcpayserver-variables.css",
     "build:bootstrap": "npm run generate-bootstrap && :",
     "optimize": "npm-run-all -p optimize:*",
     "optimize:styles": "csso dist/styles/btcpayserver-main.css --output dist/styles/btcpayserver-main.css",

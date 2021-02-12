@@ -1,12 +1,3 @@
-/*
- * This file overrides the bootstrap variables with CSS custom properties
- * that get defined in the root.scss file. Every variable we want to edit
- * we need to set to a `--btcpay-` custom property and set it in the root.
- *
- * The patch-bootstrap script replaces the colors in the resulting build
- * that need to be actual color values to work with the modifier functions.
- */
-
 // Bootstrap
 
 // $gray-100: var(--btcpay-color-neutral-100);
@@ -39,3 +30,10 @@ $font-family-monospace: var(--btcpay-font-family-monospace);
 
 $font-family-base: var(--btcpay-font-family-base);
 $font-family-code: var(--btcpay-font-family-monospace);
+
+
+$list-group-action-color: var(--btcpay-body-color);
+$list-group-action-hover-color: var(--btcpay-body-color-accent);
+$list-group-hover-bg: var(--btcpay-body-color-bg-dim);
+// $list-group-action-active-color: var(--btcpay-body-color-bg-dim);
+// $list-group-action-active-bg: var(--btcpay-body-color-bg-dim);
