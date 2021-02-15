@@ -27,13 +27,16 @@ pre code {
 .bg-secondary,
 .bg-success,
 .bg-danger,
-.bg-dark {
-  color: var(--btcpay-color-white) !important; }
-
 .bg-info,
+.bg-dark {
+  color: var(--btcpay-color-white) !important;
+}
+
 .bg-warning,
 .bg-light {
-  color: var(--btcpay-color-black) !important; }
+  color: var(--btcpay-color-neutral-800) !important;
+}
 
 .bg-body {
-  color: var(--btcpay-body-color) !important; }
+  color: var(--btcpay-body-color) !important;
+}

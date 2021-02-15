@@ -1693,7 +1693,7 @@ pre code {
 .table-primary > th,
 .table-primary > td {
   color: var(--btcpay-color-primary-text);
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .table-primary th,
@@ -1707,7 +1707,7 @@ pre code {
 .table-secondary > th,
 .table-secondary > td {
   color: var(--btcpay-color-secondary-text);
-  background-color: var(--btcpay-color-secondary-backdrop);
+  background-color: var(--btcpay-color-secondary-dim-bg);
 }
 
 .table-secondary th,
@@ -1721,7 +1721,7 @@ pre code {
 .table-success > th,
 .table-success > td {
   color: var(--btcpay-color-success-text);
-  background-color: var(--btcpay-color-success-backdrop);
+  background-color: var(--btcpay-color-success-dim-bg);
 }
 
 .table-success th,
@@ -1735,7 +1735,7 @@ pre code {
 .table-info > th,
 .table-info > td {
   color: var(--btcpay-color-info-text);
-  background-color: var(--btcpay-color-info-backdrop);
+  background-color: var(--btcpay-color-info-dim-bg);
 }
 
 .table-info th,
@@ -1749,7 +1749,7 @@ pre code {
 .table-warning > th,
 .table-warning > td {
   color: var(--btcpay-color-warning-text);
-  background-color: var(--btcpay-color-warning-backdrop);
+  background-color: var(--btcpay-color-warning-dim-bg);
 }
 
 .table-warning th,
@@ -1763,7 +1763,7 @@ pre code {
 .table-danger > th,
 .table-danger > td {
   color: var(--btcpay-color-danger-text);
-  background-color: var(--btcpay-color-danger-backdrop);
+  background-color: var(--btcpay-color-danger-dim-bg);
 }
 
 .table-danger th,
@@ -1777,14 +1777,14 @@ pre code {
 .table-light > th,
 .table-light > td {
   color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light-backdrop);
+  background-color: var(--btcpay-color-light-dim-bg);
 }
 
 .table-dark,
 .table-dark > th,
 .table-dark > td {
   color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark-backdrop);
+  background-color: var(--btcpay-color-dark-dim-bg);
 }
 
 @media (max-width: 575.98px) {
@@ -1881,9 +1881,9 @@ pre code {
 .form-control:focus {
   color: var(--btcpay-color-neutral-700);
   background-color: var(--btcpay-color-white);
-  border-color: var(--btcpay-color-primary-backdrop);
+  border-color: var(--btcpay-color-primary-dim-bg);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .form-control::placeholder {
@@ -2061,7 +2061,7 @@ textarea.form-control {
   font-size: 0.875rem;
   line-height: 1.5;
   color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success-backdrop);
+  background-color: var(--btcpay-color-success-dim-bg);
   border-radius: 0.25rem;
 }
 
@@ -2088,7 +2088,7 @@ textarea.form-control {
 
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: var(--btcpay-color-success);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .was-validated .form-control:valid ~ .valid-feedback,
@@ -2110,7 +2110,7 @@ textarea.form-control {
 
 .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
   border-color: var(--btcpay-color-success);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .was-validated .custom-select:valid ~ .valid-feedback,
@@ -2155,7 +2155,7 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .was-validated .custom-control-input:valid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-valid:focus:not(:checked) ~ .custom-control-label::before {
@@ -2174,7 +2174,7 @@ textarea.form-control {
 
 .was-validated .custom-file-input:valid:focus ~ .custom-file-label, .custom-file-input.is-valid:focus ~ .custom-file-label {
   border-color: var(--btcpay-color-success);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .invalid-feedback {
@@ -2197,7 +2197,7 @@ textarea.form-control {
   font-size: 0.875rem;
   line-height: 1.5;
   color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger-backdrop);
+  background-color: var(--btcpay-color-danger-dim-bg);
   border-radius: 0.25rem;
 }
 
@@ -2224,7 +2224,7 @@ textarea.form-control {
 
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: var(--btcpay-color-danger);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-dim-bg);
 }
 
 .was-validated .form-control:invalid ~ .invalid-feedback,
@@ -2246,7 +2246,7 @@ textarea.form-control {
 
 .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
   border-color: var(--btcpay-color-danger);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-dim-bg);
 }
 
 .was-validated .custom-select:invalid ~ .invalid-feedback,
@@ -2291,7 +2291,7 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-dim-bg);
 }
 
 .was-validated .custom-control-input:invalid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before {
@@ -2310,7 +2310,7 @@ textarea.form-control {
 
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
   border-color: var(--btcpay-color-danger);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-dim-bg);
 }
 
 .form-inline {
@@ -2420,7 +2420,7 @@ textarea.form-control {
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .btn.disabled, .btn:disabled {
@@ -2449,7 +2449,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2467,7 +2467,7 @@ fieldset:disabled a.btn {
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .btn-secondary {
@@ -2483,7 +2483,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-dim-bg);
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
@@ -2501,7 +2501,7 @@ fieldset:disabled a.btn {
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-dim-bg);
 }
 
 .btn-success {
@@ -2517,7 +2517,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-success:focus, .btn-success.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .btn-success.disabled, .btn-success:disabled {
@@ -2535,7 +2535,7 @@ fieldset:disabled a.btn {
 
 .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-success.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .btn-info {
@@ -2551,7 +2551,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-info:focus, .btn-info.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-dim-bg);
 }
 
 .btn-info.disabled, .btn-info:disabled {
@@ -2569,7 +2569,7 @@ fieldset:disabled a.btn {
 
 .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-info.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-dim-bg);
 }
 
 .btn-warning {
@@ -2585,7 +2585,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-warning:focus, .btn-warning.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-dim-bg);
 }
 
 .btn-warning.disabled, .btn-warning:disabled {
@@ -2603,7 +2603,7 @@ fieldset:disabled a.btn {
 
 .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-dim-bg);
 }
 
 .btn-danger {
@@ -2619,7 +2619,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-danger:focus, .btn-danger.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-dim-bg);
 }
 
 .btn-danger.disabled, .btn-danger:disabled {
@@ -2637,7 +2637,7 @@ fieldset:disabled a.btn {
 
 .btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-danger.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-dim-bg);
 }
 
 .btn-light {
@@ -2653,13 +2653,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-light:focus, .btn-light.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-dim-bg);
 }
 
 .btn-light.disabled, .btn-light:disabled {
   color: var(--btcpay-color-neutral-400);
-  background-color: var(--btcpay-color-light-backdrop);
-  border-color: var(--btcpay-color-light-backdrop);
+  background-color: var(--btcpay-color-light-dim-bg);
+  border-color: var(--btcpay-color-light-dim-bg);
 }
 
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
@@ -2671,7 +2671,7 @@ fieldset:disabled a.btn {
 
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-dim-bg);
 }
 
 .btn-dark {
@@ -2687,13 +2687,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-dark:focus, .btn-dark.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-dim-bg);
 }
 
 .btn-dark.disabled, .btn-dark:disabled {
   color: var(--btcpay-color-neutral-600);
-  background-color: var(--btcpay-color-dark-backdrop);
-  border-color: var(--btcpay-color-dark-backdrop);
+  background-color: var(--btcpay-color-dark-dim-bg);
+  border-color: var(--btcpay-color-dark-dim-bg);
 }
 
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
@@ -2705,7 +2705,7 @@ fieldset:disabled a.btn {
 
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-dim-bg);
 }
 
 .btn-outline-primary {
@@ -2720,7 +2720,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
@@ -2737,7 +2737,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .btn-outline-secondary {
@@ -2752,7 +2752,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-dim-bg);
 }
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
@@ -2769,7 +2769,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-dim-bg);
 }
 
 .btn-outline-success {
@@ -2784,7 +2784,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .btn-outline-success.disabled, .btn-outline-success:disabled {
@@ -2801,7 +2801,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-success.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .btn-outline-info {
@@ -2816,7 +2816,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-info:focus, .btn-outline-info.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-dim-bg);
 }
 
 .btn-outline-info.disabled, .btn-outline-info:disabled {
@@ -2833,7 +2833,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-info.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-dim-bg);
 }
 
 .btn-outline-warning {
@@ -2848,7 +2848,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-warning:focus, .btn-outline-warning.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-dim-bg);
 }
 
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {
@@ -2865,7 +2865,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-dim-bg);
 }
 
 .btn-outline-danger {
@@ -2880,7 +2880,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-danger:focus, .btn-outline-danger.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-dim-bg);
 }
 
 .btn-outline-danger.disabled, .btn-outline-danger:disabled {
@@ -2897,7 +2897,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-danger.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-dim-bg);
 }
 
 .btn-link {
@@ -3588,17 +3588,17 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: var(--btcpay-color-primary-backdrop);
+  border-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
   color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary-backdrop);
-  border-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
+  border-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
@@ -3657,11 +3657,11 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-radio .custom-control-label::before {
@@ -3673,7 +3673,7 @@ input[type="button"].btn-block {
 }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-switch {
@@ -3712,7 +3712,7 @@ input[type="button"].btn-block {
 }
 
 .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-select {
@@ -3735,9 +3735,9 @@ input[type="button"].btn-block {
 }
 
 .custom-select:focus {
-  border-color: var(--btcpay-color-primary-backdrop);
+  border-color: var(--btcpay-color-primary-dim-bg);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-select:focus::-ms-value {
@@ -3800,8 +3800,8 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: var(--btcpay-color-primary-backdrop);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  border-color: var(--btcpay-color-primary-dim-bg);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-file-input[disabled] ~ .custom-file-label,
@@ -3866,15 +3866,15 @@ input[type="button"].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-range::-moz-focus-outer {
@@ -3902,7 +3902,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-webkit-slider-thumb:active {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-range::-webkit-slider-runnable-track {
@@ -3935,7 +3935,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-moz-range-thumb:active {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-range::-moz-range-track {
@@ -3970,7 +3970,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-ms-thumb:active {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .custom-range::-ms-track {
@@ -4080,8 +4080,8 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: var(--btcpay-color-primary);
-  background-color: var(--btcpay-color-primary-backdrop);
-  border-color: var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
+  border-color: var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) var(--btcpay-color-primary-dim-bg);
 }
 
 .nav-tabs .dropdown-menu {
@@ -4859,7 +4859,7 @@ input[type="button"].btn-block {
 .page-link:focus {
   z-index: 3;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .page-item:first-child .page-link {
@@ -4970,7 +4970,7 @@ a.badge-primary:hover, a.badge-primary:focus {
 
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-dim-bg);
 }
 
 .badge-secondary {
@@ -4985,7 +4985,7 @@ a.badge-secondary:hover, a.badge-secondary:focus {
 
 a.badge-secondary:focus, a.badge-secondary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-dim-bg);
 }
 
 .badge-success {
@@ -5000,7 +5000,7 @@ a.badge-success:hover, a.badge-success:focus {
 
 a.badge-success:focus, a.badge-success.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-dim-bg);
 }
 
 .badge-info {
@@ -5015,7 +5015,7 @@ a.badge-info:hover, a.badge-info:focus {
 
 a.badge-info:focus, a.badge-info.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-dim-bg);
 }
 
 .badge-warning {
@@ -5030,7 +5030,7 @@ a.badge-warning:hover, a.badge-warning:focus {
 
 a.badge-warning:focus, a.badge-warning.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-dim-bg);
 }
 
 .badge-danger {
@@ -5061,7 +5061,7 @@ a.badge-light:hover, a.badge-light:focus {
 
 a.badge-light:focus, a.badge-light.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-dim-bg);
 }
 
 .badge-dark {
@@ -5076,7 +5076,7 @@ a.badge-dark:hover, a.badge-dark:focus {
 
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-dim-bg);
 }
 
 .jumbotron {
@@ -5136,8 +5136,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-primary {
   color: var(--btcpay-color-primary-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-primary-backdrop);
-  border-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
+  border-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .alert-primary hr {
@@ -5146,8 +5146,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-secondary {
   color: var(--btcpay-color-secondary-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-secondary-backdrop);
-  border-color: var(--btcpay-color-secondary-backdrop);
+  background-color: var(--btcpay-color-secondary-dim-bg);
+  border-color: var(--btcpay-color-secondary-dim-bg);
 }
 
 .alert-secondary hr {
@@ -5156,8 +5156,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-success {
   color: var(--btcpay-color-success-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-success-backdrop);
-  border-color: var(--btcpay-color-success-backdrop);
+  background-color: var(--btcpay-color-success-dim-bg);
+  border-color: var(--btcpay-color-success-dim-bg);
 }
 
 .alert-success hr {
@@ -5166,8 +5166,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-info {
   color: var(--btcpay-color-info-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-info-backdrop);
-  border-color: var(--btcpay-color-info-backdrop);
+  background-color: var(--btcpay-color-info-dim-bg);
+  border-color: var(--btcpay-color-info-dim-bg);
 }
 
 .alert-info hr {
@@ -5176,8 +5176,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-warning {
   color: var(--btcpay-color-warning-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-warning-backdrop);
-  border-color: var(--btcpay-color-warning-backdrop);
+  background-color: var(--btcpay-color-warning-dim-bg);
+  border-color: var(--btcpay-color-warning-dim-bg);
 }
 
 .alert-warning hr {
@@ -5186,8 +5186,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-danger {
   color: var(--btcpay-color-danger-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-danger-backdrop);
-  border-color: var(--btcpay-color-danger-backdrop);
+  background-color: var(--btcpay-color-danger-dim-bg);
+  border-color: var(--btcpay-color-danger-dim-bg);
 }
 
 .alert-danger hr {
@@ -5196,8 +5196,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-light {
   color: var(--btcpay-color-light-text, var(--btcpay-color-dark));
-  background-color: var(--btcpay-color-light-backdrop);
-  border-color: var(--btcpay-color-light-backdrop);
+  background-color: var(--btcpay-color-light-dim-bg);
+  border-color: var(--btcpay-color-light-dim-bg);
 }
 
 .alert-light hr {
@@ -5206,8 +5206,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-dark {
   color: var(--btcpay-color-dark-text, var(--btcpay-color-light));
-  background-color: var(--btcpay-color-dark-backdrop);
-  border-color: var(--btcpay-color-dark-backdrop);
+  background-color: var(--btcpay-color-dark-dim-bg);
+  border-color: var(--btcpay-color-dark-dim-bg);
 }
 
 .alert-dark hr {
@@ -5513,12 +5513,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-primary {
   color: var(--btcpay-color-primary-text);
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
   color: var(--btcpay-color-primary-text);
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-color-primary-dim-bg);
 }
 
 .list-group-item-primary.list-group-item-action.active {
@@ -5529,12 +5529,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-secondary {
   color: var(--btcpay-color-secondary-text);
-  background-color: var(--btcpay-color-secondary-backdrop);
+  background-color: var(--btcpay-color-secondary-dim-bg);
 }
 
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
   color: var(--btcpay-color-secondary-text);
-  background-color: var(--btcpay-color-secondary-backdrop);
+  background-color: var(--btcpay-color-secondary-dim-bg);
 }
 
 .list-group-item-secondary.list-group-item-action.active {
@@ -5545,12 +5545,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-success {
   color: var(--btcpay-color-success-text);
-  background-color: var(--btcpay-color-success-backdrop);
+  background-color: var(--btcpay-color-success-dim-bg);
 }
 
 .list-group-item-success.list-group-item-action:hover, .list-group-item-success.list-group-item-action:focus {
   color: var(--btcpay-color-success-text);
-  background-color: var(--btcpay-color-success-backdrop);
+  background-color: var(--btcpay-color-success-dim-bg);
 }
 
 .list-group-item-success.list-group-item-action.active {
@@ -5561,12 +5561,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-info {
   color: var(--btcpay-color-info-text);
-  background-color: var(--btcpay-color-info-backdrop);
+  background-color: var(--btcpay-color-info-dim-bg);
 }
 
 .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
   color: var(--btcpay-color-info-text);
-  background-color: var(--btcpay-color-info-backdrop);
+  background-color: var(--btcpay-color-info-dim-bg);
 }
 
 .list-group-item-info.list-group-item-action.active {
@@ -5577,12 +5577,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-warning {
   color: var(--btcpay-color-warning-text);
-  background-color: var(--btcpay-color-warning-backdrop);
+  background-color: var(--btcpay-color-warning-dim-bg);
 }
 
 .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
   color: var(--btcpay-color-warning-text);
-  background-color: var(--btcpay-color-warning-backdrop);
+  background-color: var(--btcpay-color-warning-dim-bg);
 }
 
 .list-group-item-warning.list-group-item-action.active {
@@ -5593,12 +5593,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-danger {
   color: var(--btcpay-color-danger-text);
-  background-color: var(--btcpay-color-danger-backdrop);
+  background-color: var(--btcpay-color-danger-dim-bg);
 }
 
 .list-group-item-danger.list-group-item-action:hover, .list-group-item-danger.list-group-item-action:focus {
   color: var(--btcpay-color-danger-text);
-  background-color: var(--btcpay-color-danger-backdrop);
+  background-color: var(--btcpay-color-danger-dim-bg);
 }
 
 .list-group-item-danger.list-group-item-action.active {
@@ -5609,12 +5609,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-light {
   color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light-backdrop);
+  background-color: var(--btcpay-color-light-dim-bg);
 }
 
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
   color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light-backdrop);
+  background-color: var(--btcpay-color-light-dim-bg);
 }
 
 .list-group-item-light.list-group-item-action.active {
@@ -5625,12 +5625,12 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-dark {
   color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark-backdrop);
+  background-color: var(--btcpay-color-dark-dim-bg);
 }
 
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
   color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark-backdrop);
+  background-color: var(--btcpay-color-dark-dim-bg);
 }
 
 .list-group-item-dark.list-group-item-action.active {
@@ -6587,7 +6587,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: var(--btcpay-color-light-backdrop) !important;
+  background-color: var(--btcpay-color-light-dim-bg) !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -6597,7 +6597,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: var(--btcpay-color-dark-backdrop) !important;
+  background-color: var(--btcpay-color-dark-dim-bg) !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
