@@ -1,15 +1,15 @@
 .btcpay-footer {
-  color: var(--btcpay-footer-color);
+  color: var(--btcpay-footer-text);
   background-color: var(--btcpay-footer-bg);
 
   & a {
-    color: var(--btcpay-footer-color-link);
+    color: var(--btcpay-footer-link);
     text-decoration: none;
   }
 
   & a:focus,
   & a:hover {
-    color: var(--btcpay-footer-color-link-accent);
+    color: var(--btcpay-footer-link-accent);
   }
 }
 

@@ -16,7 +16,7 @@ body {
   font-size: var(--btcpay-font-size-body, var(--btcpay-font-size-m));
   font-weight: var(--btcpay-font-weight-normal);
   line-height: 1.6;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   background-color: var(--btcpay-body-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,7 +26,7 @@ code {
   font-family: var(--btcpay-font-family-monospace);
   border-radius: var(--btcpay-border-radius);
   padding: var(--btcpay-space-xs);
-  color: var(--btcpay-code-color);
+  color: var(--btcpay-code-text);
   background-color: var(--btcpay-code-bg);
 }
 
@@ -34,20 +34,20 @@ pre {
   font-family: var(--btcpay-font-family-monospace);
   border-radius: var(--btcpay-border-radius);
   padding: var(--btcpay-space-m);
-  color: var(--btcpay-pre-color);
+  color: var(--btcpay-pre-text);
   background-color: var(--btcpay-pre-bg);
 }
 
 pre code {
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-neutral-white);
   background: transparent;
 }
 
 a {
-  color: var(--btcpay-body-color-link);
+  color: var(--btcpay-body-link);
 }
 
 a:focus,
 a:hover {
-  color: var(--btcpay-body-color-link-accent);
+  color: var(--btcpay-body-link-accent);
 }

@@ -5,8 +5,15 @@ $font-family-monospace: var(--btcpay-font-family-monospace);
 $font-family-base: var(--btcpay-font-family-base);
 $font-family-code: var(--btcpay-font-family-monospace);
 
-$list-group-action-color: var(--btcpay-body-color);
-$list-group-action-hover-color: var(--btcpay-body-color-accent);
-$list-group-hover-bg: var(--btcpay-body-color-bg-dim);
-// $list-group-action-active-color: var(--btcpay-body-color-bg-dim);
-// $list-group-action-active-bg: var(--btcpay-body-color-bg-dim);
+$list-group-action-color: var(--btcpay-body-text);
+$list-group-action-hover-color: var(--btcpay-body-accent);
+$list-group-hover-bg: var(--btcpay-body-bg-dim);
+// $list-group-action-active-color: var(--btcpay-body-bg-dim);
+// $list-group-action-active-bg: var(--btcpay-body-bg-dim);
+
+$table-striped-color: var(--btcpay-body-text);
+$table-striped-bg: var(--btcpay-body-bg-striped);
+$table-hover-color: var(--btcpay-body-text-hover);
+$table-hover-bg: var(--btcpay-body-bg-hover);
+$table-active-color: var(--btcpay-body-text-active);
+$table-active-bg: var(--btcpay-body-bg-active);

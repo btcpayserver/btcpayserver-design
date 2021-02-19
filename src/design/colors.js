@@ -13,7 +13,7 @@ const scale = (title, values, ref) =>
       value,
       category: title,
       name: `${title} ${num}`,
-      variable: `--btcpay-color-${slugify(title)}-${num}`,
+      variable: `--btcpay-${slugify(title)}-${num}`,
       reference: ref ? `${ref} ${num}` : null
     })
   }, [])
@@ -50,20 +50,20 @@ module.exports = [
     category: 'Neutral',
     name: 'White',
     value: white,
-    variable: '--btcpay-color-white'
+    variable: '--btcpay-neutral-white'
   },
   ...scale('Neutral', neutral),
   {
     category: 'Neutral',
     name: 'Neutral 950',
     value: '#222',
-    variable: '--btcpay-color-neutral-950'
+    variable: '--btcpay-neutral-950'
   },
   {
     category: 'Neutral',
     name: 'Black',
     value: '#000',
-    variable: '--btcpay-color-black'
+    variable: '--btcpay-neutral-black'
   },
 
   // Categories

@@ -43,7 +43,7 @@ html[data-devenv]:before {
   right: 0;
   bottom: 0;
   background: var(--btcpay-bg-dark);
-  color: var(--btcpay-color-dark-text);
+  color: var(--btcpay-dark-text);
   opacity: .7;
   padding: 4px 5px 3px 7px;
   font-size: 10px;
