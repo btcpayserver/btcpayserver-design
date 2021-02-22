@@ -96,7 +96,7 @@ String.prototype.replaceCategoryColors = function (map) {
 
 const patch = css => {
   const categoryColors = extractCategoriesColors(css)
-  console.log(categoryColors)
+  // console.log(categoryColors)
   return css
     // body
     .replaceColor(true, `(body \\{[\\S\\s]*?) background-color: #fff;`, `$1 background-color: var(--btcpay-body-bg);`)
@@ -107,7 +107,6 @@ const patch = css => {
     // popover
     .replaceColor(true, `(\\.popover \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
     .replaceColor(true, `(\\.popover-header \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
-
 
     // form
     .replaceColor(true, `(\\.form-range::(.*?):active \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-form-border-active);`)
@@ -137,16 +136,8 @@ const patch = css => {
     .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
     .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
 
-    // // simple colors
+    // code
     .replace(/#d63384/gi, 'var(--btcpay-code-text)')
-
-    // .replace(/#86b7fe/gi, 'var(--btcpay-primary-border, var(--btcpay-primary-backdrop))') // -> form control focus border color
-    // .replace(/rgba\(13,\s?110,\s?253,\s?0\.25\)/gi, 'var(--btcpay-primary-border, var(--btcpay-primary-backdrop))') // -> form control focus bopx shadow
-
-    // .replace(/#6610f2/gi, 'var(--btcpay-color-indigo, #6610f2)') // unused
-    // .replace(/#6f42c1/gi, 'var(--btcpay-color-purple, #6f42c1)') // unused
-    // .replace(/#fd7e14/gi, 'var(--btcpay-color-orange, #fd7e14)') // unused
-    // .replace(/#20c997/gi, 'var(--btcpay-color-teal, #20c997)') // unused
 
     // generic
     .replace(/#000;/gi, 'var(--btcpay-neutral-black);')
@@ -154,7 +145,6 @@ const patch = css => {
     .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-neutral-black)')
     .replace(/#fff;/gi, 'var(--btcpay-neutral-white);')
     .replace(/#fff !important;/gi, 'var(--btcpay-neutral-white);')
-
 }
 
 sass.render({ file, outFile }, (error, result) =>

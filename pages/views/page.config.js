@@ -1,6 +1,7 @@
 module.exports = {
   components: [
     'kitchensink',
-    'bootstrap'
+    'bootstrap-v4',
+    'bootstrap-v5'
   ]
 }
