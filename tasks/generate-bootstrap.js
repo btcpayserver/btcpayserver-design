@@ -7,13 +7,9 @@ const { resolve } = require('path')
 const sass = require('node-sass')
 
 const file = resolve(__dirname, '../src/bootstrap/index.scss')
-const outFile = resolve(__dirname, '../dist/styles/btcpayserver-bootstrap-v5.css')
-const origFile = resolve(__dirname, '../dist/styles/btcpayserver-bootstrap-v5-original.css')
+const outFile = resolve(__dirname, '../src/static/styles/btcpayserver-bootstrap-v5.css')
 
-const output = css => {
-  writeFileSync(origFile, css)
-  writeFileSync(outFile, patch(css))
-}
+const output = css => writeFileSync(outFile, patch(css))
 
 const SKIP_COLORS = ['#fff', '#000']
 const CATEGORIES = ['primary', 'secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark']
