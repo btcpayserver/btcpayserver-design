@@ -102,34 +102,50 @@ const patch = css => {
     .replaceColor(true, `(body \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-body-bg);`)
     .replaceColor(true, `(body \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-body-text);`)
 
+    // tiles
+    .replaceColor(true, `(.card \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
+    .replaceColor(true, `(.img-thumbnail \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
+
     // list group
-    .replaceColor(true, `(.list-group-item \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-body-bg);`)
+    // .replaceColor(true, `(.list-group-item \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-body-bg);`)
 
     // form
     .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-form-text);`)
     .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-bg);`)
     .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( border: 1px solid (.*?);)`, `$1 border: 1px solid var(--btcpay-form-border);`)
     .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( border-color: (.*?);)`, `$1 border-color: var(--btcpay-form-border-focus);`)
-    .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( box-shadow: 0 0 0 0.25rem (.*?);)`, `$1 box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow);`)
+    .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( box-shadow: 0 0 0 0.25rem (.*?);)`, `$1 box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);`)
     .replaceColor(true, `(.form-control:hover(.*?) \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-bg-hover);`)
-    .replaceColor(true, `(.form-check-input \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-bg);`)
+    .replaceColor(true, `(.form-check-input \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-form-bg);`)
     .replaceColor(true, `(.form-check-input:focus \\{[\\S\\s]*?)( border-color: (.*?);)`, `$1 border-color: var(--btcpay-form-border-focus);`)
-    .replaceColor(true, `(.form-check-input:focus \\{[\\S\\s]*?)( box-shadow: 0 0 0 0.25rem (.*?);)`, `$1 box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow);`)
+    .replaceColor(true, `(.form-check-input:focus \\{[\\S\\s]*?)( box-shadow: 0 0 0 0.25rem (.*?);)`, `$1 box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);`)
     .replaceColor(true, `(.form-range::(.*?):active \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-border-active);`)
+    .replaceColor(true, `(.input-group-text \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-form-text-addon);`)
+    .replaceColor(true, `(.input-group-text \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-bg-addon);`)
+    .replaceColor(true, `(.form-floating > label \\{[\\S\\s]*?)( position: absolute;)`, `$1 position: absolute; color: var(--btcpay-form-text-addon);`)
+    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(25, 135, 84, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-valid);`)
+    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(220, 53, 69, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-invalid);`)
+
+    // border
+    .replace(/(border(-.*?)?): 1px solid rgba\(0,\s?0,\s?0,\s?0\.1\d*?\)/gi, '$1: 1px solid var(--btcpay-body-border-light)')
+    .replace(/(border(-.*?)?): 1px solid #dee2e6/gi, '$1: 1px solid var(--btcpay-body-border-light)')
+    .replace(/(border(-.*?)?): #dee2e6/gi, '$1: var(--btcpay-body-border-light)')
+    .replace(/(border(-.*?)?): 1px solid rgba\(0,\s?0,\s?0,\s?0\.2\d*?\)/gi, '$1: 1px solid var(--btcpay-body-border-medium)')
+    .replace(/(border(-.*?)?): currentColor/gi, '$1: var(--btcpay-body-border-medium)')
 
     // categories
     .replaceCategoryColors(categoryColors)
 
     // neutral
-    .replace(/#f8f9fa/gi, 'var(--btcpay-neutral-100)')
-    .replace(/#e9ecef/gi, 'var(--btcpay-neutral-200)')
-    .replace(/#dee2e6/gi, 'var(--btcpay-neutral-300)')
-    .replace(/#ced4da/gi, 'var(--btcpay-neutral-400)')
-    .replace(/#adb5bd/gi, 'var(--btcpay-neutral-500)')
-    .replace(/#6c757d/gi, 'var(--btcpay-neutral-600)')
-    .replace(/#495057/gi, 'var(--btcpay-neutral-700)')
-    .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
-    .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
+    // .replace(/#f8f9fa/gi, 'var(--btcpay-neutral-100)')
+    // .replace(/#e9ecef/gi, 'var(--btcpay-neutral-200)')
+    // .replace(/#dee2e6/gi, 'var(--btcpay-neutral-300)')
+    // .replace(/#ced4da/gi, 'var(--btcpay-neutral-400)')
+    // .replace(/#adb5bd/gi, 'var(--btcpay-neutral-500)')
+    // .replace(/#6c757d/gi, 'var(--btcpay-neutral-600)')
+    // .replace(/#495057/gi, 'var(--btcpay-neutral-700)')
+    // .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
+    // .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
 
     // // simple colors
     .replace(/#d63384/gi, 'var(--btcpay-code-text)')
@@ -149,10 +165,6 @@ const patch = css => {
     // .replace(/#fff;/gi, 'var(--btcpay-neutral-white);')
     // .replace(/#fff !important;/gi, 'var(--btcpay-neutral-white);')
 
-    // TODO:
-    // border: 1px solid rgba(0, 0, 0, 0.1 -> light
-    .replace(/border: 1px solid rgba\(0,\s?0,\s?0,\s?0\.1\d*?\)/gi, 'border: 1px solid var(--btcpay-body-border-light)')
-    .replace(/border: 1px solid rgba\(0,\s?0,\s?0,\s?0\.2\d*?\)/gi, 'border: 1px solid var(--btcpay-body-border-medium)')
 }
 
 sass.render({ file, outFile }, (error, result) =>
