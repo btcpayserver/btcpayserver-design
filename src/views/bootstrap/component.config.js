@@ -1,5 +1,6 @@
 module.exports = {
   variants: [
-    'bootstrap.html'
+    'v5.html',
+    'v4.html'
   ]
 }
