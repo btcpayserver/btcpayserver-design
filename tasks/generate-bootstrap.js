@@ -72,23 +72,23 @@ String.prototype.replaceCategoryColors = function (map) {
     .replaceColor(true, values['shadow'][0].replace('(', '\\(').replace(')', '\\)').replace('.', '\\.'), `var(--btcpay-${category}-shadow)`)
     .replaceColor(true, values['shadow'][1].replace('(', '\\(').replace(')', '\\)').replace('.', '\\.'), `var(--btcpay-${category}-shadow)`)
     // button
-    .replaceColor(true, `(.btn-${category}(\\.disabled)? \\{[\\S\\s]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text);`)
-    .replaceColor(true, `(.btn-${category}.dropdown-toggle \\{[\\S\\s]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text-active);`)
-    .replaceColor(true, `(.btn-${category}:(hover|focus) \\{[\\S\\s]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text-hover);`)
-    .replaceColor(true, `(.btn-${category}\\.dropdown-toggle \\{[\\S\\s]*?) background-color: (.*?);`, `$1 background-color: var(--btcpay-${category}-bg-active);`)
-    .replaceColor(true, `(.btn-outline-${category}:(hover|focus) \\{[\\S\\s]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text);`)
+    .replaceColor(true, `(\\.btn-${category}(\\.disabled)? \\{[\\S\\s]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text);`)
+    .replaceColor(true, `(\\.btn-${category}.dropdown-toggle \\{[\\S\\s]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text-active);`)
+    .replaceColor(true, `(\\.btn-${category}:(hover|focus) \\{[\\S\\s]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text-hover);`)
+    .replaceColor(true, `(\\.btn-${category}\\.dropdown-toggle \\{[\\S\\s]*?) background-color: (.*?);`, `$1 background-color: var(--btcpay-${category}-bg-active);`)
+    .replaceColor(true, `(\\.btn-outline-${category}:(hover|focus) \\{[\\S\\s]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text);`)
     // table
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( border-color: (.*?);)`, `$1 border-color: var(--btcpay-${category}-dim-border);`)
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-${category}-dim-text);`)
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( --bs-table-striped-color: (.*?);)`, `$1 --bs-table-striped-color: var(--btcpay-${category}-dim-text-striped);`)
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( --bs-table-hover-color: (.*?);)`, `$1 --bs-table-hover-color: var(--btcpay-${category}-dim-text-hover);`)
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( --bs-table-active-color: (.*?);)`, `$1 --bs-table-active-color: var(--btcpay-${category}-dim-text-active);`)
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( --bs-table-bg: (.*?);)`, `$1 --bs-table-bg: var(--btcpay-${category}-dim-bg);`)
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( --bs-table-striped-bg: (.*?);)`, `$1 --bs-table-striped-bg: var(--btcpay-${category}-dim-bg-striped);`)
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( --bs-table-hover-bg: (.*?);)`, `$1 --bs-table-hover-bg: var(--btcpay-${category}-dim-bg-hover);`)
-    .replaceColor(true, `(.table-${category} \\{[\\S\\s]*?)( --bs-table-active-bg: (.*?);)`, `$1 --bs-table-active-bg: var(--btcpay-${category}-dim-bg-active);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( border-color: (.*?);)`, `$1 border-color: var(--btcpay-${category}-dim-border);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-${category}-dim-text);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( --bs-table-striped-color: (.*?);)`, `$1 --bs-table-striped-color: var(--btcpay-${category}-dim-text-striped);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( --bs-table-hover-color: (.*?);)`, `$1 --bs-table-hover-color: var(--btcpay-${category}-dim-text-hover);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( --bs-table-active-color: (.*?);)`, `$1 --bs-table-active-color: var(--btcpay-${category}-dim-text-active);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( --bs-table-bg: (.*?);)`, `$1 --bs-table-bg: var(--btcpay-${category}-dim-bg);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( --bs-table-striped-bg: (.*?);)`, `$1 --bs-table-striped-bg: var(--btcpay-${category}-dim-bg-striped);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( --bs-table-hover-bg: (.*?);)`, `$1 --bs-table-hover-bg: var(--btcpay-${category}-dim-bg-hover);`)
+    .replaceColor(true, `(\\.table-${category} \\{[\\S\\s]*?)( --bs-table-active-bg: (.*?);)`, `$1 --bs-table-active-bg: var(--btcpay-${category}-dim-bg-active);`)
     // list group
-    .replaceColor(true, `(.list-group-item-${category}.list-group-item-action.active \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-${category}-dim-text-active);`)
+    .replaceColor(true, `(\\.list-group-item-${category}.list-group-item-action.active \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-${category}-dim-text-active);`)
     // general color
     .replaceColor(values[''], `color: ${values['']}`, `color: var(--btcpay-${category})`)
   , this)
@@ -99,30 +99,20 @@ const patch = css => {
   console.log(categoryColors)
   return css
     // body
-    .replaceColor(true, `(body \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-body-bg);`)
-    .replaceColor(true, `(body \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-body-text);`)
+    .replaceColor(true, `(body \\{[\\S\\s]*?) background-color: #fff;`, `$1 background-color: var(--btcpay-body-bg);`)
+    .replaceColor(true, `(body \\{[\\S\\s]*?) color: #212529;`, `$1 color: var(--btcpay-body-text);`)
+    .replaceColor(true, `(\\.bg-body \\{[\\S\\s]*?) background-color: #fff !important;`, `$1 background-color: var(--btcpay-body-bg) !important;`)
+    .replaceColor(true, `(\\.bg-white \\{[\\S\\s]*?) background-color: #fff !important;`, `$1 background-color: var(--btcpay-neutral-white) !important;`)
 
-    // tiles
-    .replaceColor(true, `(.card \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
-    .replaceColor(true, `(.img-thumbnail \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
+    // popover
+    .replaceColor(true, `(\\.popover \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
+    .replaceColor(true, `(\\.popover-header \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
 
-    // list group
-    // .replaceColor(true, `(.list-group-item \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-body-bg);`)
 
     // form
-    .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-form-text);`)
-    .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-bg);`)
-    .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( border: 1px solid (.*?);)`, `$1 border: 1px solid var(--btcpay-form-border);`)
-    .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( border-color: (.*?);)`, `$1 border-color: var(--btcpay-form-border-focus);`)
-    .replaceColor(true, `(.form-control \\{[\\S\\s]*?)( box-shadow: 0 0 0 0.25rem (.*?);)`, `$1 box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);`)
-    .replaceColor(true, `(.form-control:hover(.*?) \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-bg-hover);`)
-    .replaceColor(true, `(.form-check-input \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-form-bg);`)
-    .replaceColor(true, `(.form-check-input:focus \\{[\\S\\s]*?)( border-color: (.*?);)`, `$1 border-color: var(--btcpay-form-border-focus);`)
-    .replaceColor(true, `(.form-check-input:focus \\{[\\S\\s]*?)( box-shadow: 0 0 0 0.25rem (.*?);)`, `$1 box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);`)
-    .replaceColor(true, `(.form-range::(.*?):active \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-border-active);`)
-    .replaceColor(true, `(.input-group-text \\{[\\S\\s]*?)( color: (.*?);)`, `$1 color: var(--btcpay-form-text-addon);`)
-    .replaceColor(true, `(.input-group-text \\{[\\S\\s]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-form-bg-addon);`)
-    .replaceColor(true, `(.form-floating > label \\{[\\S\\s]*?)( position: absolute;)`, `$1 position: absolute; color: var(--btcpay-form-text-addon);`)
+    .replaceColor(true, `(\\.form-range::(.*?):active \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-form-border-active);`)
+    .replaceColor(true, `(\\.form-floating > label \\{[\\S\\s]*?)( position: absolute;)`, `$1 position: absolute; color: var(--btcpay-form-text-addon);`)
+    .replaceColor(true, `(\\.form-control::(.*?) \\{[\\S\\s]*?)( background-color: #e9ecef;)`, `$1 background-color: var(--btcpay-form-bg-addon);`)
     .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(25, 135, 84, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-valid);`)
     .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(220, 53, 69, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-invalid);`)
 
@@ -137,15 +127,15 @@ const patch = css => {
     .replaceCategoryColors(categoryColors)
 
     // neutral
-    // .replace(/#f8f9fa/gi, 'var(--btcpay-neutral-100)')
-    // .replace(/#e9ecef/gi, 'var(--btcpay-neutral-200)')
-    // .replace(/#dee2e6/gi, 'var(--btcpay-neutral-300)')
-    // .replace(/#ced4da/gi, 'var(--btcpay-neutral-400)')
-    // .replace(/#adb5bd/gi, 'var(--btcpay-neutral-500)')
-    // .replace(/#6c757d/gi, 'var(--btcpay-neutral-600)')
-    // .replace(/#495057/gi, 'var(--btcpay-neutral-700)')
-    // .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
-    // .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
+    .replace(/#f8f9fa/gi, 'var(--btcpay-neutral-100)')
+    .replace(/#e9ecef/gi, 'var(--btcpay-neutral-200)')
+    .replace(/#dee2e6/gi, 'var(--btcpay-neutral-300)')
+    .replace(/#ced4da/gi, 'var(--btcpay-neutral-400)')
+    .replace(/#adb5bd/gi, 'var(--btcpay-neutral-500)')
+    .replace(/#6c757d/gi, 'var(--btcpay-neutral-600)')
+    .replace(/#495057/gi, 'var(--btcpay-neutral-700)')
+    .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
+    .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
 
     // // simple colors
     .replace(/#d63384/gi, 'var(--btcpay-code-text)')
@@ -159,11 +149,11 @@ const patch = css => {
     // .replace(/#20c997/gi, 'var(--btcpay-color-teal, #20c997)') // unused
 
     // generic
-    // .replace(/#000;/gi, 'var(--btcpay-neutral-black);')
-    // .replace(/#000 !important;/gi, 'var(--btcpay-neutral-black);')
-    // .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-neutral-black)')
-    // .replace(/#fff;/gi, 'var(--btcpay-neutral-white);')
-    // .replace(/#fff !important;/gi, 'var(--btcpay-neutral-white);')
+    .replace(/#000;/gi, 'var(--btcpay-neutral-black);')
+    .replace(/#000 !important;/gi, 'var(--btcpay-neutral-black);')
+    .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-neutral-black)')
+    .replace(/#fff;/gi, 'var(--btcpay-neutral-white);')
+    .replace(/#fff !important;/gi, 'var(--btcpay-neutral-white);')
 
 }
 

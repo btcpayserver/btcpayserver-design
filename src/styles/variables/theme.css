@@ -3,22 +3,21 @@
   --btcpay-bg-dark: var(--btcpay-brand-dark);
 
   --btcpay-body-bg: var(--btcpay-neutral-100);
-  --btcpay-body-bg-striped: var(--btcpay-neutral-200);
-  --btcpay-body-bg-hover: var(--btcpay-neutral-200);
-  --btcpay-body-bg-active: var(--btcpay-neutral-300);
-  --btcpay-body-border: var(--btcpay-body-dim-bg);
-  --btcpay-body-border-active: var(--btcpay-body-dim-bg-active);
-  --btcpay-body-text: var(--btcpay-neutral-900);
-  --btcpay-body-text-striped: var(--btcpay-body-dim-text);
-  --btcpay-body-text-hover: var(--btcpay-body-dim-text);
-  --btcpay-body-text-active: var(--btcpay-neutral-900);
-  --btcpay-body-link: var(--btcpay-primary);
-  --btcpay-body-link-accent: var(--btcpay-primary);
-
   --btcpay-body-bg-light: var(--btcpay-neutral-white);
   --btcpay-body-bg-medium: var(--btcpay-neutral-200);
+  --btcpay-body-bg-striped: var(--btcpay-neutral-200);
+  --btcpay-body-bg-hover: var(--btcpay-neutral-200);
+  --btcpay-body-bg-active: var(--btcpay-primary);
   --btcpay-body-border-light: var(--btcpay-neutral-200);
   --btcpay-body-border-medium: var(--btcpay-neutral-300);
+  --btcpay-body-text: var(--btcpay-neutral-900);
+  --btcpay-body-text-striped: var(--btcpay-body-text);
+  --btcpay-body-text-hover: var(--btcpay-body-text);
+  --btcpay-body-text-active: var(--btcpay-neutral-white);
+  --btcpay-body-text-muted: var(--btcpay-neutral-500);
+  --btcpay-body-link: var(--btcpay-primary);
+  --btcpay-body-link-accent: var(--btcpay-primary);
+  --btcpay-body-shadow: rgba(25, 135, 84, 0.33);
 
   --btcpay-header-bg: var(--btcpay-neutral-white);
   --btcpay-header-text: var(--btcpay-body-text);
@@ -32,11 +31,14 @@
   --btcpay-form-bg: var(--btcpay-neutral-white);
   --btcpay-form-bg-hover: var(--btcpay-form-bg);
   --btcpay-form-bg-addon: var(--btcpay-neutral-300);
+  --btcpay-form-bg-disabled: var(--btcpay-neutral-200);
   --btcpay-form-text: var(--btcpay-neutral-900);
+  --btcpay-form-text-label: var(--btcpay-neutral-700);
   --btcpay-form-text-addon: var(--btcpay-neutral-700);
   --btcpay-form-border: var(--btcpay-neutral-300);
-  --btcpay-form-border-focus: var(--btcpay-neutral-300);
-  --btcpay-form-border-active: var(--btcpay-neutral-300);
+  --btcpay-form-border-focus: var(--btcpay-form-border);
+  --btcpay-form-border-active: var(--btcpay-form-border);
+  --btcpay-form-border-disabled: var(--btcpay-form-border);
   --btcpay-form-shadow-focus: var(--btcpay-primary-shadow);
   --btcpay-form-shadow-valid: var(--btcpay-success-shadow);
   --btcpay-form-shadow-invalid: var(--btcpay-danger-shadow);
@@ -71,7 +73,7 @@
   --btcpay-primary-dim-text-striped: var(--btcpay-primary-dim-text);
   --btcpay-primary-dim-text-hover: var(--btcpay-primary-dim-text);
   --btcpay-primary-dim-text-active: var(--btcpay-primary-900);
-  --btcpay-primary-shadow: var(--btcpay-primary-dim-bg);
+  --btcpay-primary-shadow: rgba(25, 135, 84, 0.33);
 
   --btcpay-secondary: var(--btcpay-neutral-500);
   --btcpay-secondary-accent: var(--btcpay-neutral-700);
@@ -93,7 +95,7 @@
   --btcpay-secondary-dim-text-striped: var(--btcpay-secondary-dim-text);
   --btcpay-secondary-dim-text-hover: var(--btcpay-secondary-dim-text);
   --btcpay-secondary-dim-text-active: var(--btcpay-secondary-900);
-  --btcpay-secondary-shadow: var(--btcpay-secondary-dim-bg);
+  --btcpay-secondary-shadow: rgba(130, 138, 145, 0.33);
 
   --btcpay-success: var(--btcpay-success-500);
   --btcpay-success-accent: var(--btcpay-success-700);
@@ -115,7 +117,7 @@
   --btcpay-success-dim-text-striped: var(--btcpay-success-dim-text);
   --btcpay-success-dim-text-hover: var(--btcpay-success-dim-text);
   --btcpay-success-dim-text-active: var(--btcpay-success-900);
-  --btcpay-success-shadow: var(--btcpay-success-dim-bg);
+  --btcpay-success-shadow: rgba(60, 153, 110, 0.33);
 
   --btcpay-info: var(--btcpay-info-500);
   --btcpay-info-accent: var(--btcpay-info-700);
@@ -137,7 +139,7 @@
   --btcpay-info-dim-text-striped: var(--btcpay-info-dim-text);
   --btcpay-info-dim-text-hover: var(--btcpay-info-dim-text);
   --btcpay-info-dim-text-active: var(--btcpay-info-900);
-  --btcpay-info-shadow: var(--btcpay-info-dim-bg);
+  --btcpay-info-shadow: rgba(11, 172, 204, 0.33);
 
   --btcpay-warning: var(--btcpay-warning-500);
   --btcpay-warning-accent: var(--btcpay-warning-700);
@@ -159,7 +161,7 @@
   --btcpay-warning-dim-text-striped: var(--btcpay-warning-dim-text);
   --btcpay-warning-dim-text-hover: var(--btcpay-warning-dim-text);
   --btcpay-warning-dim-text-active: var(--btcpay-warning-900);
-  --btcpay-warning-shadow: var(--btcpay-warning-dim-bg);
+  --btcpay-warning-shadow: rgba(217, 164, 6, 0.33);
 
   --btcpay-danger: var(--btcpay-danger-500);
   --btcpay-danger-accent: var(--btcpay-danger-700);
@@ -181,7 +183,7 @@
   --btcpay-danger-dim-text-striped: var(--btcpay-danger-dim-text);
   --btcpay-danger-dim-text-hover: var(--btcpay-danger-dim-text);
   --btcpay-danger-dim-text-active: var(--btcpay-danger-900);
-  --btcpay-danger-shadow: rgba(220, 53, 69, 0.4);
+  --btcpay-danger-shadow: rgba(225, 83, 97, 0.33);
 
   --btcpay-light: var(--btcpay-neutral-200);
   --btcpay-light-accent: var(--btcpay-neutral-400);
@@ -203,7 +205,7 @@
   --btcpay-light-dim-text-striped: var(--btcpay-light-dim-text);
   --btcpay-light-dim-text-hover: var(--btcpay-light-dim-text);
   --btcpay-light-dim-text-active: var(--btcpay-neutral-900);
-  --btcpay-light-shadow: var(--btcpay-light-dim-bg);
+  --btcpay-light-shadow: rgba(211, 212, 213, 0.33);
 
   --btcpay-dark: var(--btcpay-neutral-800);
   --btcpay-dark-accent: var(--btcpay-neutral-black);
@@ -225,7 +227,7 @@
   --btcpay-dark-dim-text-striped: var(--btcpay-dark-dim-text);
   --btcpay-dark-dim-text-hover: var(--btcpay-dark-dim-text);
   --btcpay-dark-dim-text-active: var(--btcpay-neutral-100);
-  --btcpay-dark-shadow: var(--btcpay-dark-dim-bg);
+  --btcpay-dark-shadow: rgba(66, 70, 73, 0.33);
 }
 
 %dark-theme {
@@ -233,11 +235,16 @@
   --btcpay-bg-tile: var(--btcpay-bg-dark);
 
   --btcpay-body-bg: var(--btcpay-neutral-900);
-  --btcpay-body-text: var(--btcpay-neutral-white);
   --btcpay-body-bg-light: var(--btcpay-neutral-950);
   --btcpay-body-bg-medium: var(--btcpay-neutral-800);
+  --btcpay-body-bg-striped: var(--btcpay-neutral-800);
+  --btcpay-body-bg-hover: var(--btcpay-neutral-700);
+  --btcpay-body-bg-active: var(--btcpay-neutral-700);
   --btcpay-body-border-light: var(--btcpay-neutral-800);
   --btcpay-body-border-medium: var(--btcpay-neutral-700);
+  --btcpay-body-text: var(--btcpay-neutral-white);
+
+  --btcpay-form-text-label: var(--btcpay-neutral-300);
 
   --btcpay-header-bg: var(--btcpay-bg-dark);
 
@@ -272,7 +279,7 @@
   --btcpay-light-dim-text-striped: var(--btcpay-light-dim-text);
   --btcpay-light-dim-text-hover: var(--btcpay-light-dim-text);
   --btcpay-light-dim-text-active: var(--btcpay-neutral-100);
-  --btcpay-light-shadow: var(--btcpay-light-dim-bg);
+  --btcpay-light-shadow: rgba(66, 70, 73, 0.33);
 
   --btcpay-dark: var(--btcpay-neutral-200);
   --btcpay-dark-accent: var(--btcpay-neutral-400);
@@ -294,7 +301,7 @@
   --btcpay-dark-dim-text-striped: var(--btcpay-dark-dim-text);
   --btcpay-dark-dim-text-hover: var(--btcpay-dark-dim-text);
   --btcpay-dark-dim-text-active: var(--btcpay-neutral-900);
-  --btcpay-dark-shadow: var(--btcpay-dark-dim-bg);
+  --btcpay-dark-shadow: rgba(211, 212, 213, 0.33);
 }
 
 :root[data-btcpay-theme="dark"] {

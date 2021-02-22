@@ -15,3 +15,104 @@ $table-hover-color: var(--btcpay-body-text-hover);
 $table-hover-bg: var(--btcpay-body-bg-hover);
 $table-active-color: var(--btcpay-body-text-active);
 $table-active-bg: var(--btcpay-body-bg-active);
+
+$pagination-color: var(--btcpay-body-link);
+$pagination-bg: var(--btcpay-body-bg-light);
+$pagination-hover-color: $pagination-color;
+$pagination-hover-bg: var(--btcpay-body-bg-hover);
+$pagination-border-color: var(--btcpay-body-border-light);
+$pagination-hover-border-color: $pagination-border-color;
+
+$pagination-focus-color: $pagination-hover-color;
+$pagination-focus-bg: $pagination-hover-bg;
+$pagination-focus-box-shadow: 0 0 0 0.25rem var(--btcpay-body-shadow);
+
+$pagination-active-color: var(--btcpay-body-text-active);
+$pagination-active-bg: var(--btcpay-body-bg-active);
+$pagination-active-border-color: var(--btcpay-body-border-medium);
+
+$dropdown-color: var(--btcpay-body-text);
+$dropdown-bg: var(--btcpay-body-bg);
+$dropdown-border-color: var(--btcpay-body-border-medium);
+$dropdown-link-color: var(--btcpay-body-color);
+$dropdown-link-hover-color: $dropdown-link-color;
+$dropdown-link-hover-bg: var(--btcpay-body-bg-hover);
+$dropdown-link-active-color: $dropdown-link-color;
+$dropdown-link-active-bg: var(--btcpay-body-bg-active);
+$dropdown-link-disabled-color: var(--btcpay-body-text-muted);
+$dropdown-dark-color: var(--btcpay-neutral-white);
+$dropdown-dark-bg: var(--btcpay-bg-tile);
+$dropdown-dark-border-color: var(--btcpay-neutral-900);
+$dropdown-dark-link-color: $dropdown-dark-color;
+$dropdown-dark-link-disabled-color: var(--btcpay-body-text-muted);
+
+$nav-tabs-border-color: var(--btcpay-body-border-medium);
+$nav-tabs-link-hover-border-color: var(--btcpay-body-border-medium);
+$nav-tabs-link-active-color: var(--btcpay-body-text-active);
+$nav-tabs-link-active-bg: var(--btcpay-body-bg-active);
+$nav-tabs-link-active-border-color: $nav-tabs-link-hover-border-color;
+
+$list-group-color: var(--btcpay-body-text);
+$list-group-bg: var(--btcpay-body-bg-light);
+$list-group-hover-bg: var(--btcpay-body-bg-hover);
+$list-group-border-color: var(--btcpay-body-border-medium);
+$list-group-active-color: var(--btcpay-body-text);
+$list-group-active-bg: var(--btcpay-body-bg-medium);
+$list-group-active-border-color: $list-group-border-color;
+
+$list-group-action-color: var(--btcpay-body-text);
+$list-group-action-hover-color: $list-group-action-color;
+$list-group-action-active-color: $list-group-active-color;
+$list-group-action-active-bg: $list-group-active-bg;
+
+$accordion-button-color: var(--btcpay-body-text);
+$accordion-button-bg: var(--btcpay-body-bg);
+$accordion-border-color: var(--btcpay-body-border-medium);
+$accordion-button-focus-border-color: $accordion-border-color;
+$accordion-button-focus-box-shadow: 0 0 0 0.25rem var(--btcpay-body-shadow);
+$accordion-button-active-color: var(--btcpay-body-text-active);
+$accordion-button-active-bg: var(--btcpay-body-bg-active);
+
+$form-label-color: var(--btcpay-form-text-label);
+$form-text-color: var(--btcpay-form-text);
+$form-file-button-hover-bg: var(--btcpay-form-bg-hover);
+$input-color: var(--btcpay-form-text);
+$input-bg: var(--btcpay-form-bg);
+$input-border-color: var(--btcpay-form-border);
+$input-disabled-bg: var(--btcpay-form-bg-disabled);
+$input-disabled-border-color: var(--btcpay-form-border-disabled);
+
+$input-focus-bg: $input-bg;
+$input-focus-border-color: var(--btcpay-form-border-focus);
+$input-focus-box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);
+$form-check-input-bg: var(--btcpay-form-bg);
+$form-check-input-border: 1px solid var(--btcpay-form-border);
+$form-check-input-focus-border: $input-focus-border-color;
+$form-check-input-focus-box-shadow: $input-focus-box-shadow;
+$form-range-track-bg: var(--btcpay-form-border);
+$form-range-thumb-focus-box-shadow: $input-focus-box-shadow;
+$form-range-thumb-disabled-bg: var(--btcpay-form-bg-disabled);
+$form-select-disabled-bg: var(--btcpay-form-bg-disabled);
+
+$input-group-addon-color: var(--btcpay-form-text-addon);
+$input-group-addon-bg: var(--btcpay-form-bg-addon);
+
+$card-color: var(--btcpay-body-text);
+$card-bg: var(--btcpay-bg-tile);
+$card-border-color: var(--btcpay-body-border-medium);
+$card-cap-color: var(--btcpay-body-text);
+$card-cap-bg: var(--btcpay-body-bg-light);
+
+$thumbnail-bg: var(--btcpay-bg-tile);
+$thumbnail-border-color: var(--btcpay-body-border-medium);
+
+$toast-color: var(--btcpay-body-text);
+$toast-background-color: var(--btcpay-bg-tile);
+$toast-border-color: var(--btcpay-body-border-medium);
+$toast-header-color: var(--btcpay-body-text-muted);
+$toast-header-background-color: var(--btcpay-body-bg-light);
+$toast-header-border-color: $toast-header-background-color;
+
+$popover-border-color: var(--btcpay-body-border-medium);
+$popover-arrow-color: var(--btcpay-bg-tile);
+$popover-arrow-outer-color: $popover-border-color;
