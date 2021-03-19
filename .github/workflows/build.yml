@@ -1,0 +1,49 @@
+name: Build
+
+on:
+  # Run the build for pushes and pull requests targeting master
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14]
+
+    steps:
+      # Checkout doc repo and its dependencies
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Setup Node
+      - name: Setup (Node.js ${{ matrix.node-version }})
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      # Install and build
+      - name: Install
+        run: npm ci
+      - name: Build
+        run: npm run prod
+      # Deploy, limited to the master branch
+      - name: Predeploy
+        if: success() && github.ref == 'refs/heads/master'
+        run: |
+          # GitHub Pages SPA
+          sed '7i\'$'\n''<script src="/scripts/gh-pages-spa.js"></script>'$'\n' dist/index.html > dist/index-modified.html
+          mv dist/index{-modified,}.html
+          # https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/
+          touch dist/.nojekyll
+          # https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site
+          echo design.btcpayserver.org > dist/CNAME
+      - name: Deploy
+        if: success() && github.ref == 'refs/heads/master'
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          BUILD_DIR: dist/
+          GH_PAT: ${{ secrets.GH_PAT }}
