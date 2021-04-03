@@ -36,7 +36,7 @@
     "@uiengine/adapter-html": "3.1.7",
     "@uiengine/core": "3.1.7",
     "autoprefixer": "10.2.4",
-    "bootstrap": "5.0.0-beta2",
+    "bootstrap": "5.0.0-beta3",
     "csso-cli": "3.0.0",
     "import-fresh": "3.3.0",
     "node-sass": "5.0.0",
