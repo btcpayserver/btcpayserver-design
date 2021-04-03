@@ -5114,6 +5114,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   font-weight: 700;
 }
 
+.alert-link,
+.alert-link:focus,
+.alert-link:hover,
 .alert code {
   color: inherit;
 }
@@ -5892,7 +5895,7 @@ a.close.disabled {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
