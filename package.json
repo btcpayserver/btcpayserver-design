@@ -11,7 +11,7 @@
     "BTCPayServer"
   ],
   "scripts": {
-    "clean": "rimraf dist generated && mkdir -p dist/styles generated",
+    "clean": "rimraf dist generated && mkdir -p dist/styles dist/scripts/bootstrap-v5 generated",
     "start": "npm run clean && npm-run-all -p 'start:*'",
     "start:build": "npm-run-all -p 'build:* -- --serve --watch'",
     "start:static": "onchange -k 'src/static/**' -- npm run build:static",
@@ -20,7 +20,7 @@
     "start:styles:variables": "onchange -k 'postcss/variables/*' 'src/styles/variables/**' 'src/design/**' -- npm run build:styles:variables",
     "start:bootstrap": "onchange -k 'src/bootstrap/**' 'tasks/generate-bootstrap.js' -- npm run build:bootstrap",
     "build": "npm run clean && N  ODE_ENV=production npm-run-all -p 'build:*'",
-    "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts && :",
+    "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts/bootstrap-v5 && :",
     "build:patternlib": "uiengine build",
     "build:styles": "npm-run-all -s 'build:styles:main' 'build:styles:variables' && :",
     "build:styles:main": "postcss --config postcss/main --output dist/styles/btcpayserver-main.css src/styles/main/index.css",

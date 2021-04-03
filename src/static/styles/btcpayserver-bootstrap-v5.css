@@ -2718,17 +2718,17 @@ textarea.form-control-lg {
   padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
   .dropdown-item:hover, .dropdown-item:focus {
-    color: var(--btcpay-body-color);
+    color: var(--btcpay-body-text);
     background-color: var(--btcpay-body-bg-hover); }
   .dropdown-item.active, .dropdown-item:active {
-    color: var(--btcpay-body-color);
+    color: var(--btcpay-body-text);
     text-decoration: none;
     background-color: var(--btcpay-body-bg-active); }
   .dropdown-item.disabled, .dropdown-item:disabled {
@@ -2750,7 +2750,7 @@ textarea.form-control-lg {
 .dropdown-item-text {
   display: block;
   padding: 0.25rem 1rem;
-  color: var(--btcpay-body-color); }
+  color: var(--btcpay-body-text); }
 
 .dropdown-menu-dark {
   color: var(--btcpay-neutral-white);
@@ -2762,7 +2762,7 @@ textarea.form-control-lg {
       color: var(--btcpay-neutral-white);
       background-color: rgba(255, 255, 255, 0.15); }
     .dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
-      color: var(--btcpay-body-color);
+      color: var(--btcpay-body-text);
       background-color: var(--btcpay-body-bg-active); }
     .dropdown-menu-dark .dropdown-item.disabled, .dropdown-menu-dark .dropdown-item:disabled {
       color: var(--btcpay-body-text-muted); }

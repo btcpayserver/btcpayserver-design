@@ -8,7 +8,7 @@ Then use this HTML snippet inside the `<head>` section to integrate the styleshe
 
 ```html
 <link href="/styles/btcpayserver-variables.css" rel="stylesheet">
-<link href="/styles/btcpayserver-bootstrap-v4.css" rel="stylesheet">
+<link href="/styles/btcpayserver-bootstrap.css" rel="stylesheet">
 <link href="/styles/btcpayserver-main.css" rel="stylesheet">
 ```
 
@@ -36,10 +36,11 @@ The general approach regarding the themes is:
 
 ## Bootstrap
 
-This is our forked version of [Bootstrap 4](https://getbootstrap.com/).
+This is our forked version of [Bootstrap](https://getbootstrap.com/).
 Including this is optional and only required if you want to build upon what Bootstrap offers.
 
 📦 [btcpayserver-bootstrap-v4.css](/styles/btcpayserver-bootstrap-v4.css)
+📦 [btcpayserver-bootstrap-v5.css](/styles/btcpayserver-bootstrap-v5.css)
 
 ### Why do we use a fork?
 
