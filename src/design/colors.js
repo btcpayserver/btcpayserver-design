@@ -1,8 +1,13 @@
 const brandPrimary = '#51b13e'
+const brandSecondary = '#CEDC21'
 const brandTertiary = '#1e7a44'
+const brandDark = '#0F3B21'
+
 const white = '#ffffff'
 const black = '#000000'
 const neutral = ['#f8f9fa', '#e9ecef', '#dee2e6', '#ced4da', '#8f979e', '#6c757d', '#495057', '#343a40', '#292929']
+
+const dark = ['#F0F6FC', '#C9D1D9', '#B1BAC4', '#8B949E', '#6E7681', '#484F58', '#30363D', '#21262D', '#161B22']
 
 const slugify = str => str.toLowerCase().replace(/\W/, '-')
 
@@ -29,7 +34,7 @@ module.exports = [
   {
     category: 'Brand',
     name: 'Brand Secondary',
-    value: '#CEDC21',
+    value: brandSecondary,
     variable: '--btcpay-brand-secondary'
   },
   {
@@ -41,7 +46,7 @@ module.exports = [
   {
     category: 'Brand',
     name: 'Brand Dark',
-    value: '#0F3B21',
+    value: brandDark,
     variable: '--btcpay-brand-dark'
   },
 
@@ -64,6 +69,13 @@ module.exports = [
     name: 'Black',
     value: '#000',
     variable: '--btcpay-neutral-black'
+  },
+  ...scale('Dark', dark),
+  {
+    category: 'Dark',
+    name: 'Dark 950',
+    value: '#0D1117',
+    variable: '--btcpay-dark-950'
   },
 
   // Categories
