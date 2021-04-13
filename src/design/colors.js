@@ -97,6 +97,12 @@ module.exports = [
   ...scale('Danger', ['#ebbcb6', '#e4a59e', '#dc887e', '#d06053', '#c12c1a', '#a71705', '#9a1000', '#8e0f00', '#810d00']),
   ...scale('Red', ['#FFEFED', '#FED7D2', '#F1998E', '#E85C4A', '#E11900', '#AB1300', '#870F00', '#5A0A00']),
 
+  ...scale('Purple', ['#F4F1FA', '#E3DDF2', '#C1B5E3', '#957FCE', '#7356BF', '#574191', '#453473', '#2E224C']),
+
+  ...scale('Orange', ['#FFF3EF', '#FFE1D6', '#FABDA5', '#FA9269', '#FF6937', '#C14F29', '#9A3F21', '#672A16']),
+
+  ...scale('Brown', ['#F6F0EA', '#EBE0DB', '#D2BBB0', '#B18977', '#99644C', '#744C3A', '#5C3C2E', '#3D281E']),
+
   // ...scale('Pink', ['#F6F0EA', '#EBE0DB', '#D2BBB0', '#B18977', '#99644C', '#744C3A', '#5C3C2E', '#3D281E']),
 
 ]
