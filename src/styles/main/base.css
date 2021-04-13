@@ -39,7 +39,7 @@ pre {
 }
 
 pre code {
-  color: var(--btcpay-neutral-white);
+  color: var(--btcpay-white);
   background: transparent;
 }
 

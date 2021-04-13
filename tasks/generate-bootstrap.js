@@ -98,7 +98,7 @@ const patch = css => {
     .replaceColor(true, `(body \\{[\\S\\s]*?) background-color: #fff;`, `$1 background-color: var(--btcpay-body-bg);`)
     .replaceColor(true, `(body \\{[\\S\\s]*?) color: #212529;`, `$1 color: var(--btcpay-body-text);`)
     .replaceColor(true, `(\\.bg-body \\{[\\S\\s]*?) background-color: #fff !important;`, `$1 background-color: var(--btcpay-body-bg) !important;`)
-    .replaceColor(true, `(\\.bg-white \\{[\\S\\s]*?) background-color: #fff !important;`, `$1 background-color: var(--btcpay-neutral-white) !important;`)
+    .replaceColor(true, `(\\.bg-white \\{[\\S\\s]*?) background-color: #fff !important;`, `$1 background-color: var(--btcpay-white) !important;`)
 
     // popover
     .replaceColor(true, `(\\.popover \\{[\\S\\s]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)
@@ -122,15 +122,15 @@ const patch = css => {
     .replaceCategoryColors(categoryColors)
 
     // neutral
-    .replace(/#f8f9fa/gi, 'var(--btcpay-neutral-100)')
-    .replace(/#e9ecef/gi, 'var(--btcpay-neutral-200)')
-    .replace(/#dee2e6/gi, 'var(--btcpay-neutral-300)')
-    .replace(/#ced4da/gi, 'var(--btcpay-neutral-400)')
-    .replace(/#adb5bd/gi, 'var(--btcpay-neutral-500)')
-    .replace(/#6c757d/gi, 'var(--btcpay-neutral-600)')
-    .replace(/#495057/gi, 'var(--btcpay-neutral-700)')
-    .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
-    .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
+    .replace(/#f8f9fa/gi, 'var(--btcpay-light-100)')
+    .replace(/#e9ecef/gi, 'var(--btcpay-light-200)')
+    .replace(/#dee2e6/gi, 'var(--btcpay-light-300)')
+    .replace(/#ced4da/gi, 'var(--btcpay-light-400)')
+    .replace(/#adb5bd/gi, 'var(--btcpay-light-500)')
+    .replace(/#6c757d/gi, 'var(--btcpay-light-600)')
+    .replace(/#495057/gi, 'var(--btcpay-light-700)')
+    .replace(/#343a40/gi, 'var(--btcpay-light-800)')
+    .replace(/#212529/gi, 'var(--btcpay-light-900)')
 
     // code
     .replace(/#d63384/gi, 'var(--btcpay-code-text)')
@@ -139,8 +139,8 @@ const patch = css => {
     .replace(/#000;/gi, 'var(--btcpay-neutral-black);')
     .replace(/#000 !important;/gi, 'var(--btcpay-neutral-black);')
     .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-neutral-black)')
-    .replace(/#fff;/gi, 'var(--btcpay-neutral-white);')
-    .replace(/#fff !important;/gi, 'var(--btcpay-neutral-white);')
+    .replace(/#fff;/gi, 'var(--btcpay-white);')
+    .replace(/#fff !important;/gi, 'var(--btcpay-white);')
 }
 
 sass.render({ file, outFile }, (error, result) =>

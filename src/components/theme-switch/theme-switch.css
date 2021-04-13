@@ -1,12 +1,12 @@
 .btcpay-theme-switch {
-  --btcpay-theme-switch-light-color: var(--btcpay-neutral-white);
-  --btcpay-theme-switch-dark-color: var(--btcpay-neutral-900);
+  --btcpay-theme-switch-light-color: var(--btcpay-white);
+  --btcpay-theme-switch-dark-color: var(--btcpay-light-900);
   --btcpay-theme-switch-icon-size: 1.25rem;
 
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--btcpay-neutral-white);
+  color: var(--btcpay-white);
   background: none;
   cursor: pointer;
   height: 40px;
