@@ -103,6 +103,6 @@ module.exports = [
 
   ...scale('Brown', ['#F6F0EA', '#EBE0DB', '#D2BBB0', '#B18977', '#99644C', '#744C3A', '#5C3C2E', '#3D281E']),
 
-  // ...scale('Pink', ['#F6F0EA', '#EBE0DB', '#D2BBB0', '#B18977', '#99644C', '#744C3A', '#5C3C2E', '#3D281E']),
+  ...scale('Pink', ['#FFEDF9', '#FFCEE5', '#FFACD6', '#FE82C2', '#F162AF', '#BB4183', '#7D2457', '#5E103E']),
 
 ]
