@@ -79,10 +79,24 @@ module.exports = [
   },
 
   // Categories
-  ...scale('Primary', ['#c7e6c1', '#b5dead', '#9dd392', '#7cc46e', '#44a431', '#389725', '#2e8a1b', '#247d12', '#1c710b']),
   ...scale('Secondary', neutral, 'Neutral'),
+
+  ...scale('Primary', ['#c7e6c1', '#b5dead', '#9dd392', '#7cc46e', '#44a431', '#389725', '#2e8a1b', '#247d12', '#1c710b']),
+
   ...scale('Success', ['#b9d6b4', '#a2c89b', '#83b679', '#5a9e4d', '#247e12', '#146404', '#0e5700', '#0c4b00', '#0a3e00']),
+  ...scale('Green', ['#EEFAEB', '#C7E8C0', '#A0D695', '#78C369', '#51B13E', '#3B8A34', '#25622B', '#0F3B21']),
+  // ...scale('Greens', ['#E6F2ED', '#ADDEC9', '#66D19E', '#06C167', '#05944F', '#03703C', '#03582F', '#10462D']),
+
   ...scale('Info', ['#b5e1e8', '#9dd7e1', '#7ccad7', '#51b9c9', '#17a2b8', '#03899e', '#007d91', '#007284', '#006778']),
+  ...scale('Blue', ['#EFF3FE', '#D4E2FC', '#A0BFF8', '#5B91F5', '#276EF1', '#1E54B7', '#174291', '#102C60']),
+  ...scale('Blues', ['#EFF3FE', '#CAE8FF', '#79C0FF', '#388BFD', '#1F6FEB', '#1158C7', '#0D419D', '#0C2D6B']),
+
   ...scale('Warning', ['#ffebb0', '#ffe496', '#ffdc73', '#ffd045', '#ffc107', '#e5ac00', '#d8a200', '#cc9900', '#bf8f00']),
+  ...scale('Yellow', ['#FFFAF0', '#FFF2D9', '#FFE3AC', '#FFCF70', '#FFC043', '#BC8B2C', '#997328', '#674D1B']),
+
   ...scale('Danger', ['#ebbcb6', '#e4a59e', '#dc887e', '#d06053', '#c12c1a', '#a71705', '#9a1000', '#8e0f00', '#810d00']),
+  ...scale('Red', ['#FFEFED', '#FED7D2', '#F1998E', '#E85C4A', '#E11900', '#AB1300', '#870F00', '#5A0A00']),
+
+  // ...scale('Pink', ['#F6F0EA', '#EBE0DB', '#D2BBB0', '#B18977', '#99644C', '#744C3A', '#5C3C2E', '#3D281E']),
+
 ]
