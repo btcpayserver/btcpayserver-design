@@ -1,11 +1,34 @@
-a {
+html {
+    position: relative;
+    min-height: 100%;
+    font-size: var(--btcpay-font-size-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+.btn-link {
   color: var(--btcpay-body-link);
+  transition-duration: 0.2s;
+  transition-property: background, color;
+  text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.btn-link:hover {
   color: var(--btcpay-body-link-accent);
+  text-decoration: underline;
 }
 
+a.nav-link {
+  color: var(--btcpay-nav-link);
+}
+
+a.nav-link:focus,
+a.nav-link:hover {
+  color: var(--btcpay-nav-link-accent);
+  text-decoration: none;
+}
 
 code {
   color: var(--btcpay-code-text);
@@ -18,8 +41,43 @@ pre code {
   background: var(--btcpay-pre-bg);
 }
 
+hr:not([size]) {
+  height: 3px;
+}
+
+ol {
+  padding-left: 1.125em;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+ul li {
+  padding-top: .2em;
+  padding-bottom: .2em;
+}
+
+.alert-link,
+.alert-link:focus,
+.alert-link:hover,
+.alert code {
+  color: inherit;
+}
+
+.alert hr {
+  display: block;
+  width: unset;
+  height: 1px;
+  background: none;
+}
+
 .alert-dismissible .btn-close {
   color: inherit;
+}
+
+.bg-tile {
+  background-color: var(--btcpay-bg-tile);
 }
 
 /* set color for text on background */
