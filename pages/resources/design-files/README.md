@@ -23,4 +23,4 @@ You can [download the logo for Adobe Illustrator](./btcpay-logo.ai).
 
 ## Further resources
 
-Also see the [media asset repository for BTCPayServer](https://github.com/btcpayserver/btcpayserver-media).
+Also see the [media asset repository for BTCPay Server](https://github.com/btcpayserver/btcpayserver-media).
