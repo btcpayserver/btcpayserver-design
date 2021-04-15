@@ -50,7 +50,7 @@ String.prototype.replaceColor = function (colorOrForce, original, replacement) {
 // consumes the extracted category values and replaces them with the variable names
 String.prototype.replaceCategoryColors = function (map) {
   return Object.entries(map).reduce((res, [category, values]) => res
-    .replaceColor(values[''], `--bs-${category}: ${values['']};`, `--bs-${category}: var(--btcpay-${category})`)
+    .replaceColor(values[''], `--bs-${category}: ${values['']};`, `--bs-${category}: var(--btcpay-${category});`)
     .replaceColor(values[''], `background-color: ${values['']}`, `background-color: var(--btcpay-${category})`)
     .replaceColor(values['text-hover'], ` color: ${values['text-hover']}`, ` color: var(--btcpay-${category}-text-hover)`)
     .replaceColor(values['bg-hover'], `background-color: ${values['bg-hover']}`, `background-color: var(--btcpay-${category}-bg-hover)`)

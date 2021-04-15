@@ -18,14 +18,14 @@
   --bs-white: var(--btcpay-white);
   --bs-gray: var(--btcpay-neutral-600);
   --bs-gray-dark: var(--btcpay-neutral-800);
-  --bs-primary: var(--btcpay-primary)
-  --bs-secondary: var(--btcpay-secondary)
-  --bs-success: var(--btcpay-success)
-  --bs-info: var(--btcpay-info)
-  --bs-warning: var(--btcpay-warning)
-  --bs-danger: var(--btcpay-danger)
-  --bs-light: var(--btcpay-light)
-  --bs-dark: var(--btcpay-dark)
+  --bs-primary: var(--btcpay-primary);
+  --bs-secondary: var(--btcpay-secondary);
+  --bs-success: var(--btcpay-success);
+  --bs-info: var(--btcpay-info);
+  --bs-warning: var(--btcpay-warning);
+  --bs-danger: var(--btcpay-danger);
+  --bs-light: var(--btcpay-light);
+  --bs-dark: var(--btcpay-dark);
   --bs-font-sans-serif: var(--btcpay-font-family-base);
   --bs-font-monospace: var(--btcpay-font-family-monospace);
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
