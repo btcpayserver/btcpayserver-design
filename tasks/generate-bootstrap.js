@@ -122,23 +122,23 @@ const patch = css => {
     .replaceCategoryColors(categoryColors)
 
     // neutral
-    .replace(/#f8f9fa/gi, 'var(--btcpay-light-100)')
-    .replace(/#e9ecef/gi, 'var(--btcpay-light-200)')
-    .replace(/#dee2e6/gi, 'var(--btcpay-light-300)')
-    .replace(/#ced4da/gi, 'var(--btcpay-light-400)')
-    .replace(/#adb5bd/gi, 'var(--btcpay-light-500)')
-    .replace(/#6c757d/gi, 'var(--btcpay-light-600)')
-    .replace(/#495057/gi, 'var(--btcpay-light-700)')
-    .replace(/#343a40/gi, 'var(--btcpay-light-800)')
-    .replace(/#212529/gi, 'var(--btcpay-light-900)')
+    .replace(/#f8f9fa/gi, 'var(--btcpay-neutral-100)')
+    .replace(/#e9ecef/gi, 'var(--btcpay-neutral-200)')
+    .replace(/#dee2e6/gi, 'var(--btcpay-neutral-300)')
+    .replace(/#ced4da/gi, 'var(--btcpay-neutral-400)')
+    .replace(/#adb5bd/gi, 'var(--btcpay-neutral-500)')
+    .replace(/#6c757d/gi, 'var(--btcpay-neutral-600)')
+    .replace(/#495057/gi, 'var(--btcpay-neutral-700)')
+    .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
+    .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
 
     // code
     .replace(/#d63384/gi, 'var(--btcpay-code-text)')
 
     // generic
-    .replace(/#000;/gi, 'var(--btcpay-neutral-black);')
-    .replace(/#000 !important;/gi, 'var(--btcpay-neutral-black);')
-    .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-neutral-black)')
+    .replace(/#000;/gi, 'var(--btcpay-black);')
+    .replace(/#000 !important;/gi, 'var(--btcpay-black);')
+    .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-black)')
     .replace(/#fff;/gi, 'var(--btcpay-white);')
     .replace(/#fff !important;/gi, 'var(--btcpay-white);')
 }
