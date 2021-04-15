@@ -341,12 +341,13 @@
   --btcpay-dark-shadow: rgba(211, 212, 213, 0.33);
 }
 
+:root[data-theme="dark"],
 :root[data-btcpay-theme="dark"] {
   @extend %dark-theme;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-btcpay-theme]) {
+  :root:not([data-btcpay-theme],[data-theme]) {
     @extend %dark-theme;
   }
 }
