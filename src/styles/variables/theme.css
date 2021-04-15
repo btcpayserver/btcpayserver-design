@@ -48,7 +48,7 @@
   --btcpay-nav-bg-active: transparent;
   --btcpay-nav-border: transparent;
   --btcpay-nav-border-hover: transparent;
-  --btcpay-nav-border-active: var(--btcpay-color-primary);
+  --btcpay-nav-border-active: var(--btcpay-primary);
 
   --btcpay-form-bg: var(--btcpay-white);
   --btcpay-form-bg-hover: var(--btcpay-form-bg);

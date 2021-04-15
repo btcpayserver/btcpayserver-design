@@ -22,12 +22,16 @@ a:hover,
 
 a.nav-link {
   color: var(--btcpay-nav-link);
+  background: var(--btcpay-nav-bg);
+  border-left-color: var(--btcpay-nav-border);
 }
 
 a.nav-link:focus,
 a.nav-link:hover {
   color: var(--btcpay-nav-link-accent);
   text-decoration: none;
+  border-left-color: var(--btcpay-nav-border-hover);
+  background: var(--btcpay-nav-bg-hover);
 }
 
 code {
