@@ -123,6 +123,7 @@
   --btcpay-success-accent: var(--btcpay-green-700);
   --btcpay-success-text: var(--btcpay-white);
   --btcpay-success-text-hover: var(--btcpay-white);
+  --btcpay-success-text-active: var(--btcpay-white);
   --btcpay-success-bg-hover: var(--btcpay-success-accent);
   --btcpay-success-bg-active: var(--btcpay-success-accent);
   --btcpay-success-border: var(--btcpay-success);

@@ -31,6 +31,13 @@ $pagination-active-color: var(--btcpay-body-text-active);
 $pagination-active-bg: var(--btcpay-body-bg-active);
 $pagination-active-border-color: var(--btcpay-body-border-medium);
 
+$pagination-disabled-color: var(--btcpay-body-text-muted);
+$pagination-disabled-bg: var(--btcpay-body-bg);
+$pagination-disabled-border-color: $pagination-border-color;
+
+$modal-content-color: var(--btcpay-body-text);
+$modal-content-bg: var(--btcpay-body-bg);
+
 $dropdown-color: var(--btcpay-body-text);
 $dropdown-bg: var(--btcpay-body-bg);
 $dropdown-border-color: var(--btcpay-body-border-medium);
@@ -65,6 +72,7 @@ $list-group-action-hover-color: $list-group-action-color;
 $list-group-action-active-color: $list-group-active-color;
 $list-group-action-active-bg: $list-group-active-bg;
 
+$accordion-bg: var(--btcpay-body-bg);
 $accordion-button-color: var(--btcpay-body-text);
 $accordion-button-bg: var(--btcpay-body-bg);
 $accordion-border-color: var(--btcpay-body-border-medium);
