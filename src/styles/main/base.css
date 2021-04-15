@@ -13,7 +13,7 @@
 
 body {
   font-family: var(--btcpay-font-family-base);
-  font-size: var(--btcpay-font-size-body, var(--btcpay-font-size-m));
+  font-size: var(--btcpay-font-size-base);
   font-weight: var(--btcpay-font-weight-normal);
   line-height: 1.6;
   color: var(--btcpay-body-text);
