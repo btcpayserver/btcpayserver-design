@@ -7592,3 +7592,7 @@ ul li {
 
 .bg-body {
   color: var(--btcpay-body-text); }
+
+/* Readd removed classes */
+.form-group {
+  margin-bottom: 1rem; }

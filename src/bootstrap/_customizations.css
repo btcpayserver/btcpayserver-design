@@ -94,3 +94,8 @@ ul li {
 .bg-light { color: var(--btcpay-light-text); }
 .bg-dark { color: var(--btcpay-dark-text); }
 .bg-body { color: var(--btcpay-body-text); }
+
+/* Readd removed classes */
+.form-group {
+  margin-bottom: 1rem;
+}
