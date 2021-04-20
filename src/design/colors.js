@@ -61,8 +61,8 @@ module.exports = [
   // ...scale('GreenBackup', ['#b9d6b4', '#a2c89b', '#83b679', '#5a9e4d', '#247e12', '#146404', '#0e5700', '#0c4b00', '#0a3e00']),
   ...scale('Green', ['#EEFAEB', '#C7E8C0', '#A0D695', '#78C369', '#51B13E', '#419437', '#307630', '#205928', '#0F3B21']),
 
-  // ...scale('BlueBackup', ['#b5e1e8', '#9dd7e1', '#7ccad7', '#51b9c9', '#17a2b8', '#03899e', '#007d91', '#007284', '#006778']),
-  ...scale('Blue', ['#EFF8FE', '#CAE8FF', '#79C0FF', '#388BFD', '#1F6FEB', '#1158C7', '#0D419D', '#0C2D6B', '#051D4D']),
+  ...scale('Blue', ['#b5e1e8', '#9dd7e1', '#7ccad7', '#51b9c9', '#17a2b8', '#03899e', '#007d91', '#007284', '#006778']),
+  // ...scale('BlueNew', ['#EFF8FE', '#CAE8FF', '#79C0FF', '#388BFD', '#1F6FEB', '#1158C7', '#0D419D', '#0C2D6B', '#051D4D']),
 
   // ...scale('YellowBackup', ['#ffebb0', '#ffe496', '#ffdc73', '#ffd045', '#ffc107', '#e5ac00', '#d8a200', '#cc9900', '#bf8f00']),
   ...scale('Yellow', ['#FFFAF0', '#FFF2D9', '#FFE3AC', '#FFCF70', '#FFC043', '#BC8B2C', '#997328', '#674D1B', '#543D10']),
