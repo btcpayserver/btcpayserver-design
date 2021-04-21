@@ -28,7 +28,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-align: left;
   background-color: var(--btcpay-body-bg);
 }
@@ -123,13 +123,13 @@ sup {
 }
 
 a {
-  color: var(--btcpay-body-color-link);
+  color: var(--btcpay-body-link);
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: var(--btcpay-body-color-link-accent);
+  color: var(--btcpay-body-link-accent);
   text-decoration: underline;
 }
 
@@ -183,7 +183,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   text-align: left;
   caption-side: bottom;
 }
@@ -437,7 +437,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
 }
 
 .blockquote-footer::before {
@@ -452,7 +452,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   background-color: var(--btcpay-body-bg);
-  border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto;
@@ -469,12 +469,12 @@ mark,
 
 .figure-caption {
   font-size: 90%;
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
 }
 
 code {
   font-size: 87.5%;
-  color: var(--btcpay-color-info);
+  color: var(--btcpay-info);
   word-wrap: break-word;
 }
 
@@ -485,8 +485,8 @@ a > code {
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-neutral-900);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-neutral-900);
   border-radius: 0.2rem;
 }
 
@@ -499,7 +499,7 @@ kbd kbd {
 pre {
   display: block;
   font-size: 87.5%;
-  color: var(--btcpay-color-neutral-900);
+  color: var(--btcpay-neutral-900);
 }
 
 pre code {
@@ -1635,23 +1635,23 @@ pre code {
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
 }
 
 .table th,
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-top: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-bottom: 2px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .table tbody + tbody {
-  border-top: 2px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-top: 2px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .table-sm th,
@@ -1660,12 +1660,12 @@ pre code {
 }
 
 .table-bordered {
-  border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .table-bordered th,
 .table-bordered td {
-  border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .table-bordered thead th,
@@ -1685,106 +1685,106 @@ pre code {
 }
 
 .table-hover tbody tr:hover {
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   background-color: rgba(0, 0, 0, 0.075);
 }
 
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  color: var(--btcpay-color-primary-text);
-  background-color: var(--btcpay-color-primary-backdrop);
+  color: var(--btcpay-primary-dim-text);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .table-primary th,
 .table-primary td,
 .table-primary thead th,
 .table-primary tbody + tbody {
-  border-color: var(--btcpay-color-primary);
+  border-color: var(--btcpay-primary-dim-border);
 }
 
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  color: var(--btcpay-color-secondary-text);
-  background-color: var(--btcpay-color-secondary-backdrop);
+  color: var(--btcpay-secondary-dim-text);
+  background-color: var(--btcpay-secondary-dim-bg);
 }
 
 .table-secondary th,
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: var(--btcpay-color-secondary);
+  border-color: var(--btcpay-secondary-dim-border);
 }
 
 .table-success,
 .table-success > th,
 .table-success > td {
-  color: var(--btcpay-color-success-text);
-  background-color: var(--btcpay-color-success-backdrop);
+  color: var(--btcpay-success-dim-text);
+  background-color: var(--btcpay-success-dim-bg);
 }
 
 .table-success th,
 .table-success td,
 .table-success thead th,
 .table-success tbody + tbody {
-  border-color: var(--btcpay-color-success);
+  border-color: var(--btcpay-success-dim-border);
 }
 
 .table-info,
 .table-info > th,
 .table-info > td {
-  color: var(--btcpay-color-info-text);
-  background-color: var(--btcpay-color-info-backdrop);
+  color: var(--btcpay-info-dim-text);
+  background-color: var(--btcpay-info-dim-bg);
 }
 
 .table-info th,
 .table-info td,
 .table-info thead th,
 .table-info tbody + tbody {
-  border-color: var(--btcpay-color-info);
+  border-color: var(--btcpay-info-dim-border);
 }
 
 .table-warning,
 .table-warning > th,
 .table-warning > td {
-  color: var(--btcpay-color-warning-text);
-  background-color: var(--btcpay-color-warning-backdrop);
+  color: var(--btcpay-warning-dim-text);
+  background-color: var(--btcpay-warning-dim-bg);
 }
 
 .table-warning th,
 .table-warning td,
 .table-warning thead th,
 .table-warning tbody + tbody {
-  border-color: var(--btcpay-color-warning);
+  border-color: var(--btcpay-warning-dim-border);
 }
 
 .table-danger,
 .table-danger > th,
 .table-danger > td {
-  color: var(--btcpay-color-danger-text);
-  background-color: var(--btcpay-color-danger-backdrop);
+  color: var(--btcpay-danger-dim-text);
+  background-color: var(--btcpay-danger-dim-bg);
 }
 
 .table-danger th,
 .table-danger td,
 .table-danger thead th,
 .table-danger tbody + tbody {
-  border-color: var(--btcpay-color-danger);
+  border-color: var(--btcpay-danger-dim-border);
 }
 
 .table-light,
 .table-light > th,
 .table-light > td {
-  color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light-backdrop);
+  color: var(--btcpay-light-dim-text);
+  background-color: var(--btcpay-light-dim-bg);
 }
 
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark-backdrop);
+  color: var(--btcpay-dark-dim-text);
+  background-color: var(--btcpay-dark-dim-bg);
 }
 
 @media (max-width: 575.98px) {
@@ -1854,10 +1854,10 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--btcpay-color-neutral-700);
-  background-color: var(--btcpay-color-white);
+  color: var(--btcpay-neutral-700);
+  background-color: var(--btcpay-white);
   background-clip: padding-box;
-  border: 1px solid var(--btcpay-color-neutral-300);
+  border: 1px solid var(--btcpay-neutral-300);
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -1879,20 +1879,20 @@ pre code {
 }
 
 .form-control:focus {
-  color: var(--btcpay-color-neutral-700);
-  background-color: var(--btcpay-color-white);
-  border-color: var(--btcpay-color-primary-backdrop);
+  color: var(--btcpay-neutral-700);
+  background-color: var(--btcpay-white);
+  border-color: var(--btcpay-primary-dim-bg);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .form-control::placeholder {
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   opacity: 1;
 }
 
 .form-control:disabled, .form-control[readonly] {
-  background-color: var(--btcpay-color-neutral-200);
+  background-color: var(--btcpay-neutral-200);
   opacity: .75;
 }
 
@@ -1906,8 +1906,8 @@ input[type="month"].form-control {
 }
 
 select.form-control:focus::-ms-value {
-  color: var(--btcpay-color-neutral-700);
-  background-color: var(--btcpay-color-white);
+  color: var(--btcpay-neutral-700);
+  background-color: var(--btcpay-white);
 }
 
 .form-control-file,
@@ -1945,7 +1945,7 @@ select.form-control:focus::-ms-value {
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2018,7 +2018,7 @@ textarea.form-control {
 
 .form-check-input[disabled] ~ .form-check-label,
 .form-check-input:disabled ~ .form-check-label {
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
 }
 
 .form-check-label {
@@ -2046,7 +2046,7 @@ textarea.form-control {
   width: 100%;
   margin-top: 0.25rem;
   font-size: 80%;
-  color: var(--btcpay-color-success);
+  color: var(--btcpay-success);
 }
 
 .valid-tooltip {
@@ -2060,8 +2060,8 @@ textarea.form-control {
   margin-top: .1rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success-backdrop);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success-dim-bg);
   border-radius: 0.25rem;
 }
 
@@ -2078,7 +2078,7 @@ textarea.form-control {
 }
 
 .was-validated .form-control:valid, .form-control.is-valid {
-  border-color: var(--btcpay-color-success);
+  border-color: var(--btcpay-success);
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -2087,8 +2087,8 @@ textarea.form-control {
 }
 
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
-  border-color: var(--btcpay-color-success);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  border-color: var(--btcpay-success);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .was-validated .form-control:valid ~ .valid-feedback,
@@ -2103,14 +2103,14 @@ textarea.form-control {
 }
 
 .was-validated .custom-select:valid, .custom-select.is-valid {
-  border-color: var(--btcpay-color-success);
+  border-color: var(--btcpay-success);
   padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='var(--btcpay-color-neutral-800)' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") #fff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='var(--btcpay-neutral-800)' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") #fff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
 .was-validated .custom-select:valid:focus, .custom-select.is-valid:focus {
-  border-color: var(--btcpay-color-success);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  border-color: var(--btcpay-success);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .was-validated .custom-select:valid ~ .valid-feedback,
@@ -2126,7 +2126,7 @@ textarea.form-control {
 }
 
 .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
-  color: var(--btcpay-color-success);
+  color: var(--btcpay-success);
 }
 
 .was-validated .form-check-input:valid ~ .valid-feedback,
@@ -2136,11 +2136,11 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:valid ~ .custom-control-label, .custom-control-input.is-valid ~ .custom-control-label {
-  color: var(--btcpay-color-success);
+  color: var(--btcpay-success);
 }
 
 .was-validated .custom-control-input:valid ~ .custom-control-label::before, .custom-control-input.is-valid ~ .custom-control-label::before {
-  border-color: var(--btcpay-color-success);
+  border-color: var(--btcpay-success);
 }
 
 .was-validated .custom-control-input:valid ~ .valid-feedback,
@@ -2155,15 +2155,15 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:valid:focus ~ .custom-control-label::before, .custom-control-input.is-valid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .was-validated .custom-control-input:valid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-valid:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: var(--btcpay-color-success);
+  border-color: var(--btcpay-success);
 }
 
 .was-validated .custom-file-input:valid ~ .custom-file-label, .custom-file-input.is-valid ~ .custom-file-label {
-  border-color: var(--btcpay-color-success);
+  border-color: var(--btcpay-success);
 }
 
 .was-validated .custom-file-input:valid ~ .valid-feedback,
@@ -2173,8 +2173,8 @@ textarea.form-control {
 }
 
 .was-validated .custom-file-input:valid:focus ~ .custom-file-label, .custom-file-input.is-valid:focus ~ .custom-file-label {
-  border-color: var(--btcpay-color-success);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  border-color: var(--btcpay-success);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .invalid-feedback {
@@ -2182,7 +2182,7 @@ textarea.form-control {
   width: 100%;
   margin-top: 0.25rem;
   font-size: 80%;
-  color: var(--btcpay-color-danger);
+  color: var(--btcpay-danger);
 }
 
 .invalid-tooltip {
@@ -2196,8 +2196,8 @@ textarea.form-control {
   margin-top: .1rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger-backdrop);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger-dim-bg);
   border-radius: 0.25rem;
 }
 
@@ -2214,7 +2214,7 @@ textarea.form-control {
 }
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
-  border-color: var(--btcpay-color-danger);
+  border-color: var(--btcpay-danger);
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
   background-repeat: no-repeat;
@@ -2223,8 +2223,8 @@ textarea.form-control {
 }
 
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
-  border-color: var(--btcpay-color-danger);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  border-color: var(--btcpay-danger);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-danger-dim-bg);
 }
 
 .was-validated .form-control:invalid ~ .invalid-feedback,
@@ -2239,14 +2239,14 @@ textarea.form-control {
 }
 
 .was-validated .custom-select:invalid, .custom-select.is-invalid {
-  border-color: var(--btcpay-color-danger);
+  border-color: var(--btcpay-danger);
   padding-right: calc((1em + 0.75rem) * 3 / 4 + 1.75rem);
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='var(--btcpay-color-neutral-800)' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") #fff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='var(--btcpay-neutral-800)' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px, url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E") #fff no-repeat center right 1.75rem/calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 
 .was-validated .custom-select:invalid:focus, .custom-select.is-invalid:focus {
-  border-color: var(--btcpay-color-danger);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  border-color: var(--btcpay-danger);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-danger-dim-bg);
 }
 
 .was-validated .custom-select:invalid ~ .invalid-feedback,
@@ -2262,7 +2262,7 @@ textarea.form-control {
 }
 
 .was-validated .form-check-input:invalid ~ .form-check-label, .form-check-input.is-invalid ~ .form-check-label {
-  color: var(--btcpay-color-danger);
+  color: var(--btcpay-danger);
 }
 
 .was-validated .form-check-input:invalid ~ .invalid-feedback,
@@ -2272,11 +2272,11 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label, .custom-control-input.is-invalid ~ .custom-control-label {
-  color: var(--btcpay-color-danger);
+  color: var(--btcpay-danger);
 }
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label::before, .custom-control-input.is-invalid ~ .custom-control-label::before {
-  border-color: var(--btcpay-color-danger);
+  border-color: var(--btcpay-danger);
 }
 
 .was-validated .custom-control-input:invalid ~ .invalid-feedback,
@@ -2291,15 +2291,15 @@ textarea.form-control {
 }
 
 .was-validated .custom-control-input:invalid:focus ~ .custom-control-label::before, .custom-control-input.is-invalid:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-danger-dim-bg);
 }
 
 .was-validated .custom-control-input:invalid:focus:not(:checked) ~ .custom-control-label::before, .custom-control-input.is-invalid:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: var(--btcpay-color-danger);
+  border-color: var(--btcpay-danger);
 }
 
 .was-validated .custom-file-input:invalid ~ .custom-file-label, .custom-file-input.is-invalid ~ .custom-file-label {
-  border-color: var(--btcpay-color-danger);
+  border-color: var(--btcpay-danger);
 }
 
 .was-validated .custom-file-input:invalid ~ .invalid-feedback,
@@ -2309,8 +2309,8 @@ textarea.form-control {
 }
 
 .was-validated .custom-file-input:invalid:focus ~ .custom-file-label, .custom-file-input.is-invalid:focus ~ .custom-file-label {
-  border-color: var(--btcpay-color-danger);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  border-color: var(--btcpay-danger);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-danger-dim-bg);
 }
 
 .form-inline {
@@ -2391,7 +2391,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -2414,13 +2414,13 @@ textarea.form-control {
 }
 
 .btn:hover {
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-decoration: none;
 }
 
 .btn:focus, .btn.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .btn.disabled, .btn:disabled {
@@ -2437,477 +2437,477 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary);
-  border-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary);
+  border-color: var(--btcpay-primary);
 }
 
 .btn-primary:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary-accent);
-  border-color: var(--btcpay-color-primary-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary-accent);
+  border-color: var(--btcpay-primary-accent);
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary);
-  border-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary);
+  border-color: var(--btcpay-primary);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary-accent);
-  border-color: var(--btcpay-color-primary-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary-accent);
+  border-color: var(--btcpay-primary-accent);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .btn-secondary {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-secondary);
-  border-color: var(--btcpay-color-secondary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-secondary);
+  border-color: var(--btcpay-secondary);
 }
 
 .btn-secondary:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-secondary-accent);
-  border-color: var(--btcpay-color-secondary-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-secondary-accent);
+  border-color: var(--btcpay-secondary-accent);
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-secondary-dim-bg);
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-secondary);
-  border-color: var(--btcpay-color-secondary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-secondary);
+  border-color: var(--btcpay-secondary);
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-secondary-accent);
-  border-color: var(--btcpay-color-secondary-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-secondary-accent);
+  border-color: var(--btcpay-secondary-accent);
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-secondary-dim-bg);
 }
 
 .btn-success {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success);
-  border-color: var(--btcpay-color-success);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success);
+  border-color: var(--btcpay-success);
 }
 
 .btn-success:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success-accent);
-  border-color: var(--btcpay-color-success-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success-accent);
+  border-color: var(--btcpay-success-accent);
 }
 
 .btn-success:focus, .btn-success.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .btn-success.disabled, .btn-success:disabled {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success);
-  border-color: var(--btcpay-color-success);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success);
+  border-color: var(--btcpay-success);
 }
 
 .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
 .show > .btn-success.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success-accent);
-  border-color: var(--btcpay-color-success-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success-accent);
+  border-color: var(--btcpay-success-accent);
 }
 
 .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-success.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .btn-info {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-info);
-  border-color: var(--btcpay-color-info);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-info);
+  border-color: var(--btcpay-info);
 }
 
 .btn-info:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-info-accent);
-  border-color: var(--btcpay-color-info-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-info-accent);
+  border-color: var(--btcpay-info-accent);
 }
 
 .btn-info:focus, .btn-info.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-info-dim-bg);
 }
 
 .btn-info.disabled, .btn-info:disabled {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-info);
-  border-color: var(--btcpay-color-info);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-info);
+  border-color: var(--btcpay-info);
 }
 
 .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
 .show > .btn-info.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-info-accent);
-  border-color: var(--btcpay-color-info-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-info-accent);
+  border-color: var(--btcpay-info-accent);
 }
 
 .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-info.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-info-dim-bg);
 }
 
 .btn-warning {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-warning);
-  border-color: var(--btcpay-color-warning);
+  color: var(--btcpay-neutral-900);
+  background-color: var(--btcpay-warning);
+  border-color: var(--btcpay-warning);
 }
 
 .btn-warning:hover {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-warning-accent);
-  border-color: var(--btcpay-color-warning-accent);
+  color: var(--btcpay-neutral-900);
+  background-color: var(--btcpay-warning-accent);
+  border-color: var(--btcpay-warning-accent);
 }
 
 .btn-warning:focus, .btn-warning.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-warning-dim-bg);
 }
 
 .btn-warning.disabled, .btn-warning:disabled {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-warning);
-  border-color: var(--btcpay-color-warning);
+  color: var(--btcpay-neutral-900);
+  background-color: var(--btcpay-warning);
+  border-color: var(--btcpay-warning);
 }
 
 .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled).active,
 .show > .btn-warning.dropdown-toggle {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-warning-accent);
-  border-color: var(--btcpay-color-warning-accent);
+  color: var(--btcpay-neutral-900);
+  background-color: var(--btcpay-warning-accent);
+  border-color: var(--btcpay-warning-accent);
 }
 
 .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-warning-dim-bg);
 }
 
 .btn-danger {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger);
-  border-color: var(--btcpay-color-danger);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger);
+  border-color: var(--btcpay-danger);
 }
 
 .btn-danger:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger-accent);
-  border-color: var(--btcpay-color-danger-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger-accent);
+  border-color: var(--btcpay-danger-accent);
 }
 
 .btn-danger:focus, .btn-danger.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-danger-dim-bg);
 }
 
 .btn-danger.disabled, .btn-danger:disabled {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger);
-  border-color: var(--btcpay-color-danger);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger);
+  border-color: var(--btcpay-danger);
 }
 
 .btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active,
 .show > .btn-danger.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger-accent);
-  border-color: var(--btcpay-color-danger-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger-accent);
+  border-color: var(--btcpay-danger-accent);
 }
 
 .btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-danger.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-danger-dim-bg);
 }
 
 .btn-light {
-  color: var(--btcpay-color-dark);
-  background-color: var(--btcpay-color-light);
-  border-color: var(--btcpay-color-light);
+  color: var(--btcpay-dark);
+  background-color: var(--btcpay-light);
+  border-color: var(--btcpay-light);
 }
 
 .btn-light:hover {
-  color: var(--btcpay-color-dark);
-  background-color: var(--btcpay-color-light-accent);
-  border-color: var(--btcpay-color-light-accent);
+  color: var(--btcpay-dark);
+  background-color: var(--btcpay-light-accent);
+  border-color: var(--btcpay-light-accent);
 }
 
 .btn-light:focus, .btn-light.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-light-dim-bg);
 }
 
 .btn-light.disabled, .btn-light:disabled {
-  color: var(--btcpay-color-neutral-400);
-  background-color: var(--btcpay-color-light-backdrop);
-  border-color: var(--btcpay-color-light-backdrop);
+  color: var(--btcpay-neutral-400);
+  background-color: var(--btcpay-light-dim-bg);
+  border-color: var(--btcpay-light-dim-bg);
 }
 
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
 .show > .btn-light.dropdown-toggle {
-  color: var(--btcpay-color-dark);
-  background-color: var(--btcpay-color-light-accent);
-  border-color: var(--btcpay-color-light-accent);
+  color: var(--btcpay-dark);
+  background-color: var(--btcpay-light-accent);
+  border-color: var(--btcpay-light-accent);
 }
 
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-light-dim-bg);
 }
 
 .btn-dark {
-  color: var(--btcpay-color-light);
-  background-color: var(--btcpay-color-dark);
-  border-color: var(--btcpay-color-dark);
+  color: var(--btcpay-light);
+  background-color: var(--btcpay-dark);
+  border-color: var(--btcpay-dark);
 }
 
 .btn-dark:hover {
-  color: var(--btcpay-color-light);
-  background-color: var(--btcpay-color-dark-accent);
-  border-color: var(--btcpay-color-dark-accent);
+  color: var(--btcpay-light);
+  background-color: var(--btcpay-dark-accent);
+  border-color: var(--btcpay-dark-accent);
 }
 
 .btn-dark:focus, .btn-dark.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-dark-dim-bg);
 }
 
 .btn-dark.disabled, .btn-dark:disabled {
-  color: var(--btcpay-color-neutral-600);
-  background-color: var(--btcpay-color-dark-backdrop);
-  border-color: var(--btcpay-color-dark-backdrop);
+  color: var(--btcpay-neutral-600);
+  background-color: var(--btcpay-dark-dim-bg);
+  border-color: var(--btcpay-dark-dim-bg);
 }
 
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
 .show > .btn-dark.dropdown-toggle {
-  color: var(--btcpay-color-light);
-  background-color: var(--btcpay-color-dark-accent);
-  border-color: var(--btcpay-color-dark-accent);
+  color: var(--btcpay-light);
+  background-color: var(--btcpay-dark-accent);
+  border-color: var(--btcpay-dark-accent);
 }
 
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-dark-dim-bg);
 }
 
 .btn-outline-primary {
-  color: var(--btcpay-color-primary);
-  border-color: var(--btcpay-color-primary);
+  color: var(--btcpay-primary);
+  border-color: var(--btcpay-primary);
 }
 
 .btn-outline-primary:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary);
-  border-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary);
+  border-color: var(--btcpay-primary);
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: var(--btcpay-color-primary);
+  color: var(--btcpay-primary);
   background-color: transparent;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary);
-  border-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary);
+  border-color: var(--btcpay-primary);
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .btn-outline-secondary {
-  color: var(--btcpay-color-secondary);
-  border-color: var(--btcpay-color-secondary);
+  color: var(--btcpay-secondary);
+  border-color: var(--btcpay-secondary);
 }
 
 .btn-outline-secondary:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-secondary);
-  border-color: var(--btcpay-color-secondary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-secondary);
+  border-color: var(--btcpay-secondary);
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-secondary-dim-bg);
 }
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-  color: var(--btcpay-color-secondary);
+  color: var(--btcpay-secondary);
   background-color: transparent;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-secondary);
-  border-color: var(--btcpay-color-secondary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-secondary);
+  border-color: var(--btcpay-secondary);
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-secondary-dim-bg);
 }
 
 .btn-outline-success {
-  color: var(--btcpay-color-success);
-  border-color: var(--btcpay-color-success);
+  color: var(--btcpay-success);
+  border-color: var(--btcpay-success);
 }
 
 .btn-outline-success:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success);
-  border-color: var(--btcpay-color-success);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success);
+  border-color: var(--btcpay-success);
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .btn-outline-success.disabled, .btn-outline-success:disabled {
-  color: var(--btcpay-color-success);
+  color: var(--btcpay-success);
   background-color: transparent;
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
 .show > .btn-outline-success.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success);
-  border-color: var(--btcpay-color-success);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success);
+  border-color: var(--btcpay-success);
 }
 
 .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-success.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .btn-outline-info {
-  color: var(--btcpay-color-info);
-  border-color: var(--btcpay-color-info);
+  color: var(--btcpay-info);
+  border-color: var(--btcpay-info);
 }
 
 .btn-outline-info:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-info);
-  border-color: var(--btcpay-color-info);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-info);
+  border-color: var(--btcpay-info);
 }
 
 .btn-outline-info:focus, .btn-outline-info.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-info-dim-bg);
 }
 
 .btn-outline-info.disabled, .btn-outline-info:disabled {
-  color: var(--btcpay-color-info);
+  color: var(--btcpay-info);
   background-color: transparent;
 }
 
 .btn-outline-info:not(:disabled):not(.disabled):active, .btn-outline-info:not(:disabled):not(.disabled).active,
 .show > .btn-outline-info.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-info);
-  border-color: var(--btcpay-color-info);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-info);
+  border-color: var(--btcpay-info);
 }
 
 .btn-outline-info:not(:disabled):not(.disabled):active:focus, .btn-outline-info:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-info.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-info-dim-bg);
 }
 
 .btn-outline-warning {
-  color: var(--btcpay-color-warning);
-  border-color: var(--btcpay-color-warning);
+  color: var(--btcpay-warning);
+  border-color: var(--btcpay-warning);
 }
 
 .btn-outline-warning:hover {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-warning);
-  border-color: var(--btcpay-color-warning);
+  color: var(--btcpay-neutral-900);
+  background-color: var(--btcpay-warning);
+  border-color: var(--btcpay-warning);
 }
 
 .btn-outline-warning:focus, .btn-outline-warning.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-warning-dim-bg);
 }
 
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {
-  color: var(--btcpay-color-warning);
+  color: var(--btcpay-warning);
   background-color: transparent;
 }
 
 .btn-outline-warning:not(:disabled):not(.disabled):active, .btn-outline-warning:not(:disabled):not(.disabled).active,
 .show > .btn-outline-warning.dropdown-toggle {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-warning);
-  border-color: var(--btcpay-color-warning);
+  color: var(--btcpay-neutral-900);
+  background-color: var(--btcpay-warning);
+  border-color: var(--btcpay-warning);
 }
 
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-warning-dim-bg);
 }
 
 .btn-outline-danger {
-  color: var(--btcpay-color-danger);
-  border-color: var(--btcpay-color-danger);
+  color: var(--btcpay-danger);
+  border-color: var(--btcpay-danger);
 }
 
 .btn-outline-danger:hover {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger);
-  border-color: var(--btcpay-color-danger);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger);
+  border-color: var(--btcpay-danger);
 }
 
 .btn-outline-danger:focus, .btn-outline-danger.focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-danger-dim-bg);
 }
 
 .btn-outline-danger.disabled, .btn-outline-danger:disabled {
-  color: var(--btcpay-color-danger);
+  color: var(--btcpay-danger);
   background-color: transparent;
 }
 
 .btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active,
 .show > .btn-outline-danger.dropdown-toggle {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger);
-  border-color: var(--btcpay-color-danger);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger);
+  border-color: var(--btcpay-danger);
 }
 
 .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-danger.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-danger-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-danger-dim-bg);
 }
 
 .btn-link {
   font-weight: 400;
-  color: var(--btcpay-body-color-link);
+  color: var(--btcpay-body-link);
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: var(--btcpay-body-color-link-accent);
+  color: var(--btcpay-body-link-accent);
   text-decoration: underline;
 }
 
@@ -2917,7 +2917,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:disabled, .btn-link.disabled {
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   pointer-events: none;
 }
 
@@ -3018,12 +3018,12 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-align: left;
   list-style: none;
-  background-color: var(--btcpay-bg-tile, var(--btcpay-color-white));
+  background-color: var(--btcpay-bg-tile, var(--btcpay-white));
   background-clip: padding-box;
-  border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
   border-radius: 0.25rem;
 }
 
@@ -3176,7 +3176,7 @@ input[type="button"].btn-block {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid var(--btcpay-border-color-light, var(--btcpay-color-neutral-200));
+  border-top: 1px solid var(--btcpay-body-border-light, var(--btcpay-neutral-200));
 }
 
 .dropdown-item {
@@ -3185,7 +3185,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -3193,19 +3193,19 @@ input[type="button"].btn-block {
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-decoration: none;
-  background-color: var(--btcpay-bg-color-light);
+  background-color: var(--btcpay-body-bg-light);
 }
 
 .dropdown-item.active, .dropdown-item:active {
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-decoration: none;
-  background-color: var(--btcpay-bg-color-light)
+  background-color: var(--btcpay-body-bg-light)
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
-  color: var(--btcpay-color-secondary);
+  color: var(--btcpay-secondary);
   pointer-events: none;
 }
 
@@ -3218,14 +3218,14 @@ input[type="button"].btn-block {
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   white-space: nowrap;
 }
 
 .dropdown-item-text {
   display: block;
   padding: 0.25rem 1.5rem;
-  color: var(--btcpay-color-neutral-900);
+  color: var(--btcpay-neutral-900);
 }
 
 .btn-group,
@@ -3482,11 +3482,11 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--btcpay-color-neutral-700);
+  color: var(--btcpay-neutral-700);
   text-align: center;
   white-space: nowrap;
-  background-color: var(--btcpay-color-neutral-200);
-  border: 1px solid var(--btcpay-color-neutral-300);
+  background-color: var(--btcpay-neutral-200);
+  border: 1px solid var(--btcpay-neutral-300);
   border-radius: 0.25rem;
 }
 
@@ -3582,31 +3582,31 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
-  color: var(--btcpay-color-white);
-  border-color: var(--btcpay-color-primary);
-  background-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  border-color: var(--btcpay-primary);
+  background-color: var(--btcpay-primary);
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border-color: var(--btcpay-color-primary-backdrop);
+  border-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary-backdrop);
-  border-color: var(--btcpay-color-primary-backdrop);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary-dim-bg);
+  border-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
 }
 
 .custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-neutral-200);
+  background-color: var(--btcpay-neutral-200);
 }
 
 .custom-control-label {
@@ -3624,8 +3624,8 @@ input[type="button"].btn-block {
   height: 1rem;
   pointer-events: none;
   content: "";
-  background-color: var(--btcpay-color-white);
-  border: var(--btcpay-color-neutral-500) solid 1px;
+  background-color: var(--btcpay-white);
+  border: var(--btcpay-neutral-500) solid 1px;
 }
 
 .custom-control-label::after {
@@ -3648,8 +3648,8 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  border-color: var(--btcpay-color-primary);
-  background-color: var(--btcpay-color-primary);
+  border-color: var(--btcpay-primary);
+  background-color: var(--btcpay-primary);
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -3657,11 +3657,11 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-radio .custom-control-label::before {
@@ -3673,7 +3673,7 @@ input[type="button"].btn-block {
 }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-switch {
@@ -3692,7 +3692,7 @@ input[type="button"].btn-block {
   left: calc(-2.25rem + 2px);
   width: calc(1rem - 4px);
   height: calc(1rem - 4px);
-  background-color: var(--btcpay-color-neutral-500);
+  background-color: var(--btcpay-neutral-500);
   border-radius: 0.5rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
   transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3706,13 +3706,13 @@ input[type="button"].btn-block {
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: var(--btcpay-color-white);
+  background-color: var(--btcpay-white);
   -webkit-transform: translateX(0.75rem);
   transform: translateX(0.75rem);
 }
 
 .custom-switch .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-select {
@@ -3723,11 +3723,11 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--btcpay-color-neutral-700);
+  color: var(--btcpay-neutral-700);
   vertical-align: middle;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='var(--btcpay-color-neutral-800)' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
-  background-color: var(--btcpay-color-white);
-  border: 1px solid var(--btcpay-color-neutral-300);
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='var(--btcpay-neutral-800)' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+  background-color: var(--btcpay-white);
+  border: 1px solid var(--btcpay-neutral-300);
   border-radius: 0.25rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -3735,14 +3735,14 @@ input[type="button"].btn-block {
 }
 
 .custom-select:focus {
-  border-color: var(--btcpay-color-primary-backdrop);
+  border-color: var(--btcpay-primary-dim-bg);
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .custom-select:focus::-ms-value {
-  color: var(--btcpay-color-neutral-700);
-  background-color: var(--btcpay-color-white);
+  color: var(--btcpay-neutral-700);
+  background-color: var(--btcpay-white);
 }
 
 .custom-select[multiple], .custom-select[size]:not([size="1"]) {
@@ -3752,8 +3752,8 @@ input[type="button"].btn-block {
 }
 
 .custom-select:disabled {
-  color: var(--btcpay-color-neutral-600);
-  background-color: var(--btcpay-color-neutral-200);
+  color: var(--btcpay-neutral-600);
+  background-color: var(--btcpay-neutral-200);
 }
 
 .custom-select::-ms-expand {
@@ -3800,13 +3800,13 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:focus ~ .custom-file-label {
-  border-color: var(--btcpay-color-primary-backdrop);
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  border-color: var(--btcpay-primary-dim-bg);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .custom-file-input[disabled] ~ .custom-file-label,
 .custom-file-input:disabled ~ .custom-file-label {
-  background-color: var(--btcpay-color-neutral-200);
+  background-color: var(--btcpay-neutral-200);
 }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
@@ -3828,9 +3828,9 @@ input[type="button"].btn-block {
   overflow: hidden;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--btcpay-color-neutral-700);
-  background-color: var(--btcpay-color-white);
-  border: 1px solid var(--btcpay-color-neutral-300);
+  color: var(--btcpay-neutral-700);
+  background-color: var(--btcpay-white);
+  border: 1px solid var(--btcpay-neutral-300);
   border-radius: 0.25rem;
 }
 
@@ -3844,9 +3844,9 @@ input[type="button"].btn-block {
   height: calc(1.5em + 0.75rem);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
-  color: var(--btcpay-color-neutral-700);
+  color: var(--btcpay-neutral-700);
   content: "Browse";
-  background-color: var(--btcpay-color-neutral-200);
+  background-color: var(--btcpay-neutral-200);
   border-left: inherit;
   border-radius: 0 0.25rem 0.25rem 0;
 }
@@ -3866,15 +3866,15 @@ input[type="button"].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 1px var(--btcpay-body-bg), 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .custom-range::-moz-focus-outer {
@@ -3885,7 +3885,7 @@ input[type="button"].btn-block {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: var(--btcpay-color-primary);
+  background-color: var(--btcpay-primary);
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3902,7 +3902,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-webkit-slider-thumb:active {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-range::-webkit-slider-runnable-track {
@@ -3910,7 +3910,7 @@ input[type="button"].btn-block {
   height: 0.5rem;
   color: transparent;
   cursor: pointer;
-  background-color: var(--btcpay-color-neutral-300);
+  background-color: var(--btcpay-neutral-300);
   border-color: transparent;
   border-radius: 1rem;
 }
@@ -3918,7 +3918,7 @@ input[type="button"].btn-block {
 .custom-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
-  background-color: var(--btcpay-color-primary);
+  background-color: var(--btcpay-primary);
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3935,7 +3935,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-moz-range-thumb:active {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-range::-moz-range-track {
@@ -3943,7 +3943,7 @@ input[type="button"].btn-block {
   height: 0.5rem;
   color: transparent;
   cursor: pointer;
-  background-color: var(--btcpay-color-neutral-300);
+  background-color: var(--btcpay-neutral-300);
   border-color: transparent;
   border-radius: 1rem;
 }
@@ -3954,7 +3954,7 @@ input[type="button"].btn-block {
   margin-top: 0;
   margin-right: 0.2rem;
   margin-left: 0.2rem;
-  background-color: var(--btcpay-color-primary);
+  background-color: var(--btcpay-primary);
   border: 0;
   border-radius: 1rem;
   -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3970,7 +3970,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-ms-thumb:active {
-  background-color: var(--btcpay-color-primary-backdrop);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .custom-range::-ms-track {
@@ -3984,18 +3984,18 @@ input[type="button"].btn-block {
 }
 
 .custom-range::-ms-fill-lower {
-  background-color: var(--btcpay-color-neutral-300);
+  background-color: var(--btcpay-neutral-300);
   border-radius: 1rem;
 }
 
 .custom-range::-ms-fill-upper {
   margin-right: 15px;
-  background-color: var(--btcpay-color-neutral-300);
+  background-color: var(--btcpay-neutral-300);
   border-radius: 1rem;
 }
 
 .custom-range:disabled::-webkit-slider-thumb {
-  background-color: var(--btcpay-color-neutral-500);
+  background-color: var(--btcpay-neutral-500);
 }
 
 .custom-range:disabled::-webkit-slider-runnable-track {
@@ -4003,7 +4003,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range:disabled::-moz-range-thumb {
-  background-color: var(--btcpay-color-neutral-500);
+  background-color: var(--btcpay-neutral-500);
 }
 
 .custom-range:disabled::-moz-range-track {
@@ -4011,7 +4011,7 @@ input[type="button"].btn-block {
 }
 
 .custom-range:disabled::-ms-thumb {
-  background-color: var(--btcpay-color-neutral-500);
+  background-color: var(--btcpay-neutral-500);
 }
 
 .custom-control-label::before,
@@ -4048,13 +4048,13 @@ input[type="button"].btn-block {
 }
 
 .nav-link.disabled {
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   pointer-events: none;
   cursor: default;
 }
 
 .nav-tabs {
-  border-bottom: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-bottom: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .nav-tabs .nav-item {
@@ -4068,20 +4068,20 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: var(--btcpay-border-color-light, var(--btcpay-color-neutral-200)) var(--btcpay-border-color-light, var(--btcpay-color-neutral-200)) var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-color: var(--btcpay-body-border-light, var(--btcpay-neutral-200)) var(--btcpay-body-border-light, var(--btcpay-neutral-200)) var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .nav-tabs .nav-link.disabled {
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   background-color: transparent;
   border-color: transparent;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: var(--btcpay-color-primary);
-  background-color: var(--btcpay-color-primary-backdrop);
-  border-color: var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) var(--btcpay-color-primary-backdrop);
+  color: var(--btcpay-primary);
+  background-color: var(--btcpay-primary-dim-bg);
+  border-color: var(--btcpay-body-border-medium, var(--btcpay-neutral-300)) var(--btcpay-body-border-medium, var(--btcpay-neutral-300)) var(--btcpay-primary-dim-bg);
 }
 
 .nav-tabs .dropdown-menu {
@@ -4096,8 +4096,8 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary);
 }
 
 .nav-fill > .nav-link,
@@ -4502,11 +4502,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-brand {
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -4525,7 +4525,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
 }
 
 .navbar-dark .navbar-toggler {
@@ -4542,11 +4542,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-dark .navbar-text a {
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
 }
 
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
 }
 
 .card {
@@ -4557,9 +4557,9 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: var(--btcpay-bg-tile, var(--btcpay-color-white));
+  background-color: var(--btcpay-bg-tile, var(--btcpay-white));
   background-clip: border-box;
-  border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
   border-radius: 0.25rem;
 }
 
@@ -4622,7 +4622,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-bottom: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .card-header:first-child {
@@ -4632,7 +4632,7 @@ input[type="button"].btn-block {
 .card-footer {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-top: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .card-footer:last-child {
@@ -4802,7 +4802,7 @@ input[type="button"].btn-block {
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
-  background-color: var(--btcpay-color-neutral-200);
+  background-color: var(--btcpay-neutral-200);
   border-radius: 0.25rem;
 }
 
@@ -4813,7 +4813,7 @@ input[type="button"].btn-block {
 .breadcrumb-item + .breadcrumb-item::before {
   float: left;
   padding-right: 0.5rem;
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   content: "/";
 }
 
@@ -4826,7 +4826,7 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item.active {
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
 }
 
 .pagination {
@@ -4843,23 +4843,23 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: var(--btcpay-body-color-link);
-  background-color: var(--btcpay-color-white);
-  border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  color: var(--btcpay-body-link);
+  background-color: var(--btcpay-white);
+  border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .page-link:hover {
   z-index: 2;
-  color: var(--btcpay-body-color-link-accent);
+  color: var(--btcpay-body-link-accent);
   text-decoration: none;
-  background-color: var(--btcpay-color-neutral-200);
-  border-color: var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  background-color: var(--btcpay-neutral-200);
+  border-color: var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .page-link:focus {
   z-index: 3;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .page-item:first-child .page-link {
@@ -4874,18 +4874,18 @@ input[type="button"].btn-block {
 }
 
 .page-item.active .page-link {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary);
-  border-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary);
+  border-color: var(--btcpay-primary);
   z-index: 3;
 }
 
 .page-item.disabled .page-link {
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   pointer-events: none;
   cursor: auto;
-  background-color: var(--btcpay-color-white);
-  border-color: var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  background-color: var(--btcpay-white);
+  border-color: var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .pagination-lg .page-link {
@@ -4959,88 +4959,88 @@ a.badge:hover, a.badge:focus {
 }
 
 .badge-primary {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary);
 }
 
 a.badge-primary:hover, a.badge-primary:focus {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary-accent);
 }
 
 a.badge-primary:focus, a.badge-primary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-primary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-primary-dim-bg);
 }
 
 .badge-secondary {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-secondary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-secondary);
 }
 
 a.badge-secondary:hover, a.badge-secondary:focus {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-secondary-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-secondary-accent);
 }
 
 a.badge-secondary:focus, a.badge-secondary.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-secondary-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-secondary-dim-bg);
 }
 
 .badge-success {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success);
 }
 
 a.badge-success:hover, a.badge-success:focus {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-success-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-success-accent);
 }
 
 a.badge-success:focus, a.badge-success.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-success-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-success-dim-bg);
 }
 
 .badge-info {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-info);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-info);
 }
 
 a.badge-info:hover, a.badge-info:focus {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-info-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-info-accent);
 }
 
 a.badge-info:focus, a.badge-info.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-info-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-info-dim-bg);
 }
 
 .badge-warning {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-warning);
+  color: var(--btcpay-neutral-900);
+  background-color: var(--btcpay-warning);
 }
 
 a.badge-warning:hover, a.badge-warning:focus {
-  color: var(--btcpay-color-neutral-900);
-  background-color: var(--btcpay-color-warning-accent);
+  color: var(--btcpay-neutral-900);
+  background-color: var(--btcpay-warning-accent);
 }
 
 a.badge-warning:focus, a.badge-warning.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-warning-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-warning-dim-bg);
 }
 
 .badge-danger {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger);
 }
 
 a.badge-danger:hover, a.badge-danger:focus {
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-danger-accent);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-danger-accent);
 }
 
 a.badge-danger:focus, a.badge-danger.focus {
@@ -5050,33 +5050,33 @@ a.badge-danger:focus, a.badge-danger.focus {
 }
 
 .badge-light {
-  color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light);
+  color: var(--btcpay-light-text);
+  background-color: var(--btcpay-light);
 }
 
 a.badge-light:hover, a.badge-light:focus {
-  color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light-accent);
+  color: var(--btcpay-light-text);
+  background-color: var(--btcpay-light-accent);
 }
 
 a.badge-light:focus, a.badge-light.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-light-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-light-dim-bg);
 }
 
 .badge-dark {
-  color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark);
+  color: var(--btcpay-dark-text);
+  background-color: var(--btcpay-dark);
 }
 
 a.badge-dark:hover, a.badge-dark:focus {
-  color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark-accent);
+  color: var(--btcpay-dark-text);
+  background-color: var(--btcpay-dark-accent);
 }
 
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--btcpay-color-dark-backdrop);
+  box-shadow: 0 0 0 0.2rem var(--btcpay-dark-dim-bg);
 }
 
 .jumbotron {
@@ -5111,6 +5111,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-link {
+  color: inherit;
   font-weight: 700;
 }
 
@@ -5135,83 +5136,83 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-primary {
-  color: var(--btcpay-color-primary-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-primary-backdrop);
-  border-color: var(--btcpay-color-primary-backdrop);
+  color: var(--btcpay-primary-dim-text);
+  background-color: var(--btcpay-primary-dim-bg);
+  border-color: var(--btcpay-primary-dim-border);
 }
 
 .alert-primary hr {
-  border-top-color: var(--btcpay-color-primary-accent);
+  border-top-color: var(--btcpay-primary-dim-border);
 }
 
 .alert-secondary {
-  color: var(--btcpay-color-secondary-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-secondary-backdrop);
-  border-color: var(--btcpay-color-secondary-backdrop);
+  color: var(--btcpay-secondary-dim-text);
+  background-color: var(--btcpay-secondary-dim-bg);
+  border-color: var(--btcpay-secondary-dim-border);
 }
 
 .alert-secondary hr {
-  border-top-color: var(--btcpay-color-secondary-accent);
+  border-top-color: var(--btcpay-secondary-dim-border);
 }
 
 .alert-success {
-  color: var(--btcpay-color-success-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-success-backdrop);
-  border-color: var(--btcpay-color-success-backdrop);
+  color: var(--btcpay-success-dim-text);
+  background-color: var(--btcpay-success-dim-bg);
+  border-color: var(--btcpay-success-dim-border);
 }
 
 .alert-success hr {
-  border-top-color: var(--btcpay-color-success-accent);
+  border-top-color: var(--btcpay-success-dim-border);
 }
 
 .alert-info {
-  color: var(--btcpay-color-info-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-info-backdrop);
-  border-color: var(--btcpay-color-info-backdrop);
+  color: var(--btcpay-info-dim-text);
+  background-color: var(--btcpay-info-dim-bg);
+  border-color: var(--btcpay-info-dim-border);
 }
 
 .alert-info hr {
-  border-top-color: var(--btcpay-color-info-accent);
+  border-top-color: var(--btcpay-info-dim-border);
 }
 
 .alert-warning {
-  color: var(--btcpay-color-warning-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-warning-backdrop);
-  border-color: var(--btcpay-color-warning-backdrop);
+  color: var(--btcpay-warning-dim-text);
+  background-color: var(--btcpay-warning-dim-bg);
+  border-color: var(--btcpay-warning-dim-border);
 }
 
 .alert-warning hr {
-  border-top-color: var(--btcpay-color-warning-accent);
+  border-top-color: var(--btcpay-warning-dim-border);
 }
 
 .alert-danger {
-  color: var(--btcpay-color-danger-text, var(--btcpay-color-white));
-  background-color: var(--btcpay-color-danger-backdrop);
-  border-color: var(--btcpay-color-danger-backdrop);
+  color: var(--btcpay-danger-dim-text);
+  background-color: var(--btcpay-danger-dim-bg);
+  border-color: var(--btcpay-danger-dim-border);
 }
 
 .alert-danger hr {
-  border-top-color: var(--btcpay-color-danger-accent);
+  border-top-color: var(--btcpay-danger-dim-border);
 }
 
 .alert-light {
-  color: var(--btcpay-color-light-text, var(--btcpay-color-dark));
-  background-color: var(--btcpay-color-light-backdrop);
-  border-color: var(--btcpay-color-light-backdrop);
+  color: var(--btcpay-light-dim-text);
+  background-color: var(--btcpay-light-dim-bg);
+  border-color: var(--btcpay-light-dim-border);
 }
 
 .alert-light hr {
-  border-top-color: var(--btcpay-color-light-accent);
+  border-top-color: var(--btcpay-light-dim-border);
 }
 
 .alert-dark {
-  color: var(--btcpay-color-dark-text, var(--btcpay-color-light));
-  background-color: var(--btcpay-color-dark-backdrop);
-  border-color: var(--btcpay-color-dark-backdrop);
+  color: var(--btcpay-dark-text, var(--btcpay-light));
+  background-color: var(--btcpay-dark-dim-bg);
+  border-color: var(--btcpay-dark-dim-border);
 }
 
 .alert-dark hr {
-  border-top-color: var(--btcpay-color-dark-accent);
+  border-top-color: var(--btcpay-dark-dim-border);
 }
 
 @-webkit-keyframes progress-bar-stripes {
@@ -5239,7 +5240,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   overflow: hidden;
   line-height: 0;
   font-size: 0.75rem;
-  background-color: var(--btcpay-color-neutral-200);
+  background-color: var(--btcpay-neutral-200);
   border-radius: 0.25rem;
 }
 
@@ -5250,11 +5251,11 @@ a.badge-dark:focus, a.badge-dark.focus {
   flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
   overflow: hidden;
   text-align: center;
   white-space: nowrap;
-  background-color: var(--btcpay-color-primary);
+  background-color: var(--btcpay-primary);
   transition: width 0.6s ease;
 }
 
@@ -5305,20 +5306,20 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .list-group-item-action {
   width: 100%;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-align: inherit;
 }
 
 .list-group-item-action:hover, .list-group-item-action:focus {
   z-index: 1;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-decoration: none;
-  background-color: var(--btcpay-bg-color-light);
+  background-color: var(--btcpay-body-bg-light);
 }
 
 .list-group-item-action:active {
-  color: var(--btcpay-body-color);
-  background-color: var(--btcpay-color-neutral-200);
+  color: var(--btcpay-body-text);
+  background-color: var(--btcpay-neutral-200);
 }
 
 .list-group-item {
@@ -5326,7 +5327,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   display: block;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
 }
 
 .list-group-item:first-child {
@@ -5341,15 +5342,15 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item.disabled, .list-group-item:disabled {
-  color: var(--btcpay-color-secondary);
+  color: var(--btcpay-secondary);
   pointer-events: none;
 }
 
 .list-group-item.active {
   z-index: 2;
-  color: var(--btcpay-color-white);
-  background-color: var(--btcpay-color-primary);
-  border-color: var(--btcpay-color-primary);
+  color: var(--btcpay-white);
+  background-color: var(--btcpay-primary);
+  border-color: var(--btcpay-primary);
 }
 
 .list-group-horizontal {
@@ -5512,131 +5513,131 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .list-group-item-primary {
-  color: var(--btcpay-color-primary-text);
-  background-color: var(--btcpay-color-primary-backdrop);
+  color: var(--btcpay-primary-text);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-  color: var(--btcpay-color-primary-text);
-  background-color: var(--btcpay-color-primary-backdrop);
+  color: var(--btcpay-primary-text);
+  background-color: var(--btcpay-primary-dim-bg);
 }
 
 .list-group-item-primary.list-group-item-action.active {
-  color: var(--btcpay-color-primary-text);
-  background-color: var(--btcpay-color-primary-accent);
-  border-color: var(--btcpay-color-primary-accent);
+  color: var(--btcpay-primary-text);
+  background-color: var(--btcpay-primary-accent);
+  border-color: var(--btcpay-primary-accent);
 }
 
 .list-group-item-secondary {
-  color: var(--btcpay-color-secondary-text);
-  background-color: var(--btcpay-color-secondary-backdrop);
+  color: var(--btcpay-secondary-text);
+  background-color: var(--btcpay-secondary-dim-bg);
 }
 
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: var(--btcpay-color-secondary-text);
-  background-color: var(--btcpay-color-secondary-backdrop);
+  color: var(--btcpay-secondary-text);
+  background-color: var(--btcpay-secondary-dim-bg);
 }
 
 .list-group-item-secondary.list-group-item-action.active {
-  color: var(--btcpay-color-secondary-text);
-  background-color: var(--btcpay-color-secondary-accent);
-  border-color: var(--btcpay-color-secondary-accent);
+  color: var(--btcpay-secondary-text);
+  background-color: var(--btcpay-secondary-accent);
+  border-color: var(--btcpay-secondary-accent);
 }
 
 .list-group-item-success {
-  color: var(--btcpay-color-success-text);
-  background-color: var(--btcpay-color-success-backdrop);
+  color: var(--btcpay-success-text);
+  background-color: var(--btcpay-success-dim-bg);
 }
 
 .list-group-item-success.list-group-item-action:hover, .list-group-item-success.list-group-item-action:focus {
-  color: var(--btcpay-color-success-text);
-  background-color: var(--btcpay-color-success-backdrop);
+  color: var(--btcpay-success-text);
+  background-color: var(--btcpay-success-dim-bg);
 }
 
 .list-group-item-success.list-group-item-action.active {
-  color: var(--btcpay-color-success-text);
-  background-color: var(--btcpay-color-success-accent);
-  border-color: var(--btcpay-color-success-accent);
+  color: var(--btcpay-success-text);
+  background-color: var(--btcpay-success-accent);
+  border-color: var(--btcpay-success-accent);
 }
 
 .list-group-item-info {
-  color: var(--btcpay-color-info-text);
-  background-color: var(--btcpay-color-info-backdrop);
+  color: var(--btcpay-info-text);
+  background-color: var(--btcpay-info-dim-bg);
 }
 
 .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
-  color: var(--btcpay-color-info-text);
-  background-color: var(--btcpay-color-info-backdrop);
+  color: var(--btcpay-info-text);
+  background-color: var(--btcpay-info-dim-bg);
 }
 
 .list-group-item-info.list-group-item-action.active {
-  color: var(--btcpay-color-info-text);
-  background-color: var(--btcpay-color-info-accent);
-  border-color: var(--btcpay-color-info-accent);
+  color: var(--btcpay-info-text);
+  background-color: var(--btcpay-info-accent);
+  border-color: var(--btcpay-info-accent);
 }
 
 .list-group-item-warning {
-  color: var(--btcpay-color-warning-text);
-  background-color: var(--btcpay-color-warning-backdrop);
+  color: var(--btcpay-warning-text);
+  background-color: var(--btcpay-warning-dim-bg);
 }
 
 .list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
-  color: var(--btcpay-color-warning-text);
-  background-color: var(--btcpay-color-warning-backdrop);
+  color: var(--btcpay-warning-text);
+  background-color: var(--btcpay-warning-dim-bg);
 }
 
 .list-group-item-warning.list-group-item-action.active {
-  color: var(--btcpay-color-warning-text);
-  background-color: var(--btcpay-color-warning-accent);
-  border-color: var(--btcpay-color-warning-accent);
+  color: var(--btcpay-warning-text);
+  background-color: var(--btcpay-warning-accent);
+  border-color: var(--btcpay-warning-accent);
 }
 
 .list-group-item-danger {
-  color: var(--btcpay-color-danger-text);
-  background-color: var(--btcpay-color-danger-backdrop);
+  color: var(--btcpay-danger-text);
+  background-color: var(--btcpay-danger-dim-bg);
 }
 
 .list-group-item-danger.list-group-item-action:hover, .list-group-item-danger.list-group-item-action:focus {
-  color: var(--btcpay-color-danger-text);
-  background-color: var(--btcpay-color-danger-backdrop);
+  color: var(--btcpay-danger-text);
+  background-color: var(--btcpay-danger-dim-bg);
 }
 
 .list-group-item-danger.list-group-item-action.active {
-  color: var(--btcpay-color-danger-text);
-  background-color: var(--btcpay-color-danger-accent);
-  border-color: var(--btcpay-color-danger-accent);
+  color: var(--btcpay-danger-text);
+  background-color: var(--btcpay-danger-accent);
+  border-color: var(--btcpay-danger-accent);
 }
 
 .list-group-item-light {
-  color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light-backdrop);
+  color: var(--btcpay-light-text);
+  background-color: var(--btcpay-light-dim-bg);
 }
 
 .list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
-  color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light-backdrop);
+  color: var(--btcpay-light-text);
+  background-color: var(--btcpay-light-dim-bg);
 }
 
 .list-group-item-light.list-group-item-action.active {
-  color: var(--btcpay-color-light-text);
-  background-color: var(--btcpay-color-light-accent);
-  border-color: var(--btcpay-color-light-accent);
+  color: var(--btcpay-light-text);
+  background-color: var(--btcpay-light-accent);
+  border-color: var(--btcpay-light-accent);
 }
 
 .list-group-item-dark {
-  color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark-backdrop);
+  color: var(--btcpay-dark-text);
+  background-color: var(--btcpay-dark-dim-bg);
 }
 
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-  color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark-backdrop);
+  color: var(--btcpay-dark-text);
+  background-color: var(--btcpay-dark-dim-bg);
 }
 
 .list-group-item-dark.list-group-item-action.active {
-  color: var(--btcpay-color-dark-text);
-  background-color: var(--btcpay-color-dark-accent);
-  border-color: var(--btcpay-color-dark-accent);
+  color: var(--btcpay-dark-text);
+  background-color: var(--btcpay-dark-accent);
+  border-color: var(--btcpay-dark-accent);
 }
 
 .close {
@@ -5644,13 +5645,13 @@ a.badge-dark:focus, a.badge-dark.focus {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: var(--btcpay-color-dark-accent);
-  text-shadow: 0 1px 0 var(--btcpay-color-white);
+  color: var(--btcpay-dark-accent);
+  text-shadow: 0 1px 0 var(--btcpay-white);
   opacity: .5;
 }
 
 .close:hover {
-  color: var(--btcpay-color-dark-accent);
+  color: var(--btcpay-dark-accent);
   text-decoration: none;
 }
 
@@ -5704,7 +5705,7 @@ a.close.disabled {
   -ms-flex-align: center;
   align-items: center;
   padding: 0.25rem 0.75rem;
-  color: var(--btcpay-color-neutral-600);
+  color: var(--btcpay-neutral-600);
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -5830,7 +5831,7 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: var(--btcpay-bg-tile, var(--btcpay-color-white));
+  background-color: var(--btcpay-bg-tile, var(--btcpay-white));
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -5844,7 +5845,7 @@ a.close.disabled {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: var(--btcpay-color-black);
+  background-color: var(--btcpay-black);
 }
 
 .modal-backdrop.fade {
@@ -5863,7 +5864,7 @@ a.close.disabled {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-bottom: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5895,7 +5896,7 @@ a.close.disabled {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+  border-top: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -6003,7 +6004,7 @@ a.close.disabled {
 .bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
   top: 0;
   border-width: 0.4rem 0.4rem 0;
-  border-top-color: var(--btcpay-color-black);
+  border-top-color: var(--btcpay-black);
 }
 
 .bs-tooltip-right, .bs-tooltip-auto[x-placement^="right"] {
@@ -6019,7 +6020,7 @@ a.close.disabled {
 .bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
   right: 0;
   border-width: 0.4rem 0.4rem 0.4rem 0;
-  border-right-color: var(--btcpay-color-black);
+  border-right-color: var(--btcpay-black);
 }
 
 .bs-tooltip-bottom, .bs-tooltip-auto[x-placement^="bottom"] {
@@ -6033,7 +6034,7 @@ a.close.disabled {
 .bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
   bottom: 0;
   border-width: 0 0.4rem 0.4rem;
-  border-bottom-color: var(--btcpay-color-black);
+  border-bottom-color: var(--btcpay-black);
 }
 
 .bs-tooltip-left, .bs-tooltip-auto[x-placement^="left"] {
@@ -6049,15 +6050,15 @@ a.close.disabled {
 .bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
   left: 0;
   border-width: 0.4rem 0 0.4rem 0.4rem;
-  border-left-color: var(--btcpay-color-black);
+  border-left-color: var(--btcpay-black);
 }
 
 .tooltip-inner {
   max-width: 200px;
   padding: 0.25rem 0.5rem;
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
   text-align: center;
-  background-color: var(--btcpay-color-black);
+  background-color: var(--btcpay-black);
   border-radius: 0.25rem;
 }
 
@@ -6217,7 +6218,7 @@ a.close.disabled {
 
 .popover-body {
   padding: 0.5rem 0.75rem;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
 }
 
 .carousel {
@@ -6391,7 +6392,7 @@ a.close.disabled {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: var(--btcpay-color-white);
+  background-color: var(--btcpay-white);
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -6417,7 +6418,7 @@ a.close.disabled {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
   text-align: center;
 }
 
@@ -6527,87 +6528,87 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: var(--btcpay-color-primary) !important;
+  background-color: var(--btcpay-primary) !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: var(--btcpay-color-primary-accent) !important;
+  background-color: var(--btcpay-primary-accent) !important;
 }
 
 .bg-secondary {
-  background-color: var(--btcpay-color-secondary) !important;
+  background-color: var(--btcpay-secondary) !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: var(--btcpay-color-secondary-accent) !important;
+  background-color: var(--btcpay-secondary-accent) !important;
 }
 
 .bg-success {
-  background-color: var(--btcpay-color-success) !important;
+  background-color: var(--btcpay-success) !important;
 }
 
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: var(--btcpay-color-success-accent) !important;
+  background-color: var(--btcpay-success-accent) !important;
 }
 
 .bg-info {
-  background-color: var(--btcpay-color-info) !important;
+  background-color: var(--btcpay-info) !important;
 }
 
 a.bg-info:hover, a.bg-info:focus,
 button.bg-info:hover,
 button.bg-info:focus {
-  background-color: var(--btcpay-color-info-accent) !important;
+  background-color: var(--btcpay-info-accent) !important;
 }
 
 .bg-warning {
-  background-color: var(--btcpay-color-warning) !important;
+  background-color: var(--btcpay-warning) !important;
 }
 
 a.bg-warning:hover, a.bg-warning:focus,
 button.bg-warning:hover,
 button.bg-warning:focus {
-  background-color: var(--btcpay-color-warning-accent) !important;
+  background-color: var(--btcpay-warning-accent) !important;
 }
 
 .bg-danger {
-  background-color: var(--btcpay-color-danger) !important;
+  background-color: var(--btcpay-danger) !important;
 }
 
 a.bg-danger:hover, a.bg-danger:focus,
 button.bg-danger:hover,
 button.bg-danger:focus {
-  background-color: var(--btcpay-color-danger-accent) !important;
+  background-color: var(--btcpay-danger-accent) !important;
 }
 
 .bg-light {
-  background-color: var(--btcpay-color-light-backdrop) !important;
+  background-color: var(--btcpay-light-dim-bg) !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
-  background-color: var(--btcpay-color-light-accent) !important;
+  background-color: var(--btcpay-light-accent) !important;
 }
 
 .bg-dark {
-  background-color: var(--btcpay-color-dark-backdrop) !important;
+  background-color: var(--btcpay-dark-dim-bg) !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: var(--btcpay-color-dark-accent) !important;
+  background-color: var(--btcpay-dark-accent) !important;
 }
 
 .bg-white {
-  background-color: var(--btcpay-color-white);
+  background-color: var(--btcpay-white);
 }
 
 .bg-transparent {
@@ -6615,23 +6616,23 @@ button.bg-dark:focus {
 }
 
 .border {
-  border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) !important;
+  border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300)) !important;
 }
 
 .border-top {
-  border-top: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) !important;
+  border-top: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300)) !important;
 }
 
 .border-right {
-  border-right: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) !important;
+  border-right: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300)) !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) !important;
+  border-bottom: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300)) !important;
 }
 
 .border-left {
-  border-left: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) !important;
+  border-left: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300)) !important;
 }
 
 .border-0 {
@@ -6655,39 +6656,39 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: var(--btcpay-color-primary) !important;
+  border-color: var(--btcpay-primary) !important;
 }
 
 .border-secondary {
-  border-color: var(--btcpay-color-secondary) !important;
+  border-color: var(--btcpay-secondary) !important;
 }
 
 .border-success {
-  border-color: var(--btcpay-color-success) !important;
+  border-color: var(--btcpay-success) !important;
 }
 
 .border-info {
-  border-color: var(--btcpay-color-info) !important;
+  border-color: var(--btcpay-info) !important;
 }
 
 .border-warning {
-  border-color: var(--btcpay-color-warning) !important;
+  border-color: var(--btcpay-warning) !important;
 }
 
 .border-danger {
-  border-color: var(--btcpay-color-danger) !important;
+  border-color: var(--btcpay-danger) !important;
 }
 
 .border-light {
-  border-color: var(--btcpay-color-light) !important;
+  border-color: var(--btcpay-light) !important;
 }
 
 .border-dark {
-  border-color: var(--btcpay-color-dark) !important;
+  border-color: var(--btcpay-dark) !important;
 }
 
 .border-white {
-  border-color: var(--btcpay-color-white);
+  border-color: var(--btcpay-white);
 }
 
 .rounded-sm {
@@ -9885,79 +9886,79 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: var(--btcpay-color-white);
+  color: var(--btcpay-white);
 }
 
 .text-primary {
-  color: var(--btcpay-color-primary) !important;
+  color: var(--btcpay-primary) !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: var(--btcpay-color-primary-accent) !important;
+  color: var(--btcpay-primary-accent) !important;
 }
 
 .text-secondary {
-  color: var(--btcpay-color-secondary) !important;
+  color: var(--btcpay-secondary) !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: var(--btcpay-color-secondary-accent) !important;
+  color: var(--btcpay-secondary-accent) !important;
 }
 
 .text-success {
-  color: var(--btcpay-color-success) !important;
+  color: var(--btcpay-success) !important;
 }
 
 a.text-success:hover, a.text-success:focus {
-  color: var(--btcpay-color-success-accent) !important;
+  color: var(--btcpay-success-accent) !important;
 }
 
 .text-info {
-  color: var(--btcpay-color-info) !important;
+  color: var(--btcpay-info) !important;
 }
 
 a.text-info:hover, a.text-info:focus {
-  color: var(--btcpay-color-info-accent) !important;
+  color: var(--btcpay-info-accent) !important;
 }
 
 .text-warning {
-  color: var(--btcpay-color-warning) !important;
+  color: var(--btcpay-warning) !important;
 }
 
 a.text-warning:hover, a.text-warning:focus {
-  color: var(--btcpay-color-warning-accent) !important;
+  color: var(--btcpay-warning-accent) !important;
 }
 
 .text-danger {
-  color: var(--btcpay-color-danger) !important;
+  color: var(--btcpay-danger) !important;
 }
 
 a.text-danger:hover, a.text-danger:focus {
-  color: var(--btcpay-color-danger-accent) !important;
+  color: var(--btcpay-danger-accent) !important;
 }
 
 .text-light {
-  color: var(--btcpay-color-light) !important;
+  color: var(--btcpay-light) !important;
 }
 
 a.text-light:hover, a.text-light:focus {
-  color: var(--btcpay-color-light-accent) !important;
+  color: var(--btcpay-light-accent) !important;
 }
 
 .text-dark {
-  color: var(--btcpay-color-dark) !important;
+  color: var(--btcpay-dark) !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
-  color: var(--btcpay-color-dark-accent) !important;
+  color: var(--btcpay-dark-accent) !important;
 }
 
 .text-body {
-  color: var(--btcpay-body-color) !important;
+  color: var(--btcpay-body-text) !important;
 }
 
 .text-muted {
-  color: var(--btcpay-color-secondary) !important;
+  color: var(--btcpay-secondary) !important;
 }
 
 .text-black-50 {
@@ -10015,7 +10016,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   pre,
   blockquote {
-    border: 1px solid var(--btcpay-color-neutral-500);
+    border: 1px solid var(--btcpay-neutral-500);
     page-break-inside: avoid;
   }
   thead {
@@ -10048,18 +10049,18 @@ a.text-dark:hover, a.text-dark:focus {
     display: none;
   }
   .badge {
-    border: 1px solid var(--btcpay-color-black);
+    border: 1px solid var(--btcpay-black);
   }
   .table {
     border-collapse: collapse !important;
   }
   .table td,
   .table th {
-    background-color: var(--btcpay-color-white);
+    background-color: var(--btcpay-white);
   }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300)) !important;
+    border: 1px solid var(--btcpay-body-border-medium, var(--btcpay-neutral-300)) !important;
   }
   .table-dark {
     color: inherit;
@@ -10068,10 +10069,10 @@ a.text-dark:hover, a.text-dark:focus {
   .table-dark td,
   .table-dark thead th,
   .table-dark tbody + tbody {
-    border-color: var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+    border-color: var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
   }
   .table .thead-dark th {
     color: inherit;
-    border-color: var(--btcpay-border-color-medium, var(--btcpay-color-neutral-300));
+    border-color: var(--btcpay-body-border-medium, var(--btcpay-neutral-300));
   }
 }

@@ -1,0 +1,10 @@
+// bootstrap SCSS variables which we can replace and customize
+// to be part of the build – no need to replace afterwards
+@import "_variables";
+
+// include all of boostrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// apply custom overrides that cannot be done by replacing
+// strings via the generate-bootstrap script
+@import "_customizations";

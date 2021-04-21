@@ -1,16 +1,12 @@
-const autoprefixer = require('autoprefixer')
-const importer = require('postcss-import')
-const nesting = require('postcss-nesting')
-const prettify = require('postcss-prettify')
-
 // https://github.com/michael-ciniawsky/postcss-load-config
 const customProperties = require('postcss-custom-properties')
+const prettify = require('postcss-prettify')
 
 // design tokens meta description
-const variables = require('./src/design/variables')
-const colors = require('./src/design/colors')
-const spaces = require('./src/design/spaces')
-const fonts = require('./src/design/fonts')
+const variables = require('../../src/design/variables')
+const colors = require('../../src/design/colors')
+const spaces = require('../../src/design/spaces')
+const fonts = require('../../src/design/fonts')
 
 // converts the meta format to custom property definition
 const metaToProp = collection =>
@@ -23,11 +19,6 @@ const metaToProp = collection =>
 
 module.exports = {
   plugins: [
-    autoprefixer(),
-    importer({
-      path: ['src/styles', 'src/components'],
-    }),
-    nesting(),
     customProperties({
       // https://github.com/postcss/postcss-custom-properties#importfrom
       importFrom: [
@@ -56,7 +47,7 @@ module.exports = {
           }
         }
       ],
-      exportTo: 'src/styles/variables/design.css'
+      exportTo: ['generated/design.css']
     }),
     prettify()
   ]
