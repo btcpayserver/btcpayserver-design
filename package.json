@@ -1,6 +1,6 @@
 {
   "name": "btcpayserver-design",
-  "description": "BTCPayServer Design System",
+  "description": "BTCPay Server Design System",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Dennis Reimann <mail@dennisreimann.de>",
@@ -8,7 +8,7 @@
   "bugs": "https://github.com/btcpayserver/btcpayserver-design/issues",
   "repository": "btcpayserver/btcpayserver-design",
   "keywords": [
-    "BTCPayServer"
+    "BTCPay Server"
   ],
   "scripts": {
     "clean": "rimraf dist generated && mkdir -p dist/styles dist/scripts/bootstrap-v5 generated",
