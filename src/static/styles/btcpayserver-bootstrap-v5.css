@@ -4012,7 +4012,7 @@ textarea.form-control-lg {
   width: 100%;
   color: var(--btcpay-body-text);
   pointer-events: auto;
-  background-color: var(--btcpay-body-bg);
+  background-color: var(--btcpay-bg-tile);
   background-clip: padding-box;
   border: 1px solid var(--btcpay-body-border-medium);
   border-radius: 0.3rem;
@@ -7562,8 +7562,33 @@ ul li {
 .alert-dismissible .btn-close {
   color: inherit; }
 
+.text-monospace {
+  font-size: .95rem; }
+
+input.w-auto,
+select.w-auto,
+textarea.w-auto {
+  max-width: 100%; }
+
+/* custom utility classes */
 .bg-tile {
   background-color: var(--btcpay-bg-tile); }
+
+.fw-semibold {
+  font-weight: var(--btcpay-font-weight-semibold) !important; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number].hide-number-spin::-webkit-outer-spin-button,
+input[type=number].hide-number-spin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number].hide-number-spin {
+  -moz-appearance: textfield; }
 
 /* set color for text on background */
 .bg-primary {
@@ -7593,6 +7618,120 @@ ul li {
 .bg-body {
   color: var(--btcpay-body-text); }
 
-/* Readd removed classes */
+/* Forms */
 .form-group {
   margin-bottom: 1rem; }
+
+[data-required]::after {
+  content: "*";
+  color: var(--btcpay-danger); }
+
+.btcpay-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: .25em solid transparent;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px; }
+
+.btcpay-status:before {
+  content: '';
+  border-radius: 50%;
+  width: 9px;
+  height: 9px; }
+
+.btcpay-status--enabled {
+  background-color: rgba(0, 182, 52, 0.3); }
+
+.btcpay-status--enabled:before {
+  background-color: #00B634; }
+
+.btcpay-status--disabled {
+  background-color: rgba(251, 56, 61, 0.3); }
+
+.btcpay-status--disabled:before {
+  background-color: #FB383D; }
+
+.btcpay-toggle {
+  --border-size: 2px;
+  --toggle-width: 40px;
+  --toggle-height: 24px;
+  --switch-size: calc(var(--toggle-height) - 2 * var(--border-size));
+  position: relative;
+  display: inline-block;
+  width: var(--toggle-width);
+  height: var(--toggle-height);
+  border: 0;
+  border-radius: calc(var(--toggle-height) / 2);
+  background: var(--btcpay-neutral-500);
+  font-size: 0; }
+
+input.btcpay-toggle {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
+
+input.btcpay-toggle:checked,
+.btcpay-toggle.btcpay-toggle--active {
+  background: var(--btcpay-primary); }
+
+.btcpay-toggle::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: var(--border-size);
+  left: var(--border-size);
+  width: var(--switch-size);
+  height: var(--switch-size);
+  background-color: var(--btcpay-white); }
+
+.btcpay-toggle,
+.btcpay-toggle::after {
+  transition: all 0.2s; }
+
+input.btcpay-toggle:checked::after,
+.btcpay-toggle.btcpay-toggle--active::after {
+  left: calc(var(--toggle-width) - var(--switch-size) - var(--border-size)); }
+
+label + input.btcpay-toggle {
+  position: relative;
+  top: .45rem; }
+
+/* Bootstrap Responsive Helper */
+html[data-devenv]:before {
+  display: inline-block;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  bottom: 0;
+  background: var(--btcpay-secondary);
+  color: var(--btcpay-secondary-text);
+  opacity: .7;
+  padding: 4px 5px 3px 7px;
+  font-size: 10px;
+  border-top-left-radius: 4px; }
+
+@media (max-width: 575px) {
+  html[data-devenv]:before {
+    content: 'XS'; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  html[data-devenv]:before {
+    content: 'SM'; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html[data-devenv]:before {
+    content: 'MD'; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  html[data-devenv]:before {
+    content: 'LG'; } }
+
+@media (min-width: 1200px) {
+  html[data-devenv]:before {
+    content: 'XL'; } }
+
+@media print {
+  html[data-devenv]:before {
+    content: none; } }

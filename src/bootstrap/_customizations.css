@@ -80,8 +80,39 @@ ul li {
   color: inherit;
 }
 
+.text-monospace {
+    font-size: .95rem;
+}
+
+input.w-auto,
+select.w-auto,
+textarea.w-auto {
+    max-width: 100%;
+}
+
+/* custom utility classes */
 .bg-tile {
   background-color: var(--btcpay-bg-tile);
+}
+
+.fw-semibold {
+    font-weight: var(--btcpay-font-weight-semibold) !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number].hide-number-spin::-webkit-outer-spin-button,
+input[type=number].hide-number-spin::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number].hide-number-spin {
+    -moz-appearance: textfield;
 }
 
 /* set color for text on background */
@@ -95,7 +126,12 @@ ul li {
 .bg-dark { color: var(--btcpay-dark-text); }
 .bg-body { color: var(--btcpay-body-text); }
 
-/* Readd removed classes */
+/* Forms */
 .form-group {
   margin-bottom: 1rem;
+}
+
+[data-required]::after {
+  content: "*";
+  color: var(--btcpay-danger);
 }
