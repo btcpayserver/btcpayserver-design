@@ -8,45 +8,29 @@ html {
 
 a,
 .btn-link {
-  color: var(--btcpay-body-link);
   transition-duration: 0.2s;
   transition-property: background, color;
-  text-decoration: none;
-}
-
-a:hover,
-.btn-link:hover {
-  color: var(--btcpay-body-link-accent);
-  text-decoration: underline;
 }
 
 a.nav-link {
-  color: var(--btcpay-nav-link);
   background: var(--btcpay-nav-bg);
   border-left-color: var(--btcpay-nav-border);
 }
 
 a.nav-link:focus,
 a.nav-link:hover {
-  color: var(--btcpay-nav-link-accent);
   text-decoration: none;
   border-left-color: var(--btcpay-nav-border-hover);
   background: var(--btcpay-nav-bg-hover);
 }
 
 code {
-  color: var(--btcpay-code-text);
   background: var(--btcpay-code-bg);
 }
 
 pre,
 pre code {
-  color: var(--btcpay-pre-text);
   background: var(--btcpay-pre-bg);
-}
-
-hr:not([size]) {
-  height: 3px;
 }
 
 ol {
@@ -80,14 +64,22 @@ ul li {
   color: inherit;
 }
 
+.btn-close .icon {
+  position: relative;
+  top: -.4rem;
+  display: inline-block;
+  width: .8rem;
+  height: .8rem;
+}
+
 .text-monospace {
-    font-size: .95rem;
+  font-size: .95rem;
 }
 
 input.w-auto,
 select.w-auto,
 textarea.w-auto {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* custom utility classes */
@@ -96,23 +88,23 @@ textarea.w-auto {
 }
 
 .fw-semibold {
-    font-weight: var(--btcpay-font-weight-semibold) !important;
+  font-weight: var(--btcpay-font-weight-semibold) !important;
 }
 
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Chrome, Safari, Edge, Opera */
 input[type=number].hide-number-spin::-webkit-outer-spin-button,
 input[type=number].hide-number-spin::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
 input[type=number].hide-number-spin {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 /* set color for text on background */
