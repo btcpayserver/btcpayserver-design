@@ -1,6 +1,7 @@
 // Disable because it breaks ChromeDriver
 // https://github.com/SeleniumHQ/selenium/issues/8295
 $enable-smooth-scroll: false;
+$enable-reduced-motion: false;
 
 // Bootstrap
 $font-family-sans-serif: var(--btcpay-font-family-base);
