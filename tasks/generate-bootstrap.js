@@ -146,7 +146,7 @@ const patch = css => {
     .replace(/#fff !important;/gi, 'var(--btcpay-white);')
 }
 
-sass.render({ file, outFile }, (error, result) =>
+sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>
   error
     ? console.error(error.formatted)
     : output(result.css.toString('utf8'))
