@@ -40,7 +40,7 @@
     "@uiengine/adapter-html": "3.1.10",
     "@uiengine/core": "3.1.10",
     "autoprefixer": "10.2.5",
-    "bootstrap": "5.0.0",
+    "bootstrap": "5.0.1",
     "csso-cli": "3.0.0",
     "import-fresh": "3.3.0",
     "node-sass": "6.0.0",
