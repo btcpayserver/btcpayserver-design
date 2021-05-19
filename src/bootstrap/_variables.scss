@@ -10,6 +10,23 @@ $font-family-monospace: var(--btcpay-font-family-monospace);
 $font-family-base: var(--btcpay-font-family-base);
 $font-family-code: var(--btcpay-font-family-monospace);
 
+// layout
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+// components
 $list-group-action-color: var(--btcpay-body-text);
 $list-group-action-hover-color: var(--btcpay-body-accent);
 $list-group-hover-bg: var(--btcpay-body-bg-dim);
