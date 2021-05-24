@@ -46,6 +46,32 @@ ul li {
   padding-bottom: .2em;
 }
 
+/* Accordion */
+.accordion-item + .accordion-item {
+  border-top: 1px solid var(--btcpay-body-border-light);
+}
+
+.accordion-button::after {
+  content: none;
+}
+
+.accordion-button svg.icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) svg.icon {
+  transform: rotate(-180deg);
+}
+
+.accordion-body {
+  padding-top: 0;
+}
+
+/* Alert */
 .alert-link,
 .alert-link:focus,
 .alert-link:hover,

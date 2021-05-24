@@ -97,12 +97,19 @@ $list-group-action-active-color: $list-group-active-color;
 $list-group-action-active-bg: $list-group-active-bg;
 
 $accordion-bg: var(--btcpay-body-bg);
+$accordion-border-width: 0;
+$accordion-border-radius: 0;
+$accordion-border-color: transparent;
 $accordion-button-color: var(--btcpay-body-text);
-$accordion-button-bg: var(--btcpay-body-bg);
-$accordion-border-color: var(--btcpay-body-border-medium);
+$accordion-button-bg: transparent;
+$accordion-button-padding-x: 0;
 $accordion-button-focus-border-color: $accordion-border-color;
-$accordion-button-focus-box-shadow: 0 0 0 0.25rem var(--btcpay-body-shadow);
-$accordion-button-active-color: var(--btcpay-body-text-active);
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-color: $accordion-button-color;
+$accordion-button-active-bg: transparent;
+$accordion-body-padding-x: 0;
+$accordion-button-icon: none;
+$accordion-button-active-icon:  none;
 
 $form-label-color: var(--btcpay-form-text-label);
 $form-text-color: var(--btcpay-form-text);
