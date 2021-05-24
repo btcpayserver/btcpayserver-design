@@ -67,6 +67,10 @@ String.prototype.replaceCategoryColors = function (map) {
     .replaceColor(values['dim-link'], `color: ${values['dim-link']}`, `color: inherit`)
     .replaceColor(true, values['shadow'][0].replace('(', '\\(').replace(')', '\\)').replace('.', '\\.'), `var(--btcpay-${category}-shadow)`)
     .replaceColor(true, values['shadow'][1].replace('(', '\\(').replace(')', '\\)').replace('.', '\\.'), `var(--btcpay-${category}-shadow)`)
+    // alert
+    .replaceColor(true, `(\\.alert-${category} \\{[^{]*?)( border-color: (.*?);)`, `$1 border-color: var(--btcpay-${category}-border);`)
+    .replaceColor(true, `(\\.alert-${category} \\{[^{]*?)( background-color: (.*?);)`, `$1 background-color: var(--btcpay-${category});`)
+    .replaceColor(true, `(\\.alert-${category} \\{[^{]*?)( color: (.*?);)`, `$1 color: var(--btcpay-${category}-text);`)
     // button
     .replaceColor(true, `(\\.btn-${category}(\\.disabled)? \\{[^{]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text);`)
     .replaceColor(true, `(\\.btn-${category}.dropdown-toggle \\{[^{]*?) color: (.*?);`, `$1 color: var(--btcpay-${category}-text-active);`)
@@ -144,6 +148,7 @@ const patch = css => {
     .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-black)')
     .replace(/#fff;/gi, 'var(--btcpay-white);')
     .replace(/#fff !important;/gi, 'var(--btcpay-white);')
+    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(13, 110, 253, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-primary-shadow);`)
 }
 
 sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>

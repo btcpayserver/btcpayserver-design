@@ -72,9 +72,6 @@ ul li {
 }
 
 /* Alert */
-.alert-link,
-.alert-link:focus,
-.alert-link:hover,
 .alert code {
   color: inherit;
 }
