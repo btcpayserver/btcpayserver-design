@@ -26,6 +26,8 @@ $container-max-widths: (
   xl: 1140px
 );
 
+$border-radius: 4px;
+
 // components
 $list-group-action-color: var(--btcpay-body-text);
 $list-group-action-hover-color: var(--btcpay-body-accent);
@@ -101,7 +103,6 @@ $accordion-border-color: var(--btcpay-body-border-medium);
 $accordion-button-focus-border-color: $accordion-border-color;
 $accordion-button-focus-box-shadow: 0 0 0 0.25rem var(--btcpay-body-shadow);
 $accordion-button-active-color: var(--btcpay-body-text-active);
-$accordion-button-active-bg: var(--btcpay-body-bg-active);
 
 $form-label-color: var(--btcpay-form-text-label);
 $form-text-color: var(--btcpay-form-text);
@@ -130,6 +131,7 @@ $input-group-addon-bg: var(--btcpay-form-bg-addon);
 $card-color: var(--btcpay-body-text);
 $card-bg: var(--btcpay-bg-tile);
 $card-border-color: var(--btcpay-body-border-medium);
+$card-border-radius: 8px;
 $card-cap-color: var(--btcpay-body-text);
 $card-cap-bg: var(--btcpay-body-bg-light);
 
