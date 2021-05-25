@@ -50,3 +50,9 @@ label + input.btcpay-toggle {
   position: relative;
   top: .45rem;
 }
+
+.btcpay-toggle:disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.5;
+}
