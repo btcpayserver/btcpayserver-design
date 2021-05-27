@@ -2,9 +2,11 @@
  * Replaces the colors in the initial Bootstrap build that needed
  * to be actual color values to work with the modifier functions.
  */
-const { readFileSync, writeFileSync } = require('fs')
+const { writeFileSync } = require('fs')
 const { resolve } = require('path')
 const sass = require('node-sass')
+const postcss = require('postcss')
+const autoprefixer = require('autoprefixer')
 
 const file = resolve(__dirname, '../src/bootstrap/index.scss')
 const outFile = resolve(__dirname, '../src/static/styles/btcpayserver-bootstrap-v5.css')
@@ -154,5 +156,7 @@ const patch = css => {
 sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>
   error
     ? console.error(error.formatted)
-    : output(result.css.toString('utf8'))
+    : postcss([autoprefixer])
+        .process(result.css.toString('utf8'))
+        .then(result => output(result.css))
 )
