@@ -119,6 +119,7 @@ const patch = css => {
     .replaceColor(true, `(\\.form-control::(.*?) \\{[^{]*?)( background-color: #e9ecef;)`, `$1 background-color: var(--btcpay-form-bg-addon);`)
     .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(25, 135, 84, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-valid);`)
     .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(220, 53, 69, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-invalid);`)
+    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(13, 110, 253, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);`)
 
     // border
     .replace(/(border(-.*?)?): 1px solid rgba\(0,\s?0,\s?0,\s?0\.1\d*?\)/gi, '$1: 1px solid var(--btcpay-body-border-light)')
@@ -150,7 +151,6 @@ const patch = css => {
     .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-black)')
     .replace(/#fff;/gi, 'var(--btcpay-white);')
     .replace(/#fff !important;/gi, 'var(--btcpay-white);')
-    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(13, 110, 253, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-primary-shadow);`)
 }
 
 sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>

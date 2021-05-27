@@ -1990,7 +1990,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: var(--btcpay-form-border-focus);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem var(--btcpay-primary-shadow);
+  box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);
 }
 
 .form-select[multiple], .form-select[size]:not([size="1"]) {
@@ -2599,7 +2599,7 @@ textarea.form-control-lg {
 
 .btn-check:focus + .btn, .btn:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem var(--btcpay-primary-shadow);
+  box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);
 }
 
 .btn:disabled, .btn.disabled,
@@ -5013,7 +5013,7 @@ fieldset:disabled .btn {
 
 .btn-close:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.25rem var(--btcpay-primary-shadow);
+  box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);
   opacity: 1;
 }
 
