@@ -32,7 +32,7 @@
   --btcpay-body-shadow: rgba(25, 135, 84, 0.33);
 
   --btcpay-wizard-bg: var(--btcpay-white);
-  --btcpay-wizard-color: var(--btcpay-body-text);
+  --btcpay-wizard-text: var(--btcpay-body-text);
 
   --btcpay-header-bg: var(--btcpay-white);
   --btcpay-header-text: var(--btcpay-body-text);
@@ -278,7 +278,7 @@
   --btcpay-body-text: var(--btcpay-white);
 
   --btcpay-wizard-bg: var(--btcpay-body-bg);
-  --btcpay-wizard-color: var(--btcpay-body-text);
+  --btcpay-wizard-text: var(--btcpay-body-text);
 
   --btcpay-form-text-label: var(--btcpay-neutral-300);
 
