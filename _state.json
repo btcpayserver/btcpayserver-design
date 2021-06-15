@@ -1,0 +1,1810 @@
+{
+  "config": {
+    "name": "BTCPay Server Design System",
+    "version": "0.1.0",
+    "update": 1623754044105,
+    "logo": "/resources/design-files/btcpay-logo.svg",
+    "source": {
+      "components": [
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/src/components",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/src/views"
+      ],
+      "templates": "/home/runner/work/btcpayserver-design/btcpayserver-design/src/templates",
+      "pages": "/home/runner/work/btcpayserver-design/btcpayserver-design/pages",
+      "additionalWatches": [
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/src/design"
+      ],
+      "base": "/home/runner/work/btcpayserver-design/btcpayserver-design",
+      "configFile": "/home/runner/work/btcpayserver-design/btcpayserver-design/uiengine.config.js"
+    },
+    "target": "/home/runner/work/btcpayserver-design/btcpayserver-design/dist",
+    "adapters": {
+      "html": {
+        "module": "@uiengine/adapter-html",
+        "options": {
+          "basedir": "./src/components",
+          "skipScaffold": false
+        }
+      }
+    },
+    "template": "patternlib.html",
+    "themes": [
+      {
+        "id": "light",
+        "title": "Light"
+      },
+      {
+        "id": "dark",
+        "title": "Dark"
+      }
+    ],
+    "ui": {
+      "lang": "en",
+      "customStylesFile": "/styles/patternlib-overrides.css",
+      "repoBaseUrl": "https://github.com/btcpayserver/btcpayserver-design/blob/master/",
+      "viewports": {
+        "Phone": {
+          "width": 320
+        },
+        "Tablet": {
+          "width": 768
+        },
+        "Desktop": {
+          "width": 1280
+        }
+      },
+      "breakpoints": {
+        "XS": 320,
+        "S": 560,
+        "M": 768,
+        "L": 960,
+        "XL": 1280
+      },
+      "base": "/"
+    },
+    "browserSync": {
+      "open": false
+    },
+    "plugins": []
+  },
+  "plugins": {
+    "ui": {
+      "js": [],
+      "css": [],
+      "tabs": [],
+      "actions": [],
+      "iframe_js": []
+    }
+  },
+  "pages": {
+    "index": {
+      "childIds": [
+        "design",
+        "components",
+        "views",
+        "resources",
+        "development"
+      ],
+      "id": "index",
+      "title": "BTCPay Server Design System",
+      "isTitleFromHeading": true,
+      "path": "",
+      "sourcePath": "pages",
+      "sourceFile": "pages/page.config.js",
+      "readmeFile": "pages/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"btcpay-server-design-system\">BTCPay Server Design System</h1>\n<p>Codified design guidelines for the BTCPay Server webpages.</p>\n<h2 id=\"related-resources\">Related resources</h2>\n<ul>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-design/\">Repository on GitHub</a></li>\n<li><a href=\"https://www.figma.com/file/C7Xyq0FlxgFW8vaBr8ht1z/BTCPAY\">Design Specifications on Figma</a></li>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-media\">Media asset for BTCPay Server</a></li>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-doc\">Official Documentation</a></li>\n</ul>"
+    },
+    "components": {
+      "childIds": [],
+      "componentIds": [
+        "header",
+        "theme-switch",
+        "footer"
+      ],
+      "id": "components",
+      "title": "Components",
+      "isTitleFromHeading": true,
+      "path": "components",
+      "sourcePath": "pages/components",
+      "sourceFile": "pages/components/page.config.js",
+      "readmeFile": "pages/components/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"components\">Components</h1>"
+    },
+    "design": {
+      "childIds": [
+        "design/colors",
+        "design/fonts",
+        "design/spaces",
+        "design/variables"
+      ],
+      "id": "design",
+      "title": "Design",
+      "isTitleFromHeading": true,
+      "path": "design",
+      "sourcePath": "pages/design",
+      "sourceFile": "pages/design/page.config.js",
+      "readmeFile": "pages/design/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"design\">Design</h1>"
+    },
+    "development": {
+      "childIds": [],
+      "id": "development",
+      "title": "Development",
+      "isTitleFromHeading": true,
+      "path": "development",
+      "sourcePath": "pages/development",
+      "readmeFile": "pages/development/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"development\">Development</h1>\n<h2 id=\"setup\">Setup</h2>\n<p>Dependencies are managed via npm.\nOnce you have cloned <a href=\"https://github.com/btcpayserver/btcpayserver-design/\">this repo</a>, you can setup the packages:</p>\n<pre class=\"hljs lang-bash\"><code>npm install\n</code></pre>\n<p>Create a build and rebuild on file change:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>This will bring up the dev server and pattern library on <a href=\"http://localhost:3000\">localhost:3000</a>.</p>\n<h2 id=\"how-to-create-a-component%3F\">How to create a component?</h2>\n<p>To generate the basic files of a component you can use the <code>component</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID\n</code></pre>\n<p>This will also generate a default variant named after the component.\nIn case you want to directly add some variants, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID VARIANT_1 VARIANT_2 VARIANT_3\n</code></pre>\n<h2 id=\"how-to-create-a-variant%3F\">How to create a variant?</h2>\n<p>A variant needs at least a file to render.\nYou create a variant by adding a file renderable by one of the configured adapters to the <code>variants</code> directory of a component.</p>\n<p>To render a variant, we also need a layout.\nThe <code>npx uiengine init</code> command created a basic html layout file in <code>src/templates/uiengine.html</code>.\nIt includes the <code>&lt;!-- uiengine:content --&gt;</code> comment, which will be replaced with the HTML of the rendered variant.\nYou can go ahead and extend the layout to fit your needs and include the correct HTML and style and script references.</p>\n<p>This layout file is just there to get you started.\nFeel free to change its content and use an other adapter to fit your projects needs.</p>\n<h2 id=\"how-to-create-a-page%3F\">How to create a page?</h2>\n<p>To generate the basic files and folders of a page you can use the <code>page</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_ID\n</code></pre>\n<p>This generate a <code>README.md</code> and a <code>page.config.js</code> file inside the folder matching the page id in you pages source directory.\nIn case you want to directly add some pages, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_1_ID PAGE_2_ID PAGE_3_ID\n</code></pre>\n<p>Say you would like to create pages for grouping your components with the <a href=\"http://atomicdesign.bradfrost.com/chapter-2/\">Atomic Design Methodology</a>:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page atoms molecules organisms templates pages\n</code></pre>\n<h2 id=\"how-to-generate-the-project%3F\">How to generate the project?</h2>\n<p>The site can be generated with the following command:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>It rebuilds files on change and spawns a server for the generated site.</p>\n<p>Under the hood <a href=\"https://www.browsersync.io/\">BrowserSync</a> is used to provide serving and watching the files.\nFor information on how to configure the server and pass additional options, see the <a href=\"https://uiengine.uix.space/basics/config/#BrowserSync\">configuration documentation</a>.</p>"
+    },
+    "resources": {
+      "childIds": [
+        "resources/css",
+        "resources/favicon",
+        "resources/design-files"
+      ],
+      "id": "resources",
+      "title": "Resources",
+      "isTitleFromHeading": false,
+      "path": "resources",
+      "sourcePath": "pages/resources",
+      "sourceFile": "pages/resources/page.config.js",
+      "type": "documentation"
+    },
+    "views": {
+      "childIds": [],
+      "componentIds": [
+        "kitchensink",
+        "bootstrap-v4",
+        "bootstrap-v5"
+      ],
+      "id": "views",
+      "title": "Views",
+      "isTitleFromHeading": true,
+      "path": "views",
+      "sourcePath": "pages/views",
+      "sourceFile": "pages/views/page.config.js",
+      "readmeFile": "pages/views/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"views\">Views</h1>"
+    },
+    "design/colors": {
+      "childIds": [],
+      "tokens": [
+        {
+          "type": "category",
+          "name": "Brand",
+          "tokens": [
+            {
+              "category": "Brand",
+              "name": "Brand Primary",
+              "value": "#51b13e",
+              "variable": "--btcpay-brand-primary",
+              "type": "color"
+            },
+            {
+              "category": "Brand",
+              "name": "Brand Secondary",
+              "value": "#CEDC21",
+              "variable": "--btcpay-brand-secondary",
+              "type": "color"
+            },
+            {
+              "category": "Brand",
+              "name": "Brand Tertiary",
+              "value": "#1e7a44",
+              "variable": "--btcpay-brand-tertiary",
+              "type": "color"
+            },
+            {
+              "category": "Brand",
+              "name": "Brand Dark",
+              "value": "#0F3B21",
+              "variable": "--btcpay-brand-dark",
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Primitives",
+          "tokens": [
+            {
+              "category": "Primitives",
+              "name": "White",
+              "value": "#ffffff",
+              "variable": "--btcpay-white",
+              "type": "color"
+            },
+            {
+              "category": "Primitives",
+              "name": "Black",
+              "value": "#000000",
+              "variable": "--btcpay-black",
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Neutral Light",
+          "tokens": [
+            {
+              "value": "#f8f9fa",
+              "category": "Neutral Light",
+              "name": "Neutral Light 100",
+              "variable": "--btcpay-neutral-light-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#e9ecef",
+              "category": "Neutral Light",
+              "name": "Neutral Light 200",
+              "variable": "--btcpay-neutral-light-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#dee2e6",
+              "category": "Neutral Light",
+              "name": "Neutral Light 300",
+              "variable": "--btcpay-neutral-light-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#ced4da",
+              "category": "Neutral Light",
+              "name": "Neutral Light 400",
+              "variable": "--btcpay-neutral-light-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#8f979e",
+              "category": "Neutral Light",
+              "name": "Neutral Light 500",
+              "variable": "--btcpay-neutral-light-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#6c757d",
+              "category": "Neutral Light",
+              "name": "Neutral Light 600",
+              "variable": "--btcpay-neutral-light-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#495057",
+              "category": "Neutral Light",
+              "name": "Neutral Light 700",
+              "variable": "--btcpay-neutral-light-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#343a40",
+              "category": "Neutral Light",
+              "name": "Neutral Light 800",
+              "variable": "--btcpay-neutral-light-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#292929",
+              "category": "Neutral Light",
+              "name": "Neutral Light 900",
+              "variable": "--btcpay-neutral-light-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Neutral Dark",
+          "tokens": [
+            {
+              "value": "#F0F6FC",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 100",
+              "variable": "--btcpay-neutral-dark-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#C9D1D9",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 200",
+              "variable": "--btcpay-neutral-dark-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#B1BAC4",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 300",
+              "variable": "--btcpay-neutral-dark-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#8B949E",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 400",
+              "variable": "--btcpay-neutral-dark-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#6E7681",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 500",
+              "variable": "--btcpay-neutral-dark-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#484F58",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 600",
+              "variable": "--btcpay-neutral-dark-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#30363D",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 700",
+              "variable": "--btcpay-neutral-dark-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#21262D",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 800",
+              "variable": "--btcpay-neutral-dark-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#161B22",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 900",
+              "variable": "--btcpay-neutral-dark-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Primary",
+          "tokens": [
+            {
+              "value": "#c7e6c1",
+              "category": "Primary",
+              "name": "Primary 100",
+              "variable": "--btcpay-primary-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#b5dead",
+              "category": "Primary",
+              "name": "Primary 200",
+              "variable": "--btcpay-primary-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#9dd392",
+              "category": "Primary",
+              "name": "Primary 300",
+              "variable": "--btcpay-primary-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#7cc46e",
+              "category": "Primary",
+              "name": "Primary 400",
+              "variable": "--btcpay-primary-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#44a431",
+              "category": "Primary",
+              "name": "Primary 500",
+              "variable": "--btcpay-primary-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#389725",
+              "category": "Primary",
+              "name": "Primary 600",
+              "variable": "--btcpay-primary-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#2e8a1b",
+              "category": "Primary",
+              "name": "Primary 700",
+              "variable": "--btcpay-primary-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#247d12",
+              "category": "Primary",
+              "name": "Primary 800",
+              "variable": "--btcpay-primary-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#1c710b",
+              "category": "Primary",
+              "name": "Primary 900",
+              "variable": "--btcpay-primary-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Green",
+          "tokens": [
+            {
+              "value": "#EEFAEB",
+              "category": "Green",
+              "name": "Green 100",
+              "variable": "--btcpay-green-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#C7E8C0",
+              "category": "Green",
+              "name": "Green 200",
+              "variable": "--btcpay-green-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#A0D695",
+              "category": "Green",
+              "name": "Green 300",
+              "variable": "--btcpay-green-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#78C369",
+              "category": "Green",
+              "name": "Green 400",
+              "variable": "--btcpay-green-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#51B13E",
+              "category": "Green",
+              "name": "Green 500",
+              "variable": "--btcpay-green-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#419437",
+              "category": "Green",
+              "name": "Green 600",
+              "variable": "--btcpay-green-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#307630",
+              "category": "Green",
+              "name": "Green 700",
+              "variable": "--btcpay-green-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#205928",
+              "category": "Green",
+              "name": "Green 800",
+              "variable": "--btcpay-green-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#0F3B21",
+              "category": "Green",
+              "name": "Green 900",
+              "variable": "--btcpay-green-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Blue",
+          "tokens": [
+            {
+              "value": "#b5e1e8",
+              "category": "Blue",
+              "name": "Blue 100",
+              "variable": "--btcpay-blue-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#9dd7e1",
+              "category": "Blue",
+              "name": "Blue 200",
+              "variable": "--btcpay-blue-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#7ccad7",
+              "category": "Blue",
+              "name": "Blue 300",
+              "variable": "--btcpay-blue-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#51b9c9",
+              "category": "Blue",
+              "name": "Blue 400",
+              "variable": "--btcpay-blue-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#17a2b8",
+              "category": "Blue",
+              "name": "Blue 500",
+              "variable": "--btcpay-blue-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#03899e",
+              "category": "Blue",
+              "name": "Blue 600",
+              "variable": "--btcpay-blue-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#007d91",
+              "category": "Blue",
+              "name": "Blue 700",
+              "variable": "--btcpay-blue-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#007284",
+              "category": "Blue",
+              "name": "Blue 800",
+              "variable": "--btcpay-blue-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#006778",
+              "category": "Blue",
+              "name": "Blue 900",
+              "variable": "--btcpay-blue-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Yellow",
+          "tokens": [
+            {
+              "value": "#FFFAF0",
+              "category": "Yellow",
+              "name": "Yellow 100",
+              "variable": "--btcpay-yellow-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FFF2D9",
+              "category": "Yellow",
+              "name": "Yellow 200",
+              "variable": "--btcpay-yellow-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FFE3AC",
+              "category": "Yellow",
+              "name": "Yellow 300",
+              "variable": "--btcpay-yellow-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FFCF70",
+              "category": "Yellow",
+              "name": "Yellow 400",
+              "variable": "--btcpay-yellow-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FFC043",
+              "category": "Yellow",
+              "name": "Yellow 500",
+              "variable": "--btcpay-yellow-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#BC8B2C",
+              "category": "Yellow",
+              "name": "Yellow 600",
+              "variable": "--btcpay-yellow-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#997328",
+              "category": "Yellow",
+              "name": "Yellow 700",
+              "variable": "--btcpay-yellow-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#674D1B",
+              "category": "Yellow",
+              "name": "Yellow 800",
+              "variable": "--btcpay-yellow-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#543D10",
+              "category": "Yellow",
+              "name": "Yellow 900",
+              "variable": "--btcpay-yellow-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Red",
+          "tokens": [
+            {
+              "value": "#FFEFED",
+              "category": "Red",
+              "name": "Red 100",
+              "variable": "--btcpay-red-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FED7D2",
+              "category": "Red",
+              "name": "Red 200",
+              "variable": "--btcpay-red-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#F1998E",
+              "category": "Red",
+              "name": "Red 300",
+              "variable": "--btcpay-red-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#E85C4A",
+              "category": "Red",
+              "name": "Red 400",
+              "variable": "--btcpay-red-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#E11900",
+              "category": "Red",
+              "name": "Red 500",
+              "variable": "--btcpay-red-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#AB1300",
+              "category": "Red",
+              "name": "Red 600",
+              "variable": "--btcpay-red-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#870F00",
+              "category": "Red",
+              "name": "Red 700",
+              "variable": "--btcpay-red-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#5A0A00",
+              "category": "Red",
+              "name": "Red 800",
+              "variable": "--btcpay-red-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#420105",
+              "category": "Red",
+              "name": "Red 900",
+              "variable": "--btcpay-red-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Purple",
+          "tokens": [
+            {
+              "value": "#F4F1FA",
+              "category": "Purple",
+              "name": "Purple 100",
+              "variable": "--btcpay-purple-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#E3DDF2",
+              "category": "Purple",
+              "name": "Purple 200",
+              "variable": "--btcpay-purple-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#C1B5E3",
+              "category": "Purple",
+              "name": "Purple 300",
+              "variable": "--btcpay-purple-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#957FCE",
+              "category": "Purple",
+              "name": "Purple 400",
+              "variable": "--btcpay-purple-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#7356BF",
+              "category": "Purple",
+              "name": "Purple 500",
+              "variable": "--btcpay-purple-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#574191",
+              "category": "Purple",
+              "name": "Purple 600",
+              "variable": "--btcpay-purple-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#453473",
+              "category": "Purple",
+              "name": "Purple 700",
+              "variable": "--btcpay-purple-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#2E224C",
+              "category": "Purple",
+              "name": "Purple 800",
+              "variable": "--btcpay-purple-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#1A1033",
+              "category": "Purple",
+              "name": "Purple 900",
+              "variable": "--btcpay-purple-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Orange",
+          "tokens": [
+            {
+              "value": "#FFF3EF",
+              "category": "Orange",
+              "name": "Orange 100",
+              "variable": "--btcpay-orange-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FFE1D6",
+              "category": "Orange",
+              "name": "Orange 200",
+              "variable": "--btcpay-orange-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FABDA5",
+              "category": "Orange",
+              "name": "Orange 300",
+              "variable": "--btcpay-orange-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FA9269",
+              "category": "Orange",
+              "name": "Orange 400",
+              "variable": "--btcpay-orange-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FF6937",
+              "category": "Orange",
+              "name": "Orange 500",
+              "variable": "--btcpay-orange-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#C14F29",
+              "category": "Orange",
+              "name": "Orange 600",
+              "variable": "--btcpay-orange-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#9A3F21",
+              "category": "Orange",
+              "name": "Orange 700",
+              "variable": "--btcpay-orange-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#672A16",
+              "category": "Orange",
+              "name": "Orange 800",
+              "variable": "--btcpay-orange-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#3D1300",
+              "category": "Orange",
+              "name": "Orange 900",
+              "variable": "--btcpay-orange-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Brown",
+          "tokens": [
+            {
+              "value": "#F6F0EA",
+              "category": "Brown",
+              "name": "Brown 100",
+              "variable": "--btcpay-brown-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#EBE0DB",
+              "category": "Brown",
+              "name": "Brown 200",
+              "variable": "--btcpay-brown-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#D2BBB0",
+              "category": "Brown",
+              "name": "Brown 300",
+              "variable": "--btcpay-brown-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#B18977",
+              "category": "Brown",
+              "name": "Brown 400",
+              "variable": "--btcpay-brown-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#99644C",
+              "category": "Brown",
+              "name": "Brown 500",
+              "variable": "--btcpay-brown-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#744C3A",
+              "category": "Brown",
+              "name": "Brown 600",
+              "variable": "--btcpay-brown-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#5C3C2E",
+              "category": "Brown",
+              "name": "Brown 700",
+              "variable": "--btcpay-brown-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#3D281E",
+              "category": "Brown",
+              "name": "Brown 800",
+              "variable": "--btcpay-brown-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#241914",
+              "category": "Brown",
+              "name": "Brown 900",
+              "variable": "--btcpay-brown-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Pink",
+          "tokens": [
+            {
+              "value": "#FFEDF9",
+              "category": "Pink",
+              "name": "Pink 100",
+              "variable": "--btcpay-pink-100",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FFCEE5",
+              "category": "Pink",
+              "name": "Pink 200",
+              "variable": "--btcpay-pink-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FFACD6",
+              "category": "Pink",
+              "name": "Pink 300",
+              "variable": "--btcpay-pink-300",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#FE82C2",
+              "category": "Pink",
+              "name": "Pink 400",
+              "variable": "--btcpay-pink-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#F162AF",
+              "category": "Pink",
+              "name": "Pink 500",
+              "variable": "--btcpay-pink-500",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#BB4183",
+              "category": "Pink",
+              "name": "Pink 600",
+              "variable": "--btcpay-pink-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#7D2457",
+              "category": "Pink",
+              "name": "Pink 700",
+              "variable": "--btcpay-pink-700",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#5E103E",
+              "category": "Pink",
+              "name": "Pink 800",
+              "variable": "--btcpay-pink-800",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "#4A042E",
+              "category": "Pink",
+              "name": "Pink 900",
+              "variable": "--btcpay-pink-900",
+              "reference": null,
+              "type": "color"
+            }
+          ]
+        }
+      ],
+      "id": "design/colors",
+      "title": "Colors",
+      "isTitleFromHeading": true,
+      "path": "design/colors",
+      "sourcePath": "pages/design/colors",
+      "sourceFile": "pages/design/colors/page.config.js",
+      "readmeFile": "pages/design/colors/README.md",
+      "type": "tokens",
+      "content": "<h1 id=\"colors\">Colors</h1>"
+    },
+    "design/fonts": {
+      "childIds": [],
+      "tokens": [
+        {
+          "type": "category",
+          "name": "Font sizes",
+          "tokens": [
+            {
+              "name": "XS",
+              "value": "10px",
+              "variable": "--btcpay-font-size-xs"
+            },
+            {
+              "name": "S",
+              "value": "12px",
+              "variable": "--btcpay-font-size-s"
+            },
+            {
+              "name": "M",
+              "value": "14px",
+              "variable": "--btcpay-font-size-m"
+            },
+            {
+              "name": "L",
+              "value": "18px",
+              "variable": "--btcpay-font-size-l"
+            },
+            {
+              "name": "XL",
+              "value": "36px",
+              "variable": "--btcpay-font-size-xl"
+            },
+            {
+              "name": "XXL",
+              "value": "45px",
+              "variable": "--btcpay-font-size-xxl"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Font weights",
+          "tokens": [
+            {
+              "name": "Regular",
+              "value": 400,
+              "variable": "--btcpay-font-weight-normal"
+            },
+            {
+              "name": "Semibold",
+              "value": 600,
+              "variable": "--btcpay-font-weight-semibold"
+            },
+            {
+              "name": "Bold",
+              "value": 700,
+              "variable": "--btcpay-font-weight-bold"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Font families",
+          "tokens": [
+            {
+              "type": "category",
+              "name": "Base",
+              "tokens": [
+                {
+                  "type": "font",
+                  "fontweight": "Regular / 400",
+                  "description": "\"Open Sans\", \"Helvetica Neue\", Arial, sans-serif",
+                  "value": "font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif; font-weight: 400; ",
+                  "variable": "--btcpay-font-family-base",
+                  "sizes": [
+                    "10px",
+                    "12px",
+                    "14px",
+                    "18px",
+                    "36px",
+                    "45px"
+                  ],
+                  "text": "Chancellor on Brink of Second Bailout for Banks"
+                },
+                {
+                  "type": "font",
+                  "fontweight": "Semibold / 600",
+                  "description": "\"Open Sans\", \"Helvetica Neue\", Arial, sans-serif",
+                  "value": "font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif; font-weight: 600; ",
+                  "variable": "--btcpay-font-family-base",
+                  "sizes": [
+                    "10px",
+                    "12px",
+                    "14px",
+                    "18px",
+                    "36px",
+                    "45px"
+                  ],
+                  "text": "Chancellor on Brink of Second Bailout for Banks"
+                },
+                {
+                  "type": "font",
+                  "fontweight": "Bold / 700",
+                  "description": "\"Open Sans\", \"Helvetica Neue\", Arial, sans-serif",
+                  "value": "font-family: \"Open Sans\", \"Helvetica Neue\", Arial, sans-serif; font-weight: 700; ",
+                  "variable": "--btcpay-font-family-base",
+                  "sizes": [
+                    "10px",
+                    "12px",
+                    "14px",
+                    "18px",
+                    "36px",
+                    "45px"
+                  ],
+                  "text": "Chancellor on Brink of Second Bailout for Banks"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "name": "Monospace",
+              "tokens": [
+                {
+                  "type": "font",
+                  "fontweight": "Regular / 400",
+                  "description": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+                  "value": "font-family: SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; font-weight: 400; ",
+                  "variable": "--btcpay-font-family-monospace",
+                  "sizes": [
+                    "10px",
+                    "12px",
+                    "14px",
+                    "18px",
+                    "36px",
+                    "45px"
+                  ],
+                  "text": "Chancellor on Brink of Second Bailout for Banks"
+                },
+                {
+                  "type": "font",
+                  "fontweight": "Semibold / 600",
+                  "description": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+                  "value": "font-family: SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; font-weight: 600; ",
+                  "variable": "--btcpay-font-family-monospace",
+                  "sizes": [
+                    "10px",
+                    "12px",
+                    "14px",
+                    "18px",
+                    "36px",
+                    "45px"
+                  ],
+                  "text": "Chancellor on Brink of Second Bailout for Banks"
+                },
+                {
+                  "type": "font",
+                  "fontweight": "Bold / 700",
+                  "description": "SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+                  "value": "font-family: SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace; font-weight: 700; ",
+                  "variable": "--btcpay-font-family-monospace",
+                  "sizes": [
+                    "10px",
+                    "12px",
+                    "14px",
+                    "18px",
+                    "36px",
+                    "45px"
+                  ],
+                  "text": "Chancellor on Brink of Second Bailout for Banks"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "id": "design/fonts",
+      "title": "Fonts",
+      "isTitleFromHeading": true,
+      "path": "design/fonts",
+      "sourcePath": "pages/design/fonts",
+      "sourceFile": "pages/design/fonts/page.config.js",
+      "readmeFile": "pages/design/fonts/README.md",
+      "type": "tokens",
+      "content": "<h1 id=\"fonts\">Fonts</h1>\n<p>The different fonts can be use via the combination of the CSS properties <code>font-family</code> and <code>font-weight</code>.</p>"
+    },
+    "design/spaces": {
+      "childIds": [],
+      "tokens": [
+        {
+          "type": "size",
+          "name": "XS",
+          "value": "5px",
+          "variable": "--btcpay-space-xs"
+        },
+        {
+          "type": "size",
+          "name": "S",
+          "value": "10px",
+          "variable": "--btcpay-space-s"
+        },
+        {
+          "type": "size",
+          "name": "M",
+          "value": "20px",
+          "variable": "--btcpay-space-m"
+        },
+        {
+          "type": "size",
+          "name": "L",
+          "value": "40px",
+          "variable": "--btcpay-space-l"
+        },
+        {
+          "type": "size",
+          "name": "XL",
+          "value": "60px",
+          "variable": "--btcpay-space-xl"
+        },
+        {
+          "type": "size",
+          "name": "XXL",
+          "value": "80px",
+          "variable": "--btcpay-space-xxl"
+        }
+      ],
+      "id": "design/spaces",
+      "title": "Spaces",
+      "isTitleFromHeading": true,
+      "path": "design/spaces",
+      "sourcePath": "pages/design/spaces",
+      "sourceFile": "pages/design/spaces/page.config.js",
+      "readmeFile": "pages/design/spaces/README.md",
+      "type": "tokens",
+      "content": "<h1 id=\"spaces\">Spaces</h1>\n<p>The spacings should be used via the CSS custom properties:</p>\n<pre class=\"hljs lang-css\"><code><span class=\"hljs-selector-class\">.my-component</span> {\n  <span class=\"hljs-attribute\">margin-left</span>: <span class=\"hljs-built_in\">var</span>(--btcpay-space-m);\n}\n</code></pre>\n<p>In addition to that there are also utility classes like <code>btcpay-space-x</code>, which apply the space as <code>margin-bottom</code>:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;btcpay-space-x&quot;</span>&gt;</span>…<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n</code></pre>"
+    },
+    "design/variables": {
+      "childIds": [],
+      "tokens": [
+        {
+          "type": "category",
+          "name": "Borders",
+          "tokens": [
+            {
+              "category": "Borders",
+              "name": "Border Radius",
+              "value": "4px",
+              "variable": "--btcpay-border-radius",
+              "type": "border-radius"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "Transition",
+          "tokens": [
+            {
+              "category": "Transition",
+              "name": "Transition fast",
+              "value": ".2s",
+              "variable": "--btcpay-transition-duration-fast"
+            },
+            {
+              "category": "Transition",
+              "name": "Transition default",
+              "value": ".3s",
+              "variable": "--btcpay-transition-duration-default"
+            },
+            {
+              "category": "Transition",
+              "name": "Transition slow",
+              "value": ".5s",
+              "variable": "--btcpay-transition-duration-slow"
+            }
+          ]
+        }
+      ],
+      "id": "design/variables",
+      "title": "Variables",
+      "isTitleFromHeading": true,
+      "path": "design/variables",
+      "sourcePath": "pages/design/variables",
+      "sourceFile": "pages/design/variables/page.config.js",
+      "readmeFile": "pages/design/variables/README.md",
+      "type": "tokens",
+      "content": "<h1 id=\"variables\">Variables</h1>"
+    },
+    "resources/css": {
+      "childIds": [],
+      "id": "resources/css",
+      "title": "CSS",
+      "isTitleFromHeading": true,
+      "path": "resources/css",
+      "sourcePath": "pages/resources/css",
+      "readmeFile": "pages/resources/css/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"css\">CSS</h1>\n<p>To keep the different apps and websites consistent, we offer these stylesheets you should use to build upon.</p>\n<p>You can download the CSS files using the references below and copy them to the styles folder of your project.</p>\n<p>Then use this HTML snippet inside the <code>&lt;head&gt;</code> section to integrate the stylesheets you want to use:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-variables.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-bootstrap.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-main.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n</code></pre>\n<h2 id=\"variables\">Variables</h2>\n<p>The codified version of what you find in the design section:\nThis stylesheet does not do anything on its own, but gives you access to the design variables via <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties\">CSS Custom Properties</a>.</p>\n<p>This file should be the first to include, as every other of the following resources uses the variables it defines.</p>\n<p>📦 <a href=\"/styles/btcpayserver-variables.css\">btcpayserver-variables.css</a></p>\n<h2 id=\"main-styles\">Main styles</h2>\n<p>The most basic set of CSS styles we can share across the different websites.\nThey include the font references and setting for the light/dark color themes.</p>\n<p>The general approach regarding the themes is:</p>\n<ul>\n<li>Light mode is the default</li>\n<li>If the browser supports the <a href=\"https://web.dev/prefers-color-scheme/\">prefers-color-scheme media query</a>, we use the users preference</li>\n<li>Support an <a href=\"/components/theme-switch/\">explicit setting</a> saved in the browsers <code>localStorage</code>, that the user can change via a switch</li>\n</ul>\n<p>📦 <a href=\"/styles/btcpayserver-main.css\">btcpayserver-main.css</a></p>\n<h2 id=\"bootstrap\">Bootstrap</h2>\n<p>This is our forked version of <a href=\"https://getbootstrap.com/\">Bootstrap</a>.\nIncluding this is optional and only required if you want to build upon what Bootstrap offers.</p>\n<p>📦 <a href=\"/styles/btcpayserver-bootstrap-v4.css\">btcpayserver-bootstrap-v4.css</a>\n📦 <a href=\"/styles/btcpayserver-bootstrap-v5.css\">btcpayserver-bootstrap-v5.css</a></p>\n<h3 id=\"why-do-we-use-a-fork%3F\">Why do we use a fork?</h3>\n<p>Bootstrap unfortunately doesn’t support CSS Custom Properties (<a href=\"https://github.com/twbs/bootstrap/commit/ac58c25dc8b65928ac817b8a2bf7c0e46a58de97\">yet</a>), but that is what we need for out themeing approach.\nSo the idea was to maintain this fork at a central place and use it as our custom version.</p>\n<p>This way we have to manually update it, but as there aren’t too many updates and we don’t have to do this every week or so.\nAlso we can just merge stuff in when we need new features or fixes.\nThis isn’t ideal, but will hopefully change with Bootstrap 5.</p>"
+    },
+    "resources/design-files": {
+      "childIds": [],
+      "id": "resources/design-files",
+      "title": "Design files",
+      "isTitleFromHeading": true,
+      "path": "resources/design-files",
+      "sourcePath": "pages/resources/design-files",
+      "readmeFile": "pages/resources/design-files/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"design-files\">Design files</h1>\n<h2 id=\"color-palette\">Color Palette</h2>\n<p>You can <a href=\"./btcpay.gpl\">download the color palette for GIMP/Inkscape</a>.</p>\n<h2 id=\"logo\">Logo</h2>\n<p>You can <a href=\"./btcpay-logo.ai\">download the logo for Adobe Illustrator</a>.</p>\n<table>\n<thead>\n<tr>\n<th>Image</th>\n<th>Downloads</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img src=\"./btcpay-logo.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo.svg\">SVG</a> | <a href=\"./btcpay-logo.png\">PNG</a></td>\n</tr>\n<tr>\n<td><img src=\"./btcpay-logo-black-txt.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo-black-txt.svg\">SVG</a> | <a href=\"./btcpay-logo-black-txt.png\">PNG</a></td>\n</tr>\n<tr>\n<td><img src=\"./btcpay-logo-white-txt.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo-white-txt.svg\">SVG</a> | <a href=\"./btcpay-logo-white-txt.png\">PNG</a></td>\n</tr>\n</tbody>\n</table>\n<style>\n  table img { height: 4em !important; margin: .2em 1em !important; display: block !important; }\n  table td { vertical-align: middle !important; }\n  table td:first-child { background: var(--uie-color-bg-medium) !important; }\n</style>\n<h2 id=\"further-resources\">Further resources</h2>\n<p>Also see the <a href=\"https://github.com/btcpayserver/btcpayserver-media\">media asset repository for BTCPay Server</a>.</p>",
+      "files": [
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-icon.png",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-logo-black-txt.png",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-logo-black-txt.svg",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-logo-white-txt.png",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-logo-white-txt.svg",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-logo.ai",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-logo.png",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-logo.svg",
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay.gpl"
+      ]
+    },
+    "resources/favicon": {
+      "childIds": [],
+      "id": "resources/favicon",
+      "title": "Favicon",
+      "isTitleFromHeading": true,
+      "path": "resources/favicon",
+      "sourcePath": "pages/resources/favicon",
+      "readmeFile": "pages/resources/favicon/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"favicon\">Favicon</h1>\n<p>You can <a href=\"./favicon.zip\">download the favicon files</a> and copy them to the root folder of your project.</p>\n<p>Then use this HTML snippet inside the <code>&lt;head&gt;</code> section to integrate the favicon:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;apple-touch-icon&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;180x180&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/apple-touch-icon.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;icon&quot;</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">&quot;image/png&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;32x32&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/favicon-32x32.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;icon&quot;</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">&quot;image/png&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;16x16&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/favicon-16x16.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;manifest&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/site.webmanifest&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;mask-icon&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/safari-pinned-tab.svg&quot;</span> <span class=\"hljs-attr\">color</span>=<span class=\"hljs-string\">&quot;#51b13e&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">meta</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">&quot;msapplication-TileColor&quot;</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">&quot;#0f3b21&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">meta</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">&quot;theme-color&quot;</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">&quot;#ffffff&quot;</span>&gt;</span>\n</code></pre>",
+      "files": [
+        "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/favicon/favicon.zip"
+      ]
+    }
+  },
+  "components": {
+    "footer": {
+      "id": "footer",
+      "title": "Footer",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"footer\">Footer</h1>",
+      "variants": [
+        {
+          "file": "footer.html",
+          "id": "footer/footer.html-1",
+          "componentId": "footer",
+          "title": "Footer",
+          "extension": "html",
+          "raw": "<div class=\"btcpay-footer\">\n  <div class=\"btcpay-footer-columns\">\n    <div>\n      <h6>Software</h6>\n      <ul>\n        <li><a href=\"https://docs.btcpayserver.org/\">Introduction</a></li>\n        <li><a href=\"https://docs.btcpayserver.org/btcpay-basics/usecase\">Use Case</a></li>\n        <li><a href=\"https://docs.btcpayserver.org/features/apps\">Apps</a></li>\n        <li><a href=\"https://docs.btcpayserver.org/deployment/deployment\">Deployment</a></li>\n        <li><a href=\"https://docs.btcpayserver.org/btcpay-basics/gettingstarted\">Getting Started</a></li>\n      </ul>\n    </div>\n    <div>\n      <h6>Resources</h6>\n      <ul>\n        <li><a href=\"https://docs.btcpayserver.org/\">Documentation</a></li>\n        <li><a href=\"https://docs.btcpayserver.org/development\">Development</a></li>\n        <li><a href=\"https://github.com/btcpayserver/\">GitHub</a></li>\n        <li><a href=\"https://docs.btcpayserver.org/support-and-community/support\">Support</a></li>\n        <li><a href=\"https://docs.btcpayserver.org/faq-and-common-issues/faq\">FAQ</a></li>\n      </ul>\n    </div>\n    <div>\n      <h6>Community</h6>\n      <ul>\n        <li><a href=\"https://blog.btcpayserver.org\">Blog</a></li>\n        <li><a href=\"https://chat.btcpayserver.org\">Chat</a></li>\n        <li><a href=\"https://directory.btcpayserver.org\">Directory</a></li>\n        <li><a href=\"https://docs.btcpayserver.org/support-and-community/contribute\">Contribute</a></li>\n        <li><a href=\"https://btcpayserver.org/donate/\">Donate</a></li>\n      </ul>\n    </div>\n  </div>\n  <p>\n    Content Released under MIT license.\n    <br>\n    This website does not use cookies nor collect personal data.\n  </p>\n</div>"
+        }
+      ],
+      "sourcePath": "src/components/footer",
+      "sourceFile": "src/components/footer/component.config.js",
+      "readmeFile": "src/components/footer/README.md",
+      "type": "component"
+    },
+    "header": {
+      "id": "header",
+      "title": "Header",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"header\">Header</h1>",
+      "variants": [
+        {
+          "file": "header.html",
+          "id": "header/header.html-1",
+          "componentId": "header",
+          "title": "Header",
+          "extension": "html",
+          "raw": "<div class=\"btcpay-header\">\n  <div class=\"btcpay-header-columns\">\n    <a href=\"#\">\n      <img src=\"/svg/logo.svg\" class=\"btcpay-header-logo\" alt=\"\" />\n    </a>\n    <!--#include file=\"/theme-switch/variants/theme-switch.html\" -->\n  </div>\n</div>"
+        }
+      ],
+      "sourcePath": "src/components/header",
+      "sourceFile": "src/components/header/component.config.js",
+      "readmeFile": "src/components/header/README.md",
+      "type": "component"
+    },
+    "responsive-helper": {
+      "id": "responsive-helper",
+      "title": "Responsive Helper",
+      "isTitleFromHeading": false,
+      "variants": [],
+      "sourcePath": "src/components/responsive-helper",
+      "type": "component"
+    },
+    "status": {
+      "id": "status",
+      "title": "Status",
+      "isTitleFromHeading": false,
+      "variants": [],
+      "sourcePath": "src/components/status",
+      "type": "component"
+    },
+    "theme-switch": {
+      "id": "theme-switch",
+      "title": "Theme Switch",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"theme-switch\">Theme Switch</h1>\n<p>Use the Theme Switch in the header to offer the user the ability to set the color mode explicitely.</p>\n<p>See the <a href=\"/scripts/theme-switch.js\">theme-switch.js</a> for a vanilla JavaScript implementation.</p>",
+      "variants": [
+        {
+          "file": "theme-switch.html",
+          "id": "theme-switch/theme-switch.html-1",
+          "componentId": "theme-switch",
+          "title": "Theme Switch",
+          "extension": "html",
+          "raw": "<button class=\"btcpay-theme-switch\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\">\n    <path class=\"btcpay-theme-switch-dark\" transform=\"translate(1 1)\" d=\"M2.72 0A3.988 3.988 0 000 3.78c0 2.21 1.79 4 4 4 1.76 0 3.25-1.14 3.78-2.72-.4.13-.83.22-1.28.22-2.21 0-4-1.79-4-4 0-.45.08-.88.22-1.28z\"/>\n    <path class=\"btcpay-theme-switch-light\" transform=\"translate(1 1)\" d=\"M4 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5S4.28 0 4 0zM1.5 1c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm5 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM4 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM.5 3.5c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm7 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM1.5 6c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zm5 0c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5-.22-.5-.5-.5zM4 7c-.28 0-.5.22-.5.5s.22.5.5.5.5-.22.5-.5S4.28 7 4 7z\"/>\n  </svg>\n</button>\n<script src=\"/scripts/theme-switch.js\"></script>\n<noscript><style>.btcpay-theme-switch { display: none; }</style></noscript>"
+        }
+      ],
+      "sourcePath": "src/components/theme-switch",
+      "sourceFile": "src/components/theme-switch/component.config.js",
+      "readmeFile": "src/components/theme-switch/README.md",
+      "type": "component"
+    },
+    "toggle": {
+      "id": "toggle",
+      "title": "Toggle",
+      "isTitleFromHeading": false,
+      "variants": [],
+      "sourcePath": "src/components/toggle",
+      "type": "component"
+    },
+    "bootstrap-v4": {
+      "id": "bootstrap-v4",
+      "title": "Bootstrap v4",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"bootstrap-v4\">Bootstrap v4</h1>\n<p>This is a <a href=\"https://getbootstrap.com/docs/\">Bootstrap</a> kitchensink page that showcases everything and all together.\nIt is intended to be used as a quick overview/reference and to check the themes.</p>",
+      "variants": [
+        {
+          "file": "v4.html",
+          "template": "bootstrap-v4.html",
+          "id": "bootstrap-v4/v4.html-1",
+          "componentId": "bootstrap-v4",
+          "title": "V4",
+          "extension": "html",
+          "raw": ""
+        }
+      ],
+      "sourcePath": "src/views/bootstrap-v4",
+      "sourceFile": "src/views/bootstrap-v4/component.config.js",
+      "readmeFile": "src/views/bootstrap-v4/README.md",
+      "type": "component"
+    },
+    "bootstrap-v5": {
+      "id": "bootstrap-v5",
+      "title": "Bootstrap v5",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"bootstrap-v5\">Bootstrap v5</h1>\n<p>This is a <a href=\"https://getbootstrap.com/docs/\">Bootstrap</a> kitchensink page that showcases everything and all together.\nIt is intended to be used as a quick overview/reference and to check the themes.</p>",
+      "variants": [
+        {
+          "file": "v5.html",
+          "id": "bootstrap-v5/v5.html-1",
+          "componentId": "bootstrap-v5",
+          "title": "V5",
+          "extension": "html",
+          "raw": "<style>\n.bd-placeholder-img {\n  font-size: 1.125rem;\n  text-anchor: middle;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n}\n\n@media (min-width: 768px) {\n  .bd-placeholder-img-lg {\n    font-size: 3.5rem;\n  }\n}\nbody {\n  scroll-behavior: smooth;\n}\n\n/* stylelint-disable-next-line selector-max-universal */\n.bd-heading + div > * + * {\n  margin-top: 3rem;\n}\n\n/* Table of contents */\n.bd-aside a {\n  padding: .1875rem .5rem;\n  margin-top: .125rem;\n  margin-left: .3125rem;\n  text-decoration: none;\n}\n\n.bd-aside .active {\n  font-weight: 600;\n}\n\n.bd-aside .btn {\n  padding: .25rem .5rem;\n  font-weight: 600;\n  border: 0;\n}\n\n.bd-aside .btn::before {\n  width: 1.25em;\n  line-height: 0;\n  content: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e\");\n  transition: transform .35s ease;\n\n  /* rtl:raw:\n  transform: rotate(180deg) translateX(-2px);\n  */\n  transform-origin: .5em 50%;\n}\n\n.bd-aside .btn[aria-expanded=\"true\"]::before {\n  transform: rotate(90deg)/* rtl:ignore */;\n}\n\n\n/* Examples */\n.scrollspy-example {\n  position: relative;\n  height: 200px;\n  margin-top: .5rem;\n  overflow: auto;\n}\n\n[id=\"modal\"] .bd-example .btn,\n[id=\"buttons\"] .bd-example .btn,\n[id=\"tooltips\"] .bd-example .btn,\n[id=\"popovers\"] .bd-example .btn,\n[id=\"dropdowns\"] .bd-example .btn-group,\n[id=\"dropdowns\"] .bd-example .dropdown,\n[id=\"dropdowns\"] .bd-example .dropup,\n[id=\"dropdowns\"] .bd-example .dropend,\n[id=\"dropdowns\"] .bd-example .dropstart {\n  margin: 0 1rem 1rem 0;\n}\n\n/* Layout */\n@media (min-width: 1200px) {\n  body {\n    display: grid;\n    gap: 1rem;\n    grid-template-columns: 1fr 4fr 1fr;\n    grid-template-rows: auto;\n  }\n\n  .bd-header {\n    position: fixed;\n    top: 0;\n    /* rtl:begin:ignore */\n    right: 0;\n    left: 0;\n    /* rtl:end:ignore */\n    z-index: 1030;\n    grid-column: 1 / span 3;\n  }\n\n  .bd-aside,\n  .bd-cheatsheet {\n    padding-top: 4rem;\n  }\n\n  /**\n   * 1. Too bad only Firefox supports subgrids ATM\n   */\n  .bd-cheatsheet,\n  .bd-cheatsheet section,\n  .bd-cheatsheet article {\n    display: inherit; /* 1 */\n    gap: inherit; /* 1 */\n    grid-template-columns: 1fr 4fr;\n    grid-column: 1 / span 2;\n    grid-template-rows: auto;\n  }\n\n  .bd-aside {\n    grid-area: 1 / 3;\n    scroll-margin-top: 4rem;\n  }\n\n  .bd-cheatsheet section,\n  .bd-cheatsheet section > h2 {\n    top: 2rem;\n    scroll-margin-top: 2rem;\n  }\n\n  .bd-cheatsheet article,\n  .bd-cheatsheet .bd-heading {\n    top: 8rem;\n    scroll-margin-top: 8rem;\n  }\n\n  .bd-cheatsheet .bd-heading {\n    z-index: 1;\n  }\n}\n</style>\n\n<header class=\"bd-header py-3 d-flex align-items-stretch btcpay-header\">\n  <div class=\"container-fluid d-flex align-items-center\">\n    <h1 class=\"d-flex align-items-center fs-4 mb-0\">\n      Bootstrap Cheatsheet\n    </h1>\n  </div>\n</header>\n<aside class=\"bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2\">\n  <h2 class=\"h6 pt-4 pb-3 mb-4 border-bottom\">On this page</h2>\n  <nav class=\"small\" id=\"toc\">\n    <ul class=\"list-unstyled\">\n      <li class=\"my-2\">\n        <button class=\"btn d-inline-flex align-items-center collapsed\" data-bs-toggle=\"collapse\" aria-expanded=\"false\" data-bs-target=\"#contents-collapse\" aria-controls=\"contents-collapse\">Contents</button>\n        <ul class=\"list-unstyled ps-3 collapse\" id=\"contents-collapse\">\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#typography\">Typography</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#images\">Images</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#tables\">Tables</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#figures\">Figures</a></li>\n        </ul>\n      </li>\n      <li class=\"my-2\">\n        <button class=\"btn d-inline-flex align-items-center collapsed\" data-bs-toggle=\"collapse\" aria-expanded=\"false\" data-bs-target=\"#forms-collapse\" aria-controls=\"forms-collapse\">Forms</button>\n        <ul class=\"list-unstyled ps-3 collapse\" id=\"forms-collapse\">\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#overview\">Overview</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#disabled-forms\">Disabled forms</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#sizing\">Sizing</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#input-group\">Input group</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#floating-labels\">Floating labels</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#validation\">Validation</a></li>\n        </ul>\n      </li>\n      <li class=\"my-2\">\n        <button class=\"btn d-inline-flex align-items-center collapsed\" data-bs-toggle=\"collapse\" aria-expanded=\"false\" data-bs-target=\"#components-collapse\" aria-controls=\"components-collapse\">Components</button>\n        <ul class=\"list-unstyled ps-3 collapse\" id=\"components-collapse\">\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#accordion\">Accordion</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#alerts\">Alerts</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#badge\">Badge</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#breadcrumb\">Breadcrumb</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#buttons\">Buttons</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#button-group\">Button group</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#card\">Card</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#carousel\">Carousel</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#dropdowns\">Dropdowns</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#list-group\">List group</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#modal\">Modal</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#navs\">Navs</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#navbar\">Navbar</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#pagination\">Pagination</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#popovers\">Popovers</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#progress\">Progress</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#scrollspy\">Scrollspy</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#spinners\">Spinners</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#toasts\">Toasts</a></li>\n          <li><a class=\"d-inline-flex align-items-center rounded\" href=\"#tooltips\">Tooltips</a></li>\n        </ul>\n      </li>\n    </ul>\n  </nav>\n</aside>\n<div class=\"bd-cheatsheet container-fluid bg-body\">\n  <section id=\"content\">\n    <h2 class=\"sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3\">Contents</h2>\n\n    <article class=\"my-3\" id=\"typography\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Typography</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/content/typography/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <p class=\"display-1\">Display 1</p>\n        <p class=\"display-2\">Display 2</p>\n        <p class=\"display-3\">Display 3</p>\n        <p class=\"display-4\">Display 4</p>\n        <p class=\"display-5\">Display 5</p>\n        <p class=\"display-6\">Display 6</p>\n        </div>\n\n        <div class=\"bd-example\">\n        <p class=\"h1\">Heading 1</p>\n        <p class=\"h2\">Heading 2</p>\n        <p class=\"h3\">Heading 3</p>\n        <p class=\"h4\">Heading 4</p>\n        <p class=\"h5\">Heading 5</p>\n        <p class=\"h6\">Heading 6</p>\n        </div>\n\n        <div class=\"bd-example\">\n        <p class=\"lead\">\n          This is a lead paragraph. It stands out from regular paragraphs.\n        </p>\n        </div>\n\n        <div class=\"bd-example\">\n        <p>You can use the mark tag to <mark>highlight</mark> text.</p>\n        <p><del>This line of text is meant to be treated as deleted text.</del></p>\n        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>\n        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>\n        <p><u>This line of text will render as underlined.</u></p>\n        <p><small>This line of text is meant to be treated as fine print.</small></p>\n        <p><strong>This line rendered as bold text.</strong></p>\n        <p><em>This line rendered as italicized text.</em></p>\n        </div>\n\n        <div class=\"bd-example\">\n        <blockquote class=\"blockquote\">\n          <p>A well-known quote, contained in a blockquote element.</p>\n          <footer class=\"blockquote-footer\">Someone famous in <cite title=\"Source Title\">Source Title</cite></footer>\n        </blockquote>\n        </div>\n\n        <div class=\"bd-example\">\n        <ul class=\"list-unstyled\">\n          <li>This is a list.</li>\n          <li>It appears completely unstyled.</li>\n          <li>Structurally, it's still a list.</li>\n          <li>However, this style only applies to immediate child elements.</li>\n          <li>Nested lists:\n            <ul>\n              <li>are unaffected by this style</li>\n              <li>will still show a bullet</li>\n              <li>and have appropriate left margin</li>\n            </ul>\n          </li>\n          <li>This may still come in handy in some situations.</li>\n        </ul>\n        </div>\n\n        <div class=\"bd-example\">\n        <ul class=\"list-inline\">\n          <li class=\"list-inline-item\">This is a list item.</li>\n          <li class=\"list-inline-item\">And another one.</li>\n          <li class=\"list-inline-item\">But they're displayed inline.</li>\n        </ul>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"images\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Images</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/content/images/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <svg class=\"bd-placeholder-img bd-placeholder-img-lg img-fluid\" width=\"100%\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: Responsive image\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#868e96\"/><text x=\"50%\" y=\"50%\" fill=\"#dee2e6\" dy=\".3em\">Responsive image</text></svg>\n\n        </div>\n\n        <div class=\"bd-example\">\n        <svg class=\"bd-placeholder-img img-thumbnail\" width=\"200\" height=\"200\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title><rect width=\"100%\" height=\"100%\" fill=\"#868e96\"/><text x=\"50%\" y=\"50%\" fill=\"#dee2e6\" dy=\".3em\">200x200</text></svg>\n\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"tables\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Tables</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/content/tables/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <table class=\"table table-striped\">\n          <thead>\n          <tr>\n            <th scope=\"col\">#</th>\n            <th scope=\"col\">First</th>\n            <th scope=\"col\">Last</th>\n            <th scope=\"col\">Handle</th>\n          </tr>\n          </thead>\n          <tbody>\n          <tr>\n            <th scope=\"row\">1</th>\n            <td>Mark</td>\n            <td>Otto</td>\n            <td>@mdo</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">2</th>\n            <td>Jacob</td>\n            <td>Thornton</td>\n            <td>@fat</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">3</th>\n            <td colspan=\"2\">Larry the Bird</td>\n            <td>@twitter</td>\n          </tr>\n          </tbody>\n        </table>\n        </div>\n\n        <div class=\"bd-example\">\n        <table class=\"table table-dark table-borderless\">\n          <thead>\n          <tr>\n            <th scope=\"col\">#</th>\n            <th scope=\"col\">First</th>\n            <th scope=\"col\">Last</th>\n            <th scope=\"col\">Handle</th>\n          </tr>\n          </thead>\n          <tbody>\n          <tr>\n            <th scope=\"row\">1</th>\n            <td>Mark</td>\n            <td>Otto</td>\n            <td>@mdo</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">2</th>\n            <td>Jacob</td>\n            <td>Thornton</td>\n            <td>@fat</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">3</th>\n            <td colspan=\"2\">Larry the Bird</td>\n            <td>@twitter</td>\n          </tr>\n          </tbody>\n        </table>\n        </div>\n\n        <div class=\"bd-example\">\n        <table class=\"table table-hover\">\n          <thead>\n          <tr>\n            <th scope=\"col\">Class</th>\n            <th scope=\"col\">Heading</th>\n            <th scope=\"col\">Heading</th>\n          </tr>\n          </thead>\n          <tbody>\n          <tr>\n            <th scope=\"row\">Default</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n\n          <tr class=\"table-primary\">\n            <th scope=\"row\">Primary</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n          <tr class=\"table-secondary\">\n            <th scope=\"row\">Secondary</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n          <tr class=\"table-success\">\n            <th scope=\"row\">Success</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n          <tr class=\"table-danger\">\n            <th scope=\"row\">Danger</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n          <tr class=\"table-warning\">\n            <th scope=\"row\">Warning</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n          <tr class=\"table-info\">\n            <th scope=\"row\">Info</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n          <tr class=\"table-light\">\n            <th scope=\"row\">Light</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n          <tr class=\"table-dark\">\n            <th scope=\"row\">Dark</th>\n            <td>Cell</td>\n            <td>Cell</td>\n          </tr>\n          </tbody>\n        </table>\n        </div>\n\n        <div class=\"bd-example\">\n        <table class=\"table table-sm table-bordered\">\n          <thead>\n          <tr>\n            <th scope=\"col\">#</th>\n            <th scope=\"col\">First</th>\n            <th scope=\"col\">Last</th>\n            <th scope=\"col\">Handle</th>\n          </tr>\n          </thead>\n          <tbody>\n          <tr>\n            <th scope=\"row\">1</th>\n            <td>Mark</td>\n            <td>Otto</td>\n            <td>@mdo</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">2</th>\n            <td>Jacob</td>\n            <td>Thornton</td>\n            <td>@fat</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">3</th>\n            <td colspan=\"2\">Larry the Bird</td>\n            <td>@twitter</td>\n          </tr>\n          </tbody>\n        </table>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"figures\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Figures</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/content/figures/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <figure class=\"figure\">\n          <svg class=\"bd-placeholder-img figure-img img-fluid rounded\" width=\"400\" height=\"300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: 400x300\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#868e96\"/><text x=\"50%\" y=\"50%\" fill=\"#dee2e6\" dy=\".3em\">400x300</text></svg>\n\n          <figcaption class=\"figure-caption\">A caption for the above image.</figcaption>\n        </figure>\n        </div>\n      </div>\n    </article>\n  </section>\n\n  <section id=\"forms\">\n    <h2 class=\"sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3\">Forms</h2>\n\n    <article class=\"my-3\" id=\"overview\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Overview</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/forms/overview/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <form>\n          <div class=\"mb-3\">\n            <label for=\"exampleInputEmail1\" class=\"form-label\">Email address</label>\n            <input type=\"email\" class=\"form-control\" id=\"exampleInputEmail1\" aria-describedby=\"emailHelp\">\n            <div id=\"emailHelp\" class=\"form-text\">We'll never share your email with anyone else.</div>\n          </div>\n          <div class=\"mb-3\">\n            <label for=\"exampleInputPassword1\" class=\"form-label\">Password</label>\n            <input type=\"password\" class=\"form-control\" id=\"exampleInputPassword1\">\n          </div>\n          <div class=\"mb-3 form-check\">\n            <input type=\"checkbox\" class=\"form-check-input\" id=\"exampleCheck1\">\n            <label class=\"form-check-label\" for=\"exampleCheck1\">Check me out</label>\n          </div>\n          <fieldset class=\"mb-3\">\n            <legend>Radios buttons</legend>\n            <div class=\"form-check\">\n              <input type=\"radio\" name=\"radios\" class=\"form-check-input\" id=\"exampleRadio1\">\n              <label class=\"form-check-label\" for=\"exampleRadio1\">Default radio</label>\n            </div>\n            <div class=\"mb-3 form-check\">\n              <input type=\"radio\" name=\"radios\" class=\"form-check-input\" id=\"exampleRadio2\">\n              <label class=\"form-check-label\" for=\"exampleRadio2\">Another radio</label>\n            </div>\n          </fieldset>\n          <div class=\"mb-3\">\n            <label class=\"form-label\" for=\"customFile\">Upload</label>\n            <input type=\"file\" class=\"form-control\" id=\"customFile\">\n          </div>\n          <div class=\"mb-3 form-check form-switch\">\n            <input class=\"form-check-input\" type=\"checkbox\" id=\"flexSwitchCheckChecked\" checked>\n            <label class=\"form-check-label\" for=\"flexSwitchCheckChecked\">Checked switch checkbox input</label>\n          </div>\n          <div class=\"mb-3\">\n            <label for=\"customRange3\" class=\"form-label\">Example range</label>\n            <input type=\"range\" class=\"form-range\" min=\"0\" max=\"5\" step=\"0.5\" id=\"customRange3\">\n          </div>\n          <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n        </form>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"disabled-forms\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Disabled forms</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/forms/overview/#disabled-forms\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <form>\n          <fieldset disabled aria-label=\"Disabled fieldset example\">\n            <div class=\"mb-3\">\n              <label for=\"disabledTextInput\" class=\"form-label\">Disabled input</label>\n              <input type=\"text\" id=\"disabledTextInput\" class=\"form-control\" placeholder=\"Disabled input\">\n            </div>\n            <div class=\"mb-3\">\n              <label for=\"disabledSelect\" class=\"form-label\">Disabled select menu</label>\n              <select id=\"disabledSelect\" class=\"form-select\">\n                <option>Disabled select</option>\n              </select>\n            </div>\n            <div class=\"mb-3\">\n              <div class=\"form-check\">\n                <input class=\"form-check-input\" type=\"checkbox\" id=\"disabledFieldsetCheck\" disabled>\n                <label class=\"form-check-label\" for=\"disabledFieldsetCheck\">\n                  Can't check this\n                </label>\n              </div>\n            </div>\n            <fieldset class=\"mb-3\">\n              <legend>Disabled radios buttons</legend>\n              <div class=\"form-check\">\n                <input type=\"radio\" name=\"radios\" class=\"form-check-input\" id=\"disabledRadio1\" disabled>\n                <label class=\"form-check-label\" for=\"disabledRadio1\">Disabled radio</label>\n              </div>\n              <div class=\"mb-3 form-check\">\n                <input type=\"radio\" name=\"radios\" class=\"form-check-input\" id=\"disabledRadio2\" disabled>\n                <label class=\"form-check-label\" for=\"disabledRadio2\">Another radio</label>\n              </div>\n            </fieldset>\n            <div class=\"mb-3\">\n              <label class=\"form-label\" for=\"disabledCustomFile\">Upload</label>\n              <input type=\"file\" class=\"form-control\" id=\"disabledCustomFile\" disabled>\n            </div>\n            <div class=\"mb-3 form-check form-switch\">\n              <input class=\"form-check-input\" type=\"checkbox\" id=\"disabledSwitchCheckChecked\" checked disabled>\n              <label class=\"form-check-label\" for=\"disabledSwitchCheckChecked\">Disabled checked switch checkbox input</label>\n            </div>\n            <div class=\"mb-3\">\n              <label for=\"disabledRange\" class=\"form-label\">Disabled range</label>\n              <input type=\"range\" class=\"form-range\" min=\"0\" max=\"5\" step=\"0.5\" id=\"disabledRange\">\n            </div>\n            <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n          </fieldset>\n        </form>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"sizing\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Sizing</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/forms/form-control/#sizing\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div class=\"mb-3\">\n          <input class=\"form-control form-control-lg\" type=\"text\" placeholder=\".form-control-lg\" aria-label=\".form-control-lg example\">\n        </div>\n        <div class=\"mb-3\">\n          <select class=\"form-select form-select-lg mb-3\" aria-label=\".form-select-lg example\">\n            <option selected>Open this select menu</option>\n            <option value=\"1\">One</option>\n            <option value=\"2\">Two</option>\n            <option value=\"3\">Three</option>\n          </select>\n        </div>\n        <div class=\"mb-3\">\n          <input type=\"file\" class=\"form-control form-control-lg\" aria-label=\"Large file input example\">\n        </div>\n        </div>\n\n        <div class=\"bd-example\">\n        <div class=\"mb-3\">\n          <input class=\"form-control form-control-sm\" type=\"text\" placeholder=\".form-control-sm\" aria-label=\".form-control-sm example\">\n        </div>\n        <div class=\"mb-3\">\n          <select class=\"form-select form-select-sm\" aria-label=\".form-select-sm example\">\n            <option selected>Open this select menu</option>\n            <option value=\"1\">One</option>\n            <option value=\"2\">Two</option>\n            <option value=\"3\">Three</option>\n          </select>\n        </div>\n        <div class=\"mb-3\">\n          <input type=\"file\" class=\"form-control form-control-sm\" aria-label=\"Small file input example\">\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"input-group\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Input group</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/forms/input-group/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div class=\"input-group mb-3\">\n          <span class=\"input-group-text\" id=\"basic-addon1\">@</span>\n          <input type=\"text\" class=\"form-control\" placeholder=\"Username\" aria-label=\"Username\" aria-describedby=\"basic-addon1\">\n        </div>\n        <div class=\"input-group mb-3\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"Recipient's username\" aria-label=\"Recipient's username\" aria-describedby=\"basic-addon2\">\n          <span class=\"input-group-text\" id=\"basic-addon2\">@example.com</span>\n        </div>\n        <label for=\"basic-url\" class=\"form-label\">Your vanity URL</label>\n        <div class=\"input-group mb-3\">\n          <span class=\"input-group-text\" id=\"basic-addon3\">https://example.com/users/</span>\n          <input type=\"text\" class=\"form-control\" id=\"basic-url\" aria-describedby=\"basic-addon3\">\n        </div>\n        <div class=\"input-group mb-3\">\n          <span class=\"input-group-text\">$</span>\n          <input type=\"text\" class=\"form-control\" aria-label=\"Amount (to the nearest dollar)\">\n          <span class=\"input-group-text\">.00</span>\n        </div>\n        <div class=\"input-group\">\n          <span class=\"input-group-text\">With textarea</span>\n          <textarea class=\"form-control\" aria-label=\"With textarea\"></textarea>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"floating-labels\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Floating labels</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/forms/floating-labels/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <form>\n          <div class=\"form-floating mb-3\">\n            <input type=\"email\" class=\"form-control\" id=\"floatingInput\" placeholder=\"name@example.com\">\n            <label for=\"floatingInput\">Email address</label>\n          </div>\n          <div class=\"form-floating\">\n            <input type=\"password\" class=\"form-control\" id=\"floatingPassword\" placeholder=\"Password\">\n            <label for=\"floatingPassword\">Password</label>\n          </div>\n        </form>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"validation\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Validation</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/forms/validation/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <form class=\"row g-3\">\n          <div class=\"col-md-4\">\n            <label for=\"validationServer01\" class=\"form-label\">First name</label>\n            <input type=\"text\" class=\"form-control is-valid\" id=\"validationServer01\" value=\"Mark\" required>\n            <div class=\"valid-feedback\">\n              Looks good!\n            </div>\n          </div>\n          <div class=\"col-md-4\">\n            <label for=\"validationServer02\" class=\"form-label\">Last name</label>\n            <input type=\"text\" class=\"form-control is-valid\" id=\"validationServer02\" value=\"Otto\" required>\n            <div class=\"valid-feedback\">\n              Looks good!\n            </div>\n          </div>\n          <div class=\"col-md-4\">\n            <label for=\"validationServerUsername\" class=\"form-label\">Username</label>\n            <div class=\"input-group has-validation\">\n              <span class=\"input-group-text\" id=\"inputGroupPrepend3\">@</span>\n              <input type=\"text\" class=\"form-control is-invalid\" id=\"validationServerUsername\" aria-describedby=\"inputGroupPrepend3\" required>\n              <div class=\"invalid-feedback\">\n                Please choose a username.\n              </div>\n            </div>\n          </div>\n          <div class=\"col-md-6\">\n            <label for=\"validationServer03\" class=\"form-label\">City</label>\n            <input type=\"text\" class=\"form-control is-invalid\" id=\"validationServer03\" required>\n            <div class=\"invalid-feedback\">\n              Please provide a valid city.\n            </div>\n          </div>\n          <div class=\"col-md-3\">\n            <label for=\"validationServer04\" class=\"form-label\">State</label>\n            <select class=\"form-select is-invalid\" id=\"validationServer04\" required>\n              <option selected disabled value=\"\">Choose...</option>\n              <option>...</option>\n            </select>\n            <div class=\"invalid-feedback\">\n              Please select a valid state.\n            </div>\n          </div>\n          <div class=\"col-md-3\">\n            <label for=\"validationServer05\" class=\"form-label\">Zip</label>\n            <input type=\"text\" class=\"form-control is-invalid\" id=\"validationServer05\" required>\n            <div class=\"invalid-feedback\">\n              Please provide a valid zip.\n            </div>\n          </div>\n          <div class=\"col-12\">\n            <div class=\"form-check\">\n              <input class=\"form-check-input is-invalid\" type=\"checkbox\" value=\"\" id=\"invalidCheck3\" required>\n              <label class=\"form-check-label\" for=\"invalidCheck3\">\n                Agree to terms and conditions\n              </label>\n              <div class=\"invalid-feedback\">\n                You must agree before submitting.\n              </div>\n            </div>\n          </div>\n          <div class=\"col-12\">\n            <button class=\"btn btn-primary\" type=\"submit\">Submit form</button>\n          </div>\n        </form>\n        </div>\n      </div>\n    </article>\n  </section>\n\n  <section id=\"components\">\n    <h2 class=\"sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3\">Components</h2>\n\n    <article class=\"my-3\" id=\"accordion\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Accordion</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/accordion/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div class=\"accordion\" id=\"accordionExample\">\n          <div class=\"accordion-item\">\n            <h4 class=\"accordion-header\" id=\"headingOne\">\n              <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\">\n                Accordion Item #1\n                <svg role=\"img\" class=\"icon icon-caret-down\"><use href=\"/img/icon-sprite.svg#caret-down\"></use></svg>\n              </button>\n            </h4>\n            <div id=\"collapseOne\" class=\"accordion-collapse collapse show\" aria-labelledby=\"headingOne\" data-bs-parent=\"#accordionExample\">\n              <div class=\"accordion-body\">\n                <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\n              </div>\n            </div>\n          </div>\n          <div class=\"accordion-item\">\n            <h4 class=\"accordion-header\" id=\"headingTwo\">\n              <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\">\n                Accordion Item #2\n                <svg role=\"img\" class=\"icon icon-caret-down\"><use href=\"/img/icon-sprite.svg#caret-down\"></use></svg>\n              </button>\n            </h4>\n            <div id=\"collapseTwo\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingTwo\" data-bs-parent=\"#accordionExample\">\n              <div class=\"accordion-body\">\n                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\n              </div>\n            </div>\n          </div>\n          <div class=\"accordion-item\">\n            <h4 class=\"accordion-header\" id=\"headingThree\">\n              <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\">\n                Accordion Item #3\n                <svg role=\"img\" class=\"icon icon-caret-down\"><use href=\"/img/icon-sprite.svg#caret-down\"></use></svg>\n              </button>\n            </h4>\n            <div id=\"collapseThree\" class=\"accordion-collapse collapse\" aria-labelledby=\"headingThree\" data-bs-parent=\"#accordionExample\">\n              <div class=\"accordion-body\">\n                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.\n              </div>\n            </div>\n          </div>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"alerts\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Alerts</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/alerts/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n\n        <div class=\"alert alert-primary alert-dismissible fade show\" role=\"alert\">\n          A simple primary alert with <a href=\"#\" class=\"alert-link\">an example link</a>. Give it a click if you like.\n          <code>This is code.</code>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\">\n            <svg role=\"img\" class=\"icon icon-close\"><use href=\"/img/icon-sprite.svg#close\"></use></svg>\n          </button>\n        </div>\n        <div class=\"alert alert-secondary alert-dismissible fade show\" role=\"alert\">\n          A simple secondary alert with <a href=\"#\" class=\"alert-link\">an example link</a>. Give it a click if you like.\n          <code>This is code.</code>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\">\n            <svg role=\"img\" class=\"icon icon-close\"><use href=\"/img/icon-sprite.svg#close\"></use></svg>\n          </button>\n        </div>\n        <div class=\"alert alert-success alert-dismissible fade show\" role=\"alert\">\n          A simple success alert with <a href=\"#\" class=\"alert-link\">an example link</a>. Give it a click if you like.\n          <code>This is code.</code>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\">\n            <svg role=\"img\" class=\"icon icon-close\"><use href=\"/img/icon-sprite.svg#close\"></use></svg>\n          </button>\n        </div>\n        <div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\n          A simple danger alert with <a href=\"#\" class=\"alert-link\">an example link</a>. Give it a click if you like.\n          <code>This is code.</code>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\">\n            <svg role=\"img\" class=\"icon icon-close\"><use href=\"/img/icon-sprite.svg#close\"></use></svg>\n          </button>\n        </div>\n        <div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">\n          A simple warning alert with <a href=\"#\" class=\"alert-link\">an example link</a>. Give it a click if you like.\n          <code>This is code.</code>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\">\n            <svg role=\"img\" class=\"icon icon-close\"><use href=\"/img/icon-sprite.svg#close\"></use></svg>\n          </button>\n        </div>\n        <div class=\"alert alert-info alert-dismissible fade show\" role=\"alert\">\n          A simple info alert with <a href=\"#\" class=\"alert-link\">an example link</a>. Give it a click if you like.\n          <code>This is code.</code>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\">\n            <svg role=\"img\" class=\"icon icon-close\"><use href=\"/img/icon-sprite.svg#close\"></use></svg>\n          </button>\n        </div>\n        <div class=\"alert alert-light alert-dismissible fade show\" role=\"alert\">\n          A simple light alert with <a href=\"#\" class=\"alert-link\">an example link</a>. Give it a click if you like.\n          <code>This is code.</code>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\">\n            <svg role=\"img\" class=\"icon icon-close\"><use href=\"/img/icon-sprite.svg#close\"></use></svg>\n          </button>\n        </div>\n        <div class=\"alert alert-dark alert-dismissible fade show\" role=\"alert\">\n          A simple dark alert with <a href=\"#\" class=\"alert-link\">an example link</a>. Give it a click if you like.\n          <code>This is code.</code>\n          <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\">\n            <svg role=\"img\" class=\"icon icon-close\"><use href=\"/img/icon-sprite.svg#close\"></use></svg>\n          </button>\n        </div>\n        </div>\n\n        <div class=\"bd-example\">\n        <div class=\"alert alert-success\" role=\"alert\">\n          <h4 class=\"alert-heading\">Well done!</h4>\n          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>\n          <hr>\n          <p class=\"mb-0\">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"badge\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Badge</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/badge/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <p class=\"h1\">Example heading <span class=\"badge bg-primary\">New</span></p>\n        <p class=\"h2\">Example heading <span class=\"badge bg-secondary\">New</span></p>\n        <p class=\"h3\">Example heading <span class=\"badge bg-success\">New</span></p>\n        <p class=\"h4\">Example heading <span class=\"badge bg-danger\">New</span></p>\n        <p class=\"h5\">Example heading <span class=\"badge bg-warning text-dark\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-info text-dark\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-light text-dark\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-dark\">New</span></p>\n        </div>\n\n        <div class=\"bd-example\">\n\n        <span class=\"badge rounded-pill bg-primary\">Primary</span>\n        <span class=\"badge rounded-pill bg-secondary\">Secondary</span>\n        <span class=\"badge rounded-pill bg-success\">Success</span>\n        <span class=\"badge rounded-pill bg-danger\">Danger</span>\n        <span class=\"badge rounded-pill bg-warning text-dark\">Warning</span>\n        <span class=\"badge rounded-pill bg-info text-dark\">Info</span>\n        <span class=\"badge rounded-pill bg-light text-dark\">Light</span>\n        <span class=\"badge rounded-pill bg-dark\">Dark</span>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"breadcrumb\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Breadcrumb</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/breadcrumb/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <nav aria-label=\"breadcrumb\">\n          <ol class=\"breadcrumb\">\n            <li class=\"breadcrumb-item\"><a href=\"#\">Home</a></li>\n            <li class=\"breadcrumb-item\"><a href=\"#\">Library</a></li>\n            <li class=\"breadcrumb-item active\" aria-current=\"page\">Data</li>\n          </ol>\n        </nav>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"buttons\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Buttons</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/buttons/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n\n        <button type=\"button\" class=\"btn btn-primary\">Primary</button>\n        <button type=\"button\" class=\"btn btn-secondary\">Secondary</button>\n        <button type=\"button\" class=\"btn btn-success\">Success</button>\n        <button type=\"button\" class=\"btn btn-danger\">Danger</button>\n        <button type=\"button\" class=\"btn btn-warning\">Warning</button>\n        <button type=\"button\" class=\"btn btn-info\">Info</button>\n        <button type=\"button\" class=\"btn btn-light\">Light</button>\n        <button type=\"button\" class=\"btn btn-dark\">Dark</button>\n\n        <button type=\"button\" class=\"btn btn-link\">Link</button>\n        </div>\n\n        <div class=\"bd-example\">\n\n        <button type=\"button\" class=\"btn btn-outline-primary\">Primary</button>\n        <button type=\"button\" class=\"btn btn-outline-secondary\">Secondary</button>\n        <button type=\"button\" class=\"btn btn-outline-success\">Success</button>\n        <button type=\"button\" class=\"btn btn-outline-danger\">Danger</button>\n        <button type=\"button\" class=\"btn btn-outline-warning\">Warning</button>\n        <button type=\"button\" class=\"btn btn-outline-info\">Info</button>\n        <button type=\"button\" class=\"btn btn-outline-light\">Light</button>\n        <button type=\"button\" class=\"btn btn-outline-dark\">Dark</button>\n        </div>\n\n        <div class=\"bd-example\">\n        <button type=\"button\" class=\"btn btn-primary btn-sm\">Small button</button>\n        <button type=\"button\" class=\"btn btn-primary\">Standard button</button>\n        <button type=\"button\" class=\"btn btn-primary btn-lg\">Large button</button>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"button-group\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Button group</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/button-group/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"Toolbar with button groups\">\n          <div class=\"btn-group me-2\" role=\"group\" aria-label=\"First group\">\n            <button type=\"button\" class=\"btn btn-secondary\">1</button>\n            <button type=\"button\" class=\"btn btn-secondary\">2</button>\n            <button type=\"button\" class=\"btn btn-secondary\">3</button>\n            <button type=\"button\" class=\"btn btn-secondary\">4</button>\n          </div>\n          <div class=\"btn-group me-2\" role=\"group\" aria-label=\"Second group\">\n            <button type=\"button\" class=\"btn btn-secondary\">5</button>\n            <button type=\"button\" class=\"btn btn-secondary\">6</button>\n            <button type=\"button\" class=\"btn btn-secondary\">7</button>\n          </div>\n          <div class=\"btn-group\" role=\"group\" aria-label=\"Third group\">\n            <button type=\"button\" class=\"btn btn-secondary\">8</button>\n          </div>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"card\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Card</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/card/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div class=\"row  row-cols-1 row-cols-md-2 g-4\">\n          <div class=\"col\">\n            <div class=\"card\">\n              <svg class=\"bd-placeholder-img card-img-top\" width=\"100%\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: Image cap\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#868e96\"/><text x=\"50%\" y=\"50%\" fill=\"#dee2e6\" dy=\".3em\">Image cap</text></svg>\n\n              <div class=\"card-body\">\n                <h5 class=\"card-title\">Card title</h5>\n                <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n                <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n              </div>\n            </div>\n          </div>\n          <div class=\"col\">\n            <div class=\"card\">\n              <div class=\"card-header\">\n                Featured\n              </div>\n              <div class=\"card-body\">\n                <h5 class=\"card-title\">Card title</h5>\n                <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n                <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n              </div>\n              <div class=\"card-footer text-muted\">\n                2 days ago\n              </div>\n            </div>\n          </div>\n          <div class=\"col\">\n            <div class=\"card\">\n              <div class=\"card-body\">\n                <h5 class=\"card-title\">Card title</h5>\n                <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n              </div>\n              <ul class=\"list-group list-group-flush\">\n                <li class=\"list-group-item\">An item</li>\n                <li class=\"list-group-item\">A second item</li>\n                <li class=\"list-group-item\">A third item</li>\n              </ul>\n              <div class=\"card-body\">\n                <a href=\"#\" class=\"card-link\">Card link</a>\n                <a href=\"#\" class=\"card-link\">Another link</a>\n              </div>\n            </div>\n          </div>\n          <div class=\"col\">\n            <div class=\"card\">\n              <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                  <svg class=\"bd-placeholder-img\" width=\"100%\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: Image\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#868e96\"/><text x=\"50%\" y=\"50%\" fill=\"#dee2e6\" dy=\".3em\">Image</text></svg>\n\n                </div>\n                <div class=\"col-md-8\">\n                  <div class=\"card-body\">\n                    <h5 class=\"card-title\">Card title</h5>\n                    <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n                    <p class=\"card-text\"><small class=\"text-muted\">Last updated 3 mins ago</small></p>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"carousel\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Carousel</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/carousel/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div id=\"carouselExampleCaptions\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n          <ol class=\"carousel-indicators\">\n            <li data-bs-target=\"#carouselExampleCaptions\" data-bs-slide-to=\"0\" class=\"active\"></li>\n            <li data-bs-target=\"#carouselExampleCaptions\" data-bs-slide-to=\"1\"></li>\n            <li data-bs-target=\"#carouselExampleCaptions\" data-bs-slide-to=\"2\"></li>\n          </ol>\n          <div class=\"carousel-inner\">\n            <div class=\"carousel-item active\">\n              <svg class=\"bd-placeholder-img bd-placeholder-img-lg d-block w-100\" width=\"800\" height=\"400\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: First slide\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#777\"/><text x=\"50%\" y=\"50%\" fill=\"#555\" dy=\".3em\">First slide</text></svg>\n\n              <div class=\"carousel-caption d-none d-md-block\">\n                <h5>First slide label</h5>\n                <p>Some representative placeholder content for the first slide.</p>\n              </div>\n            </div>\n            <div class=\"carousel-item\">\n              <svg class=\"bd-placeholder-img bd-placeholder-img-lg d-block w-100\" width=\"800\" height=\"400\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: Second slide\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#666\"/><text x=\"50%\" y=\"50%\" fill=\"#444\" dy=\".3em\">Second slide</text></svg>\n\n              <div class=\"carousel-caption d-none d-md-block\">\n                <h5>Second slide label</h5>\n                <p>Some representative placeholder content for the second slide.</p>\n              </div>\n            </div>\n            <div class=\"carousel-item\">\n              <svg class=\"bd-placeholder-img bd-placeholder-img-lg d-block w-100\" width=\"800\" height=\"400\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: Third slide\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#555\"/><text x=\"50%\" y=\"50%\" fill=\"#333\" dy=\".3em\">Third slide</text></svg>\n\n              <div class=\"carousel-caption d-none d-md-block\">\n                <h5>Third slide label</h5>\n                <p>Some representative placeholder content for the third slide.</p>\n              </div>\n            </div>\n          </div>\n          <a class=\"carousel-control-prev\" href=\"#carouselExampleCaptions\" role=\"button\" data-bs-slide=\"prev\">\n            <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n            <span class=\"visually-hidden\">Previous</span>\n          </a>\n          <a class=\"carousel-control-next\" href=\"#carouselExampleCaptions\" role=\"button\" data-bs-slide=\"next\">\n            <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n            <span class=\"visually-hidden\">Next</span>\n          </a>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"dropdowns\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Dropdowns</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/dropdowns/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div class=\"btn-group w-100 align-items-center justify-content-between flex-wrap\">\n          <div class=\"dropdown\">\n            <button class=\"btn btn-secondary btn-sm dropdown-toggle\" type=\"button\" id=\"dropdownMenuButtonSM\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n              Dropdown button\n            </button>\n            <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButtonSM\">\n              <li><h6 class=\"dropdown-header\">Dropdown header</h6></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n              <li><hr class=\"dropdown-divider\"></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n            </ul>\n          </div>\n          <div class=\"dropdown\">\n            <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropdownMenuButton\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n              Dropdown button\n            </button>\n            <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButton\">\n              <li><h6 class=\"dropdown-header\">Dropdown header</h6></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n              <li><hr class=\"dropdown-divider\"></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n            </ul>\n          </div>\n          <div class=\"dropdown\">\n            <button class=\"btn btn-secondary btn-lg dropdown-toggle\" type=\"button\" id=\"dropdownMenuButtonLG\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n              Dropdown button\n            </button>\n            <ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenuButtonLG\">\n              <li><h6 class=\"dropdown-header\">Dropdown header</h6></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n              <li><hr class=\"dropdown-divider\"></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n            </ul>\n          </div>\n        </div>\n        </div>\n\n        <div class=\"bd-example\">\n        <div class=\"btn-group\">\n          <button type=\"button\" class=\"btn btn-primary\">Primary</button>\n          <button type=\"button\" class=\"btn btn-primary dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n            <span class=\"visually-hidden\">Toggle Dropdown</span>\n          </button>\n          <ul class=\"dropdown-menu\">\n            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n          </ul>\n        </div><!-- /btn-group -->\n        <div class=\"btn-group\">\n          <button type=\"button\" class=\"btn btn-secondary\">Secondary</button>\n          <button type=\"button\" class=\"btn btn-secondary dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n            <span class=\"visually-hidden\">Toggle Dropdown</span>\n          </button>\n          <ul class=\"dropdown-menu\">\n            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n          </ul>\n        </div><!-- /btn-group -->\n        <div class=\"btn-group\">\n          <button type=\"button\" class=\"btn btn-success\">Success</button>\n          <button type=\"button\" class=\"btn btn-success dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n            <span class=\"visually-hidden\">Toggle Dropdown</span>\n          </button>\n          <ul class=\"dropdown-menu\">\n            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n          </ul>\n        </div><!-- /btn-group -->\n        <div class=\"btn-group\">\n          <button type=\"button\" class=\"btn btn-info\">Info</button>\n          <button type=\"button\" class=\"btn btn-info dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n            <span class=\"visually-hidden\">Toggle Dropdown</span>\n          </button>\n          <ul class=\"dropdown-menu\">\n            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n          </ul>\n        </div><!-- /btn-group -->\n        <div class=\"btn-group\">\n          <button type=\"button\" class=\"btn btn-warning\">Warning</button>\n          <button type=\"button\" class=\"btn btn-warning dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n            <span class=\"visually-hidden\">Toggle Dropdown</span>\n          </button>\n          <ul class=\"dropdown-menu\">\n            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n          </ul>\n        </div><!-- /btn-group -->\n        <div class=\"btn-group\">\n          <button type=\"button\" class=\"btn btn-danger\">Danger</button>\n          <button type=\"button\" class=\"btn btn-danger dropdown-toggle dropdown-toggle-split\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n            <span class=\"visually-hidden\">Toggle Dropdown</span>\n          </button>\n          <ul class=\"dropdown-menu\">\n            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n          </ul>\n        </div><!-- /btn-group -->\n        </div>\n\n        <div class=\"bd-example\">\n        <div class=\"btn-group w-100 align-items-center justify-content-between flex-wrap\">\n          <div class=\"dropend\">\n            <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropendMenuButton\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n              Dropend button\n            </button>\n            <ul class=\"dropdown-menu\" aria-labelledby=\"dropendMenuButton\">\n              <li><h6 class=\"dropdown-header\">Dropdown header</h6></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n              <li><hr class=\"dropdown-divider\"></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n            </ul>\n          </div>\n          <div class=\"dropup\">\n            <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropupMenuButton\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n              Dropup button\n            </button>\n            <ul class=\"dropdown-menu\" aria-labelledby=\"dropupMenuButton\">\n              <li><h6 class=\"dropdown-header\">Dropdown header</h6></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n              <li><hr class=\"dropdown-divider\"></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n            </ul>\n          </div>\n          <div class=\"dropstart\">\n            <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropstartMenuButton\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n              Dropstart button\n            </button>\n            <ul class=\"dropdown-menu\" aria-labelledby=\"dropstartMenuButton\">\n              <li><h6 class=\"dropdown-header\">Dropdown header</h6></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n              <li><hr class=\"dropdown-divider\"></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n            </ul>\n          </div>\n        </div>\n        </div>\n\n        <div class=\"bd-example\">\n        <div class=\"btn-group\">\n          <div class=\"dropdown\">\n            <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropdownRightMenuButton\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n              End-aligned menu\n            </button>\n            <ul class=\"dropdown-menu dropdown-menu-end\" aria-labelledby=\"dropdownRightMenuButton\">\n              <li><h6 class=\"dropdown-header\">Dropdown header</h6></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n              <li><hr class=\"dropdown-divider\"></li>\n              <li><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n            </ul>\n          </div>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"list-group\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>List group</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/list-group/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <ul class=\"list-group\">\n          <li class=\"list-group-item disabled\" aria-disabled=\"true\">A disabled item</li>\n          <li class=\"list-group-item\">A second item</li>\n          <li class=\"list-group-item\">A third item</li>\n          <li class=\"list-group-item\">A fourth item</li>\n          <li class=\"list-group-item\">And a fifth one</li>\n        </ul>\n        </div>\n\n        <div class=\"bd-example\">\n        <ul class=\"list-group list-group-flush\">\n          <li class=\"list-group-item\">An item</li>\n          <li class=\"list-group-item\">A second item</li>\n          <li class=\"list-group-item\">A third item</li>\n          <li class=\"list-group-item\">A fourth item</li>\n          <li class=\"list-group-item\">And a fifth one</li>\n        </ul>\n        </div>\n\n        <div class=\"bd-example\">\n        <div class=\"list-group\">\n          <a href=\"#\" class=\"list-group-item list-group-item-action\">A simple default list group item</a>\n\n          <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-primary\">A simple primary list group item</a>\n          <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-secondary\">A simple secondary list group item</a>\n          <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-success\">A simple success list group item</a>\n          <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-danger\">A simple danger list group item</a>\n          <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-warning\">A simple warning list group item</a>\n          <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-info\">A simple info list group item</a>\n          <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-light\">A simple light list group item</a>\n          <a href=\"#\" class=\"list-group-item list-group-item-action list-group-item-dark\">A simple dark list group item</a>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"modal\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Modal</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/modal/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div class=\"d-flex justify-content-between flex-wrap\">\n          <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModalDefault\">\n            Launch demo modal\n          </button>\n          <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#staticBackdropLive\">\n            Launch static backdrop modal\n          </button>\n          <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModalCenteredScrollable\">\n            Vertically centered scrollable modal\n          </button>\n          <button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#exampleModalFullscreen\">\n            Full screen\n          </button>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"navs\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Navs</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/navs-tabs/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <nav class=\"nav\">\n          <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Active</a>\n          <a class=\"nav-link\" href=\"#\">Link</a>\n          <a class=\"nav-link\" href=\"#\">Link</a>\n          <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>\n        </nav>\n        </div>\n\n        <div class=\"bd-example\">\n        <nav>\n          <div class=\"nav nav-tabs mb-3\" id=\"nav-tab\" role=\"tablist\">\n            <a class=\"nav-link active\" id=\"nav-home-tab\" data-bs-toggle=\"tab\" href=\"#nav-home\" role=\"tab\" aria-controls=\"nav-home\" aria-selected=\"true\">Home</a>\n            <a class=\"nav-link\" id=\"nav-profile-tab\" data-bs-toggle=\"tab\" href=\"#nav-profile\" role=\"tab\" aria-controls=\"nav-profile\" aria-selected=\"false\">Profile</a>\n            <a class=\"nav-link\" id=\"nav-contact-tab\" data-bs-toggle=\"tab\" href=\"#nav-contact\" role=\"tab\" aria-controls=\"nav-contact\" aria-selected=\"false\">Contact</a>\n          </div>\n        </nav>\n        <div class=\"tab-content\" id=\"nav-tabContent\">\n          <div class=\"tab-pane fade show active\" id=\"nav-home\" role=\"tabpanel\" aria-labelledby=\"nav-home-tab\">\n            <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.</p>\n          </div>\n          <div class=\"tab-pane fade\" id=\"nav-profile\" role=\"tabpanel\" aria-labelledby=\"nav-profile-tab\">\n            <p>Placeholder content for the tab panel. This one relates to the profile tab. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.</p>\n          </div>\n          <div class=\"tab-pane fade\" id=\"nav-contact\" role=\"tabpanel\" aria-labelledby=\"nav-contact-tab\">\n            <p>Placeholder content for the tab panel. This one relates to the contact tab. Her love is like a drug. All my girls vintage Chanel baby. Got a motel and built a fort out of sheets. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk. Catch her if you can. Stinging like a bee I earned my stripes.</p>\n          </div>\n        </div>\n        </div>\n\n        <div class=\"bd-example\">\n        <ul class=\"nav nav-pills\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Active</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\">Link</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" href=\"#\">Link</a>\n          </li>\n          <li class=\"nav-item\">\n            <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>\n          </li>\n        </ul>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"navbar\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Navbar</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/navbar/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n          <div class=\"container-fluid\">\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n              <span class=\"navbar-toggler-icon\"></span>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n              <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n                <li class=\"nav-item\">\n                  <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n                </li>\n                <li class=\"nav-item\">\n                  <a class=\"nav-link\" href=\"#\">Link</a>\n                </li>\n                <li class=\"nav-item dropdown\">\n                  <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n                    Dropdown\n                  </a>\n                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n                    <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n                    <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n                    <li><hr class=\"dropdown-divider\"></li>\n                    <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n                  </ul>\n                </li>\n                <li class=\"nav-item\">\n                  <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>\n                </li>\n              </ul>\n              <form class=\"d-flex\">\n                <input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n                <button class=\"btn btn-outline-dark\" type=\"submit\">Search</button>\n              </form>\n            </div>\n          </div>\n        </nav>\n\n        <nav class=\"navbar navbar-expand-lg navbar-dark bg-primary mt-5\">\n          <div class=\"container-fluid\">\n            <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent2\" aria-controls=\"navbarSupportedContent2\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n              <span class=\"navbar-toggler-icon\"></span>\n            </button>\n            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent2\">\n              <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n                <li class=\"nav-item\">\n                  <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>\n                </li>\n                <li class=\"nav-item\">\n                  <a class=\"nav-link\" href=\"#\">Link</a>\n                </li>\n                <li class=\"nav-item dropdown\">\n                  <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown2\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">\n                    Dropdown\n                  </a>\n                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown2\">\n                    <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n                    <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n                    <li><hr class=\"dropdown-divider\"></li>\n                    <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n                  </ul>\n                </li>\n                <li class=\"nav-item\">\n                  <a class=\"nav-link disabled\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Disabled</a>\n                </li>\n              </ul>\n              <form class=\"d-flex\">\n                <input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n                <button class=\"btn btn-outline-light\" type=\"submit\">Search</button>\n              </form>\n            </div>\n          </div>\n        </nav>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"pagination\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Pagination</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/pagination/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <nav aria-label=\"Pagination example\">\n          <ul class=\"pagination pagination-sm\">\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n            <li class=\"page-item active\" aria-current=\"page\">\n              <a class=\"page-link\" href=\"#\">2</a>\n            </li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n          </ul>\n        </nav>\n        </div>\n\n        <div class=\"bd-example\">\n        <nav aria-label=\"Standard pagination example\">\n          <ul class=\"pagination\">\n            <li class=\"page-item\">\n              <a class=\"page-link\" href=\"#\" aria-label=\"Previous\">\n                <span aria-hidden=\"true\">&laquo;</span>\n              </a>\n            </li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">2</a></li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n            <li class=\"page-item\">\n              <a class=\"page-link\" href=\"#\" aria-label=\"Next\">\n                <span aria-hidden=\"true\">&raquo;</span>\n              </a>\n            </li>\n          </ul>\n        </nav>\n        </div>\n\n        <div class=\"bd-example\">\n        <nav aria-label=\"Another pagination example\">\n          <ul class=\"pagination pagination-lg flex-wrap\">\n            <li class=\"page-item disabled\">\n              <a class=\"page-link\" href=\"#\" tabindex=\"-1\" aria-disabled=\"true\">Previous</a>\n            </li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>\n            <li class=\"page-item active\" aria-current=\"page\">\n              <a class=\"page-link\" href=\"#\">2</a>\n            </li>\n            <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>\n            <li class=\"page-item\">\n              <a class=\"page-link\" href=\"#\">Next</a>\n            </li>\n          </ul>\n        </nav>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"popovers\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Popovers</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/popovers/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <button type=\"button\" class=\"btn btn-lg btn-danger\" data-bs-toggle=\"popover\" title=\"Popover title\" data-bs-content=\"And here's some amazing content. It's very engaging. Right?\">Click to toggle popover</button>\n        </div>\n\n        <div class=\"bd-example\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-placement=\"top\" data-bs-content=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\">\n          Popover on top\n        </button>\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-placement=\"right\" data-bs-content=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\">\n          Popover on end\n        </button>\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-placement=\"bottom\" data-bs-content=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\">\n          Popover on bottom\n        </button>\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-container=\"body\" data-bs-toggle=\"popover\" data-bs-placement=\"left\" data-bs-content=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\">\n          Popover on start\n        </button>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"progress\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Progress</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/progress/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n        <div class=\"progress mb-3\">\n          <div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"0\" aria-valuemin=\"0\" aria-valuemax=\"100\">0%</div>\n        </div>\n        <div class=\"progress mb-3\">\n          <div class=\"progress-bar bg-success w-25\" role=\"progressbar\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">25%</div>\n        </div>\n        <div class=\"progress mb-3\">\n          <div class=\"progress-bar bg-info text-dark w-50\" role=\"progressbar\" aria-valuenow=\"50\" aria-valuemin=\"0\" aria-valuemax=\"100\">50%</div>\n        </div>\n        <div class=\"progress mb-3\">\n          <div class=\"progress-bar bg-warning text-dark w-75\" role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\">75%</div>\n        </div>\n        <div class=\"progress\">\n          <div class=\"progress-bar bg-danger w-100\" role=\"progressbar\" aria-valuenow=\"100\" aria-valuemin=\"0\" aria-valuemax=\"100\">100%</div>\n        </div>\n        </div>\n\n        <div class=\"bd-example\">\n        <div class=\"progress\">\n          <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 15%\" aria-valuenow=\"15\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n          <div class=\"progress-bar progress-bar-striped progress-bar-animated bg-success\" role=\"progressbar\" style=\"width: 40%\" aria-valuenow=\"40\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"scrollspy\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Scrollspy</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/scrollspy/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n          <nav id=\"navbar-example2\" class=\"navbar navbar-light bg-light px-3\">\n            <a class=\"navbar-brand\" href=\"#\">Navbar</a>\n            <ul class=\"nav nav-pills\">\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"#fat\">@fat</a>\n              </li>\n              <li class=\"nav-item\">\n                <a class=\"nav-link\" href=\"#mdo\">@mdo</a>\n              </li>\n              <li class=\"nav-item dropdown\">\n                <a class=\"nav-link dropdown-toggle\" data-bs-toggle=\"dropdown\" href=\"#\" role=\"button\" aria-expanded=\"false\">Dropdown</a>\n                <ul class=\"dropdown-menu\">\n                  <li><a class=\"dropdown-item\" href=\"#one\">one</a></li>\n                  <li><a class=\"dropdown-item\" href=\"#two\">two</a></li>\n                  <li><hr class=\"dropdown-divider\"></li>\n                  <li><a class=\"dropdown-item\" href=\"#three\">three</a></li>\n                </ul>\n              </li>\n            </ul>\n          </nav>\n          <div data-bs-spy=\"scroll\" data-bs-target=\"#navbar-example2\" data-bs-offset=\"0\" class=\"scrollspy-example\" tabindex=\"0\">\n            <h4 id=\"fat\">@fat</h4>\n            <p>Placeholder content for the scrollspy example. You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out. Your kiss is cosmic, every move is magic. I mean the ones, I mean like she's the one. Greetings loved ones let's take a journey. Just own the night like the 4th of July! But you'd rather get wasted.</p>\n            <h4 id=\"mdo\">@mdo</h4>\n            <p>Placeholder content for the scrollspy example. 'Cause she's the muse and the artist. (This is how we do) So you wanna play with magic. So just be sure before you give it all to me. I'm walking, I'm walking on air (tonight). Skip the talk, heard it all, time to walk the walk.</p>\n            <h4 id=\"one\">one</h4>\n            <p>Placeholder content for the scrollspy example. Takes you miles high, so high, 'cause she’s got that one international smile. There's a stranger in my bed, there's a pounding in my head. Oh, no. In another life I would make you stay. ‘Cause I, I’m capable of anything. Suiting up for my crowning battle. Used to steal your parents' liquor and climb to the roof. Tone, tan fit and ready, turn it up cause its gettin' heavy. Her love is like a drug. I guess that I forgot I had a choice.</p>\n            <h4 id=\"two\">two</h4>\n            <p>Placeholder content for the scrollspy example. It's time to bring out the big balloons. I'm walking, I'm walking on air (tonight). Yeah, we maxed our credit cards and got kicked out of the bar. Yo, shout out to all you kids, buying bottle service, with your rent money. I'm ma get your heart racing in my skin-tight jeans. If you get the chance you better keep her. Yo, shout out to all you kids, buying bottle service, with your rent money.</p>\n            <h4 id=\"three\">three</h4>\n            <p>Placeholder content for the scrollspy example. If you wanna dance, if you want it all, you know that I'm the girl that you should call. Walk through the storm I would. So let me get you in your birthday suit. The one that got away. Last Friday night, yeah I think we broke the law, always say we're gonna stop. 'Cause she's a little bit of Yoko, And she's a little bit of 'Oh no'. I want the jaw droppin', eye poppin', head turnin', body shockin'. Yeah, we maxed our credit cards and got kicked out of the bar.</p>\n            <p>And some more placeholder content, for good measure.</p>\n          </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"spinners\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Spinners</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/spinners/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example\">\n\n        <div class=\"spinner-border text-primary\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-border text-secondary\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-border text-success\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-border text-danger\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-border text-warning\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-border text-info\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-border text-light\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-border text-dark\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        </div>\n\n        <div class=\"bd-example\">\n\n        <div class=\"spinner-grow text-primary\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-grow text-secondary\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-grow text-success\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-grow text-danger\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-grow text-warning\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-grow text-info\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-grow text-light\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        <div class=\"spinner-grow text-dark\" role=\"status\">\n          <span class=\"visually-hidden\">Loading...</span>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"my-3\" id=\"toasts\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Toasts</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/toasts/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example bg-dark p-5 align-items-center\">\n        <div class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">\n          <div class=\"toast-header\">\n            <svg class=\"bd-placeholder-img rounded me-2\" width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><rect width=\"100%\" height=\"100%\" fill=\"#007aff\"/></svg>\n\n            <strong class=\"me-auto\">Bootstrap</strong>\n            <small class=\"text-muted\">11 mins ago</small>\n            <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>\n          </div>\n          <div class=\"toast-body\">\n            Hello, world! This is a toast message.\n          </div>\n        </div>\n        </div>\n      </div>\n    </article>\n    <article class=\"mt-3 mb-5 pb-5\" id=\"tooltips\">\n      <div class=\"bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2\">\n        <h3>Tooltips</h3>\n        <a class=\"d-flex align-items-center\" href=\"https://getbootstrap.com/docs/5.0/components/tooltips/\">Documentation</a>\n      </div>\n\n      <div>\n        <div class=\"bd-example tooltip-demo\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"Tooltip on top\">Tooltip on top</button>\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"right\" title=\"Tooltip on end\">Tooltip on end</button>\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"bottom\" title=\"Tooltip on bottom\">Tooltip on bottom</button>\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"left\" title=\"Tooltip on start\">Tooltip on start</button>\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-html=\"true\" title=\"<em>Tooltip</em> <u>with</u> <b>HTML</b>\">Tooltip with HTML</button>\n        </div>\n      </div>\n    </article>\n  </section>\n</div>\n\n<div class=\"modal fade\" id=\"exampleModalDefault\" tabindex=\"-1\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"exampleModalLabel\">Modal title</h5>\n        <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n      </div>\n      <div class=\"modal-body\">\n        ...\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\n        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"modal fade\" id=\"staticBackdropLive\" data-bs-backdrop=\"static\" data-bs-keyboard=\"false\" tabindex=\"-1\" aria-labelledby=\"staticBackdropLiveLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"staticBackdropLiveLabel\">Modal title</h5>\n        <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n      </div>\n      <div class=\"modal-body\">\n        <p>I will not close if you click outside me. Don't even try to press escape key.</p>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\n        <button type=\"button\" class=\"btn btn-primary\">Understood</button>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"modal fade\" id=\"exampleModalCenteredScrollable\" tabindex=\"-1\" aria-labelledby=\"exampleModalCenteredScrollableTitle\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-dialog-centered modal-dialog-scrollable\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"exampleModalCenteredScrollableTitle\">Modal title</h5>\n        <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n      </div>\n      <div class=\"modal-body\">\n        <p>Placeholder text for this demonstration of a vertically centered modal dialog.</p>\n        <p>In this case, the dialog has a bit more content, just to show how vertical centering can be added to a scrollable modal.</p>\n        <p>What follows is just some placeholder text for this modal dialog. Sipping on Rosé, Silver Lake sun, coming up all lazy. It’s in the palm of your hand now baby. So we hit the boulevard. So make a wish, I'll make it like your birthday everyday. Do you ever feel already buried deep six feet under? It's time to bring out the big balloons. You could've been the greatest. Passport stamps, she's cosmopolitan. Your kiss is cosmic, every move is magic.</p>\n        <p>We're living the life. We're doing it right. Open up your heart. I was tryna hit it and quit it. Her love is like a drug. Always leaves a trail of stardust. The girl's a freak, she drive a jeep in Laguna Beach. Fine, fresh, fierce, we got it on lock. All my girls vintage Chanel baby.</p>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\n        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"modal fade\" id=\"exampleModalFullscreen\" tabindex=\"-1\" aria-labelledby=\"exampleModalFullscreenLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog modal-fullscreen\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title h4\" id=\"exampleModalFullscreenLabel\">Full screen modal</h5>\n        <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>\n      </div>\n      <div class=\"modal-body\">\n        <p>What follows is just some placeholder text for this modal dialog. I feel like I'm already there. I’m gon’ put her in a coma. Boom, boom, boom. You're reading me like erotica, boy, you make me feel exotic, yeah. Happy birthday. From Tokyo to Mexico, to Rio. I knew you were.</p>\n        <p>Last Friday night. Calling out my name. Kiss her, touch her, squeeze her buns. Heavy is the head that wears the crown. So open up your heart and just let it begin. Boy all this time was worth the waiting. You know that I'm the girl that you should call. End of the rainbow looking treasure. You're reading me like erotica, boy, you make me feel exotic, yeah. Do you know that there's still a chance for you 'Cause there's a spark in you? So I sat quietly, agreed politely. From Tokyo to Mexico, to Rio.</p>\n        <p>Don't be a shy kinda guy I'll bet it's beautiful. You fall asleep during foreplay, 'Cause the pills you take, are more your forte. Open up your heart. You're never gonna be unsatisfied. Know that you are worthy. This one goes out to the ladies at breakfast in last night's dress. You think you've seen her in a magazine. I should've told you what you meant to me 'Cause now I pay the price. Takes you miles high, so high, 'cause she’s got that one international smile.</p>\n        <p>Yo, shout out to all you kids, buying bottle service, with your rent money. So I sat quietly, agreed politely. They say, be afraid you're not like the others, futuristic lover. Boom, boom, boom. Don't need apologies. We can dance, until we die, you and I, will be young forever. If you choose to walk away, don’t walk away. You know that I'm the girl that you should call. This Friday night, do it all again.</p>\n        <p>I'm walking on air. But lil' mama so dope. It's time to bring out the big balloons. Are you ready for, ready for. The boys break their necks try'na to creep a little sneak peek. Summer after high school when we first met. If you want it all. (This is how we do) You open my eyes and I'm ready to go, lead me into the light.</p>\n        <p>Growing fast into a bolt of lightning. We freak in my jeep, Snoop Doggy Dogg on the stereo. Baby do you dare to do this? Open up your heart and just let it begin. Peach-pink lips, yeah, everybody stares. Be your teenage dream tonight. Are you brave enough to let me see your peacock? You think I'm funny when I tell the punchline wrong. Woo! I knew you were. All this money can't buy me a time machine. I can't sleep let's run away and don't ever look back, don't ever look back.</p>\n        <p>Make it like your birthday everyday. I'm not sticking around to watch you go down. Uh-huh, I see you. For you I'll risk it all, all. I’m gon’ put her in a coma. She ride me like a roller coaster. You hear my voice, you hear that sound. 'Cause I will love you unconditionally (oh yeah). They say, be afraid you're not like the others, futuristic lover. There is no fear now, let go and just be free, I will love you unconditionally.</p>\n        <p>We can dance, until we die, you and I, will be young forever. Pop your Pérignon. Last Friday night, yeah I think we broke the law, always say we're gonna stop. Don't need apologies. Give you something good to celebrate. But don’t make me your enemy, your enemy, your enemy. Flowers in her hair, she don't care. Tone, tan fit and ready, turn it up cause its gettin' heavy.</p>\n      </div>\n      <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>\n      </div>\n    </div>\n  </div>\n</div>\n\n<script>\n(function () {\n  'use strict'\n\n  // Tooltip and popover demos\n  document.querySelectorAll('.tooltip-demo')\n    .forEach(function (tooltip) {\n      new bootstrap.Tooltip(tooltip, {\n        selector: '[data-bs-toggle=\"tooltip\"]'\n      })\n    })\n\n  document.querySelectorAll('[data-bs-toggle=\"popover\"]')\n    .forEach(function (popover) {\n      new bootstrap.Popover(popover)\n    })\n\n  document.querySelectorAll('.toast')\n    .forEach(function (toastNode) {\n      var toast = new bootstrap.Toast(toastNode, {\n        autohide: false\n      })\n\n      toast.show()\n    })\n\n  // Disable empty links\n  document.querySelectorAll('[href=\"#\"]')\n    .forEach(function (link) {\n      link.addEventListener('click', function (event) {\n        event.preventDefault()\n      })\n    })\n\n  function setActiveItem() {\n    var hash = window.location.hash\n\n    if (hash === '') {\n      return\n    }\n\n    var link = document.querySelector('.bd-aside a[href=\"' + hash + '\"]')\n    var active = document.querySelector('.bd-aside .active')\n    var parent = link.parentNode.parentNode.previousElementSibling\n\n    link.classList.add('active')\n\n    if (parent.classList.contains('collapsed')) {\n      parent.click()\n    }\n\n    if (!active) {\n      return\n    }\n\n    var expanded = active.parentNode.parentNode.previousElementSibling\n\n    active.classList.remove('active')\n\n    if (expanded && parent !== expanded) {\n      expanded.click()\n    }\n  }\n\n  setActiveItem()\n  window.addEventListener('hashchange', setActiveItem)\n})()\n</script>"
+        }
+      ],
+      "sourcePath": "src/views/bootstrap-v5",
+      "sourceFile": "src/views/bootstrap-v5/component.config.js",
+      "readmeFile": "src/views/bootstrap-v5/README.md",
+      "type": "component"
+    },
+    "kitchensink": {
+      "id": "kitchensink",
+      "title": "Kitchensink",
+      "isTitleFromHeading": true,
+      "content": "<h1 id=\"kitchensink\">Kitchensink</h1>\n<p>Just a page that showcases everything and all together.</p>",
+      "variants": [
+        {
+          "file": "kitchensink.html",
+          "id": "kitchensink/kitchensink.html-1",
+          "componentId": "kitchensink",
+          "title": "Kitchensink",
+          "extension": "html",
+          "raw": "<!--#include file=\"/header/variants/header.html\" -->\n\n<h1>Chancellor on Brink of Second Bailout for Banks</h1>\n<h2>Billions may be needed as lending squeeze tightens</h2>\n<p>Alistair Darling has been forced to consider a second bailout for banks as the lending drought worsens.</p>\n<p>The Chancellor will decide within weeks whether to pump billions more into the economy as evidence mounts that the <code>£37 billion</code> part-nationalisation last year has failed to keep credit flowing. Options include cash injections, offering banks cheaper state guarantees to raise money privately or buying up “toxic assets”, The Times has learnt.</p>\n<pre>const test = 123;</pre>\n<p>The Bank of England revealed yesterday that, despite intense pressure, the banks curbed lending in the final quarter of last year and plan even tighter restrictions in the coming months. Its findings will alarm the Treasury.</pre>\n\n<!--#include file=\"/footer/variants/footer.html\" -->"
+        }
+      ],
+      "sourcePath": "src/views/kitchensink",
+      "sourceFile": "src/views/kitchensink/component.config.js",
+      "readmeFile": "src/views/kitchensink/README.md",
+      "type": "component"
+    }
+  },
+  "navigation": {
+    "index": {
+      "childIds": [
+        "design",
+        "components",
+        "views",
+        "resources",
+        "development"
+      ],
+      "id": "index",
+      "itemId": "index",
+      "path": "/",
+      "type": "documentation",
+      "title": "BTCPay Server Design System"
+    },
+    "components": {
+      "prevSiblingId": "design",
+      "nextSiblingId": "views",
+      "childIds": [
+        "components/header",
+        "components/theme-switch",
+        "components/footer"
+      ],
+      "parentId": "index",
+      "id": "components",
+      "itemId": "components",
+      "isStructural": true,
+      "path": "/components/",
+      "type": "documentation",
+      "title": "Components"
+    },
+    "components/header": {
+      "nextSiblingId": "components/theme-switch",
+      "parentId": "components",
+      "id": "components/header",
+      "itemId": "header",
+      "path": "/components/header/",
+      "type": "component",
+      "title": "Header",
+      "keywords": [
+        null
+      ]
+    },
+    "components/theme-switch": {
+      "prevSiblingId": "components/header",
+      "nextSiblingId": "components/footer",
+      "parentId": "components",
+      "id": "components/theme-switch",
+      "itemId": "theme-switch",
+      "path": "/components/theme-switch/",
+      "type": "component",
+      "title": "Theme Switch",
+      "keywords": [
+        null
+      ]
+    },
+    "components/footer": {
+      "prevSiblingId": "components/theme-switch",
+      "parentId": "components",
+      "id": "components/footer",
+      "itemId": "footer",
+      "path": "/components/footer/",
+      "type": "component",
+      "title": "Footer",
+      "keywords": [
+        null
+      ]
+    },
+    "design": {
+      "nextSiblingId": "components",
+      "childIds": [
+        "design/colors",
+        "design/fonts",
+        "design/spaces",
+        "design/variables"
+      ],
+      "parentId": "index",
+      "id": "design",
+      "itemId": "design",
+      "isStructural": true,
+      "path": "/design/",
+      "type": "documentation",
+      "title": "Design"
+    },
+    "development": {
+      "prevSiblingId": "resources",
+      "parentId": "index",
+      "id": "development",
+      "itemId": "development",
+      "path": "/development/",
+      "type": "documentation",
+      "title": "Development"
+    },
+    "resources": {
+      "prevSiblingId": "views",
+      "nextSiblingId": "development",
+      "childIds": [
+        "resources/css",
+        "resources/favicon",
+        "resources/design-files"
+      ],
+      "parentId": "index",
+      "id": "resources",
+      "itemId": "resources",
+      "isStructural": true,
+      "path": "/resources/",
+      "type": "documentation",
+      "title": "Resources"
+    },
+    "views": {
+      "prevSiblingId": "components",
+      "nextSiblingId": "resources",
+      "childIds": [
+        "views/kitchensink",
+        "views/bootstrap-v4",
+        "views/bootstrap-v5"
+      ],
+      "parentId": "index",
+      "id": "views",
+      "itemId": "views",
+      "isStructural": true,
+      "path": "/views/",
+      "type": "documentation",
+      "title": "Views"
+    },
+    "views/kitchensink": {
+      "nextSiblingId": "views/bootstrap-v4",
+      "parentId": "views",
+      "id": "views/kitchensink",
+      "itemId": "kitchensink",
+      "path": "/views/kitchensink/",
+      "type": "component",
+      "title": "Kitchensink",
+      "keywords": [
+        null
+      ]
+    },
+    "views/bootstrap-v4": {
+      "prevSiblingId": "views/kitchensink",
+      "nextSiblingId": "views/bootstrap-v5",
+      "parentId": "views",
+      "id": "views/bootstrap-v4",
+      "itemId": "bootstrap-v4",
+      "path": "/views/bootstrap-v4/",
+      "type": "component",
+      "title": "Bootstrap v4",
+      "keywords": [
+        null
+      ]
+    },
+    "views/bootstrap-v5": {
+      "prevSiblingId": "views/bootstrap-v4",
+      "parentId": "views",
+      "id": "views/bootstrap-v5",
+      "itemId": "bootstrap-v5",
+      "path": "/views/bootstrap-v5/",
+      "type": "component",
+      "title": "Bootstrap v5",
+      "keywords": [
+        null
+      ]
+    },
+    "design/colors": {
+      "nextSiblingId": "design/fonts",
+      "parentId": "design",
+      "id": "design/colors",
+      "itemId": "design/colors",
+      "path": "/design/colors/",
+      "type": "tokens",
+      "title": "Colors"
+    },
+    "design/fonts": {
+      "prevSiblingId": "design/colors",
+      "nextSiblingId": "design/spaces",
+      "parentId": "design",
+      "id": "design/fonts",
+      "itemId": "design/fonts",
+      "path": "/design/fonts/",
+      "type": "tokens",
+      "title": "Fonts"
+    },
+    "design/spaces": {
+      "prevSiblingId": "design/fonts",
+      "nextSiblingId": "design/variables",
+      "parentId": "design",
+      "id": "design/spaces",
+      "itemId": "design/spaces",
+      "path": "/design/spaces/",
+      "type": "tokens",
+      "title": "Spaces"
+    },
+    "design/variables": {
+      "prevSiblingId": "design/spaces",
+      "parentId": "design",
+      "id": "design/variables",
+      "itemId": "design/variables",
+      "path": "/design/variables/",
+      "type": "tokens",
+      "title": "Variables"
+    },
+    "resources/css": {
+      "nextSiblingId": "resources/favicon",
+      "parentId": "resources",
+      "id": "resources/css",
+      "itemId": "resources/css",
+      "path": "/resources/css/",
+      "type": "documentation",
+      "title": "CSS"
+    },
+    "resources/design-files": {
+      "prevSiblingId": "resources/favicon",
+      "parentId": "resources",
+      "id": "resources/design-files",
+      "itemId": "resources/design-files",
+      "path": "/resources/design-files/",
+      "type": "documentation",
+      "title": "Design files"
+    },
+    "resources/favicon": {
+      "prevSiblingId": "resources/css",
+      "nextSiblingId": "resources/design-files",
+      "parentId": "resources",
+      "id": "resources/favicon",
+      "itemId": "resources/favicon",
+      "path": "/resources/favicon/",
+      "type": "documentation",
+      "title": "Favicon"
+    }
+  }
+}

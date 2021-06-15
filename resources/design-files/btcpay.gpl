@@ -1,0 +1,49 @@
+GIMP Palette
+Name: BTCPay Server
+#
+81 177 62 Brand Primary
+206 220 33 Brand Secondary
+30 122 68 Brand Tertiary
+15 59 33 Brand Dark
+255 255 255 White
+248 249 250 Neutral 100
+233 236 239 Neutral 200
+222 226 230 Neutral 300
+206 212 218 Neutral 400
+143 151 158 Neutral 500
+108 117 125 Neutral 600
+73 80 87 Neutral 700
+52 58 64 Neutral 800
+41 41 41 Neutral 900
+81 177 62 Primary
+30 122 68 Primary Accent
+210 229 207 Primary Backdrop
+41 41 41 Primary Text
+143 151 158 Secondary
+73 80 87 Secondary Accent
+206 212 218 Secondary Backdrop
+73 80 87 Secondary Text
+36 126 18 Success
+30 122 68 Success Accent
+56 151 37 Success Backdrop
+255 255 255 Success Text
+23 162 184 Info
+17 122 139 Info Accent
+200 231 237 Info Backdrop
+17 122 139 Info Text
+255 193 7 Warning
+211 158 0 Warning Accent
+255 193 7 Warning Backdrop
+41 41 41 Warning Text
+193 44 26 Danger
+167 23 5 Danger Accent
+232 84 66 Danger Backdrop
+255 255 255 Danger Text
+233 236 239 Light
+206 212 218 Light Accent
+233 236 239 Light Backdrop
+52 58 64 Light Text
+52 58 64 Dark
+0 0 0 Dark Accent
+52 58 64 Dark Backdrop
+233 236 239 Dark Text
