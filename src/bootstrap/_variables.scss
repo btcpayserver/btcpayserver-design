@@ -42,9 +42,9 @@ $table-active-bg: var(--btcpay-body-bg-active);
 
 $pagination-color: var(--btcpay-body-link);
 $pagination-bg: var(--btcpay-body-bg-light);
+$pagination-border-color: var(--btcpay-body-border-light);
 $pagination-hover-color: $pagination-color;
 $pagination-hover-bg: var(--btcpay-body-bg-hover);
-$pagination-border-color: var(--btcpay-body-border-light);
 $pagination-hover-border-color: $pagination-border-color;
 
 $pagination-focus-color: $pagination-hover-color;
@@ -56,7 +56,7 @@ $pagination-active-bg: var(--btcpay-body-bg-active);
 $pagination-active-border-color: var(--btcpay-body-border-medium);
 
 $pagination-disabled-color: var(--btcpay-body-text-muted);
-$pagination-disabled-bg: var(--btcpay-body-bg);
+$pagination-disabled-bg: $pagination-bg;
 $pagination-disabled-border-color: $pagination-border-color;
 
 $modal-content-color: var(--btcpay-body-text);
@@ -166,6 +166,8 @@ $link-hover-decoration: underline;
 
 $pre-color: var(--btcpay-pre-text);
 $code-color: var(--btcpay-code-text);
+$kbd-color: $code-color;
+$kbd-bg: var(--btcpay-code-bg);
 
 $nav-link-color: var(--btcpay-nav-link);
 $nav-link-hover-color: var(--btcpay-nav-link-accent);
