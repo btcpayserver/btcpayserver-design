@@ -4998,7 +4998,7 @@ fieldset:disabled .btn {
   width: 1em;
   height: 1em;
   padding: 0.25em 0.25em;
-  color: var(--btcpay-black);
+  color: var(--btcpay-body-text);
   background: transparent none center/1em auto no-repeat;
   border: 0;
   border-radius: 4px;
@@ -5006,7 +5006,7 @@ fieldset:disabled .btn {
 }
 
 .btn-close:hover {
-  color: var(--btcpay-black);
+  color: var(--btcpay-body-text);
   text-decoration: none;
   opacity: 0.75;
 }
