@@ -4318,7 +4318,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-item {
-  background-color: var(--btcpay-body-bg);
+  background-color: transparent;
   border: 0 solid transparent;
 }
 
