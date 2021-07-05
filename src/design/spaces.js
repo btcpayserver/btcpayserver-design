@@ -1,27 +1,27 @@
 module.exports = [
   {
     name: 'XS',
-    value: '5px',
+    value: '4px',
     variable: '--btcpay-space-xs'
   },
   {
     name: 'S',
-    value: '10px',
+    value: '8px',
     variable: '--btcpay-space-s'
   },
   {
     name: 'M',
-    value: '20px',
+    value: '16px',
     variable: '--btcpay-space-m'
   },
   {
     name: 'L',
-    value: '40px',
+    value: '32px',
     variable: '--btcpay-space-l'
   },
   {
     name: 'XL',
-    value: '60px',
+    value: '64px',
     variable: '--btcpay-space-xl'
   },
   {
