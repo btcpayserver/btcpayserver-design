@@ -9439,7 +9439,6 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-
 html {
   position: relative;
   min-height: 100%;
@@ -9573,41 +9572,15 @@ input[type=number].hide-number-spin {
 }
 
 /* set color for text on background */
-.bg-primary {
-  color: var(--btcpay-primary-text);
-}
-
-.bg-secondary {
-  color: var(--btcpay-secondary-text);
-}
-
-.bg-success {
-  color: var(--btcpay-success-text);
-}
-
-.bg-info {
-  color: var(--btcpay-info-text);
-}
-
-.bg-warning {
-  color: var(--btcpay-warning-text);
-}
-
-.bg-danger {
-  color: var(--btcpay-danger-text);
-}
-
-.bg-light {
-  color: var(--btcpay-light-text);
-}
-
-.bg-dark {
-  color: var(--btcpay-dark-text);
-}
-
-.bg-body {
-  color: var(--btcpay-body-text);
-}
+.bg-primary { color: var(--btcpay-primary-text); }
+.bg-secondary { color: var(--btcpay-secondary-text); }
+.bg-success { color: var(--btcpay-success-text); }
+.bg-info { color: var(--btcpay-info-text); }
+.bg-warning { color: var(--btcpay-warning-text); }
+.bg-danger { color: var(--btcpay-danger-text); }
+.bg-light { color: var(--btcpay-light-text); }
+.bg-dark { color: var(--btcpay-dark-text); }
+.bg-body { color: var(--btcpay-body-text); }
 
 /* Forms */
 .form-group {
@@ -9615,11 +9588,12 @@ input[type=number].hide-number-spin {
 }
 
 [data-required]::after {
-  content: "*";
+  content: " *";
   color: var(--btcpay-danger);
 }
 
 /* Negative margin utils (only include bare minimum) */
+
 .mt-n1 {
   margin-top: -0.25rem !important;
 }
@@ -9762,7 +9736,6 @@ input[type=number].hide-number-spin {
     margin-left: -3rem !important;
   }
 }
-
 .btcpay-status {
   display: inline-flex;
   align-items: center;
@@ -9772,35 +9745,30 @@ input[type=number].hide-number-spin {
   width: 19px;
   height: 19px;
 }
-
 .btcpay-status:before {
   content: '';
   border-radius: 50%;
   width: 9px;
   height: 9px;
 }
-
 .btcpay-status--enabled {
-  background-color: rgba(0, 182, 52, 0.3);
+  background-color: rgba(0, 182, 52, .3);
 }
-
 .btcpay-status--enabled:before {
   background-color: #00B634;
 }
-
 .btcpay-status--disabled {
-  background-color: rgba(251, 56, 61, 0.3);
+  background-color: rgba(251, 56, 61, .3);
 }
-
 .btcpay-status--disabled:before {
   background-color: #FB383D;
 }
-
 .btcpay-toggle {
   --border-size: 2px;
   --toggle-width: 40px;
   --toggle-height: 24px;
   --switch-size: calc(var(--toggle-height) - 2 * var(--border-size));
+
   position: relative;
   display: inline-block;
   width: var(--toggle-width);
@@ -9853,54 +9821,24 @@ label + input.btcpay-toggle {
   filter: none;
   opacity: 0.5;
 }
-
 /* Bootstrap Responsive Helper */
 html[data-devenv]:before {
-  display: inline-block;
-  position: fixed;
-  z-index: 1000;
-  right: 0;
-  bottom: 0;
-  background: var(--btcpay-secondary);
-  color: var(--btcpay-secondary-text);
-  opacity: .7;
-  padding: 4px 5px 3px 7px;
-  font-size: 10px;
-  border-top-left-radius: 4px;
+    display: inline-block;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    bottom: 0;
+    background: var(--btcpay-secondary);
+    color: var(--btcpay-secondary-text);
+    opacity: .7;
+    padding: 4px 5px 3px 7px;
+    font-size: 10px;
+    border-top-left-radius: 4px;
 }
 
-@media (max-width: 575px) {
-  html[data-devenv]:before {
-    content: 'XS';
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  html[data-devenv]:before {
-    content: 'SM';
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  html[data-devenv]:before {
-    content: 'MD';
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  html[data-devenv]:before {
-    content: 'LG';
-  }
-}
-
-@media (min-width: 1200px) {
-  html[data-devenv]:before {
-    content: 'XL';
-  }
-}
-
-@media print {
-  html[data-devenv]:before {
-    content: none;
-  }
-}
+@media (max-width: 575px) { html[data-devenv]:before { content: 'XS'; } }
+@media (min-width: 576px) and (max-width: 767px) { html[data-devenv]:before { content: 'SM'; } }
+@media (min-width: 768px) and (max-width: 991px) { html[data-devenv]:before { content: 'MD'; } }
+@media (min-width: 992px) and (max-width: 1199px) { html[data-devenv]:before { content: 'LG'; } }
+@media (min-width: 1200px) { html[data-devenv]:before { content: 'XL'; } }
+@media print { html[data-devenv]:before { content: none; } }
