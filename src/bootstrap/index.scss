@@ -4,12 +4,3 @@
 
 // include all of boostrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
-// apply custom overrides that cannot be done by replacing
-// strings via the generate-bootstrap script
-@import "_customizations";
-
-// custom components
-@import "../components/status/status";
-@import "../components/toggle/toggle";
-@import "../components/responsive-helper/responsive-helper";

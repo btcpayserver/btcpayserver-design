@@ -2,16 +2,27 @@
  * Replaces the colors in the initial Bootstrap build that needed
  * to be actual color values to work with the modifier functions.
  */
-const { writeFileSync } = require('fs')
-const { resolve } = require('path')
+const { readFileSync, writeFileSync } = require('fs')
+const { join, resolve } = require('path')
 const sass = require('node-sass')
 const postcss = require('postcss')
 const autoprefixer = require('autoprefixer')
 
-const file = resolve(__dirname, '../src/bootstrap/index.scss')
-const outFile = resolve(__dirname, '../src/static/styles/btcpayserver-bootstrap-v5.css')
+const src = file => resolve(__dirname, join('../src', file))
+const file = src('bootstrap/index.scss')
+const outFile = src('static/styles/btcpayserver-bootstrap-v5.css')
 
-const output = css => writeFileSync(outFile, patch(css))
+const output = css => {
+  // apply custom overrides that cannot be done by replacing strings via the generate-bootstrap script
+  let result = patch(css)
+
+  result += readFileSync(src('bootstrap/_customizations.css'))
+  result += readFileSync(src('components/status/status.css'))
+  result += readFileSync(src('components/toggle/toggle.css'))
+  result += readFileSync(src('components/responsive-helper/responsive-helper.css'))
+
+  writeFileSync(outFile, result)
+}
 
 const SKIP_COLORS = ['#fff', '#000']
 const CATEGORIES = ['primary', 'secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark']
