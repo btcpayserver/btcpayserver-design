@@ -11,7 +11,7 @@
     "BTCPay Server"
   ],
   "scripts": {
-    "clean": "rimraf dist generated && mkdir -p dist/styles dist/scripts/bootstrap-v5 generated",
+    "clean": "rimraf dist generated && mkdir -p dist/styles dist/scripts/bootstrap generated",
     "start": "npm run clean && npm-run-all -p 'start:*'",
     "start:build": "npm-run-all -p 'build:* -- --serve --watch'",
     "start:static": "onchange -k 'src/static/**' -- npm run build:static",
@@ -20,7 +20,7 @@
     "start:styles:variables": "onchange -k 'postcss/variables/*' 'src/styles/variables/**' 'src/design/**' -- npm run build:styles:variables",
     "start:bootstrap": "onchange -k 'src/bootstrap/**' 'tasks/generate-bootstrap.js' -- npm run build:bootstrap",
     "build": "npm run clean && NODE_ENV=production npm-run-all -p 'build:*'",
-    "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts/bootstrap-v5 && :",
+    "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts/bootstrap && :",
     "build:patternlib": "uiengine build",
     "build:styles": "npm-run-all -s 'build:styles:main' 'build:styles:variables' && :",
     "build:styles:main": "postcss --config postcss/main --output dist/styles/btcpayserver-main.css src/styles/main/index.css",
@@ -30,8 +30,7 @@
     "optimize:styles": "npm-run-all -p optimize:styles:*",
     "optimize:styles:main": "csso dist/styles/btcpayserver-main.css --output dist/styles/btcpayserver-main.min.css",
     "optimize:styles:variables": "csso dist/styles/btcpayserver-variables.css --output dist/styles/btcpayserver-variables.min.css",
-    "optimize:styles:bootstrap-v4": "csso dist/styles/btcpayserver-bootstrap-v4.css --output dist/styles/btcpayserver-bootstrap-v4.min.css",
-    "optimize:styles:bootstrap-v5": "csso dist/styles/btcpayserver-bootstrap-v5.css --output dist/styles/btcpayserver-bootstrap-v5.min.css",
+    "optimize:styles:bootstrap": "csso dist/styles/btcpayserver-bootstrap.css --output dist/styles/btcpayserver-bootstrap.min.css",
     "prod": "npm-run-all build optimize",
     "generate-color-palette": "node ./tasks/generate-color-palette.js",
     "generate-bootstrap": "node ./tasks/generate-bootstrap.js"

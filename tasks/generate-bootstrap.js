@@ -10,7 +10,7 @@ const autoprefixer = require('autoprefixer')
 
 const src = file => resolve(__dirname, join('../src', file))
 const file = src('bootstrap/index.scss')
-const outFile = src('static/styles/btcpayserver-bootstrap-v5.css')
+const outFile = src('static/styles/btcpayserver-bootstrap.css')
 
 const output = css => {
   // apply custom overrides that cannot be done by replacing strings via the generate-bootstrap script

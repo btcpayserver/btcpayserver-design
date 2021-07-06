@@ -39,14 +39,9 @@ The general approach regarding the themes is:
 This is our forked version of [Bootstrap](https://getbootstrap.com/).
 Including this is optional and only required if you want to build upon what Bootstrap offers.
 
-📦 [btcpayserver-bootstrap-v4.css](/styles/btcpayserver-bootstrap-v4.css)
-📦 [btcpayserver-bootstrap-v5.css](/styles/btcpayserver-bootstrap-v5.css)
+📦 [btcpayserver-bootstrap.css](/styles/btcpayserver-bootstrap.css)
 
 ### Why do we use a fork?
 
-Bootstrap unfortunately doesn't support CSS Custom Properties ([yet](https://github.com/twbs/bootstrap/commit/ac58c25dc8b65928ac817b8a2bf7c0e46a58de97)), but that is what we need for out themeing approach.
+Bootstrap v5 unfortunately doesn't fully support CSS Custom Properties ([yet](https://github.com/twbs/bootstrap/commit/ac58c25dc8b65928ac817b8a2bf7c0e46a58de97)), but that is what we need for out themeing approach.
 So the idea was to maintain this fork at a central place and use it as our custom version.
-
-This way we have to manually update it, but as there aren't too many updates and we don't have to do this every week or so.
-Also we can just merge stuff in when we need new features or fixes.
-This isn't ideal, but will hopefully change with Bootstrap 5.
