@@ -9528,6 +9528,18 @@ ul li {
   color: inherit;
 }
 
+.btn-outline-secondary {
+  color: var(--btcpay-secondary-text);
+}
+
+.btn-outline-secondary:hover {
+  color: var(--btcpay-secondary-text-hover);
+}
+
+.btn-outline-secondary:active {
+  color: var(--btcpay-secondary-text-active);
+}
+
 .btn-close .icon {
   position: relative;
   top: -.4rem;
