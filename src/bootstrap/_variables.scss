@@ -4,6 +4,11 @@ $enable-smooth-scroll: false;
 $enable-reduced-motion: false;
 
 // Bootstrap
+$font-size-root: 16px;
+$font-size-base: .875rem;
+$font-size-sm: .75rem;
+$font-size-lg: 1rem;
+
 $font-family-sans-serif: var(--btcpay-font-family-base);
 $font-family-monospace: var(--btcpay-font-family-monospace);
 
@@ -180,3 +185,14 @@ $hr-height: 3px;
 
 $btn-close-color: var(--btcpay-body-text);
 $btn-close-bg: none;
+
+$btn-font-weight: var(--btcpay-font-weight-semibold);
+
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 1.5rem;
+
+$input-btn-padding-y-sm: .5rem;
+$input-btn-padding-x-sm: 1.5rem;
+
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 2rem;
