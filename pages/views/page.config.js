@@ -1,6 +1,5 @@
 module.exports = {
   components: [
-    'kitchensink',
-    'bootstrap'
+    'kitchensink'
   ]
 }
