@@ -110,9 +110,22 @@ ul li {
 }
 
 .btn.rounded-circle {
-  padding: 0.375em;
-  height: 2.5em;
-  width: 2.5em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 2.857em;
+  width: 2.857em;
+}
+
+.btn-sm.rounded-circle {
+  height: 2.666em;
+  width: 2.666em;
+}
+
+.btn-lg.rounded-circle {
+  height: 3.5em;
+  width: 3.5em;
 }
 
 .btn-close .icon {
