@@ -13,10 +13,161 @@
   <body>
     
 <!-- uiengine:preview:start -->
-<div class="bd-example">
+<style>
+  .button-example { margin-bottom: 3rem; }
+  .button-example th { vertical-align: top; font-weight: bold; }
+  .button-example td, .button-example th { padding: .5rem 1rem .5rem 0; }
+</style>
 
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
+<h4>Primary</h4>
+<table class="button-example">
+  <tr>
+    <th></th>
+    <th>Default</th>
+    <th>Active</th>
+    <th>Disabled</th>
+  </tr>
+  <tr>
+    <th rowspan="4">Large</th>
+    <td><button type="button" class="btn btn-lg btn-primary">Primary</button></td>
+    <td><button type="button" class="btn btn-lg btn-primary active">Primary</button></td>
+    <td><button type="button" class="btn btn-lg btn-primary" disabled>Primary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-lg btn-primary">Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-lg btn-primary active">Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-lg btn-primary" disabled>Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-lg btn-primary"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+    <td><button type="button" class="btn btn-lg btn-primary active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+    <td><button type="button" class="btn btn-lg btn-primary" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-lg btn-primary rounded-circle"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-lg btn-primary rounded-circle active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-lg btn-primary rounded-circle" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+  </tr>
+  <tr>
+    <th rowspan="4">Medium</th>
+    <td><button type="button" class="btn btn-primary">Primary</button></td>
+    <td><button type="button" class="btn btn-primary active">Primary</button></td>
+    <td><button type="button" class="btn btn-primary" disabled>Primary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-primary">Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-primary active">Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-primary" disabled>Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-primary"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+    <td><button type="button" class="btn btn-primary active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+    <td><button type="button" class="btn btn-primary" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-primary rounded-circle"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-primary rounded-circle active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-primary rounded-circle" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+  </tr>
+  <tr>
+    <th rowspan="4">Small</th>
+    <td><button type="button" class="btn btn-sm btn-primary">Primary</button></td>
+    <td><button type="button" class="btn btn-sm btn-primary active">Primary</button></td>
+    <td><button type="button" class="btn btn-sm btn-primary" disabled>Primary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-sm btn-primary">Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-sm btn-primary active">Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-sm btn-primary" disabled>Primary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-sm btn-primary"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+    <td><button type="button" class="btn btn-sm btn-primary active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+    <td><button type="button" class="btn btn-sm btn-primary" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Primary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-sm btn-primary rounded-circle"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-sm btn-primary rounded-circle active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-sm btn-primary rounded-circle" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+  </tr>
+</table>
+
+<h4>Secondary</h4>
+<table class="button-example">
+  <tr>
+    <th></th>
+    <th>Default</th>
+    <th>Active</th>
+    <th>Disabled</th>
+  </tr>
+  <tr>
+    <th rowspan="4">Large</th>
+    <td><button type="button" class="btn btn-lg btn-secondary">Secondary</button></td>
+    <td><button type="button" class="btn btn-lg btn-secondary active">Secondary</button></td>
+    <td><button type="button" class="btn btn-lg btn-secondary" disabled>Secondary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-lg btn-secondary">Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-lg btn-secondary active">Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-lg btn-secondary" disabled>Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-lg btn-secondary"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+    <td><button type="button" class="btn btn-lg btn-secondary active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+    <td><button type="button" class="btn btn-lg btn-secondary" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-lg btn-secondary rounded-circle"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-lg btn-secondary rounded-circle active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-lg btn-secondary rounded-circle" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+  </tr>
+  <tr>
+    <th rowspan="4">Medium</th>
+    <td><button type="button" class="btn btn-secondary">Secondary</button></td>
+    <td><button type="button" class="btn btn-secondary active">Secondary</button></td>
+    <td><button type="button" class="btn btn-secondary" disabled>Secondary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-secondary">Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-secondary active">Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-secondary" disabled>Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-secondary"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+    <td><button type="button" class="btn btn-secondary active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+    <td><button type="button" class="btn btn-secondary" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-secondary rounded-circle"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-secondary rounded-circle active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-secondary rounded-circle" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+  </tr>
+  <tr>
+    <th rowspan="4">Small</th>
+    <td><button type="button" class="btn btn-sm btn-secondary">Secondary</button></td>
+    <td><button type="button" class="btn btn-sm btn-secondary active">Secondary</button></td>
+    <td><button type="button" class="btn btn-sm btn-secondary" disabled>Secondary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-sm btn-secondary">Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-sm btn-secondary active">Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+    <td><button type="button" class="btn btn-sm btn-secondary" disabled>Secondary <svg role="img" class="icon icon-caret-right"><use href="/img/icon-sprite.svg#caret-right"></use></svg></button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-sm btn-secondary"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+    <td><button type="button" class="btn btn-sm btn-secondary active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+    <td><button type="button" class="btn btn-sm btn-secondary" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg> Secondary</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-sm btn-secondary rounded-circle"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-sm btn-secondary rounded-circle active"><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+    <td><button type="button" class="btn btn-sm btn-secondary rounded-circle" disabled><svg role="img" class="icon icon-search"><use href="/img/icon-sprite.svg#search"></use></svg></button></td>
+  </tr>
+</table>
+
+<h4>Others</h4>
+
+<div class="bd-example">
 <button type="button" class="btn btn-success">Success</button>
 <button type="button" class="btn btn-danger">Danger</button>
 <button type="button" class="btn btn-warning">Warning</button>
@@ -29,8 +180,6 @@
 
 <div class="bd-example">
 
-<button type="button" class="btn btn-outline-primary">Primary</button>
-<button type="button" class="btn btn-outline-secondary">Secondary</button>
 <button type="button" class="btn btn-outline-success">Success</button>
 <button type="button" class="btn btn-outline-danger">Danger</button>
 <button type="button" class="btn btn-outline-warning">Warning</button>
@@ -39,11 +188,6 @@
 <button type="button" class="btn btn-outline-dark">Dark</button>
 </div>
 
-<div class="bd-example">
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-<button type="button" class="btn btn-primary">Standard button</button>
-<button type="button" class="btn btn-primary btn-lg">Large button</button>
-</div>
 <div class="bd-example">
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
   <div class="btn-group me-2" role="group" aria-label="First group">

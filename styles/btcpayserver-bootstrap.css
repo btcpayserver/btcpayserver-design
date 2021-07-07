@@ -9540,6 +9540,18 @@ ul li {
   color: var(--btcpay-secondary-text-active);
 }
 
+.btn .icon {
+  --btn-icon-size: 1.25em;
+  height: var(--btn-icon-size);
+  width: var(--btn-icon-size);
+}
+
+.btn.rounded-circle {
+  padding: 0.375em;
+  height: 2.5em;
+  width: 2.5em;
+}
+
 .btn-close .icon {
   position: relative;
   top: -.4rem;
