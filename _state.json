@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1625667991353,
+    "update": 1627386038316,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1525,8 +1525,16 @@
           "raw": "<div class=\"bd-example\">\n        <div class=\"row  row-cols-1 row-cols-md-2 g-4\">\n          <div class=\"col\">\n            <div class=\"card\">\n              <svg class=\"bd-placeholder-img card-img-top\" width=\"100%\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: Image cap\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#868e96\"/><text x=\"50%\" y=\"50%\" fill=\"#dee2e6\" dy=\".3em\">Image cap</text></svg>\n\n              <div class=\"card-body\">\n                <h5 class=\"card-title\">Card title</h5>\n                <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n                <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n              </div>\n            </div>\n          </div>\n          <div class=\"col\">\n            <div class=\"card\">\n              <div class=\"card-header\">\n                Featured\n              </div>\n              <div class=\"card-body\">\n                <h5 class=\"card-title\">Card title</h5>\n                <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n                <a href=\"#\" class=\"btn btn-primary\">Go somewhere</a>\n              </div>\n              <div class=\"card-footer text-muted\">\n                2 days ago\n              </div>\n            </div>\n          </div>\n          <div class=\"col\">\n            <div class=\"card\">\n              <div class=\"card-body\">\n                <h5 class=\"card-title\">Card title</h5>\n                <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>\n              </div>\n              <ul class=\"list-group list-group-flush\">\n                <li class=\"list-group-item\">An item</li>\n                <li class=\"list-group-item\">A second item</li>\n                <li class=\"list-group-item\">A third item</li>\n              </ul>\n              <div class=\"card-body\">\n                <a href=\"#\" class=\"card-link\">Card link</a>\n                <a href=\"#\" class=\"card-link\">Another link</a>\n              </div>\n            </div>\n          </div>\n          <div class=\"col\">\n            <div class=\"card\">\n              <div class=\"row g-0\">\n                <div class=\"col-md-4\">\n                  <svg class=\"bd-placeholder-img\" width=\"100%\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Placeholder: Image\" preserveAspectRatio=\"xMidYMid slice\" focusable=\"false\"><title>Placeholder</title><rect width=\"100%\" height=\"100%\" fill=\"#868e96\"/><text x=\"50%\" y=\"50%\" fill=\"#dee2e6\" dy=\".3em\">Image</text></svg>\n\n                </div>\n                <div class=\"col-md-8\">\n                  <div class=\"card-body\">\n                    <h5 class=\"card-title\">Card title</h5>\n                    <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n                    <p class=\"card-text\"><small class=\"text-muted\">Last updated 3 mins ago</small></p>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n        </div>"
         },
         {
+          "file": "code.html",
+          "id": "bootstrap/code.html-12",
+          "componentId": "bootstrap",
+          "title": "Code",
+          "extension": "html",
+          "raw": "<div class=\"bd-example\">\n<p>A <code>POST</code> callback will be sent to notification with the following form will be sent to <code>notificationUrl</code> once the enough is paid and once again once there is enough confirmations to the payment:</p>\n</div>\n\n\n<div class=\"bd-example\"><pre><code class=\"html hljs xml\"><span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">form</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">method</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"POST\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">action</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"https://localhost:14142/apps/2waqS3jYMpPhTEUp8vfomTfDQwu5/pos\"</span></span></span><span class=\"hljs-tag\">&gt;</span></span>\n  <span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">input</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">type</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"hidden\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">name</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"amount\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">value</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"100\"</span></span></span><span class=\"hljs-tag\"> /&gt;</span></span>\n  <span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">input</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">type</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"hidden\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">name</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"email\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">value</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"customer@example.com\"</span></span></span><span class=\"hljs-tag\"> /&gt;</span></span>\n  <span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">input</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">type</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"hidden\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">name</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"orderId\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">value</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"CustomOrderId\"</span></span></span><span class=\"hljs-tag\"> /&gt;</span></span>\n  <span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">input</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">type</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"hidden\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">name</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"notificationUrl\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">value</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"https://example.com/callbacks\"</span></span></span><span class=\"hljs-tag\"> /&gt;</span></span>\n  <span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">input</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">type</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"hidden\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">name</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"redirectUrl\"</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">value</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"https://example.com/thanksyou\"</span></span></span><span class=\"hljs-tag\"> /&gt;</span></span>\n  <span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">button</span></span></span><span class=\"hljs-tag\"> </span><span class=\"hljs-attr\"><span class=\"hljs-tag\"><span class=\"hljs-attr\">type</span></span></span><span class=\"hljs-tag\">=</span><span class=\"hljs-string\"><span class=\"hljs-tag\"><span class=\"hljs-string\">\"submit\"</span></span></span><span class=\"hljs-tag\">&gt;</span></span>Buy now<span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;/</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">button</span></span></span><span class=\"hljs-tag\">&gt;</span></span>\n<span class=\"hljs-tag\"><span class=\"hljs-tag\">&lt;/</span><span class=\"hljs-name\"><span class=\"hljs-tag\"><span class=\"hljs-name\">form</span></span></span><span class=\"hljs-tag\">&gt;</span></span>\n</code></pre>\n</div>"
+        },
+        {
           "file": "dropdowns.html",
-          "id": "bootstrap/dropdowns.html-12",
+          "id": "bootstrap/dropdowns.html-13",
           "componentId": "bootstrap",
           "title": "Dropdowns",
           "extension": "html",
@@ -1534,7 +1542,7 @@
         },
         {
           "file": "listgroups.html",
-          "id": "bootstrap/listgroups.html-13",
+          "id": "bootstrap/listgroups.html-14",
           "componentId": "bootstrap",
           "title": "Listgroups",
           "extension": "html",
@@ -1542,7 +1550,7 @@
         },
         {
           "file": "pagination.html",
-          "id": "bootstrap/pagination.html-14",
+          "id": "bootstrap/pagination.html-15",
           "componentId": "bootstrap",
           "title": "Pagination",
           "extension": "html",
@@ -1550,7 +1558,7 @@
         },
         {
           "file": "popovers.html",
-          "id": "bootstrap/popovers.html-15",
+          "id": "bootstrap/popovers.html-16",
           "componentId": "bootstrap",
           "title": "Popovers",
           "extension": "html",
@@ -1558,7 +1566,7 @@
         },
         {
           "file": "progress.html",
-          "id": "bootstrap/progress.html-16",
+          "id": "bootstrap/progress.html-17",
           "componentId": "bootstrap",
           "title": "Progress",
           "extension": "html",
@@ -1566,7 +1574,7 @@
         },
         {
           "file": "modal.html",
-          "id": "bootstrap/modal.html-17",
+          "id": "bootstrap/modal.html-18",
           "componentId": "bootstrap",
           "title": "Modal",
           "extension": "html",
@@ -1574,7 +1582,7 @@
         },
         {
           "file": "scrollspy.html",
-          "id": "bootstrap/scrollspy.html-18",
+          "id": "bootstrap/scrollspy.html-19",
           "componentId": "bootstrap",
           "title": "Scrollspy",
           "extension": "html",
@@ -1582,7 +1590,7 @@
         },
         {
           "file": "spinners.html",
-          "id": "bootstrap/spinners.html-19",
+          "id": "bootstrap/spinners.html-20",
           "componentId": "bootstrap",
           "title": "Spinners",
           "extension": "html",
@@ -1590,7 +1598,7 @@
         },
         {
           "file": "toasts.html",
-          "id": "bootstrap/toasts.html-20",
+          "id": "bootstrap/toasts.html-21",
           "componentId": "bootstrap",
           "title": "Toasts",
           "extension": "html",
@@ -1598,7 +1606,7 @@
         },
         {
           "file": "tooltips.html",
-          "id": "bootstrap/tooltips.html-21",
+          "id": "bootstrap/tooltips.html-22",
           "componentId": "bootstrap",
           "title": "Tooltips",
           "extension": "html",
@@ -1606,7 +1614,7 @@
         },
         {
           "file": "carousel.html",
-          "id": "bootstrap/carousel.html-22",
+          "id": "bootstrap/carousel.html-23",
           "componentId": "bootstrap",
           "title": "Carousel",
           "extension": "html",
