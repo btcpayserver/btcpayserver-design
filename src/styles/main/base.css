@@ -33,14 +33,13 @@ code {
 pre {
   font-family: var(--btcpay-font-family-monospace);
   border-radius: var(--btcpay-border-radius);
-  padding: var(--btcpay-space-m);
   color: var(--btcpay-pre-text);
   background-color: var(--btcpay-pre-bg);
 }
 
 pre code {
-  color: var(--btcpay-white);
-  background: transparent;
+  padding: var(--btcpay-space-m) !important;
+  background: var(--btcpay-pre-bg);
 }
 
 a {

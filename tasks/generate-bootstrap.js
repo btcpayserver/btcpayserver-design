@@ -168,6 +168,6 @@ sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>
   error
     ? console.error(error.formatted)
     : postcss([autoprefixer])
-        .process(result.css.toString('utf8'))
+        .process(result.css.toString('utf8'), { from: file, to: outFile })
         .then(result => output(result.css))
 )

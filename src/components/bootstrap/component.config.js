@@ -11,6 +11,7 @@ module.exports = {
     'buttons.html',
     'breadcrumb.html',
     'card.html',
+    'code.html',
     'dropdowns.html',
     'listgroups.html',
     'pagination.html',
