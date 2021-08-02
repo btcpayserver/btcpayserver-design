@@ -8,6 +8,7 @@
   display: inline-block;
   width: var(--toggle-width);
   height: var(--toggle-height);
+  flex-shrink: 0;
   border: 0;
   border-radius: calc(var(--toggle-height) / 2);
   background: var(--btcpay-neutral-500);
