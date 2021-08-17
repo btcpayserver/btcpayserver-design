@@ -189,10 +189,16 @@ $btn-close-bg: none;
 $btn-font-weight: var(--btcpay-font-weight-semibold);
 
 $input-btn-padding-y: .5rem;
-$input-btn-padding-x: 1.5rem;
+$input-padding-x: .75rem;
+$btn-padding-x: 1.5rem;
 
 $input-btn-padding-y-sm: .5rem;
-$input-btn-padding-x-sm: 1.5rem;
+$input-padding-x-sm: .75rem;
+$btn-padding-x-sm: 1.5rem;
 
 $input-btn-padding-y-lg: 1rem;
-$input-btn-padding-x-lg: 2rem;
+$input-padding-x-lg: 1.25rem;
+$btn-padding-x-lg: 2rem;
+
+$badge-padding-y: .5em;
+$badge-padding-x: 1em;
