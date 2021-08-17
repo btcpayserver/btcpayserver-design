@@ -1824,7 +1824,7 @@ progress {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.6;
@@ -1888,10 +1888,10 @@ progress {
 }
 
 .form-control::-webkit-file-upload-button {
-  padding: 0.5rem 1.5rem;
-  margin: -0.5rem -1.5rem;
-  -webkit-margin-end: 1.5rem;
-          margin-inline-end: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: -0.5rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
   color: var(--btcpay-form-text);
   background-color: var(--btcpay-form-bg-addon);
   pointer-events: none;
@@ -1927,72 +1927,72 @@ progress {
 
 .form-control-sm {
   min-height: calc(1.6em + 1rem + 2px);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.75rem;
   font-size: 0.75rem;
   border-radius: 0.2rem;
 }
 
 .form-control-sm::-webkit-file-upload-button {
-  padding: 0.5rem 1.5rem;
-  margin: -0.5rem -1.5rem;
-  -webkit-margin-end: 1.5rem;
-          margin-inline-end: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: -0.5rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
 }
 
 .form-control-sm::file-selector-button {
-  padding: 0.5rem 1.5rem;
-  margin: -0.5rem -1.5rem;
-  -webkit-margin-end: 1.5rem;
-          margin-inline-end: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: -0.5rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
 }
 
 .form-control-sm::file-selector-button {
-  padding: 0.5rem 1.5rem;
-  margin: -0.5rem -1.5rem;
-  -webkit-margin-end: 1.5rem;
-          margin-inline-end: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: -0.5rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
 }
 
 .form-control-sm::-webkit-file-upload-button {
-  padding: 0.5rem 1.5rem;
-  margin: -0.5rem -1.5rem;
-  -webkit-margin-end: 1.5rem;
-          margin-inline-end: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: -0.5rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+          margin-inline-end: 0.75rem;
 }
 
 .form-control-lg {
   min-height: calc(1.6em + 2rem + 2px);
-  padding: 1rem 2rem;
+  padding: 1rem 1.25rem;
   font-size: 1rem;
   border-radius: 0.3rem;
 }
 
 .form-control-lg::-webkit-file-upload-button {
-  padding: 1rem 2rem;
-  margin: -1rem -2rem;
-  -webkit-margin-end: 2rem;
-          margin-inline-end: 2rem;
+  padding: 1rem 1.25rem;
+  margin: -1rem -1.25rem;
+  -webkit-margin-end: 1.25rem;
+          margin-inline-end: 1.25rem;
 }
 
 .form-control-lg::file-selector-button {
-  padding: 1rem 2rem;
-  margin: -1rem -2rem;
-  -webkit-margin-end: 2rem;
-          margin-inline-end: 2rem;
+  padding: 1rem 1.25rem;
+  margin: -1rem -1.25rem;
+  -webkit-margin-end: 1.25rem;
+          margin-inline-end: 1.25rem;
 }
 
 .form-control-lg::file-selector-button {
-  padding: 1rem 2rem;
-  margin: -1rem -2rem;
-  -webkit-margin-end: 2rem;
-          margin-inline-end: 2rem;
+  padding: 1rem 1.25rem;
+  margin: -1rem -1.25rem;
+  -webkit-margin-end: 1.25rem;
+          margin-inline-end: 1.25rem;
 }
 
 .form-control-lg::-webkit-file-upload-button {
-  padding: 1rem 2rem;
-  margin: -1rem -2rem;
-  -webkit-margin-end: 2rem;
-          margin-inline-end: 2rem;
+  padding: 1rem 1.25rem;
+  margin: -1rem -1.25rem;
+  -webkit-margin-end: 1.25rem;
+          margin-inline-end: 1.25rem;
 }
 
 textarea.form-control {
@@ -2030,8 +2030,8 @@ textarea.form-control-lg {
 .form-select {
   display: block;
   width: 100%;
-  padding: 0.5rem 4.5rem 0.5rem 1.5rem;
-  -moz-padding-start: calc(1.5rem - 3px);
+  padding: 0.5rem 2.25rem 0.5rem 0.75rem;
+  -moz-padding-start: calc(0.75rem - 3px);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.6;
@@ -2039,7 +2039,7 @@ textarea.form-control-lg {
   background-color: var(--btcpay-form-bg);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 1.5rem center;
+  background-position: right 0.75rem center;
   background-size: 16px 12px;
   border: 1px solid var(--btcpay-form-border);
   border-radius: var(--btcpay-border-radius);
@@ -2056,7 +2056,7 @@ textarea.form-control-lg {
 }
 
 .form-select[multiple], .form-select[size]:not([size="1"]) {
-  padding-right: 1.5rem;
+  padding-right: 0.75rem;
   background-image: none;
 }
 
@@ -2073,14 +2073,14 @@ textarea.form-control-lg {
 .form-select-sm {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  padding-left: 1.5rem;
+  padding-left: 0.75rem;
   font-size: 0.75rem;
 }
 
 .form-select-lg {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 2rem;
+  padding-left: 1.25rem;
   font-size: 1rem;
 }
 
@@ -2305,7 +2305,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   height: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.75rem;
   pointer-events: none;
   border: 1px solid transparent;
   transform-origin: 0 0;
@@ -2313,7 +2313,7 @@ textarea.form-control-lg {
 }
 
 .form-floating > .form-control {
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.75rem;
 }
 
 .form-floating > .form-control::-moz-placeholder {
@@ -2394,7 +2394,7 @@ textarea.form-control-lg {
 .input-group-text {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.75rem;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.6;
@@ -2410,7 +2410,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
-  padding: 1rem 2rem;
+  padding: 1rem 1.25rem;
   font-size: 1rem;
   border-radius: 0.3rem;
 }
@@ -2419,14 +2419,14 @@ textarea.form-control-lg {
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.75rem;
   font-size: 0.75rem;
   border-radius: 0.2rem;
 }
 
 .input-group-lg > .form-select,
 .input-group-sm > .form-select {
-  padding-right: 6rem;
+  padding-right: 3rem;
 }
 
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
@@ -2500,9 +2500,9 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
-  padding-right: 8.25rem;
+  padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-  background-position: right 1.5rem center, center right 4.5rem;
+  background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.8em + 0.5rem) calc(0.8em + 0.5rem);
 }
 
@@ -2596,9 +2596,9 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
-  padding-right: 8.25rem;
+  padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
-  background-position: right 1.5rem center, center right 4.5rem;
+  background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.8em + 0.5rem) calc(0.8em + 0.5rem);
 }
 
@@ -4688,7 +4688,7 @@ fieldset:disabled .btn {
 
 .badge {
   display: inline-block;
-  padding: 0.35em 0.65em;
+  padding: 0.5em 1em;
   font-size: 0.75em;
   font-weight: 700;
   line-height: 1;

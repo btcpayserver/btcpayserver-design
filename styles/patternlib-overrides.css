@@ -37,9 +37,9 @@
   --uie-color-main-text: var(--btcpay-body-text);
   --uie-color-main-link: var(--btcpay-body-link);
   --uie-color-main-link-hover: var(--btcpay-body-link-accent);
-  --uie-color-secondary-text: var(--btcpay-secondary);
-  --uie-color-secondary-link: var(--btcpay-secondary);
-  --uie-color-secondary-link-hover: var(--btcpay-secondary-accent);
+  --uie-color-secondary-text: var(--btcpay-body-text-muted);
+  --uie-color-secondary-link: var(--btcpay-body-text-muted);
+  --uie-color-secondary-link-hover: var(--btcpay-body-link-hover);
 
   --uie-color-option-bg: var(--btcpay-body-bg);
   --uie-color-option-text: var(--btcpay-body-text);

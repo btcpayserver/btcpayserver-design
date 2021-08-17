@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1629191741741,
+    "update": 1629221601695,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -92,7 +92,7 @@
       "sourceFile": "pages/page.config.js",
       "readmeFile": "pages/README.md",
       "type": "documentation",
-      "content": "<h1 id=\"btcpay-server-design-system\">BTCPay Server Design System</h1>\n<p>Codified design guidelines for the BTCPay Server webpages.</p>\n<h2 id=\"related-resources\">Related resources</h2>\n<ul>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-design/\">Repository on GitHub</a></li>\n<li><a href=\"https://www.figma.com/file/C7Xyq0FlxgFW8vaBr8ht1z/BTCPAY\">Design Specifications on Figma</a></li>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-media\">Media asset for BTCPay Server</a></li>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-doc\">Official Documentation</a></li>\n</ul>"
+      "content": "<h1 id=\"btcpay-server-design-system\" tabindex=\"-1\">BTCPay Server Design System</h1>\n<p>Codified design guidelines for the BTCPay Server webpages.</p>\n<h2 id=\"related-resources\" tabindex=\"-1\">Related resources</h2>\n<ul>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-design/\">Repository on GitHub</a></li>\n<li><a href=\"https://www.figma.com/file/C7Xyq0FlxgFW8vaBr8ht1z/BTCPAY\">Design Specifications on Figma</a></li>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-media\">Media asset for BTCPay Server</a></li>\n<li><a href=\"https://github.com/btcpayserver/btcpayserver-doc\">Official Documentation</a></li>\n</ul>"
     },
     "components": {
       "childIds": [],
@@ -110,7 +110,7 @@
       "sourceFile": "pages/components/page.config.js",
       "readmeFile": "pages/components/README.md",
       "type": "documentation",
-      "content": "<h1 id=\"components\">Components</h1>"
+      "content": "<h1 id=\"components\" tabindex=\"-1\">Components</h1>"
     },
     "design": {
       "childIds": [
@@ -127,7 +127,7 @@
       "sourceFile": "pages/design/page.config.js",
       "readmeFile": "pages/design/README.md",
       "type": "documentation",
-      "content": "<h1 id=\"design\">Design</h1>"
+      "content": "<h1 id=\"design\" tabindex=\"-1\">Design</h1>"
     },
     "development": {
       "childIds": [],
@@ -138,7 +138,7 @@
       "sourcePath": "pages/development",
       "readmeFile": "pages/development/README.md",
       "type": "documentation",
-      "content": "<h1 id=\"development\">Development</h1>\n<h2 id=\"setup\">Setup</h2>\n<p>Dependencies are managed via npm.\nOnce you have cloned <a href=\"https://github.com/btcpayserver/btcpayserver-design/\">this repo</a>, you can setup the packages:</p>\n<pre class=\"hljs lang-bash\"><code>npm install\n</code></pre>\n<p>Create a build and rebuild on file change:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>This will bring up the dev server and pattern library on <a href=\"http://localhost:3000\">localhost:3000</a>.</p>\n<h2 id=\"how-to-create-a-component%3F\">How to create a component?</h2>\n<p>To generate the basic files of a component you can use the <code>component</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID\n</code></pre>\n<p>This will also generate a default variant named after the component.\nIn case you want to directly add some variants, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID VARIANT_1 VARIANT_2 VARIANT_3\n</code></pre>\n<h2 id=\"how-to-create-a-variant%3F\">How to create a variant?</h2>\n<p>A variant needs at least a file to render.\nYou create a variant by adding a file renderable by one of the configured adapters to the <code>variants</code> directory of a component.</p>\n<p>To render a variant, we also need a layout.\nThe <code>npx uiengine init</code> command created a basic html layout file in <code>src/templates/uiengine.html</code>.\nIt includes the <code>&lt;!-- uiengine:content --&gt;</code> comment, which will be replaced with the HTML of the rendered variant.\nYou can go ahead and extend the layout to fit your needs and include the correct HTML and style and script references.</p>\n<p>This layout file is just there to get you started.\nFeel free to change its content and use an other adapter to fit your projects needs.</p>\n<h2 id=\"how-to-create-a-page%3F\">How to create a page?</h2>\n<p>To generate the basic files and folders of a page you can use the <code>page</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_ID\n</code></pre>\n<p>This generate a <code>README.md</code> and a <code>page.config.js</code> file inside the folder matching the page id in you pages source directory.\nIn case you want to directly add some pages, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_1_ID PAGE_2_ID PAGE_3_ID\n</code></pre>\n<p>Say you would like to create pages for grouping your components with the <a href=\"http://atomicdesign.bradfrost.com/chapter-2/\">Atomic Design Methodology</a>:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page atoms molecules organisms templates pages\n</code></pre>\n<h2 id=\"how-to-generate-the-project%3F\">How to generate the project?</h2>\n<p>The site can be generated with the following command:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>It rebuilds files on change and spawns a server for the generated site.</p>\n<p>Under the hood <a href=\"https://www.browsersync.io/\">BrowserSync</a> is used to provide serving and watching the files.\nFor information on how to configure the server and pass additional options, see the <a href=\"https://uiengine.uix.space/basics/config/#BrowserSync\">configuration documentation</a>.</p>"
+      "content": "<h1 id=\"development\" tabindex=\"-1\">Development</h1>\n<h2 id=\"setup\" tabindex=\"-1\">Setup</h2>\n<p>Dependencies are managed via npm.\nOnce you have cloned <a href=\"https://github.com/btcpayserver/btcpayserver-design/\">this repo</a>, you can setup the packages:</p>\n<pre class=\"hljs lang-bash\"><code>npm install\n</code></pre>\n<p>Create a build and rebuild on file change:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>This will bring up the dev server and pattern library on <a href=\"http://localhost:3000\">localhost:3000</a>.</p>\n<h2 id=\"how-to-create-a-component%3F\" tabindex=\"-1\">How to create a component?</h2>\n<p>To generate the basic files of a component you can use the <code>component</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID\n</code></pre>\n<p>This will also generate a default variant named after the component.\nIn case you want to directly add some variants, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID VARIANT_1 VARIANT_2 VARIANT_3\n</code></pre>\n<h2 id=\"how-to-create-a-variant%3F\" tabindex=\"-1\">How to create a variant?</h2>\n<p>A variant needs at least a file to render.\nYou create a variant by adding a file renderable by one of the configured adapters to the <code>variants</code> directory of a component.</p>\n<p>To render a variant, we also need a layout.\nThe <code>npx uiengine init</code> command created a basic html layout file in <code>src/templates/uiengine.html</code>.\nIt includes the <code>&lt;!-- uiengine:content --&gt;</code> comment, which will be replaced with the HTML of the rendered variant.\nYou can go ahead and extend the layout to fit your needs and include the correct HTML and style and script references.</p>\n<p>This layout file is just there to get you started.\nFeel free to change its content and use an other adapter to fit your projects needs.</p>\n<h2 id=\"how-to-create-a-page%3F\" tabindex=\"-1\">How to create a page?</h2>\n<p>To generate the basic files and folders of a page you can use the <code>page</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_ID\n</code></pre>\n<p>This generate a <code>README.md</code> and a <code>page.config.js</code> file inside the folder matching the page id in you pages source directory.\nIn case you want to directly add some pages, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_1_ID PAGE_2_ID PAGE_3_ID\n</code></pre>\n<p>Say you would like to create pages for grouping your components with the <a href=\"http://atomicdesign.bradfrost.com/chapter-2/\">Atomic Design Methodology</a>:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page atoms molecules organisms templates pages\n</code></pre>\n<h2 id=\"how-to-generate-the-project%3F\" tabindex=\"-1\">How to generate the project?</h2>\n<p>The site can be generated with the following command:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>It rebuilds files on change and spawns a server for the generated site.</p>\n<p>Under the hood <a href=\"https://www.browsersync.io/\">BrowserSync</a> is used to provide serving and watching the files.\nFor information on how to configure the server and pass additional options, see the <a href=\"https://uiengine.uix.space/basics/config/#BrowserSync\">configuration documentation</a>.</p>"
     },
     "resources": {
       "childIds": [
@@ -167,7 +167,7 @@
       "sourceFile": "pages/views/page.config.js",
       "readmeFile": "pages/views/README.md",
       "type": "documentation",
-      "content": "<h1 id=\"views\">Views</h1>"
+      "content": "<h1 id=\"views\" tabindex=\"-1\">Views</h1>"
     },
     "design/colors": {
       "childIds": [],
@@ -219,9 +219,23 @@
             },
             {
               "category": "Primitives",
+              "name": "White RGB",
+              "value": "255, 255, 255",
+              "variable": "--btcpay-white-rgb",
+              "type": "color"
+            },
+            {
+              "category": "Primitives",
               "name": "Black",
               "value": "#000000",
               "variable": "--btcpay-black",
+              "type": "color"
+            },
+            {
+              "category": "Primitives",
+              "name": "Black RGB",
+              "value": "0, 0, 0",
+              "variable": "--btcpay-black-rgb",
               "type": "color"
             }
           ]
@@ -301,6 +315,13 @@
               "variable": "--btcpay-neutral-light-900",
               "reference": null,
               "type": "color"
+            },
+            {
+              "value": "143,151,158",
+              "category": "Neutral Light",
+              "name": "Neutral Light RGB",
+              "variable": "--btcpay-neutral-light-rgb",
+              "type": "color"
             }
           ]
         },
@@ -378,6 +399,13 @@
               "name": "Neutral Dark 900",
               "variable": "--btcpay-neutral-dark-900",
               "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "110,118,129",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark RGB",
+              "variable": "--btcpay-neutral-dark-rgb",
               "type": "color"
             }
           ]
@@ -457,6 +485,13 @@
               "variable": "--btcpay-primary-900",
               "reference": null,
               "type": "color"
+            },
+            {
+              "value": "68,164,49",
+              "category": "Primary",
+              "name": "Primary RGB",
+              "variable": "--btcpay-primary-rgb",
+              "type": "color"
             }
           ]
         },
@@ -534,6 +569,13 @@
               "name": "Green 900",
               "variable": "--btcpay-green-900",
               "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "81,177,62",
+              "category": "Green",
+              "name": "Green RGB",
+              "variable": "--btcpay-green-rgb",
               "type": "color"
             }
           ]
@@ -613,6 +655,13 @@
               "variable": "--btcpay-blue-900",
               "reference": null,
               "type": "color"
+            },
+            {
+              "value": "23,162,184",
+              "category": "Blue",
+              "name": "Blue RGB",
+              "variable": "--btcpay-blue-rgb",
+              "type": "color"
             }
           ]
         },
@@ -690,6 +739,13 @@
               "name": "Yellow 900",
               "variable": "--btcpay-yellow-900",
               "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "255,192,67",
+              "category": "Yellow",
+              "name": "Yellow RGB",
+              "variable": "--btcpay-yellow-rgb",
               "type": "color"
             }
           ]
@@ -769,6 +825,13 @@
               "variable": "--btcpay-red-900",
               "reference": null,
               "type": "color"
+            },
+            {
+              "value": "225,25,0",
+              "category": "Red",
+              "name": "Red RGB",
+              "variable": "--btcpay-red-rgb",
+              "type": "color"
             }
           ]
         },
@@ -846,6 +909,13 @@
               "name": "Purple 900",
               "variable": "--btcpay-purple-900",
               "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "115,86,191",
+              "category": "Purple",
+              "name": "Purple RGB",
+              "variable": "--btcpay-purple-rgb",
               "type": "color"
             }
           ]
@@ -925,6 +995,13 @@
               "variable": "--btcpay-orange-900",
               "reference": null,
               "type": "color"
+            },
+            {
+              "value": "255,105,55",
+              "category": "Orange",
+              "name": "Orange RGB",
+              "variable": "--btcpay-orange-rgb",
+              "type": "color"
             }
           ]
         },
@@ -1002,6 +1079,13 @@
               "name": "Brown 900",
               "variable": "--btcpay-brown-900",
               "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "153,100,76",
+              "category": "Brown",
+              "name": "Brown RGB",
+              "variable": "--btcpay-brown-rgb",
               "type": "color"
             }
           ]
@@ -1081,6 +1165,13 @@
               "variable": "--btcpay-pink-900",
               "reference": null,
               "type": "color"
+            },
+            {
+              "value": "241,98,175",
+              "category": "Pink",
+              "name": "Pink RGB",
+              "variable": "--btcpay-pink-rgb",
+              "type": "color"
             }
           ]
         }
@@ -1093,7 +1184,7 @@
       "sourceFile": "pages/design/colors/page.config.js",
       "readmeFile": "pages/design/colors/README.md",
       "type": "tokens",
-      "content": "<h1 id=\"colors\">Colors</h1>"
+      "content": "<h1 id=\"colors\" tabindex=\"-1\">Colors</h1>"
     },
     "design/fonts": {
       "childIds": [],
@@ -1278,7 +1369,7 @@
       "sourceFile": "pages/design/fonts/page.config.js",
       "readmeFile": "pages/design/fonts/README.md",
       "type": "tokens",
-      "content": "<h1 id=\"fonts\">Fonts</h1>\n<p>The different fonts can be use via the combination of the CSS properties <code>font-family</code> and <code>font-weight</code>.</p>"
+      "content": "<h1 id=\"fonts\" tabindex=\"-1\">Fonts</h1>\n<p>The different fonts can be use via the combination of the CSS properties <code>font-family</code> and <code>font-weight</code>.</p>"
     },
     "design/spaces": {
       "childIds": [],
@@ -1328,7 +1419,7 @@
       "sourceFile": "pages/design/spaces/page.config.js",
       "readmeFile": "pages/design/spaces/README.md",
       "type": "tokens",
-      "content": "<h1 id=\"spaces\">Spaces</h1>\n<p>The spacings should be used via the CSS custom properties:</p>\n<pre class=\"hljs lang-css\"><code><span class=\"hljs-selector-class\">.my-component</span> {\n  <span class=\"hljs-attribute\">margin-left</span>: <span class=\"hljs-built_in\">var</span>(--btcpay-space-m);\n}\n</code></pre>\n<p>In addition to that there are also utility classes like <code>btcpay-space-x</code>, which apply the space as <code>margin-bottom</code>:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;btcpay-space-x&quot;</span>&gt;</span>…<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n</code></pre>"
+      "content": "<h1 id=\"spaces\" tabindex=\"-1\">Spaces</h1>\n<p>The spacings should be used via the CSS custom properties:</p>\n<pre class=\"hljs lang-css\"><code><span class=\"hljs-selector-class\">.my-component</span> {\n  <span class=\"hljs-attribute\">margin-left</span>: <span class=\"hljs-built_in\">var</span>(--btcpay-space-m);\n}\n</code></pre>\n<p>In addition to that there are also utility classes like <code>btcpay-space-x</code>, which apply the space as <code>margin-bottom</code>:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">div</span> <span class=\"hljs-attr\">class</span>=<span class=\"hljs-string\">&quot;btcpay-space-x&quot;</span>&gt;</span>…<span class=\"hljs-tag\">&lt;/<span class=\"hljs-name\">div</span>&gt;</span>\n</code></pre>"
     },
     "design/variables": {
       "childIds": [],
@@ -1379,7 +1470,7 @@
       "sourceFile": "pages/design/variables/page.config.js",
       "readmeFile": "pages/design/variables/README.md",
       "type": "tokens",
-      "content": "<h1 id=\"variables\">Variables</h1>"
+      "content": "<h1 id=\"variables\" tabindex=\"-1\">Variables</h1>"
     },
     "resources/css": {
       "childIds": [],
@@ -1390,7 +1481,7 @@
       "sourcePath": "pages/resources/css",
       "readmeFile": "pages/resources/css/README.md",
       "type": "documentation",
-      "content": "<h1 id=\"css\">CSS</h1>\n<p>To keep the different apps and websites consistent, we offer these stylesheets you should use to build upon.</p>\n<p>You can download the CSS files using the references below and copy them to the styles folder of your project.</p>\n<p>Then use this HTML snippet inside the <code>&lt;head&gt;</code> section to integrate the stylesheets you want to use:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-variables.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-bootstrap.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-main.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n</code></pre>\n<h2 id=\"variables\">Variables</h2>\n<p>The codified version of what you find in the design section:\nThis stylesheet does not do anything on its own, but gives you access to the design variables via <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties\">CSS Custom Properties</a>.</p>\n<p>This file should be the first to include, as every other of the following resources uses the variables it defines.</p>\n<p>📦 <a href=\"/styles/btcpayserver-variables.css\">btcpayserver-variables.css</a></p>\n<h2 id=\"main-styles\">Main styles</h2>\n<p>The most basic set of CSS styles we can share across the different websites.\nThey include the font references and setting for the light/dark color themes.</p>\n<p>The general approach regarding the themes is:</p>\n<ul>\n<li>Light mode is the default</li>\n<li>If the browser supports the <a href=\"https://web.dev/prefers-color-scheme/\">prefers-color-scheme media query</a>, we use the users preference</li>\n<li>Support an <a href=\"/components/theme-switch/\">explicit setting</a> saved in the browsers <code>localStorage</code>, that the user can change via a switch</li>\n</ul>\n<p>📦 <a href=\"/styles/btcpayserver-main.css\">btcpayserver-main.css</a></p>\n<h2 id=\"bootstrap\">Bootstrap</h2>\n<p>This is our forked version of <a href=\"https://getbootstrap.com/\">Bootstrap</a>.\nIncluding this is optional and only required if you want to build upon what Bootstrap offers.</p>\n<p>📦 <a href=\"/styles/btcpayserver-bootstrap.css\">btcpayserver-bootstrap.css</a></p>\n<h3 id=\"why-do-we-use-a-fork%3F\">Why do we use a fork?</h3>\n<p>Bootstrap v5 unfortunately doesn’t fully support CSS Custom Properties (<a href=\"https://github.com/twbs/bootstrap/commit/ac58c25dc8b65928ac817b8a2bf7c0e46a58de97\">yet</a>), but that is what we need for out themeing approach.\nSo the idea was to maintain this fork at a central place and use it as our custom version.</p>\n<h2 id=\"old-themes\">Old themes</h2>\n<p>We have deprecated these previous themes, but keep them here for reference:</p>\n<ul>\n<li><a href=\"/styles/btcpayserver-theme-classic.css\">Classic</a></li>\n<li><a href=\"/styles/btcpayserver-theme-casa.css\">Casa</a></li>\n</ul>"
+      "content": "<h1 id=\"css\" tabindex=\"-1\">CSS</h1>\n<p>To keep the different apps and websites consistent, we offer these stylesheets you should use to build upon.</p>\n<p>You can download the CSS files using the references below and copy them to the styles folder of your project.</p>\n<p>Then use this HTML snippet inside the <code>&lt;head&gt;</code> section to integrate the stylesheets you want to use:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-variables.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-bootstrap.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/styles/btcpayserver-main.css&quot;</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;stylesheet&quot;</span>&gt;</span>\n</code></pre>\n<h2 id=\"variables\" tabindex=\"-1\">Variables</h2>\n<p>The codified version of what you find in the design section:\nThis stylesheet does not do anything on its own, but gives you access to the design variables via <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties\">CSS Custom Properties</a>.</p>\n<p>This file should be the first to include, as every other of the following resources uses the variables it defines.</p>\n<p>📦 <a href=\"/styles/btcpayserver-variables.css\">btcpayserver-variables.css</a></p>\n<h2 id=\"main-styles\" tabindex=\"-1\">Main styles</h2>\n<p>The most basic set of CSS styles we can share across the different websites.\nThey include the font references and setting for the light/dark color themes.</p>\n<p>The general approach regarding the themes is:</p>\n<ul>\n<li>Light mode is the default</li>\n<li>If the browser supports the <a href=\"https://web.dev/prefers-color-scheme/\">prefers-color-scheme media query</a>, we use the users preference</li>\n<li>Support an <a href=\"/components/theme-switch/\">explicit setting</a> saved in the browsers <code>localStorage</code>, that the user can change via a switch</li>\n</ul>\n<p>📦 <a href=\"/styles/btcpayserver-main.css\">btcpayserver-main.css</a></p>\n<h2 id=\"bootstrap\" tabindex=\"-1\">Bootstrap</h2>\n<p>This is our forked version of <a href=\"https://getbootstrap.com/\">Bootstrap</a>.\nIncluding this is optional and only required if you want to build upon what Bootstrap offers.</p>\n<p>📦 <a href=\"/styles/btcpayserver-bootstrap.css\">btcpayserver-bootstrap.css</a></p>\n<h3 id=\"why-do-we-use-a-fork%3F\" tabindex=\"-1\">Why do we use a fork?</h3>\n<p>Bootstrap v5 unfortunately doesn’t fully support CSS Custom Properties (<a href=\"https://github.com/twbs/bootstrap/commit/ac58c25dc8b65928ac817b8a2bf7c0e46a58de97\">yet</a>), but that is what we need for out themeing approach.\nSo the idea was to maintain this fork at a central place and use it as our custom version.</p>\n<h2 id=\"old-themes\" tabindex=\"-1\">Old themes</h2>\n<p>We have deprecated these previous themes, but keep them here for reference:</p>\n<ul>\n<li><a href=\"/styles/btcpayserver-theme-classic.css\">Classic</a></li>\n<li><a href=\"/styles/btcpayserver-theme-casa.css\">Casa</a></li>\n</ul>"
     },
     "resources/design-files": {
       "childIds": [],
@@ -1401,7 +1492,7 @@
       "sourcePath": "pages/resources/design-files",
       "readmeFile": "pages/resources/design-files/README.md",
       "type": "documentation",
-      "content": "<h1 id=\"design-files\">Design files</h1>\n<h2 id=\"color-palette\">Color Palette</h2>\n<p>You can <a href=\"./btcpay.gpl\">download the color palette for GIMP/Inkscape</a>.</p>\n<h2 id=\"logo\">Logo</h2>\n<p>You can <a href=\"./btcpay-logo.ai\">download the logo for Adobe Illustrator</a>.</p>\n<table>\n<thead>\n<tr>\n<th>Image</th>\n<th>Downloads</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img src=\"./btcpay-logo.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo.svg\">SVG</a> | <a href=\"./btcpay-logo.png\">PNG</a></td>\n</tr>\n<tr>\n<td><img src=\"./btcpay-logo-black-txt.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo-black-txt.svg\">SVG</a> | <a href=\"./btcpay-logo-black-txt.png\">PNG</a></td>\n</tr>\n<tr>\n<td><img src=\"./btcpay-logo-white-txt.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo-white-txt.svg\">SVG</a> | <a href=\"./btcpay-logo-white-txt.png\">PNG</a></td>\n</tr>\n</tbody>\n</table>\n<style>\n  table img { height: 4em !important; margin: .2em 1em !important; display: block !important; }\n  table td { vertical-align: middle !important; }\n  table td:first-child { background: var(--uie-color-bg-medium) !important; }\n</style>\n<h2 id=\"further-resources\">Further resources</h2>\n<p>Also see the <a href=\"https://github.com/btcpayserver/btcpayserver-media\">media asset repository for BTCPay Server</a>.</p>",
+      "content": "<h1 id=\"design-files\" tabindex=\"-1\">Design files</h1>\n<h2 id=\"color-palette\" tabindex=\"-1\">Color Palette</h2>\n<p>You can <a href=\"./btcpay.gpl\">download the color palette for GIMP/Inkscape</a>.</p>\n<h2 id=\"logo\" tabindex=\"-1\">Logo</h2>\n<p>You can <a href=\"./btcpay-logo.ai\">download the logo for Adobe Illustrator</a>.</p>\n<table>\n<thead>\n<tr>\n<th>Image</th>\n<th>Downloads</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><img src=\"./btcpay-logo.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo.svg\">SVG</a> | <a href=\"./btcpay-logo.png\">PNG</a></td>\n</tr>\n<tr>\n<td><img src=\"./btcpay-logo-black-txt.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo-black-txt.svg\">SVG</a> | <a href=\"./btcpay-logo-black-txt.png\">PNG</a></td>\n</tr>\n<tr>\n<td><img src=\"./btcpay-logo-white-txt.svg\" alt=\"\"></td>\n<td><a href=\"./btcpay-logo-white-txt.svg\">SVG</a> | <a href=\"./btcpay-logo-white-txt.png\">PNG</a></td>\n</tr>\n</tbody>\n</table>\n<style>\n  table img { height: 4em !important; margin: .2em 1em !important; display: block !important; }\n  table td { vertical-align: middle !important; }\n  table td:first-child { background: var(--uie-color-bg-medium) !important; }\n</style>\n<h2 id=\"further-resources\" tabindex=\"-1\">Further resources</h2>\n<p>Also see the <a href=\"https://github.com/btcpayserver/btcpayserver-media\">media asset repository for BTCPay Server</a>.</p>",
       "files": [
         "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-icon.png",
         "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/design-files/btcpay-logo-black-txt.png",
@@ -1423,7 +1514,7 @@
       "sourcePath": "pages/resources/favicon",
       "readmeFile": "pages/resources/favicon/README.md",
       "type": "documentation",
-      "content": "<h1 id=\"favicon\">Favicon</h1>\n<p>You can <a href=\"./favicon.zip\">download the favicon files</a> and copy them to the root folder of your project.</p>\n<p>Then use this HTML snippet inside the <code>&lt;head&gt;</code> section to integrate the favicon:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;apple-touch-icon&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;180x180&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/apple-touch-icon.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;icon&quot;</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">&quot;image/png&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;32x32&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/favicon-32x32.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;icon&quot;</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">&quot;image/png&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;16x16&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/favicon-16x16.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;manifest&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/site.webmanifest&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;mask-icon&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/safari-pinned-tab.svg&quot;</span> <span class=\"hljs-attr\">color</span>=<span class=\"hljs-string\">&quot;#51b13e&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">meta</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">&quot;msapplication-TileColor&quot;</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">&quot;#0f3b21&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">meta</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">&quot;theme-color&quot;</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">&quot;#ffffff&quot;</span>&gt;</span>\n</code></pre>",
+      "content": "<h1 id=\"favicon\" tabindex=\"-1\">Favicon</h1>\n<p>You can <a href=\"./favicon.zip\">download the favicon files</a> and copy them to the root folder of your project.</p>\n<p>Then use this HTML snippet inside the <code>&lt;head&gt;</code> section to integrate the favicon:</p>\n<pre class=\"hljs lang-html\"><code><span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;apple-touch-icon&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;180x180&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/apple-touch-icon.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;icon&quot;</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">&quot;image/png&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;32x32&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/favicon-32x32.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;icon&quot;</span> <span class=\"hljs-attr\">type</span>=<span class=\"hljs-string\">&quot;image/png&quot;</span> <span class=\"hljs-attr\">sizes</span>=<span class=\"hljs-string\">&quot;16x16&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/favicon-16x16.png&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;manifest&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/site.webmanifest&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">link</span> <span class=\"hljs-attr\">rel</span>=<span class=\"hljs-string\">&quot;mask-icon&quot;</span> <span class=\"hljs-attr\">href</span>=<span class=\"hljs-string\">&quot;/safari-pinned-tab.svg&quot;</span> <span class=\"hljs-attr\">color</span>=<span class=\"hljs-string\">&quot;#51b13e&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">meta</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">&quot;msapplication-TileColor&quot;</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">&quot;#0f3b21&quot;</span>&gt;</span>\n<span class=\"hljs-tag\">&lt;<span class=\"hljs-name\">meta</span> <span class=\"hljs-attr\">name</span>=<span class=\"hljs-string\">&quot;theme-color&quot;</span> <span class=\"hljs-attr\">content</span>=<span class=\"hljs-string\">&quot;#ffffff&quot;</span>&gt;</span>\n</code></pre>",
       "files": [
         "/home/runner/work/btcpayserver-design/btcpayserver-design/pages/resources/favicon/favicon.zip"
       ]
@@ -1434,7 +1525,7 @@
       "id": "bootstrap",
       "title": "Bootstrap v5",
       "isTitleFromHeading": true,
-      "content": "<h1 id=\"bootstrap-v5\">Bootstrap v5</h1>\n<p>This is a <a href=\"https://getbootstrap.com/docs/\">Bootstrap</a> kitchensink page that showcases everything and all together.\nIt is intended to be used as a quick overview/reference and to check the themes.</p>",
+      "content": "<h1 id=\"bootstrap-v5\" tabindex=\"-1\">Bootstrap v5</h1>\n<p>This is a <a href=\"https://getbootstrap.com/docs/\">Bootstrap</a> kitchensink page that showcases everything and all together.\nIt is intended to be used as a quick overview/reference and to check the themes.</p>",
       "variants": [
         {
           "file": "typography.html",
@@ -1498,7 +1589,7 @@
           "componentId": "bootstrap",
           "title": "Badges",
           "extension": "html",
-          "raw": "<div class=\"bd-example\">\n        <p class=\"h1\">Example heading <span class=\"badge bg-primary\">New</span></p>\n        <p class=\"h2\">Example heading <span class=\"badge bg-secondary\">New</span></p>\n        <p class=\"h3\">Example heading <span class=\"badge bg-success\">New</span></p>\n        <p class=\"h4\">Example heading <span class=\"badge bg-danger\">New</span></p>\n        <p class=\"h5\">Example heading <span class=\"badge bg-warning text-dark\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-info text-dark\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-light text-dark\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-dark\">New</span></p>\n        </div>\n\n        <div class=\"bd-example\">\n\n        <span class=\"badge rounded-pill bg-primary\">Primary</span>\n        <span class=\"badge rounded-pill bg-secondary\">Secondary</span>\n        <span class=\"badge rounded-pill bg-success\">Success</span>\n        <span class=\"badge rounded-pill bg-danger\">Danger</span>\n        <span class=\"badge rounded-pill bg-warning text-dark\">Warning</span>\n        <span class=\"badge rounded-pill bg-info text-dark\">Info</span>\n        <span class=\"badge rounded-pill bg-light text-dark\">Light</span>\n        <span class=\"badge rounded-pill bg-dark\">Dark</span>\n        </div>"
+          "raw": "<div class=\"bd-example\">\n        <p class=\"h1\">Example heading <span class=\"badge bg-primary\">New</span></p>\n        <p class=\"h2\">Example heading <span class=\"badge bg-secondary\">New</span></p>\n        <p class=\"h3\">Example heading <span class=\"badge bg-success\">New</span></p>\n        <p class=\"h4\">Example heading <span class=\"badge bg-danger\">New</span></p>\n        <p class=\"h5\">Example heading <span class=\"badge bg-warning\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-info\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-light\">New</span></p>\n        <p class=\"h6\">Example heading <span class=\"badge bg-dark\">New</span></p>\n        </div>\n\n        <div class=\"bd-example\">\n\n        <span class=\"badge rounded-pill bg-primary\">Primary</span>\n        <span class=\"badge rounded-pill bg-secondary\">Secondary</span>\n        <span class=\"badge rounded-pill bg-success\">Success</span>\n        <span class=\"badge rounded-pill bg-danger\">Danger</span>\n        <span class=\"badge rounded-pill bg-warning\">Warning</span>\n        <span class=\"badge rounded-pill bg-info\">Info</span>\n        <span class=\"badge rounded-pill bg-light\">Light</span>\n        <span class=\"badge rounded-pill bg-dark\">Dark</span>\n        </div>"
         },
         {
           "file": "buttons.html",
@@ -1638,7 +1729,7 @@
       "id": "footer",
       "title": "Footer",
       "isTitleFromHeading": true,
-      "content": "<h1 id=\"footer\">Footer</h1>",
+      "content": "<h1 id=\"footer\" tabindex=\"-1\">Footer</h1>",
       "variants": [
         {
           "file": "footer.html",
@@ -1658,7 +1749,7 @@
       "id": "header",
       "title": "Header",
       "isTitleFromHeading": true,
-      "content": "<h1 id=\"header\">Header</h1>",
+      "content": "<h1 id=\"header\" tabindex=\"-1\">Header</h1>",
       "variants": [
         {
           "file": "header.html",
@@ -1694,7 +1785,7 @@
       "id": "theme-switch",
       "title": "Theme Switch",
       "isTitleFromHeading": true,
-      "content": "<h1 id=\"theme-switch\">Theme Switch</h1>\n<p>Use the Theme Switch in the header to offer the user the ability to set the color mode explicitely.</p>\n<p>See the <a href=\"/scripts/theme-switch.js\">theme-switch.js</a> for a vanilla JavaScript implementation.</p>",
+      "content": "<h1 id=\"theme-switch\" tabindex=\"-1\">Theme Switch</h1>\n<p>Use the Theme Switch in the header to offer the user the ability to set the color mode explicitely.</p>\n<p>See the <a href=\"/scripts/theme-switch.js\">theme-switch.js</a> for a vanilla JavaScript implementation.</p>",
       "variants": [
         {
           "file": "theme-switch.html",
@@ -1722,7 +1813,7 @@
       "id": "kitchensink",
       "title": "Kitchensink",
       "isTitleFromHeading": true,
-      "content": "<h1 id=\"kitchensink\">Kitchensink</h1>\n<p>Just a page that showcases everything and all together.</p>",
+      "content": "<h1 id=\"kitchensink\" tabindex=\"-1\">Kitchensink</h1>\n<p>Just a page that showcases everything and all together.</p>",
       "variants": [
         {
           "file": "kitchensink.html",
