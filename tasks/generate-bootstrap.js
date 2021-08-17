@@ -33,6 +33,7 @@ const extractCategoriesColors = css =>
   CATEGORIES.reduce((res, category) => Object.assign(res, {
     [category]: {
       '': css.match(`--bs-${category}: (.*?);`)[1],
+      'rgb': css.match(`--bs-${category}-rgb: (.*?);`)[1],
       'text-hover': css.match(`.link-${category}:focus \\{[^{]*?color: (.*?);`)[1],
       'bg-hover': css.match(`.btn-${category}:hover \\{[^{]*?background-color: (.*?);`)[1],
       'border': css.match(`.btn-${category} \\{[^{]*?border-color: (.*?);`)[1],
@@ -65,6 +66,7 @@ String.prototype.replaceCategoryColors = function (map) {
   return Object.entries(map).reduce((res, [category, values]) => res
     .replaceColor(values[''], `--bs-${category}: ${values['']};`, `--bs-${category}: var(--btcpay-${category});`)
     .replaceColor(values[''], `background-color: ${values['']}`, `background-color: var(--btcpay-${category})`)
+    .replaceColor(values['rgb'], `--bs-${category}-rgb: ${values['rgb']};`, `--bs-${category}-rgb: var(--btcpay-${category}-rgb);`)
     .replaceColor(values['text-hover'], ` color: ${values['text-hover']}`, ` color: var(--btcpay-${category}-text-hover)`)
     .replaceColor(values['bg-hover'], `background-color: ${values['bg-hover']}`, `background-color: var(--btcpay-${category}-bg-hover)`)
     .replaceColor(values['border'], `border-color: ${values['border']}`, `border-color: var(--btcpay-${category}-border)`)
@@ -112,13 +114,18 @@ String.prototype.replaceCategoryColors = function (map) {
 
 const patch = css => {
   const categoryColors = extractCategoriesColors(css)
-  // console.log(categoryColors)
+
   return css
     // body
     .replaceColor(true, `(body \\{[^{]*?) background-color: #fff;`, `$1 background-color: var(--btcpay-body-bg);`)
     .replaceColor(true, ` color: #212529;`, ` color: var(--btcpay-body-text);`)
     .replaceColor(true, `(\\.bg-body \\{[^{]*?) background-color: #fff !important;`, `$1 background-color: var(--btcpay-body-bg) !important;`)
     .replaceColor(true, `(\\.bg-white \\{[^{]*?) background-color: #fff !important;`, `$1 background-color: var(--btcpay-white) !important;`)
+    .replaceColor(true, `(:root \\{[^{]*?) --bs-body-color: .*?;`, `$1 --bs-body-color: var(--btcpay-body-text);`)
+    .replaceColor(true, `(:root \\{[^{]*?) --bs-body-bg: .*?;`, `$1 --bs-body-bg: var(--btcpay-body-bg);`)
+    .replaceColor(true, `(:root \\{[^{]*?) --bs-white-rgb: .*?;`, `$1 --bs-white-rgb: var(--btcpay-white-rgb);`)
+    .replaceColor(true, `(:root \\{[^{]*?) --bs-black-rgb: .*?;`, `$1 --bs-black-rgb: var(--btcpay-black-rgb);`)
+    .replaceColor(true, `(:root \\{[^{]*?) --bs-body-rgb: .*?;`, `$1 --bs-body-rgb: var(--btcpay-body-rgb);`)
 
     // popover
     .replaceColor(true, `(\\.popover \\{[^{]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-bg-tile);`)

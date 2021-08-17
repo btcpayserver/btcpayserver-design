@@ -170,6 +170,8 @@ input[type=number].hide-number-spin {
 .bg-light { color: var(--btcpay-light-text); }
 .bg-dark { color: var(--btcpay-dark-text); }
 .bg-body { color: var(--btcpay-body-text); }
+.bg-white { color: var(--btcpay-black); }
+.bg-black { color: var(--btcpay-white); }
 
 /* Forms */
 .form-group {

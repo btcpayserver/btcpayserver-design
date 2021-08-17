@@ -22,6 +22,7 @@ module.exports = {
     'spinners.html',
     'toasts.html',
     'tooltips.html',
-    'carousel.html'
+    'carousel.html',
+    'utils.html'
   ]
 }
