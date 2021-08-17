@@ -1,16 +1,24 @@
+const Color = require('color')
 const slugify = str => str.toLowerCase().replace(/\W/, '-')
 
 const scale = (title, values, ref) =>
-  values.reduce((res, value, i) => {
-    const num = (i + 1) * 100
-    return res.concat({
-      value,
+  values
+    .reduce((res, value, i) => {
+      const num = (i + 1) * 100
+      return res.concat({
+        value,
+        category: title,
+        name: `${title} ${num}`,
+        variable: `--btcpay-${slugify(title)}-${num}`,
+        reference: ref ? `${ref} ${num}` : null
+      })
+    }, [])
+    .concat({
+      value: Color(values[4]).rgb().array().join(','),
       category: title,
-      name: `${title} ${num}`,
-      variable: `--btcpay-${slugify(title)}-${num}`,
-      reference: ref ? `${ref} ${num}` : null
+      name: `${title} RGB`,
+      variable: `--btcpay-${slugify(title)}-rgb`,
     })
-  }, [])
 
 module.exports = [
   // Brand
@@ -48,9 +56,21 @@ module.exports = [
   },
   {
     category: 'Primitives',
+    name: 'White RGB',
+    value: '255, 255, 255',
+    variable: '--btcpay-white-rgb'
+  },
+  {
+    category: 'Primitives',
     name: 'Black',
     value: '#000000',
     variable: '--btcpay-black'
+  },
+  {
+    category: 'Primitives',
+    name: 'Black RGB',
+    value: '0, 0, 0',
+    variable: '--btcpay-black-rgb'
   },
 
   // Other base colors
