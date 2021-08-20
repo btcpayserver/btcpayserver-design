@@ -270,7 +270,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: var(--btcpay-secondary);
+  color: var(--btcpay-body-text-muted);
   text-align: left;
 }
 
@@ -570,7 +570,7 @@ progress {
   margin-top: -1rem;
   margin-bottom: 1rem;
   font-size: 0.875em;
-  color: var(--btcpay-secondary);
+  color: var(--btcpay-body-text-muted);
 }
 
 .blockquote-footer::before {
@@ -1819,12 +1819,12 @@ progress {
 }
 
 .form-control::-moz-placeholder {
-  color: var(--btcpay-secondary);
+  color: var(--btcpay-body-text-muted);
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: var(--btcpay-secondary);
+  color: var(--btcpay-body-text-muted);
   opacity: 1;
 }
 
@@ -3217,7 +3217,7 @@ fieldset:disabled .btn {
 }
 
 .btn-link:disabled, .btn-link.disabled {
-  color: var(--btcpay-secondary);
+  color: var(--btcpay-body-text-muted);
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -3700,7 +3700,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link.disabled {
-  color: var(--btcpay-secondary);
+  color: var(--btcpay-body-text-muted);
   pointer-events: none;
   cursor: default;
 }
@@ -3723,7 +3723,7 @@ fieldset:disabled .btn {
 }
 
 .nav-tabs .nav-link.disabled {
-  color: var(--btcpay-secondary);
+  color: var(--btcpay-body-text-muted);
   background-color: transparent;
   border-color: transparent;
 }
@@ -4874,7 +4874,7 @@ fieldset:disabled .btn {
 }
 
 .list-group-item.disabled, .list-group-item:disabled {
-  color: var(--btcpay-secondary);
+  color: var(--btcpay-body-text-muted);
   pointer-events: none;
   background-color: var(--btcpay-body-bg);
 }
@@ -7554,7 +7554,7 @@ fieldset:disabled .btn {
 
 .text-muted {
   --btcpay-text-opacity: 1;
-  color: var(--btcpay-secondary) !important;
+  color: var(--btcpay-body-text-muted) !important;
 }
 
 .text-black-50 {
