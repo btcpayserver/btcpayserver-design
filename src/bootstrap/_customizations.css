@@ -1,7 +1,7 @@
 /* Workaround until this is released > v5.1.0:
    https://github.com/twbs/bootstrap/commit/f4fd27118fb2b384968068f66361f020a0996a1a */
 :root {
-  font-size: var(--bs-root-font-size);
+  font-size: var(--btcpay-root-font-size);
 }
 
 html {
