@@ -56,6 +56,10 @@ ul li {
   padding-bottom: .2em;
 }
 
+.text-secondary {
+  color: var(--btcpay-body-text-muted) !important;
+}
+
 /* Accordion */
 .accordion-item + .accordion-item {
   border-top: 1px solid var(--btcpay-body-border-light);
