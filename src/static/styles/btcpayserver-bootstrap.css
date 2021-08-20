@@ -5,20 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --btcpay-blue: #0d6efd;
-  --btcpay-indigo: #6610f2;
-  --btcpay-purple: #6f42c1;
-  --btcpay-pink: var(--btcpay-code-text);
-  --btcpay-red: #dc3545;
-  --btcpay-orange: #fd7e14;
-  --btcpay-yellow: #ffc107;
-  --btcpay-green: #198754;
-  --btcpay-teal: #20c997;
-  --btcpay-cyan: #0dcaf0;
-  --btcpay-white: var(--btcpay-white);
-  --btcpay-white-rgb: 255, 255, 255;
-  --btcpay-black-rgb: 0, 0, 0;
-  --btcpay-body-rgb: var(--btcpay-dark-rgb);
   --btcpay-font-sans-serif: var(--btcpay-font-family-base);
   --btcpay-font-monospace: var(--btcpay-font-family-monospace);
   --btcpay-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));

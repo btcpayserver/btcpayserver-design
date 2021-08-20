@@ -64,9 +64,8 @@ String.prototype.replaceColor = function (colorOrForce, original, replacement) {
 // consumes the extracted category values and replaces them with the variable names
 String.prototype.replaceCategoryColors = function (map) {
   return Object.entries(map).reduce((res, [category, values]) => res
-    .replaceColor(values[''], `  --btcpay-${category}: ${values['']};\n[\s\S]*`, ``)
-    .replaceColor(values[''], `  --btcpay-${category}-rgb: ${values['rgb']};\n[\s\S]*`, ``)
-    .replaceColor(values[''], `  --btcpay-gray(.*?): (.*?);[\s\S]*\n[\s\S]*`, ``)
+    .replaceColor(values[''], `  --btcpay-${category}: ${values['']};\n[\s\S]*`, '')
+    .replaceColor(values[''], `  --btcpay-${category}-rgb: ${values['rgb']};\n[\s\S]*`, '')
     .replaceColor(values[''], `background-color: ${values['']}`, `background-color: var(--btcpay-${category})`)
     .replaceColor(values['rgb'], `${values['rgb']}`, `var(--btcpay-${category}-rgb)`)
     .replaceColor(values['text-hover'], ` color: ${values['text-hover']}`, ` color: var(--btcpay-${category}-text-hover)`)
@@ -167,6 +166,11 @@ const patch = css => {
     .replace(/rgba\(0,\s?0,\s?0,\s?0\)/gi, 'var(--btcpay-black)')
     .replace(/#fff;/gi, 'var(--btcpay-white);')
     .replace(/#fff !important;/gi, 'var(--btcpay-white);')
+
+    // removals
+    .replaceColor(true, `  --btcpay-white-rgb: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-black-rgb: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-body-rgb: (.*?);\n[\s\S]*`, '')
 }
 
 sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>

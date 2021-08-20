@@ -19,6 +19,10 @@ $font-family-code: var(--btcpay-font-family-monospace);
 
 $line-height-base: 1.6;
 
+// Remove default colors
+$colors: ();
+$grays: ();
+
 // layout
 $grid-breakpoints: (
   xs: 0,
