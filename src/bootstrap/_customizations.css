@@ -13,7 +13,6 @@ html {
 
 a,
 .btn-link {
-  font-weight: var(--btcpay-font-weight-semibold);
   transition-duration: 0.2s;
   transition-property: background, color;
 }
