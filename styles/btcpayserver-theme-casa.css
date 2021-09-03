@@ -135,7 +135,7 @@
   --btcpay-body-link-accent: var(--btcpay-primary-accent);
   --btcpay-body-shadow: rgba(25, 135, 84, 0.33);
   --btcpay-wizard-bg: var(--btcpay-white);
-  --btcpay-wizard-color: var(--btcpay-body-text);
+  --btcpay-wizard-text: var(--btcpay-body-text);
   --btcpay-header-bg: var(--btcpay-brand-dark);
   --btcpay-header-text: var(--btcpay-body-text);
   --btcpay-header-link: var(--btcpay-header-text);
@@ -355,10 +355,6 @@ body {
   filter: contrast(0) brightness(200%);
 }
 
-.bg-dark {
-  background-color: var(--btcpay-bg-dark) !important;
-}
-
 #mainNav {
   background: var(--btcpay-header-bg) !important;
 }
@@ -366,16 +362,4 @@ body {
 header.masthead::before,
 .service-box img {
   filter: hue-rotate(100deg) opacity(60%) contrast(125%);
-}
-
-.table {
-  margin: 1.5rem 0 3rem;
-}
-
-.table th {
-  border-top: 0;
-}
-
-.list-group-item-action {
-    color: var(--btcpay-body-color);
 }
