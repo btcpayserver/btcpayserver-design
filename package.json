@@ -22,7 +22,7 @@
     "build": "npm run clean && NODE_ENV=production npm-run-all -p 'build:*'",
     "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts/bootstrap && :",
     "build:patternlib": "uiengine build",
-    "build:styles": "npm-run-all -s 'build:styles:main' 'build:styles:variables' && :",
+    "build:styles": "npm-run-all -s 'build:styles:*' && :",
     "build:styles:main": "postcss --config postcss/main --output dist/styles/btcpayserver-main.css src/styles/main/index.css",
     "build:styles:variables": "echo '' | postcss --config postcss/variables && postcss --config postcss/main --output generated/theme.css src/styles/variables/theme.css && cat generated/*.css > dist/styles/btcpayserver-variables.css",
     "build:bootstrap": "npm run generate-bootstrap && :",
