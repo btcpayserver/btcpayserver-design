@@ -38,8 +38,8 @@
   "devDependencies": {
     "@uiengine/adapter-html": "3.2.1",
     "@uiengine/core": "3.2.1",
-    "autoprefixer": "10.3.3",
-    "bootstrap": "5.1.0",
+    "autoprefixer": "10.3.4",
+    "bootstrap": "5.1.1",
     "color": "4.0.1",
     "csso-cli": "3.0.0",
     "import-fresh": "3.3.0",

@@ -170,7 +170,9 @@ const patch = css => {
     // removals
     .replaceColor(true, `  --btcpay-white-rgb: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, `  --btcpay-black-rgb: (.*?);\n[\s\S]*`, '')
-    .replaceColor(true, `  --btcpay-body-rgb: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-body-color-rgb: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-body-bg-rgb: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, '--btcpay-body-color-rgb', '--btcpay-body-text-rgb')
 }
 
 sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>
