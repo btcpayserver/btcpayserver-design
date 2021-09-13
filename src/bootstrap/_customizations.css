@@ -29,12 +29,16 @@ code {
 
 pre {
   border-radius: var(--btcpay-border-radius);
+}
+
+pre,
+pre code {
   background: var(--btcpay-pre-bg);
 }
 
-pre code {
+pre.text-wrap,
+pre:not(.text-wrap) code {
   padding: var(--btcpay-space-m) !important;
-  background: var(--btcpay-pre-bg);
 }
 
 ol {
