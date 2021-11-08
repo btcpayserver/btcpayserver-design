@@ -183,6 +183,11 @@ textarea.w-auto {
   margin: 1.5rem -.5rem;
 }
 
+/* Fix table group border width */
+.table > :not(:first-child) {
+  border-top-width: 1px;
+}
+
 /* custom utility classes */
 .bg-tile {
   background-color: var(--btcpay-bg-tile);
