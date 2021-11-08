@@ -16,7 +16,7 @@ if [ -d "$BTCPAY_TARGET" ]; then
   defaultDarkCSS="$BTCPAY_TARGET/BTCPayServer/wwwroot/main/themes/default-dark.css"
   defaultDarkRoot=$(cat dist/styles/btcpayserver-variables.css | grep -oPz "$rootDarkSelector" | sed "s/\[data-btcpay-theme=\"dark\"\]//g")
   perl -0777 -i -pe "s/$rootSelector//" $defaultDarkCSS
-  echo -e "$defaultDarkRoot\n$(cat $defaultDarkCSS)" > $defaultDarkCSS
+  echo -e "$defaultDarkRoot$(cat $defaultDarkCSS)" > $defaultDarkCSS
 
   echo "Copied assets to $BTCPAY_TARGET"
 fi
