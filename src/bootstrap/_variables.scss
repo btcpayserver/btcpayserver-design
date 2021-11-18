@@ -87,7 +87,7 @@ $dropdown-border-color: var(--btcpay-body-border-medium);
 $dropdown-link-color: var(--btcpay-body-text);
 $dropdown-link-hover-color: $dropdown-link-color;
 $dropdown-link-hover-bg: var(--btcpay-body-bg-hover);
-$dropdown-link-active-color: $dropdown-link-color;
+$dropdown-link-active-color: var(--btcpay-body-text-active);
 $dropdown-link-active-bg: var(--btcpay-body-bg-active);
 $dropdown-link-disabled-color: var(--btcpay-body-text-muted);
 $dropdown-dark-color: var(--btcpay-white);

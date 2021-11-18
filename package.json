@@ -33,7 +33,8 @@
     "optimize:styles:bootstrap": "csso dist/styles/btcpayserver-bootstrap.css --output dist/styles/btcpayserver-bootstrap.min.css",
     "prod": "npm-run-all build optimize",
     "generate-color-palette": "node ./tasks/generate-color-palette.js",
-    "generate-bootstrap": "node ./tasks/generate-bootstrap.js"
+    "generate-bootstrap": "node ./tasks/generate-bootstrap.js",
+    "build-and-copy": "npm run build && sleep 3 && ./tasks/copy-assets-to-targets.sh"
   },
   "devDependencies": {
     "@uiengine/adapter-html": "3.2.3",
