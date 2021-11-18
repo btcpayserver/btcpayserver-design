@@ -806,11 +806,11 @@ a:hover {
     fill: none;
   }
 
-.btcpay-theme-switch:hover .btcpay-theme-switch-light, .btcpay-theme-switch:focus .btcpay-theme-switch-light {
+:is(.btcpay-theme-switch:hover,.btcpay-theme-switch:focus) .btcpay-theme-switch-light {
       fill: var(--btcpay-theme-switch-light-color);
     }
 
-.btcpay-theme-switch:hover .btcpay-theme-switch-dark, .btcpay-theme-switch:focus .btcpay-theme-switch-dark {
+:is(.btcpay-theme-switch:hover,.btcpay-theme-switch:focus) .btcpay-theme-switch-dark {
       fill: var(--btcpay-theme-switch-dark-color);
     }
 
