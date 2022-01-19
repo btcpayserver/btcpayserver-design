@@ -806,11 +806,11 @@ a:hover {
     fill: none;
   }
 
-:is(.btcpay-theme-switch:hover,.btcpay-theme-switch:focus) .btcpay-theme-switch-light {
+.btcpay-theme-switch:hover .btcpay-theme-switch-light, .btcpay-theme-switch:focus .btcpay-theme-switch-light {
       fill: var(--btcpay-theme-switch-light-color);
     }
 
-:is(.btcpay-theme-switch:hover,.btcpay-theme-switch:focus) .btcpay-theme-switch-dark {
+.btcpay-theme-switch:hover .btcpay-theme-switch-dark, .btcpay-theme-switch:focus .btcpay-theme-switch-dark {
       fill: var(--btcpay-theme-switch-dark-color);
     }
 
@@ -819,7 +819,7 @@ a:hover {
   stroke: var(--btcpay-theme-switch-dark-color);
 }
 
-:root[data-btcpay-theme="dark"] .btcpay-theme-switch-dark {
+[data-btcpay-theme="dark"]:root .btcpay-theme-switch-dark {
     display: none;
 }
 
@@ -835,7 +835,7 @@ a:hover {
   stroke: var(--btcpay-theme-switch-light-color);
 }
 
-:root[data-btcpay-theme="dark"] .btcpay-theme-switch-light {
+[data-btcpay-theme="dark"]:root .btcpay-theme-switch-light {
     display: inline-block;
 }
 
