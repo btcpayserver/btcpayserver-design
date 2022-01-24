@@ -195,6 +195,15 @@ textarea.w-auto {
   flex-grow: 0 !important;
 }
 
+/* Prevent form zoom on mobile Safari */
+@supports (-webkit-overflow-scrolling: touch) {
+    input.form-control,
+    textarea.form-control,
+    select.form-select {
+        font-size: var(--btcpay-root-font-size);
+    }
+}
+
 /* Fix for small table showing unnecessary scrollbars */
 .table-responsive .table-sm {
   width: 100% !important;
