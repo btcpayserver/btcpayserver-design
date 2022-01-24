@@ -803,6 +803,7 @@ a:hover {
 .btcpay-pills input:not(:checked):not([disabled]) + label:hover,
 .btcpay-pill:hover {
   border-color: var(--btcpay-secondary-border-hover);
+  text-decoration: none;
 }
 
 .btcpay-pills input {
