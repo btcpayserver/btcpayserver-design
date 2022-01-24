@@ -3,5 +3,6 @@
 
 /* components */
 @import 'header/header.css';
+@import 'pills/pills.css';
 @import 'theme-switch/theme-switch.css';
 @import 'footer/footer.css';

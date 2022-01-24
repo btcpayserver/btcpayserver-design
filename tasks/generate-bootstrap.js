@@ -11,17 +11,21 @@ const autoprefixer = require('autoprefixer')
 const src = file => resolve(__dirname, join('../src', file))
 const file = src('bootstrap/index.scss')
 const outFile = src('static/styles/btcpayserver-bootstrap.css')
-
+const getContent = file => {
+  const content = '' + readFileSync(src(file))
+  return content.trim() + '\n\n'
+}
 const output = css => {
   // apply custom overrides that cannot be done by replacing strings via the generate-bootstrap script
   let result = patch(css)
 
-  result += readFileSync(src('bootstrap/_customizations.css'))
-  result += readFileSync(src('components/status/status.css'))
-  result += readFileSync(src('components/toggle/toggle.css'))
-  result += readFileSync(src('components/responsive-helper/responsive-helper.css'))
+  result += getContent('bootstrap/_customizations.css')
+  result += getContent('components/pills/pills.css')
+  result += getContent('components/status/status.css')
+  result += getContent('components/toggle/toggle.css')
+  result += getContent('components/responsive-helper/responsive-helper.css')
 
-  writeFileSync(outFile, result)
+  writeFileSync(outFile, result.trim() + '\n')
 }
 
 const SKIP_COLORS = ['#fff', '#000']

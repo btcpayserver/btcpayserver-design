@@ -3,6 +3,7 @@ module.exports = {
     'header',
     'theme-switch',
     'bootstrap',
+    'pills',
     'footer'
   ]
 }

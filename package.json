@@ -34,7 +34,7 @@
     "prod": "npm-run-all build optimize",
     "generate-color-palette": "node ./tasks/generate-color-palette.js",
     "generate-bootstrap": "node ./tasks/generate-bootstrap.js",
-    "build-and-copy": "npm run build && sleep 3 && ./tasks/copy-assets-to-targets.sh"
+    "build-and-copy": "npm run build && ./tasks/copy-assets-to-targets.sh && ./tasks/copy-assets-to-targets.sh"
   },
   "devDependencies": {
     "@uiengine/adapter-html": "3.2.3",
