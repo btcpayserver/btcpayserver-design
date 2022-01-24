@@ -43,7 +43,7 @@ Including this is optional and only required if you want to build upon what Boot
 
 ### Why do we use a fork?
 
-Bootstrap v5 unfortunately doesn't fully support CSS Custom Properties ([yet](https://github.com/twbs/bootstrap/commit/ac58c25dc8b65928ac817b8a2bf7c0e46a58de97)), but that is what we need for out themeing approach.
+Bootstrap v5 unfortunately doesn't fully support CSS Custom Properties ([yet](https://github.com/twbs/bootstrap/commit/ac58c25dc8b65928ac817b8a2bf7c0e46a58de97)), but that is what we need for our theming approach.
 So the idea was to maintain this fork at a central place and use it as our custom version.
 
 ## Old themes
