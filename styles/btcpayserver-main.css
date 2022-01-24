@@ -781,6 +781,48 @@ a:hover {
   height: 45px;
 }
 
+.btcpay-pills input {
+  display: none;
+}
+
+.btcpay-pills label,
+.btcpay-pill {
+  display: inline-block;
+  padding: .75rem 2rem;
+  color: var(--btcpay-body-link);
+  font-weight: var(--btcpay-font-weight-semibold);
+  margin-right: var(--btcpay-space-m);
+  border: 1px solid var(--btcpay-secondary-border);
+  cursor: pointer;
+  border-radius: 1.5rem !important;
+  text-decoration: none !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btcpay-pills input:not(:checked):not([disabled]) + label:hover,
+.btcpay-pill:hover {
+  border-color: var(--btcpay-secondary-border-hover);
+}
+
+.btcpay-pills input {
+  display: none;
+}
+
+.btcpay-pills input:checked + label,
+.btcpay-pill.active {
+  color: var(--btcpay-body-text-active);
+  background: var(--btcpay-body-bg-active);
+  border-color: var(--btcpay-body-bg-active);
+}
+
+.btcpay-pills input[disabled] + label,
+.btcpay-pill.disabled {
+  color: var(--btcpay-body-text-muted);
+  border-color: var(--btcpay-secondary-border);
+  background: transparent;
+  opacity: .5;
+}
+
 .btcpay-theme-switch {
   --btcpay-theme-switch-light-color: var(--btcpay-white);
   --btcpay-theme-switch-dark-color: var(--btcpay-neutral-900);

@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1642589658538,
+    "update": 1643033927295,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -100,6 +100,7 @@
         "header",
         "theme-switch",
         "bootstrap",
+        "pills",
         "footer"
       ],
       "id": "components",
@@ -1765,6 +1766,32 @@
       "readmeFile": "src/components/header/README.md",
       "type": "component"
     },
+    "pills": {
+      "id": "pills",
+      "title": "Pills",
+      "isTitleFromHeading": false,
+      "variants": [
+        {
+          "file": "labels.html",
+          "id": "pills/labels.html-1",
+          "componentId": "pills",
+          "title": "Labels",
+          "extension": "html",
+          "raw": "<form action=\"#\">\n  <div class=\"nav btcpay-pills pb-1\">\n    <input id=\"Internal\" value=\"Internal\" type=\"radio\" name=\"node\" checked=\"checked\">\n    <label for=\"Internal\" >Use internal node</label>\n    <input id=\"Custom\" value=\"Custom\" type=\"radio\" name=\"node\">\n    <label for=\"Custom\">Use custom node</label>\n  </div>\n</form>"
+        },
+        {
+          "file": "links.html",
+          "id": "pills/links.html-2",
+          "componentId": "pills",
+          "title": "Links",
+          "extension": "html",
+          "raw": "<nav class=\"nav pb-1\">\n  <a class=\"btcpay-pill \" href=\"#\">BTC (On-Chain)</a>\n  <a class=\"btcpay-pill active\" href=\"#\">BTC (Off-Chain)</a>\n</nav>"
+        }
+      ],
+      "sourcePath": "src/components/pills",
+      "sourceFile": "src/components/pills/component.config.js",
+      "type": "component"
+    },
     "responsive-helper": {
       "id": "responsive-helper",
       "title": "Responsive Helper",
@@ -1851,6 +1878,7 @@
         "components/header",
         "components/theme-switch",
         "components/bootstrap",
+        "components/pills",
         "components/footer"
       ],
       "parentId": "index",
@@ -1888,7 +1916,7 @@
     },
     "components/bootstrap": {
       "prevSiblingId": "components/theme-switch",
-      "nextSiblingId": "components/footer",
+      "nextSiblingId": "components/pills",
       "parentId": "components",
       "id": "components/bootstrap",
       "itemId": "bootstrap",
@@ -1899,8 +1927,21 @@
         null
       ]
     },
-    "components/footer": {
+    "components/pills": {
       "prevSiblingId": "components/bootstrap",
+      "nextSiblingId": "components/footer",
+      "parentId": "components",
+      "id": "components/pills",
+      "itemId": "pills",
+      "path": "/components/pills/",
+      "type": "component",
+      "title": "Pills",
+      "keywords": [
+        null
+      ]
+    },
+    "components/footer": {
+      "prevSiblingId": "components/pills",
       "parentId": "components",
       "id": "components/footer",
       "itemId": "footer",
