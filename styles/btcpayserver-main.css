@@ -790,12 +790,13 @@ a:hover {
   display: inline-block;
   padding: .75rem 2rem;
   color: var(--btcpay-body-link);
+  background: transparent;
   font-weight: var(--btcpay-font-weight-semibold);
   margin-right: var(--btcpay-space-m);
   border: 1px solid var(--btcpay-secondary-border);
   cursor: pointer;
-  border-radius: 1.5rem !important;
-  text-decoration: none !important;
+  border-radius: 5rem;
+  text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -817,10 +818,9 @@ a:hover {
 
 .btcpay-pills input[disabled] + label,
 .btcpay-pill.disabled {
-  color: var(--btcpay-body-text-muted);
-  border-color: var(--btcpay-secondary-border);
-  background: transparent;
-  opacity: .5;
+  color: var(--btcpay-body-text-muted) !important;
+  border-color: var(--btcpay-secondary-border) !important;
+  opacity: .5 !important;
 }
 
 .btcpay-theme-switch {
