@@ -37,8 +37,8 @@
     "build-and-copy": "npm run build && ./tasks/copy-assets-to-targets.sh && ./tasks/copy-assets-to-targets.sh"
   },
   "devDependencies": {
-    "@uiengine/adapter-html": "3.2.3",
-    "@uiengine/core": "3.2.3",
+    "@uiengine/adapter-html": "3.2.4",
+    "@uiengine/core": "3.2.4",
     "autoprefixer": "10.4.2",
     "bootstrap": "5.1.3",
     "color": "4.2.0",
