@@ -17,5 +17,6 @@ html[data-devenv]:before {
 @media (min-width: 576px) and (max-width: 767px) { html[data-devenv]:before { content: 'SM'; } }
 @media (min-width: 768px) and (max-width: 991px) { html[data-devenv]:before { content: 'MD'; } }
 @media (min-width: 992px) and (max-width: 1199px) { html[data-devenv]:before { content: 'LG'; } }
-@media (min-width: 1200px) { html[data-devenv]:before { content: 'XL'; } }
+@media (min-width: 1200px) and (max-width: 1399px) { html[data-devenv]:before { content: 'XL'; } }
+@media (min-width: 1400px) { html[data-devenv]:before { content: 'XXL'; } }
 @media print { html[data-devenv]:before { content: none; } }
