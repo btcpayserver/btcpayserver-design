@@ -118,6 +118,10 @@ ul:not([class]) li {
   background: none;
 }
 
+.alert-link {
+  text-decoration: underline;
+}
+
 .alert-dismissible .btn-close {
   color: inherit;
   padding: 1.25rem;
