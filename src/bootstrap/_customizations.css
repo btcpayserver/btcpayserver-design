@@ -188,6 +188,11 @@ ul:not([class]) li {
   height: 1rem;
 }
 
+.dropdown-toggle-split {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
 .font-monospace {
   font-size: .95rem;
 }
