@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1647844150942,
+    "update": 1647856774756,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1432,8 +1432,29 @@
             {
               "category": "Borders",
               "name": "Border Radius",
-              "value": "4px",
+              "value": ".25rem",
               "variable": "--btcpay-border-radius",
+              "type": "border-radius"
+            },
+            {
+              "category": "Borders",
+              "name": "Border Radius L",
+              "value": ".5rem",
+              "variable": "--btcpay-border-radius-l",
+              "type": "border-radius"
+            },
+            {
+              "category": "Borders",
+              "name": "Border Radius XL",
+              "value": "1rem",
+              "variable": "--btcpay-border-radius-xl",
+              "type": "border-radius"
+            },
+            {
+              "category": "Borders",
+              "name": "Border Radius XXL",
+              "value": "1.5rem",
+              "variable": "--btcpay-border-radius-xxl",
               "type": "border-radius"
             }
           ]
