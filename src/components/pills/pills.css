@@ -4,7 +4,7 @@
 .btcpay-pills label,
 .btcpay-pill {
     display: inline-block;
-    padding: .75rem 2rem;
+    padding: var(--btcpay-space-s) 1.5rem;
     color: var(--btcpay-body-link);
     background: transparent;
     font-weight: var(--btcpay-font-weight-semibold);
