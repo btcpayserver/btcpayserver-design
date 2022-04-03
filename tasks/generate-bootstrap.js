@@ -52,8 +52,8 @@ const extractCategoriesColors = css =>
       'dim-text-active': css.match(`.list-group-item-${category}.list-group-item-action.active \\{[^{]*?color: (.*?);`)[1],
       'dim-link': css.match(`.alert-${category} .alert-link \\{[^{]*?color: (.*?);`)[1],
       'shadow': [
-        css.match(`.btn-${category}:focus \\{[^{]*?box-shadow: 0 0 0 0.25rem (.*?);`)[1],
-        css.match(`.btn-outline-${category}:focus \\{[^{]*?box-shadow: 0 0 0 0.25rem (.*?);`)[1]
+        css.match(`.btn-${category}:focus \\{[^{]*?box-shadow: 0 0 0 2px (.*?);`)[1],
+        css.match(`.btn-outline-${category}:focus \\{[^{]*?box-shadow: 0 0 0 2px (.*?);`)[1]
       ]
     }
   }), {})
@@ -136,9 +136,9 @@ const patch = css => {
     .replaceColor(true, `(\\.form-range::(.*?):active \\{[^{]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-form-border-active);`)
     .replaceColor(true, `(\\.form-floating > label \\{[^{]*?)( position: absolute;)`, `$1 position: absolute; color: var(--btcpay-form-text-addon);`)
     .replaceColor(true, `(\\.form-control::(.*?) \\{[^{]*?)( background-color: #e9ecef;)`, `$1 background-color: var(--btcpay-form-bg-addon);`)
-    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(25, 135, 84, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-valid);`)
-    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(220, 53, 69, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-invalid);`)
-    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(13, 110, 253, 0\\.25\\);`, `box-shadow: 0 0 0 0.25rem var(--btcpay-form-shadow-focus);`)
+    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(25, 135, 84, 0\\.25\\);`, `box-shadow: 0 0 0 var(--btcpay-form-shadow-size) var(--btcpay-form-shadow-valid);`)
+    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(220, 53, 69, 0\\.25\\);`, `box-shadow: 0 0 0 var(--btcpay-form-shadow-size) var(--btcpay-form-shadow-invalid);`)
+    .replaceColor(true, `box-shadow: 0 0 0 0\\.25rem rgba\\(13, 110, 253, 0\\.25\\);`, `box-shadow: 0 0 0 var(--btcpay-form-shadow-size) var(--btcpay-form-shadow-focus);`)
 
     // border
     .replace(/(border(-.*?)?): 1px solid rgba\(0,\s?0,\s?0,\s?0\.1\d*?\)/gi, '$1: 1px solid var(--btcpay-body-border-light)')
