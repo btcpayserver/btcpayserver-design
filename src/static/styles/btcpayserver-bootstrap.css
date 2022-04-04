@@ -5505,7 +5505,7 @@ fieldset:disabled .btn {
   background-color: var(--btcpay-bg-tile);
   background-clip: padding-box;
   border: 1px solid var(--btcpay-body-border-medium);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
   border-radius: var(--btcpay-border-radius);
 }
 
@@ -6861,15 +6861,15 @@ fieldset:disabled .btn {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .shadow-sm {
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
 }
 
 .shadow-lg {
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
 .shadow-none {
@@ -10696,6 +10696,11 @@ ul:not([class]) li {
 
 .text-secondary {
   color: var(--btcpay-body-text-muted) !important;
+}
+
+/* Modals */
+.modal-content {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 /* Accordion */

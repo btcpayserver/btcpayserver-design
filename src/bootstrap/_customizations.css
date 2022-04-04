@@ -81,6 +81,11 @@ ul:not([class]) li {
   color: var(--btcpay-body-text-muted) !important;
 }
 
+/* Modals */
+.modal-content {
+  box-shadow: 0 20px 20px rgba(0, 0, 0, .15);
+}
+
 /* Accordion */
 .accordion-item + .accordion-item {
   border-top: 1px solid var(--btcpay-body-border-light);
