@@ -10961,6 +10961,15 @@ input[type="number"].hide-number-spin {
   border-color: var(--btcpay-form-border-hover);
 }
 
+.form-select,
+.form-control {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+}
+
+.form-check-input {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+}
+
 [data-required]::after {
   content: " *";
   color: var(--btcpay-danger);
