@@ -69,6 +69,10 @@
   --uie-color-bg-dark: var(--btcpay-neutral-700);
 }
 
+.uie-variant body {
+  padding: 1rem;
+}
+
 .uie .layout {
   --topbar-height: 4rem;
   --navigation-width: 250px;
