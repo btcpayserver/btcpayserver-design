@@ -1,0 +1,9 @@
+.form-select,
+.form-control {
+  box-shadow: $box-shadow;
+}
+
+.form-check-input {
+  box-shadow: $box-shadow-sm;
+  transition: $input-transition;
+}
