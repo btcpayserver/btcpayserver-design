@@ -133,12 +133,12 @@ $input-disabled-border-color: var(--btcpay-form-border-disabled);
 
 $input-focus-bg: $input-bg;
 $input-focus-border-color: var(--btcpay-form-border-focus);
-$input-focus-box-shadow: 0 0 0 2px var(--btcpay-form-shadow-focus);
+$input-focus-box-shadow: 0 0 0 2px var(--btcpay-form-shadow-focus) inset;
 $form-check-input-width: 1.5em;
 $form-check-input-bg: transparent;
 $form-check-input-border: 2px solid var(--btcpay-form-border-check);
 $form-check-input-focus-border: $input-focus-border-color;
-$form-check-input-focus-box-shadow: $input-focus-box-shadow;
+$form-check-input-focus-box-shadow: 0 0 0 2px var(--btcpay-form-shadow-focus);
 $form-check-margin-bottom: 1rem;
 $form-check-padding-start: $form-check-input-width+.75em;
 $form-range-track-bg: var(--btcpay-form-border);
