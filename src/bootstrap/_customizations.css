@@ -46,6 +46,10 @@ a.nav-link:hover {
   background: var(--btcpay-nav-bg-hover);
 }
 
+main p > a {
+  font-weight: var(--btcpay-font-weight-semibold);
+}
+
 code {
   background: var(--btcpay-code-bg);
 }
