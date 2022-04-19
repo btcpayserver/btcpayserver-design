@@ -2247,19 +2247,19 @@ textarea.form-control-lg {
 .form-check {
   display: block;
   min-height: 1.4rem;
-  padding-left: 2.25em;
+  padding-left: 2em;
   margin-bottom: 1rem;
 }
 
 .form-check .form-check-input {
   float: left;
-  margin-left: -2.25em;
+  margin-left: -2em;
 }
 
 .form-check-input {
-  width: 1.5em;
-  height: 1.5em;
-  margin-top: 0.05em;
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: 0.175em;
   vertical-align: top;
   background-color: transparent;
   background-repeat: no-repeat;
