@@ -10845,7 +10845,7 @@ textarea.w-auto {
   margin: 1.5rem -0.5rem;
 }
 
-.table-responsive {
+[class^="table-responsive"] {
   width: calc(100% + 1rem);
   margin: 1.5rem -0.5rem;
 }
