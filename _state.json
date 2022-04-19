@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1649427550016,
+    "update": 1650376428241,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
