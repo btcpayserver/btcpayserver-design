@@ -17,7 +17,12 @@ $font-family-monospace: var(--btcpay-font-family-monospace);
 $font-family-base: var(--btcpay-font-family-base);
 $font-family-code: var(--btcpay-font-family-monospace);
 
+$font-weight-normal: var(--btcpay-font-weight-normal);
+$font-weight-bold: var(--btcpay-font-weight-bold);
+
 $line-height-base: 1.6;
+
+$headings-font-weight: $font-weight-bold;
 
 // Remove default colors
 $colors: ();
