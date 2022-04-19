@@ -11143,6 +11143,7 @@ input[type="number"].hide-number-spin {
 }
 .btcpay-pills input:not(:checked):not([disabled]) + label:hover,
 .btcpay-pill:hover {
+    color: var(--btcpay-body-link);
     border-color: var(--btcpay-secondary-border-hover);
     text-decoration: none;
 }
