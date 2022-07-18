@@ -11,9 +11,13 @@
   flex-shrink: 0;
   border: 0;
   border-radius: calc(var(--toggle-height) / 2);
-  background: var(--btcpay-neutral-500);
+  background: var(--btcpay-toggle-bg);
   font-size: 0;
   cursor: pointer;
+}
+
+.btcpay-toggle:hover {
+  background: var(--btcpay-toggle-bg-hover);
 }
 
 input.btcpay-toggle {
@@ -24,7 +28,12 @@ input.btcpay-toggle {
 
 input.btcpay-toggle:checked,
 .btcpay-toggle.btcpay-toggle--active {
-  background: var(--btcpay-primary);
+  background: var(--btcpay-toggle-bg-active);
+}
+
+input.btcpay-toggle:checked:hover,
+.btcpay-toggle.btcpay-toggle--active:hover {
+  background: var(--btcpay-toggle-bg-active-hover);
 }
 
 .btcpay-toggle::after {
