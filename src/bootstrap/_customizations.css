@@ -248,6 +248,10 @@ main [class^="table-responsive"] {
   border-bottom-width: 0;
 }
 
+.table > thead:not(caption) > * > th {
+  color: var(--btcpay-body-text-muted);
+}
+
 /* custom utility classes */
 .bg-tile {
   background-color: var(--btcpay-bg-tile);
