@@ -353,7 +353,7 @@ input[type="number"].hide-number-spin {
 
 /* Forms */
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-select:not(:disabled,.disabled,.is-valid,.is-invalid):hover,
