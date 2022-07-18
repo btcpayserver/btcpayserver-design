@@ -4,6 +4,7 @@ module.exports = {
     'theme-switch',
     'bootstrap',
     'pills',
+    'toggle',
     'footer'
   ]
 }
