@@ -270,7 +270,7 @@
   --btcpay-dark-rgb: 33, 38, 45;
 }
 
-%dark-theme {
+@define-mixin dark-theme {
   --btcpay-neutral-100: var(--btcpay-neutral-dark-100);
   --btcpay-neutral-200: var(--btcpay-neutral-dark-200);
   --btcpay-neutral-300: var(--btcpay-neutral-dark-300);
@@ -372,11 +372,11 @@
 
 :root[data-theme="dark"],
 :root[data-btcpay-theme="dark"] {
-  @extend %dark-theme;
+  @mixin dark-theme;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-btcpay-theme],[data-theme]) {
-    @extend %dark-theme;
+    @mixin dark-theme;
   }
 }
