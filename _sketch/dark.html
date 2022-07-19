@@ -2495,7 +2495,57 @@
   </section>
       <section class="uie-html-sketchapp-export__section">
   <h2>Toggle</h2>
-    </section>
+  
+      <article class="uie-html-sketchapp-export__article">
+    <h3>Simple</h3>
+    <div data-sketch-symbol="Toggle/Simple">
+      <div class="form-group d-flex align-items-center">
+  <input id="PayJoinEnabled" type="checkbox" class="btcpay-toggle me-2" />
+  <label for="PayJoinEnabled" class="form-label mb-0 me-1">PayJoin enabled</label>
+</div>
+
+<div class="form-group d-flex align-items-center">
+  <input id="PayJoinEnabledOn" type="checkbox" class="btcpay-toggle me-2" checked />
+  <label for="PayJoinEnabledOn" class="form-label mb-0 me-1">PayJoin enabled</label>
+</div>
+
+<div class="form-group d-flex align-items-center mb-0">
+  <input id="Disabled" type="checkbox" class="btcpay-toggle me-2" disabled />
+  <label for="Disabled" class="form-label mb-0 me-1">Disabled</label>
+</div>
+    </div>
+  </article>
+
+      <article class="uie-html-sketchapp-export__article">
+    <h3>Helptext</h3>
+    <div data-sketch-symbol="Toggle/Helptext">
+      <div class="d-flex align-items-center">
+  <input id="IsRecurring" type="checkbox" class="btcpay-toggle me-3" />
+  <div>
+    <label for="IsRecurring" class="form-label mb-0">Recurring Goal</label>
+    <div class="text-muted">Reset goal after a specific period of time, based on your crowdfund's start date.</div>
+  </div>
+</div>
+    </div>
+  </article>
+
+      <article class="uie-html-sketchapp-export__article">
+    <h3>Expand</h3>
+    <div data-sketch-symbol="Toggle/Expand">
+      <div class="d-flex align-items-center">
+  <input id="EnableTips" type="checkbox" class="btcpay-toggle me-3" data-bs-toggle="collapse"
+    data-bs-target="#CustomTipsSettings" aria-expanded="false" aria-controls="CustomTipsSettings" />
+  <label for="EnableTips" class="form-label mb-0">Enable tips</label>
+</div>
+<div class="collapse" id="CustomTipsSettings">
+  <div class="form-group pt-3">
+    <label id="CustomTipText" class="form-label" data-required>Custom tip text</label>
+    <input for="CustomTipText" class="form-control" required />
+  </div>
+</div>
+    </div>
+  </article>
+  </section>
       <section class="uie-html-sketchapp-export__section">
   <h2>Kitchensink</h2>
   

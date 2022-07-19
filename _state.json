@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1658152875128,
+    "update": 1658211926486,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -101,6 +101,7 @@
         "theme-switch",
         "bootstrap",
         "pills",
+        "toggle",
         "footer"
       ],
       "id": "components",
@@ -1861,8 +1862,34 @@
       "id": "toggle",
       "title": "Toggle",
       "isTitleFromHeading": false,
-      "variants": [],
+      "variants": [
+        {
+          "file": "simple.html",
+          "id": "toggle/simple.html-1",
+          "componentId": "toggle",
+          "title": "Simple",
+          "extension": "html",
+          "raw": "<div class=\"form-group d-flex align-items-center\">\n  <input id=\"PayJoinEnabled\" type=\"checkbox\" class=\"btcpay-toggle me-2\" />\n  <label for=\"PayJoinEnabled\" class=\"form-label mb-0 me-1\">PayJoin enabled</label>\n</div>\n\n<div class=\"form-group d-flex align-items-center\">\n  <input id=\"PayJoinEnabledOn\" type=\"checkbox\" class=\"btcpay-toggle me-2\" checked />\n  <label for=\"PayJoinEnabledOn\" class=\"form-label mb-0 me-1\">PayJoin enabled</label>\n</div>\n\n<div class=\"form-group d-flex align-items-center mb-0\">\n  <input id=\"Disabled\" type=\"checkbox\" class=\"btcpay-toggle me-2\" disabled />\n  <label for=\"Disabled\" class=\"form-label mb-0 me-1\">Disabled</label>\n</div>"
+        },
+        {
+          "file": "helptext.html",
+          "id": "toggle/helptext.html-2",
+          "componentId": "toggle",
+          "title": "Helptext",
+          "extension": "html",
+          "raw": "<div class=\"d-flex align-items-center\">\n  <input id=\"IsRecurring\" type=\"checkbox\" class=\"btcpay-toggle me-3\" />\n  <div>\n    <label for=\"IsRecurring\" class=\"form-label mb-0\">Recurring Goal</label>\n    <div class=\"text-muted\">Reset goal after a specific period of time, based on your crowdfund's start date.</div>\n  </div>\n</div>"
+        },
+        {
+          "file": "expand.html",
+          "id": "toggle/expand.html-3",
+          "componentId": "toggle",
+          "title": "Expand",
+          "extension": "html",
+          "raw": "<div class=\"d-flex align-items-center\">\n  <input id=\"EnableTips\" type=\"checkbox\" class=\"btcpay-toggle me-3\" data-bs-toggle=\"collapse\"\n    data-bs-target=\"#CustomTipsSettings\" aria-expanded=\"false\" aria-controls=\"CustomTipsSettings\" />\n  <label for=\"EnableTips\" class=\"form-label mb-0\">Enable tips</label>\n</div>\n<div class=\"collapse\" id=\"CustomTipsSettings\">\n  <div class=\"form-group pt-3\">\n    <label id=\"CustomTipText\" class=\"form-label\" data-required>Custom tip text</label>\n    <input for=\"CustomTipText\" class=\"form-control\" required />\n  </div>\n</div>"
+        }
+      ],
       "sourcePath": "src/components/toggle",
+      "sourceFile": "src/components/toggle/component.config.js",
       "type": "component"
     },
     "kitchensink": {
@@ -1908,6 +1935,7 @@
         "components/theme-switch",
         "components/bootstrap",
         "components/pills",
+        "components/toggle",
         "components/footer"
       ],
       "parentId": "index",
@@ -1958,7 +1986,7 @@
     },
     "components/pills": {
       "prevSiblingId": "components/bootstrap",
-      "nextSiblingId": "components/footer",
+      "nextSiblingId": "components/toggle",
       "parentId": "components",
       "id": "components/pills",
       "itemId": "pills",
@@ -1969,8 +1997,21 @@
         null
       ]
     },
-    "components/footer": {
+    "components/toggle": {
       "prevSiblingId": "components/pills",
+      "nextSiblingId": "components/footer",
+      "parentId": "components",
+      "id": "components/toggle",
+      "itemId": "toggle",
+      "path": "/components/toggle/",
+      "type": "component",
+      "title": "Toggle",
+      "keywords": [
+        null
+      ]
+    },
+    "components/footer": {
+      "prevSiblingId": "components/toggle",
       "parentId": "components",
       "id": "components/footer",
       "itemId": "footer",
