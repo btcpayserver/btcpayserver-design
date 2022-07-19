@@ -7,3 +7,23 @@
   box-shadow: $box-shadow-sm;
   transition: $input-transition;
 }
+
+// Override WebKit list styles, which are used e.g. for the currency selector
+// https: //stackoverflow.com/questions/20937475/remove-datalist-dropdown-arrow-in-chrome
+// https: //www.mail-archive.com/webkit-changes@lists.webkit.org/msg168835.html
+[list] {
+  background-image: escape-svg($form-select-indicator);
+  background-repeat: no-repeat;
+  background-position: $form-select-bg-position;
+  background-size: $form-select-bg-size;
+
+  // Desktop
+  &::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+
+  // Mobile
+  &::-webkit-list-button {
+    content: none;
+  }
+}
