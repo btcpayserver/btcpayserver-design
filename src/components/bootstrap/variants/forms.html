@@ -20,8 +20,23 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
+      <div class="form-group">
+        <label class="form-label" data-required="" for="DefaultCurrency">Default currency</label>
+        <input class="form-control" style="max-width:10ch;" type="text" data-val="true"
+          data-val-maxlength="The field Default currency must be a string or array type with a maximum length of '10'."
+          data-val-maxlength-max="10" data-val-required="The Default currency field is required." id="DefaultCurrency"
+          maxlength="10" name="DefaultCurrency" value="USD" list="currency-selection-suggestion"><datalist
+          id="currency-selection-suggestion">
+          <option value="BTC"></option>
+          <option value="SATS"></option>
+          <option value="USD"></option>
+          <option value="EUR"></option>
+          <option value="JPY"></option>
+        </datalist>
+        <span class="text-danger field-validation-valid" data-valmsg-for="DefaultCurrency" data-valmsg-replace="true"></span>
+      </div>
       <fieldset class="mb-3">
-        <legend>Radios buttons</legend>
+        <legend class="h3 my-3">Radios buttons</legend>
         <div class="form-check">
           <input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
           <label class="form-check-label" for="exampleRadio1">Default radio</label>
@@ -77,7 +92,7 @@
           </div>
         </div>
         <fieldset class="mb-3">
-          <legend>Disabled radios buttons</legend>
+          <legend class="h3 my-3">Disabled radios buttons</legend>
           <div class="form-check">
             <input type="radio" name="radios" class="form-check-input" id="disabledRadio1" disabled>
             <label class="form-check-label" for="disabledRadio1">Disabled radio</label>
