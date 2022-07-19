@@ -486,8 +486,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-btcpay-theme],
-[data-theme]) {
+  :root:not([data-btcpay-theme],[data-theme]) {
     --btcpay-neutral-100: var(--btcpay-neutral-dark-100);
     --btcpay-neutral-200: var(--btcpay-neutral-dark-200);
     --btcpay-neutral-300: var(--btcpay-neutral-dark-300);
