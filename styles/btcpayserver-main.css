@@ -706,8 +706,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   * {
-    -webkit-animation: none !important;
-            animation: none !important;
+    animation: none !important;
     transition: none !important;
   }
 }
