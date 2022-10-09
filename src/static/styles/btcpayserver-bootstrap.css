@@ -5035,12 +5035,6 @@ fieldset:disabled .btn {
   color: inherit;
 }
 
-@-webkit-keyframes progress-bar-stripes {
-  0% {
-    background-position-x: 1rem;
-  }
-}
-
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5074,8 +5068,7 @@ fieldset:disabled .btn {
 }
 
 .progress-bar-animated {
-  -webkit-animation: 1s linear infinite progress-bar-stripes;
-          animation: 1s linear infinite progress-bar-stripes;
+  animation: 1s linear infinite progress-bar-stripes;
 }
 
 .list-group {
@@ -6281,12 +6274,6 @@ fieldset:disabled .btn {
   color: var(--btcpay-black);
 }
 
-@-webkit-keyframes spinner-border {
-  to {
-    transform: rotate(360deg) /* rtl:ignore */;
-  }
-}
-
 @keyframes spinner-border {
   to {
     transform: rotate(360deg) /* rtl:ignore */;
@@ -6301,24 +6288,13 @@ fieldset:disabled .btn {
   border: 0.25em solid currentColor;
   border-right-color: transparent;
   border-radius: 50%;
-  -webkit-animation: 0.75s linear infinite spinner-border;
-          animation: 0.75s linear infinite spinner-border;
+  animation: 0.75s linear infinite spinner-border;
 }
 
 .spinner-border-sm {
   width: 1rem;
   height: 1rem;
   border-width: 0.2em;
-}
-
-@-webkit-keyframes spinner-grow {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    opacity: 1;
-    transform: none;
-  }
 }
 
 @keyframes spinner-grow {
@@ -6339,8 +6315,7 @@ fieldset:disabled .btn {
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0;
-  -webkit-animation: 0.75s linear infinite spinner-grow;
-          animation: 0.75s linear infinite spinner-grow;
+  animation: 0.75s linear infinite spinner-grow;
 }
 
 .spinner-grow-sm {
@@ -6472,14 +6447,7 @@ fieldset:disabled .btn {
 }
 
 .placeholder-glow .placeholder {
-  -webkit-animation: placeholder-glow 2s ease-in-out infinite;
-          animation: placeholder-glow 2s ease-in-out infinite;
-}
-
-@-webkit-keyframes placeholder-glow {
-  50% {
-    opacity: 0.2;
-  }
+  animation: placeholder-glow 2s ease-in-out infinite;
 }
 
 @keyframes placeholder-glow {
@@ -6493,15 +6461,7 @@ fieldset:disabled .btn {
           mask-image: linear-gradient(130deg, #000 55%, rgba(0, 0, 0, 0.8) 75%, #000 95%);
   -webkit-mask-size: 200% 100%;
           mask-size: 200% 100%;
-  -webkit-animation: placeholder-wave 2s linear infinite;
-          animation: placeholder-wave 2s linear infinite;
-}
-
-@-webkit-keyframes placeholder-wave {
-  100% {
-    -webkit-mask-position: -200% 0%;
-            mask-position: -200% 0%;
-  }
+  animation: placeholder-wave 2s linear infinite;
 }
 
 @keyframes placeholder-wave {
