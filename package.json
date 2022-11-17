@@ -42,7 +42,7 @@
     "@uiengine/adapter-html": "3.3.7",
     "@uiengine/core": "3.3.7",
     "autoprefixer": "10.4.13",
-    "bootstrap": "5.1.3",
+    "bootstrap": "5.2.3",
     "color": "4.2.3",
     "csso-cli": "4.0.1",
     "import-fresh": "3.3.0",
