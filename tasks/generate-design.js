@@ -4,7 +4,6 @@
 const { writeFileSync } = require('fs')
 const { resolve } = require('path')
 const postcss = require('postcss')
-const prettify = require('postcss-prettify');
 
 // design tokens meta description
 const variables = require('../src/design/variables')
@@ -46,6 +45,6 @@ const customProperties = {
 
 const css = `:root {\n${Object.entries(customProperties).map(([key, value]) => `  ${key}: ${value};`).join('\n')}\n}`;
 
-postcss([prettify])
+postcss()
   .process(css, { from: undefined, o: outFile })
   .then((result) => writeFileSync(outFile, result.css.trim() + '\n'));

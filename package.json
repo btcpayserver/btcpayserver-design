@@ -28,9 +28,9 @@
     "build:bootstrap": "npm run generate-bootstrap && :",
     "optimize": "npm-run-all -p optimize:*",
     "optimize:styles": "npm-run-all -p optimize:styles:*",
-    "optimize:styles:main": "csso dist/styles/btcpayserver-main.css --output dist/styles/btcpayserver-main.min.css",
-    "optimize:styles:variables": "csso dist/styles/btcpayserver-variables.css --output dist/styles/btcpayserver-variables.min.css",
-    "optimize:styles:bootstrap": "csso dist/styles/btcpayserver-bootstrap.css --output dist/styles/btcpayserver-bootstrap.min.css",
+    "optimize:styles:main": "csso --output dist/styles/btcpayserver-main.min.css dist/styles/btcpayserver-main.css",
+    "optimize:styles:variables": "csso --output dist/styles/btcpayserver-variables.min.css dist/styles/btcpayserver-variables.css",
+    "optimize:styles:bootstrap": "csso --output dist/styles/btcpayserver-bootstrap.min.css dist/styles/btcpayserver-bootstrap.css ",
     "prod": "npm-run-all build optimize",
     "generate-color-palette": "node ./tasks/generate-color-palette.js",
     "generate-bootstrap": "node ./tasks/generate-bootstrap.js",
@@ -54,7 +54,6 @@
     "postcss-import": "15.0.0",
     "postcss-mixins": "9.0.4",
     "postcss-nesting": "10.2.0",
-    "postcss-prettify": "0.3.4",
     "rimraf": "3.0.2"
   }
 }
