@@ -29,8 +29,13 @@ $colors: ();
 $grays: ();
 
 // layout
+$border-radius-sm: var(--btcpay-border-radius);
 $border-radius: var(--btcpay-border-radius);
 $border-radius-lg: var(--btcpay-border-radius-l);
+$border-radius-xl: var(--btcpay-border-radius-xl);
+$border-radius-2xl: var(--btcpay-border-radius-xxl);
+
+$border-color: var(--btcpay-body-border-light);
 
 $text-muted: var(--btcpay-body-text-muted);
 $blockquote-footer-color: var(--btcpay-body-text-muted);
@@ -89,6 +94,7 @@ $dropdown-dark-bg: var(--btcpay-bg-tile);
 $dropdown-dark-border-color: var(--btcpay-neutral-900);
 $dropdown-dark-link-color: $dropdown-dark-color;
 $dropdown-dark-link-disabled-color: var(--btcpay-body-text-muted);
+$dropdown-header-color: var(--btcpay-body-text-muted);
 
 $navbar-padding-y: 1rem;
 
@@ -97,6 +103,9 @@ $nav-tabs-link-hover-border-color: var(--btcpay-body-border-medium);
 $nav-tabs-link-active-color: var(--btcpay-body-text-active);
 $nav-tabs-link-active-bg: var(--btcpay-body-bg-active);
 $nav-tabs-link-active-border-color: $nav-tabs-link-hover-border-color;
+
+$nav-pills-link-active-color: var(--btcpay-primary-text);
+$nav-pills-link-active-bg: var(--btcpay-primary);
 
 $list-group-color: var(--btcpay-body-text);
 $list-group-bg: var(--btcpay-body-bg);
@@ -177,6 +186,8 @@ $toast-header-border-color: $toast-header-background-color;
 $popover-border-color: var(--btcpay-body-border-medium);
 $popover-arrow-color: var(--btcpay-bg-tile);
 $popover-arrow-outer-color: $popover-border-color;
+$popover-header-bg: var(--btcpay-bg-tile);
+$popover-bg: var(--btcpay-bg-tile);
 
 $offcanvas-color: var(--btcpay-body-text);
 $offcanvas-bg-color: var(--btcpay-black);
@@ -233,3 +244,5 @@ $offcanvas-box-shadow: none;
 $box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
 $box-shadow-sm: 0 1px 2px rgba(0, 0, 0, .08);
 $box-shadow-lg: 0 10px 20px rgba(0, 0, 0, .1);
+
+$progress-bar-bg: var(--btcpay-primary);
