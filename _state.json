@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1669114143448,
+    "update": 1669803302575,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1815,7 +1815,7 @@
           "componentId": "pills",
           "title": "Links",
           "extension": "html",
-          "raw": "<nav class=\"nav pb-1\">\n  <a class=\"btcpay-pill \" href=\"#\">BTC (On-Chain)</a>\n  <a class=\"btcpay-pill active\" href=\"#\">BTC (Off-Chain)</a>\n</nav>"
+          "raw": "<nav class=\"nav pb-1 btcpay-pills\">\n  <a class=\"btcpay-pill\" href=\"#\">BTC (On-Chain)</a>\n  <a class=\"btcpay-pill active\" href=\"#\">BTC (Off-Chain)</a>\n</nav>"
         }
       ],
       "sourcePath": "src/components/pills",
@@ -1877,7 +1877,7 @@
           "componentId": "toggle",
           "title": "Helptext",
           "extension": "html",
-          "raw": "<div class=\"d-flex align-items-center\">\n  <input id=\"IsRecurring\" type=\"checkbox\" class=\"btcpay-toggle me-3\" />\n  <div>\n    <label for=\"IsRecurring\" class=\"form-label mb-0\">Recurring Goal</label>\n    <div class=\"text-muted\">Reset goal after a specific period of time, based on your crowdfund's start date.</div>\n  </div>\n</div>"
+          "raw": "<div class=\"d-flex align-items-center\">\n  <input id=\"IsRecurring\" type=\"checkbox\" class=\"btcpay-toggle me-3\" />\n  <div>\n    <label for=\"IsRecurring\" class=\"form-label mb-0\">Recurring Goal</label>\n    <div class=\"form-text\">Reset goal after a specific period of time, based on your crowdfund's start date.</div>\n  </div>\n</div>"
         },
         {
           "file": "expand.html",
