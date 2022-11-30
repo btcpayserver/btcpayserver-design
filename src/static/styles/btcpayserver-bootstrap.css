@@ -454,7 +454,7 @@ progress {
 
 .lead {
   font-size: 1.09375rem;
-  font-weight: 300;
+  font-weight: var(--btcpay-font-weight-normal);
 }
 
 .display-1 {
