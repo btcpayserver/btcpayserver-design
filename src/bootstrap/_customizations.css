@@ -133,7 +133,7 @@ ul:not([class]) li {
 
 .alert-dismissible .btn-close {
   color: inherit;
-  padding: 1.25rem;
+  padding: 1rem;
 }
 
 /* Button */
