@@ -39,8 +39,8 @@
     "build-and-copy": "npm-run-all -s clean build build:static copy-assets"
   },
   "devDependencies": {
-    "@uiengine/adapter-html": "3.3.7",
-    "@uiengine/core": "3.3.7",
+    "@uiengine/adapter-html": "3.3.8",
+    "@uiengine/core": "3.3.8",
     "autoprefixer": "10.4.13",
     "bootstrap": "5.2.3",
     "color": "4.2.3",
@@ -49,9 +49,9 @@
     "node-sass": "8.0.0",
     "npm-run-all": "4.1.5",
     "onchange": "7.1.0",
-    "postcss": "8.4.19",
-    "postcss-cli": "10.0.0",
-    "postcss-import": "15.0.0",
+    "postcss": "8.4.20",
+    "postcss-cli": "10.1.0",
+    "postcss-import": "15.1.0",
     "postcss-mixins": "9.0.4",
     "postcss-nesting": "10.2.0",
     "rimraf": "3.0.2"
