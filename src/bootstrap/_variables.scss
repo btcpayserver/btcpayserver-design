@@ -2,6 +2,7 @@
 // https://github.com/SeleniumHQ/selenium/issues/8295
 $enable-smooth-scroll: false;
 $enable-reduced-motion: false;
+$enable-dark-mode: false;
 
 // Bootstrap
 $variable-prefix: btcpay-;
@@ -198,14 +199,11 @@ $popover-bg: var(--btcpay-bg-tile);
 $offcanvas-color: var(--btcpay-body-text);
 $offcanvas-bg-color: var(--btcpay-black);
 
-$link-color: var(--btcpay-body-link);
 $link-decoration: none;
-$link-hover-color: var(--btcpay-body-link-accent);
 $link-hover-decoration: none;
 
 $pre-color: var(--btcpay-pre-text);
-$code-color: var(--btcpay-code-text);
-$kbd-color: $code-color;
+$kbd-color: var(--btcpay-code-text);
 $kbd-bg: var(--btcpay-code-bg);
 
 $nav-link-color: var(--btcpay-nav-link);

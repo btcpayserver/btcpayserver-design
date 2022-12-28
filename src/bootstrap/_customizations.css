@@ -148,6 +148,10 @@ ul:not([class]) li {
   text-decoration: underline;
 }
 
+.alert-link:focus, .alert-link:hover {
+  color: var(--btcpay-alert-link-color);
+}
+
 .alert-dismissible .btn-close {
   color: inherit;
   padding: 1rem;

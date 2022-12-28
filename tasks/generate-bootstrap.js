@@ -39,16 +39,13 @@ const extractCategoriesColors = css =>
       '': css.match(`--btcpay-${category}: (.*?);`)[1],
       'rgb': css.match(`--btcpay-${category}-rgb: (.*?);`)[1],
       'text-hover': css.match(`.link-${category}:focus \\{[^{]*?color: (.*?) !important;`)[1],
+      'text-emphasis': css.match(`--btcpay-${category}-text-emphasis: (.*?);`)[1],
       'border': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-border-color: (.*?);`)[1],
       'border-hover': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-hover-border-color: (.*?);`)[1],
       'border-active': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-active-border-color: (.*?);`)[1],
-      'dim-bg': css.match(`.alert-${category} \\{[^{]*?--btcpay-alert-bg: (.*?);`)[1],
-      'dim-bg-hover': css.match(`list-group-item-${category}.list-group-item-action:focus \\{[^{]*?background-color: (.*?);`)[1],
-      'dim-bg-active': css.match(`.list-group-item-${category}.list-group-item-action.active \\{[^{]*?background-color: (.*?);`)[1],
-      'dim-border': css.match(`.table-${category} \\{[^{]*?--btcpay-table-border-color: (.*?);`)[1],
-      'dim-border-active': css.match(`.list-group-item-${category}.list-group-item-action.active \\{[^{]*?border-color: (.*?);`)[1],
-      'dim-text': css.match(`.list-group-item-${category} \\{[^{]*?color: (.*?);`)[1],
-      'dim-link': css.match(`.alert-${category} .alert-link \\{[^{]*?color: (.*?);`)[1],
+      'dim-bg': css.match(`--btcpay-${category}-bg-subtle: (.*?);`)[1],
+      'dim-bg-hover': css.match(`--btcpay-${category}-border-subtle: (.*?);`)[1],
+      'dim-border': css.match(`--btcpay-${category}-border-subtle: (.*?);`)[1],
       'shadow': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-focus-shadow-rgb: (.*?);`)[1]
     }
   }), {})
@@ -67,6 +64,7 @@ String.prototype.replaceCategoryColors = function (map) {
     .replaceColor(true, `(\\.alert-${category} \\{[^{]*?)--btcpay-alert-border-color: (.*?);`, `$1--btcpay-alert-border-color: var(--btcpay-${category}-border);`)
     .replaceColor(true, `(\\.alert-${category} \\{[^{]*?)--btcpay-alert-bg: (.*?);`, `$1--btcpay-alert-bg: var(--btcpay-${category});`)
     .replaceColor(true, `(\\.alert-${category} \\{[^{]*?)--btcpay-alert-color: (.*?);`, `$1--btcpay-alert-color: var(--btcpay-${category}-text);`)
+    .replaceColor(true, `(\\.alert-${category} \\{[^{]*?)--btcpay-alert-link-color: (.*?);`, `$1--btcpay-alert-color: var(--btcpay-${category}-text);`)
 
     // button
     .replaceColor(true, `(\\.btn-${category} \\{[^{]*?)--btcpay-btn-color: (.*?);`, `$1--btcpay-btn-color: var(--btcpay-${category}-text);`)
@@ -101,7 +99,10 @@ String.prototype.replaceCategoryColors = function (map) {
     .replaceColor(true, `(\\.table-${category} \\{[^{]*?)--btcpay-table-active-bg: (.*?);`, `$1--btcpay-table-active-bg: var(--btcpay-${category}-dim-bg-active);`)
 
     // list group
+    .replaceColor(true, `(\\.list-group-item-${category} \\{[^{]*?)( --btcpay-list-group-color: (.*?);)`, `$1 --btcpay-list-group-color: var(--btcpay-${category}-dim-text);`)
     .replaceColor(true, `(\\.list-group-item-${category}.list-group-item-action.active \\{[^{]*?)( color: (.*?);)`, `$1 color: var(--btcpay-${category}-dim-text-active);`)
+    .replaceColor(true, `(\\.list-group-item-${category} \\{[^{]*?)( --btcpay-list-group-action-hover-color: (.*?);)`, `$1 --btcpay-list-group-action-hover-color: var(--btcpay-${category}-dim-text-hover);`)
+    .replaceColor(true, `(\\.list-group-item-${category} \\{[^{]*?)( --btcpay-list-group-action-active-color: (.*?);)`, `$1 --btcpay-list-group-action-active-color: var(--btcpay-${category}-dim-text-active);`)
 
     // utils
     .replaceColor(true, `(\\.text-bg-${category} \\{[^{]*?)( color: (.*?);)`, `$1 color: var(--btcpay-${category}-text);`)
@@ -118,9 +119,7 @@ String.prototype.replaceCategoryColors = function (map) {
     .replaceColor(values['dim-bg-hover'], `background-color: ${values['dim-bg-hover']}`, `background-color: var(--btcpay-${category}-dim-bg-hover)`)
     .replaceColor(values['dim-bg-active'], `background-color: ${values['dim-bg-active']}`, `background-color: var(--btcpay-${category}-dim-bg-active)`)
     .replaceColor(values['dim-border'], `border-color: ${values['dim-border']}`, `border-color: var(--btcpay-${category}-dim-border)`)
-    .replaceColor(values['dim-border-active'], `border-color: ${values['dim-border-active']}`, `border-color: var(--btcpay-${category}-dim-border-active)`)
     .replaceColor(values['dim-text'], `color: ${values['dim-text']}`, `color: var(--btcpay-${category}-dim-text)`)
-    .replaceColor(values['dim-link'], `color: ${values['dim-link']}`, `color: inherit`)
     .replaceColor(true, values['shadow'].replace('(', '\\(').replace(')', '\\)').replace('.', '\\.'), `var(--btcpay-${category}-shadow)`)
 
     .replaceColor(values[''], `color: ${values['']}`, `color: var(--btcpay-${category})`)
@@ -151,12 +150,6 @@ const patch = css => {
     .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
     .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
 
-    // generic
-    .replace(/#000;/gi, 'var(--btcpay-black);')
-    .replace(/#000 !important;/gi, 'var(--btcpay-black);')
-    .replace(/#fff;/gi, 'var(--btcpay-white);')
-    .replace(/#fff !important;/gi, 'var(--btcpay-white);')
-
     // removals
     .replaceColor(true, `  --btcpay-white-rgb: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, `  --btcpay-black-rgb: (.*?);\n[\s\S]*`, '')
@@ -169,6 +162,28 @@ const patch = css => {
     .replaceColor(true, '--btcpay-link-color', '--btcpay-body-link')
     .replaceColor(true, `  --btcpay-link-hover-color: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, '--btcpay-link-hover-color', '--btcpay-body-link-accent')
+    .replaceColor(true, `  --btcpay-(.*?)-text-emphasis: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-(.*?)-bg-subtle: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-(.*?)-border-subtle: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-emphasis-color: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-emphasis-color-rgb: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-secondary-color: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-secondary-color-rgb: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-body-color: (.*?);`, '  --btcpay-body-color: var(--btcpay-body-text);')
+
+
+    // generic
+    .replace(/#000;/gi, 'var(--btcpay-black);')
+    .replace(/#000 !important;/gi, 'var(--btcpay-black);')
+    .replace(/#fff;/gi, 'var(--btcpay-white);')
+    .replace(/#fff !important;/gi, 'var(--btcpay-white);')
+    .replace(/#d63384;/gi, 'var(--btcpay-code-text);')
+    .replace(/-text-emphasis\)/gi, '-text)')
+    .replace(/-bg-subtle\)/gi, '-dim-bg)')
+    .replace(/-border-subtle\)/gi, '-dim-border)')
+    .replace(/-emphasis-color/gi, '-primary')
+    .replace(/-secondary-color\)/gi, '-secondary)')
+    .replace(/-secondary-color-rgb\)/gi, '-secondary)')
 }
 
 sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>
