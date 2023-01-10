@@ -156,7 +156,7 @@ const patch = css => {
     .replace(/#000 !important;/gi, 'var(--btcpay-black);')
     .replace(/#fff;/gi, 'var(--btcpay-white);')
     .replace(/#fff !important;/gi, 'var(--btcpay-white);')
-
+BTC
     // removals
     .replaceColor(true, `  --btcpay-white-rgb: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, `  --btcpay-black-rgb: (.*?);\n[\s\S]*`, '')
