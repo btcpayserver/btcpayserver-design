@@ -9,8 +9,9 @@ html[data-devenv]:before {
     color: var(--btcpay-secondary-text);
     opacity: .7;
     padding: 4px 5px 3px 7px;
-    font-size: 10px;
-    border-top-left-radius: 4px;
+    font-size: var(--btcpay-font-size-xs);
+    font-family: var(--btcpay-font-family-monospace);
+    border-top-left-radius: var(--btcpay-border-radius);
 }
 
 @media (max-width: 575px) { html[data-devenv]:before { content: 'XS'; } }
