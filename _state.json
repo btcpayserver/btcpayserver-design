@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1676127539836,
+    "update": 1676127739889,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -118,9 +118,9 @@
       "childIds": [
         "design/colors",
         "design/fonts",
+        "design/icons",
         "design/spaces",
-        "design/variables",
-        "design/icons"
+        "design/variables"
       ],
       "id": "design",
       "title": "Design",
@@ -2013,9 +2013,9 @@
       "childIds": [
         "design/colors",
         "design/fonts",
+        "design/icons",
         "design/spaces",
-        "design/variables",
-        "design/icons"
+        "design/variables"
       ],
       "parentId": "index",
       "id": "design",
@@ -2085,7 +2085,7 @@
     },
     "design/fonts": {
       "prevSiblingId": "design/colors",
-      "nextSiblingId": "design/spaces",
+      "nextSiblingId": "design/icons",
       "parentId": "design",
       "id": "design/fonts",
       "itemId": "design/fonts",
@@ -2094,7 +2094,8 @@
       "title": "Fonts"
     },
     "design/icons": {
-      "prevSiblingId": "design/variables",
+      "prevSiblingId": "design/fonts",
+      "nextSiblingId": "design/spaces",
       "parentId": "design",
       "id": "design/icons",
       "itemId": "design/icons",
@@ -2103,7 +2104,7 @@
       "title": "Icons"
     },
     "design/spaces": {
-      "prevSiblingId": "design/fonts",
+      "prevSiblingId": "design/icons",
       "nextSiblingId": "design/variables",
       "parentId": "design",
       "id": "design/spaces",
@@ -2114,7 +2115,6 @@
     },
     "design/variables": {
       "prevSiblingId": "design/spaces",
-      "nextSiblingId": "design/icons",
       "parentId": "design",
       "id": "design/variables",
       "itemId": "design/variables",
