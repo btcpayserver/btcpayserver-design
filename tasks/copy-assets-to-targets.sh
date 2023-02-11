@@ -3,6 +3,7 @@
 if [ -d "$BTCPAY_TARGET" ]; then
   cp dist/styles/btcpayserver-bootstrap.css "$BTCPAY_TARGET/BTCPayServer/wwwroot/main/bootstrap/bootstrap.css"
   cp dist/scripts/bootstrap/* "$BTCPAY_TARGET/BTCPayServer/wwwroot/vendor/bootstrap/"
+  cp dist/svg/icons.svg "$BTCPAY_TARGET/BTCPayServer/wwwroot/img/icon-sprite.svg"
 
   # Update default.css
   rootSelector=":root {[\s\S]*?}\n"
