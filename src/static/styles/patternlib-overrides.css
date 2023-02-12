@@ -96,4 +96,5 @@
 .uie-icon-token__icon svg {
   width: 2.5rem;
   height: 2.5rem;
+  color: var(--btcpay-black);
 }

@@ -1,5 +1,5 @@
 const { readFileSync, writeFileSync } = require('fs')
-const { join, relative, resolve } = require('path')
+const { dirname, join, relative, resolve } = require('path')
 const glob = require('glob')
 const svgstore = require('svgstore')
 
@@ -28,20 +28,11 @@ const sprite = svgstore({
 
 svgs.forEach(svg => {
   const rel = relative(dir, svg)
+  const category = dirname(rel) !== '.' ? dirname(rel) : 'general'
   const id = slugify(rel).replace(/-svg$/gi, '')
   sprite.add(id, readFileSync(svg, 'utf8'))
-  tokens.push({
-    type: 'icon',
-    name: id,
-    variable: id,
-    value: `<svg role="img"><use href="/svg/icons.svg#${id}"/></svg>`
-  })
+  tokens.push({ id, category })
 })
 
-const icons = {
-  title: 'Icons',
-  tokens
-}
-
 writeFileSync(dstSprite, sprite)
-writeFileSync(dstTokens, `module.exports = ${JSON.stringify(icons, null, 2)}`)
+writeFileSync(dstTokens, `module.exports = ${JSON.stringify(tokens, null, 2)}`)
