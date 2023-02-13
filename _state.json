@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1676298380835,
+    "update": 1676299581918,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1374,21 +1374,9 @@
           "tokens": [
             {
               "type": "icon",
-              "name": "notifications-approved-payout",
-              "variable": "notifications-approved-payout",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-approved-payout\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "notifications-expired-partial-payment",
-              "variable": "notifications-expired-partial-payment",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-expired-partial-payment\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "notifications-external-payout",
-              "variable": "notifications-external-payout",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-external-payout\"/></svg>"
+              "name": "notifications-invoice-expired-partial-payment",
+              "variable": "notifications-invoice-expired-partial-payment",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-invoice-expired-partial-payment\"/></svg>"
             },
             {
               "type": "icon",
@@ -1410,21 +1398,21 @@
             },
             {
               "type": "icon",
-              "name": "notifications-new-payout",
-              "variable": "notifications-new-payout",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-new-payout\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "notifications-new-version",
               "variable": "notifications-new-version",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-new-version\"/></svg>"
             },
             {
               "type": "icon",
-              "name": "notifications-paid-after-expiry",
-              "variable": "notifications-paid-after-expiry",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-paid-after-expiry\"/></svg>"
+              "name": "notifications-payout-approved",
+              "variable": "notifications-payout-approved",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-payout-approved\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "notifications-payout",
+              "variable": "notifications-payout",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-payout\"/></svg>"
             }
           ]
         }

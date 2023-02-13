@@ -93,8 +93,12 @@
   border-top: 0;
 }
 
+.uie-icon-token__icon {
+  background-color: var(--btcpay-bg-tile);
+}
+
 .uie-icon-token__icon svg {
   width: 2.5rem;
   height: 2.5rem;
-  color: var(--btcpay-black);
+  color: var(--btcpay-body-text);
 }
