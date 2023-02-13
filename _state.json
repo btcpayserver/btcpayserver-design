@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1676209509270,
+    "update": 1676298380835,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1050,6 +1050,12 @@
             },
             {
               "type": "icon",
+              "name": "api",
+              "variable": "api",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#api\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "back",
               "variable": "back",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#back\"/></svg>"
@@ -1074,9 +1080,33 @@
             },
             {
               "type": "icon",
+              "name": "copy",
+              "variable": "copy",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#copy\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "crowdfund",
               "variable": "crowdfund",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#crowdfund\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "docs",
+              "variable": "docs",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#docs\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "donate",
+              "variable": "donate",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#donate\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "done",
+              "variable": "done",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#done\"/></svg>"
             },
             {
               "type": "icon",
@@ -1098,6 +1128,12 @@
             },
             {
               "type": "icon",
+              "name": "home",
+              "variable": "home",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#home\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "hot-wallet",
               "variable": "hot-wallet",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#hot-wallet\"/></svg>"
@@ -1107,6 +1143,12 @@
               "name": "info",
               "variable": "info",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#info\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "invoice-expired",
+              "variable": "invoice-expired",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#invoice-expired\"/></svg>"
             },
             {
               "type": "icon",
@@ -1170,9 +1212,21 @@
             },
             {
               "type": "icon",
+              "name": "payment-complete",
+              "variable": "payment-complete",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-complete\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "payment-requests",
               "variable": "payment-requests",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-requests\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "payment-sent",
+              "variable": "payment-sent",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-sent\"/></svg>"
             },
             {
               "type": "icon",
@@ -1257,6 +1311,18 @@
               "name": "spark",
               "variable": "spark",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#spark\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "store",
+              "variable": "store",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#store\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "telegram",
+              "variable": "telegram",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#telegram\"/></svg>"
             },
             {
               "type": "icon",
