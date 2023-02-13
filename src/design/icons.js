@@ -4,6 +4,10 @@ module.exports = [
     "category": "general"
   },
   {
+    "id": "api",
+    "category": "general"
+  },
+  {
     "id": "back",
     "category": "general"
   },
@@ -20,7 +24,23 @@ module.exports = [
     "category": "general"
   },
   {
+    "id": "copy",
+    "category": "general"
+  },
+  {
     "id": "crowdfund",
+    "category": "general"
+  },
+  {
+    "id": "docs",
+    "category": "general"
+  },
+  {
+    "id": "donate",
+    "category": "general"
+  },
+  {
+    "id": "done",
     "category": "general"
   },
   {
@@ -36,11 +56,19 @@ module.exports = [
     "category": "general"
   },
   {
+    "id": "home",
+    "category": "general"
+  },
+  {
     "id": "hot-wallet",
     "category": "general"
   },
   {
     "id": "info",
+    "category": "general"
+  },
+  {
+    "id": "invoice-expired",
     "category": "general"
   },
   {
@@ -120,7 +148,15 @@ module.exports = [
     "category": "general"
   },
   {
+    "id": "payment-complete",
+    "category": "general"
+  },
+  {
     "id": "payment-requests",
+    "category": "general"
+  },
+  {
+    "id": "payment-sent",
     "category": "general"
   },
   {
@@ -177,6 +213,14 @@ module.exports = [
   },
   {
     "id": "spark",
+    "category": "general"
+  },
+  {
+    "id": "store",
+    "category": "general"
+  },
+  {
+    "id": "telegram",
     "category": "general"
   },
   {
