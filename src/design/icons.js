@@ -104,15 +104,7 @@ module.exports = [
     "category": "general"
   },
   {
-    "id": "notifications-approved-payout",
-    "category": "notifications"
-  },
-  {
-    "id": "notifications-expired-partial-payment",
-    "category": "notifications"
-  },
-  {
-    "id": "notifications-external-payout",
+    "id": "notifications-invoice-expired-partial-payment",
     "category": "notifications"
   },
   {
@@ -128,15 +120,15 @@ module.exports = [
     "category": "notifications"
   },
   {
-    "id": "notifications-new-payout",
-    "category": "notifications"
-  },
-  {
     "id": "notifications-new-version",
     "category": "notifications"
   },
   {
-    "id": "notifications-paid-after-expiry",
+    "id": "notifications-payout-approved",
+    "category": "notifications"
+  },
+  {
+    "id": "notifications-payout",
     "category": "notifications"
   },
   {
