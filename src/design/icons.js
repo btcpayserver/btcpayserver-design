@@ -104,14 +104,6 @@ module.exports = [
     "category": "general"
   },
   {
-    "id": "notifications-invoice-expired-partial-payment",
-    "category": "notifications"
-  },
-  {
-    "id": "notifications-invoice-expired",
-    "category": "notifications"
-  },
-  {
     "id": "notifications-invoice-failure",
     "category": "notifications"
   },
