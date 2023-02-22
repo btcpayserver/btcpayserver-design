@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1676371847657,
+    "update": 1677081199772,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1372,18 +1372,6 @@
           "type": "category",
           "name": "notifications",
           "tokens": [
-            {
-              "type": "icon",
-              "name": "notifications-invoice-expired-partial-payment",
-              "variable": "notifications-invoice-expired-partial-payment",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-invoice-expired-partial-payment\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "notifications-invoice-expired",
-              "variable": "notifications-invoice-expired",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-invoice-expired\"/></svg>"
-            },
             {
               "type": "icon",
               "name": "notifications-invoice-failure",
