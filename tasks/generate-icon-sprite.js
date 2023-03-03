@@ -1,6 +1,6 @@
 const { readFileSync, writeFileSync } = require('fs')
 const { dirname, join, relative, resolve } = require('path')
-const glob = require('glob')
+const { globSync } = require('glob')
 const svgstore = require('svgstore')
 
 const dir = resolve(__dirname, '../src/icons')
@@ -13,7 +13,7 @@ const slugify = str => str.toLowerCase().replace(/\W/gi, '-')
 //   .matchAll(/<symbol id="(.*?)" viewBox="0 0 (\d+) (\d+)" fill="none">(.*?)<\/symbol>/gi))
 //   .forEach(m => writeFileSync(resolve(__dirname, `../src/icons/${m[1]}.svg`), `<svg width="${m[2]}" height="${m[3]}" viewBox="0 0 ${m[2]} ${m[3]}" fill="none" xmlns="http://www.w3.org/2000/svg">\n${m[4]}\n</svg>\n`))
 
-const svgs = glob.sync(join(dir, '**/*.svg'))
+const svgs = globSync(join(dir, '**/*.svg')).sort()
 const tokens = []
 const sprite = svgstore({
   cleanDefs: true,

@@ -172,6 +172,10 @@ module.exports = [
     "category": "general"
   },
   {
+    "id": "remove",
+    "category": "general"
+  },
+  {
     "id": "rtl",
     "category": "general"
   },

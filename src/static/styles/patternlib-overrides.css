@@ -102,3 +102,8 @@
   height: 2.5rem;
   color: var(--btcpay-body-text);
 }
+
+.uie-tokens--resources-supporters .uie-icon-token__icon svg {
+  width: 4rem;
+  height: 4rem;
+}

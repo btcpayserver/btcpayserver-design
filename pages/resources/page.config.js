@@ -2,6 +2,7 @@ module.exports = {
   children: [
     'css',
     'favicon',
-    'design-files'
+    'design-files',
+    'supporters'
   ]
 }

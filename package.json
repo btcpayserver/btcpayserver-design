@@ -14,6 +14,8 @@
     "clean": "rimraf dist generated && mkdir -p dist/styles dist/scripts/bootstrap generated",
     "start": "npm run clean && npm-run-all -p 'start:*'",
     "start:build": "npm-run-all -p 'build:* -- --serve --watch'",
+    "start:icons": "onchange -k 'src/icons/**/*.svg' 'tasks/generate-icon-sprite.js' -- npm run build:icons",
+    "start:supporters": "onchange -k 'src/supporters/**/*.svg' 'tasks/generate-supporters-sprite.js' -- npm run build:supporters",
     "start:static": "onchange -k 'src/static/**' -- npm run build:static",
     "start:styles": "npm-run-all -p 'start:styles:*'",
     "start:styles:main": "onchange -k 'postcss.config.js' 'src/styles/main/**' 'src/components/**/*.css' -- npm run build:styles:main",
@@ -22,6 +24,8 @@
     "build": "npm run clean && NODE_ENV=production npm-run-all -p 'build:*'",
     "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts/bootstrap && :",
     "build:patternlib": "uiengine build",
+    "build:icons": "node tasks/generate-icon-sprite.js",
+    "build:supporters": "node ./tasks/generate-supporters-sprite.js",
     "build:styles": "npm-run-all -s 'build:styles:*' && :",
     "build:styles:main": "postcss --output dist/styles/btcpayserver-main.css src/styles/main/index.css",
     "build:styles:variables": "echo '' | npm run generate-design && postcss --output generated/theme.css src/styles/variables/theme.css && sed -i 's/\t/  /g' generated/design.css && cat generated/*.css | sed -z 's/\\n}\\n:root {//' > dist/styles/btcpayserver-variables.css",
@@ -35,8 +39,6 @@
     "generate-color-palette": "node ./tasks/generate-color-palette.js",
     "generate-bootstrap": "node ./tasks/generate-bootstrap.js",
     "generate-design": "node ./tasks/generate-design.js",
-    "generate-icon-sprite": "node ./tasks/generate-icon-sprite.js",
-    "generate-supporters-sprite": "node ./tasks/generate-supporters-sprite.js",
     "copy-assets": "bash ./tasks/copy-assets-to-targets.sh",
     "build-and-copy": "npm-run-all -s clean build build:static copy-assets"
   },
@@ -46,8 +48,8 @@
     "autoprefixer": "10.4.13",
     "bootstrap": "5.2.3",
     "color": "4.2.3",
-    "csso-cli": "4.0.1",
-    "glob": "8.1.0",
+    "csso-cli": "4.0.2",
+    "glob": "9.2.1",
     "import-fresh": "3.3.0",
     "node-sass": "8.0.0",
     "npm-run-all": "4.1.5",
@@ -57,7 +59,7 @@
     "postcss-import": "15.1.0",
     "postcss-mixins": "9.0.4",
     "postcss-nesting": "11.2.1",
-    "rimraf": "4.1.2",
+    "rimraf": "4.2.0",
     "svgstore": "3.0.1"
   }
 }
