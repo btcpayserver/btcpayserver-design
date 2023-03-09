@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1677850274518,
+    "update": 1678362724838,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1234,6 +1234,12 @@
               "name": "payouts",
               "variable": "payouts",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payouts\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "plugin",
+              "variable": "plugin",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#plugin\"/></svg>"
             },
             {
               "type": "icon",
