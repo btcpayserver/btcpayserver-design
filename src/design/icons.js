@@ -148,6 +148,10 @@ module.exports = [
     "category": "general"
   },
   {
+    "id": "plugin",
+    "category": "general"
+  },
+  {
     "id": "pointofsale",
     "category": "general"
   },
