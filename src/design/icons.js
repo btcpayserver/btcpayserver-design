@@ -20,6 +20,10 @@ module.exports = [
     "category": "general"
   },
   {
+    "id": "checkmark",
+    "category": "general"
+  },
+  {
     "id": "close",
     "category": "general"
   },
