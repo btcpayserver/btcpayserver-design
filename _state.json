@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1678371088843,
+    "update": 1678532662448,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1072,6 +1072,12 @@
               "name": "caret-right",
               "variable": "caret-right",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#caret-right\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "checkmark",
+              "variable": "checkmark",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#checkmark\"/></svg>"
             },
             {
               "type": "icon",
