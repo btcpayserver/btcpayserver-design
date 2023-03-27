@@ -46,6 +46,14 @@ a.nav-link:hover {
   background: var(--btcpay-nav-bg-hover);
 }
 
+a.page-link {
+  border-radius: var(--btcpay-pagination-border-radius);
+}
+
+.active > a.page-link:hover {
+  background: var(--btcpay-primary-bg-active);
+}
+
 main p > a {
   font-weight: var(--btcpay-font-weight-semibold);
 }
