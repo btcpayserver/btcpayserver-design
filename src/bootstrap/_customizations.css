@@ -87,7 +87,7 @@ ul:not([class]) li {
 
 /* Modals */
 .modal-content {
-  box-shadow: 0 20px 20px rgba(0, 0, 0, .15);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Accordion */
@@ -214,12 +214,12 @@ textarea.w-auto {
 }
 
 /* Pull tables out of the grid by their horizontal column padding */
-main *:not([class^="table-responsive"]) > .table {
+main *:not([class*='table-responsive']) > .table {
   width: calc(100% + 1rem);
   margin: 1.5rem -0.5rem;
 }
 
-main [class^="table-responsive"] {
+main [class*='table-responsive'] {
   width: calc(100% + 1rem);
   margin: 1.5rem -0.5rem;
 }
@@ -250,49 +250,54 @@ main [class^="table-responsive"] {
   cursor: pointer;
 }
 
-.w-100px {
-  width: 100px;
-}
-.w-125px {
-  width: 125px;
-}
-.w-150px {
-  width: 150px;
-}
-.w-175px {
-  width: 175px;
-}
-.w-200px {
-  width: 200px;
-}
-.w-225px {
-  width: 225px;
-}
-.w-250px {
-  width: 250px;
-}
-.w-275px {
-  width: 275px;
-}
-.w-300px {
-  width: 300px;
-}
-.w-325px {
-  width: 325px;
-}
-.w-350px {
-  width: 350px;
+@media screen {
+  .w-75px {
+    width: 75px;
+  }
+  .w-100px {
+    width: 100px;
+  }
+  .w-125px {
+    width: 125px;
+  }
+  .w-150px {
+    width: 150px;
+  }
+  .w-175px {
+    width: 175px;
+  }
+  .w-200px {
+    width: 200px;
+  }
+  .w-225px {
+    width: 225px;
+  }
+  .w-250px {
+    width: 250px;
+  }
+  .w-275px {
+    width: 275px;
+  }
+  .w-300px {
+    width: 300px;
+  }
+  .w-325px {
+    width: 325px;
+  }
+  .w-350px {
+    width: 350px;
+  }
 }
 
 /* Chrome, Safari, Edge, Opera */
-input[type="number"].hide-number-spin::-webkit-outer-spin-button,
-input[type="number"].hide-number-spin::-webkit-inner-spin-button {
+input[type='number'].hide-number-spin::-webkit-outer-spin-button,
+input[type='number'].hide-number-spin::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 /* Firefox */
-input[type="number"].hide-number-spin {
+input[type='number'].hide-number-spin {
   -moz-appearance: textfield;
 }
 
@@ -345,14 +350,14 @@ input[type="number"].hide-number-spin {
   margin-bottom: 1.5rem;
 }
 
-.form-select:not(:disabled,.disabled,.is-valid,.is-invalid):hover,
-.form-control:not(:disabled,.disabled,.is-valid,.is-invalid):hover,
-.form-check-input:not(:disabled,.disabled,.is-valid,.is-invalid):hover {
+.form-select:not(:disabled, .disabled, .is-valid, .is-invalid):hover,
+.form-control:not(:disabled, .disabled, .is-valid, .is-invalid):hover,
+.form-check-input:not(:disabled, .disabled, .is-valid, .is-invalid):hover {
   border-color: var(--btcpay-form-border-hover);
 }
 
 [data-required]::after {
-  content: " *";
+  content: ' *';
   color: var(--btcpay-danger);
 }
 
