@@ -4649,26 +4649,26 @@ fieldset:disabled .btn {
 }
 
 .pagination {
-  --btcpay-pagination-padding-x: 0.75rem;
-  --btcpay-pagination-padding-y: 0.375rem;
+  --btcpay-pagination-padding-x: var(--btcpay-space-m);
+  --btcpay-pagination-padding-y: var(--btcpay-space-s);
   --btcpay-pagination-font-size: 0.875rem;
   --btcpay-pagination-color: var(--btcpay-body-text-muted);
   --btcpay-pagination-bg: var(--btcpay-body-bg);
   --btcpay-pagination-border-width: 1px;
-  --btcpay-pagination-border-color: var(--btcpay-body-bg);
+  --btcpay-pagination-border-color: transparent;
   --btcpay-pagination-border-radius: var(--btcpay-border-radius);
   --btcpay-pagination-hover-color: var(--btcpay-body-text);
   --btcpay-pagination-hover-bg: var(--btcpay-body-bg);
-  --btcpay-pagination-hover-border-color: var(--btcpay-body-bg);
+  --btcpay-pagination-hover-border-color: transparent;
   --btcpay-pagination-focus-color: var(--btcpay-body-text);
   --btcpay-pagination-focus-bg: var(--btcpay-body-bg);
-  --btcpay-pagination-focus-box-shadow: 0 0 0 2px var(--btcpay-body-shadow);
+  --btcpay-pagination-focus-box-shadow: none;
   --btcpay-pagination-active-color: var(--btcpay-body-text-active);
   --btcpay-pagination-active-bg: var(--btcpay-body-bg-active);
-  --btcpay-pagination-active-border-color: var(--btcpay-body-border-medium);
+  --btcpay-pagination-active-border-color: transparent;
   --btcpay-pagination-disabled-color: var(--btcpay-body-text-muted);
   --btcpay-pagination-disabled-bg: var(--btcpay-body-bg);
-  --btcpay-pagination-disabled-border-color: var(--btcpay-body-bg);
+  --btcpay-pagination-disabled-border-color: transparent;
   display: flex;
   padding-left: 0;
   list-style: none;
@@ -4731,14 +4731,14 @@ fieldset:disabled .btn {
 }
 
 .pagination-lg {
-  --btcpay-pagination-padding-x: 1.5rem;
+  --btcpay-pagination-padding-x: 1.25rem;
   --btcpay-pagination-padding-y: 0.75rem;
   --btcpay-pagination-font-size: 1rem;
   --btcpay-pagination-border-radius: var(--btcpay-border-radius-l);
 }
 
 .pagination-sm {
-  --btcpay-pagination-padding-x: 0.5rem;
+  --btcpay-pagination-padding-x: 0.675rem;
   --btcpay-pagination-padding-y: 0.25rem;
   --btcpay-pagination-font-size: 0.75rem;
   --btcpay-pagination-border-radius: var(--btcpay-border-radius);
@@ -11076,11 +11076,17 @@ a.nav-link:hover {
   background: var(--btcpay-nav-bg-hover);
 }
 
-a.page-link {
-  border-radius: var(--btcpay-pagination-border-radius);
+.pagination {
+  gap: var(--btcpay-space-s);
 }
 
-.active > a.page-link:hover {
+a.page-link {
+  border-radius: var(--btcpay-border-radius-l) !important;
+  font-weight: var(--btcpay-font-weight-semibold);
+}
+
+.active > a.page-link:hover,
+.active > a.page-link:focus {
   background: var(--btcpay-primary-bg-active);
 }
 
