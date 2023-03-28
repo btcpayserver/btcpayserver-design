@@ -4649,7 +4649,7 @@ fieldset:disabled .btn {
 }
 
 .pagination {
-  --btcpay-pagination-padding-x: var(--btcpay-space-m);
+  --btcpay-pagination-padding-x: var(--btcpay-space-s);
   --btcpay-pagination-padding-y: var(--btcpay-space-s);
   --btcpay-pagination-font-size: 0.875rem;
   --btcpay-pagination-color: var(--btcpay-body-text-muted);
@@ -4731,14 +4731,14 @@ fieldset:disabled .btn {
 }
 
 .pagination-lg {
-  --btcpay-pagination-padding-x: 1.25rem;
+  --btcpay-pagination-padding-x: 1.5rem;
   --btcpay-pagination-padding-y: 0.75rem;
   --btcpay-pagination-font-size: 1rem;
   --btcpay-pagination-border-radius: var(--btcpay-border-radius-l);
 }
 
 .pagination-sm {
-  --btcpay-pagination-padding-x: 0.675rem;
+  --btcpay-pagination-padding-x: 0.5rem;
   --btcpay-pagination-padding-y: 0.25rem;
   --btcpay-pagination-font-size: 0.75rem;
   --btcpay-pagination-border-radius: var(--btcpay-border-radius);
@@ -11078,11 +11078,14 @@ a.nav-link:hover {
 
 .pagination {
   gap: var(--btcpay-space-s);
+  margin-bottom: 0;
+  font-weight: var(--btcpay-font-weight-semibold);
 }
 
 a.page-link {
   border-radius: var(--btcpay-border-radius-l) !important;
-  font-weight: var(--btcpay-font-weight-semibold);
+  min-width: 2.9em;
+  text-align: center;
 }
 
 .active > a.page-link:hover,

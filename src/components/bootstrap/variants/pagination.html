@@ -1,49 +1,78 @@
+<div class="bd-example">
+  <nav aria-label="Standard pagination example">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
-        <div class="bd-example">
-        <nav aria-label="Pagination example">
-          <ul class="pagination pagination-sm">
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item" aria-current="page">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-          </ul>
-        </nav>
-        </div>
+<div class="bd-example">
+  <nav class="d-flex flex-wrap gap-3 justify-content-between">
+    <ul class="pagination me-auto">
+      <li class="page-item disabled">
+        <span class="page-link px-0">
+          1 – 500 </span>
+      </li>
+    </ul>
 
-        <div class="bd-example">
-        <nav aria-label="Standard pagination example">
-          <ul class="pagination">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        </div>
+    <ul class="pagination ms-auto">
+      <li class="page-item disabled">
+        <span class="page-link">Page Size</span>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="/server/users?skip=0&amp;count=50">50</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="/server/users?skip=0&amp;count=100">100</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="/server/users?skip=0&amp;count=250">250</a>
+      </li>
+      <li class="page-item active">
+        <a class="page-link" href="/server/users?skip=0&amp;count=500">500</a>
+      </li>
+    </ul>
+  </nav>
+</div>
 
-        <div class="bd-example">
-        <nav aria-label="Another pagination example">
-          <ul class="pagination pagination-lg flex-wrap">
-            <li class="page-item disabled">
-              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-            </li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item" aria-current="page">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Next</a>
-            </li>
-          </ul>
-        </nav>
+<div class="bd-example">
+  <nav aria-label="Pagination example">
+    <ul class="pagination pagination-sm">
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item" aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="bd-example">
+  <nav aria-label="Another pagination example">
+    <ul class="pagination pagination-lg flex-wrap">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+      </li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item" aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</div>

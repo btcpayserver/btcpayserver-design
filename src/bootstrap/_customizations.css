@@ -48,11 +48,14 @@ a.nav-link:hover {
 
 .pagination {
   gap: var(--btcpay-space-s);
+  margin-bottom: 0;
+  font-weight: var(--btcpay-font-weight-semibold);
 }
 
 a.page-link {
   border-radius: var(--btcpay-border-radius-l) !important;
-  font-weight: var(--btcpay-font-weight-semibold);
+  min-width: 2.9em;
+  text-align: center;
 }
 
 .active > a.page-link:hover,
