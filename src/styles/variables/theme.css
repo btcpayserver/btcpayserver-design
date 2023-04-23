@@ -26,7 +26,7 @@
   --btcpay-body-text: var(--btcpay-neutral-900);
   --btcpay-body-text-striped: var(--btcpay-body-text);
   --btcpay-body-text-hover: var(--btcpay-body-text);
-  --btcpay-body-text-active: var(--btcpay-white);
+  --btcpay-body-text-active: var(--btcpay-primary-text-active);
   --btcpay-body-text-muted: var(--btcpay-neutral-500);
   --btcpay-body-text-rgb: 41, 41, 41;
   --btcpay-body-link: var(--btcpay-primary);
@@ -271,7 +271,7 @@
 }
 
 @define-mixin dark-theme {
-  --btcpay-neutral-50: #0D1117;
+  --btcpay-neutral-50: #0d1117;
   --btcpay-neutral-100: var(--btcpay-neutral-dark-900);
   --btcpay-neutral-200: var(--btcpay-neutral-dark-800);
   --btcpay-neutral-300: var(--btcpay-neutral-dark-700);
@@ -325,13 +325,13 @@
   --btcpay-dark-rgb: 201, 209, 217;
 }
 
-:root[data-theme="dark"],
-:root[data-btcpay-theme="dark"] {
+:root[data-theme='dark'],
+:root[data-btcpay-theme='dark'] {
   @mixin dark-theme;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-btcpay-theme],[data-theme]) {
+  :root:not([data-btcpay-theme], [data-theme]) {
     @mixin dark-theme;
   }
 }
