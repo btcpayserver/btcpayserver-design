@@ -205,6 +205,22 @@ ul:not([class]) li {
   padding-left: 1rem;
 }
 
+.dropdown-item.dropdown-item-custom-active {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--btcpay-space-s);
+}
+
+.dropdown-item.dropdown-item-custom-active::after {
+  display: inline-block;
+  margin-left: auto;
+  content: '';
+  width: 0.5em;
+  height: 0.5em;
+  background-color: var(--btcpay-dropdown-link-active-bg);
+  border-radius: 50%;
+}
+
 .font-monospace {
   font-size: 0.95rem;
 }
