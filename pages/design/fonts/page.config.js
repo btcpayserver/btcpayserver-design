@@ -15,7 +15,9 @@ const familyTokens = fonts.families.map(family => {
     type: 'font',
     fontweight: `${weight.name} / ${weight.value}`,
     description: family.value,
-    value: `font-family: ${family.value}; font-weight: ${weight.value}; ${family.cssProperties || ''}`,
+    value: `font-family: ${family.value}; font-weight: ${weight.value}; ${
+      family.cssProperties || ''
+    }`,
     variable: family.variable,
     sizes,
     text: 'Chancellor on Brink of Second Bailout for Banks'

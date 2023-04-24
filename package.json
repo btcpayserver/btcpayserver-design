@@ -40,7 +40,8 @@
     "generate-bootstrap": "node ./tasks/generate-bootstrap.js",
     "generate-design": "node ./tasks/generate-design.js",
     "copy-assets": "bash ./tasks/copy-assets-to-targets.sh",
-    "build-and-copy": "run-s clean build build:static copy-assets"
+    "build-and-copy": "run-s clean build build:static copy-assets",
+    "prettier": "prettier --write '**/*.{js,json,md}'"
   },
   "devDependencies": {
     "@uiengine/adapter-html": "3.3.11",
@@ -60,8 +61,14 @@
     "postcss-import": "15.1.0",
     "postcss-mixins": "9.0.4",
     "postcss-nesting": "11.2.2",
-    "rimraf": "4.4.0",
+    "prettier": "2.8.8",
     "rimraf": "5.0.0",
     "svgstore": "3.0.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid",
+    "trailingComma": "none"
   }
 }

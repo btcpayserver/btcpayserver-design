@@ -58,7 +58,8 @@ const families = [
   },
   {
     name: 'Monospace',
-    value: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+    value:
+      'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
     variable: '--btcpay-font-family-monospace',
     weights
   }

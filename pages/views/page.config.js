@@ -1,5 +1,3 @@
 module.exports = {
-  components: [
-    'kitchensink'
-  ]
+  components: ['kitchensink']
 }

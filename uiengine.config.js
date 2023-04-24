@@ -49,7 +49,8 @@ module.exports = {
   ui: {
     lang: 'en',
     customStylesFile: '/styles/patternlib-overrides.css',
-    repoBaseUrl: 'https://github.com/btcpayserver/btcpayserver-design/blob/master/',
+    repoBaseUrl:
+      'https://github.com/btcpayserver/btcpayserver-design/blob/master/',
     viewports: {
       Phone: {
         width: 320

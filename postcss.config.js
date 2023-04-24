@@ -1,5 +1,5 @@
 const autoprefixer = require('autoprefixer')
-const mixins = require("postcss-mixins");
+const mixins = require('postcss-mixins')
 const importer = require('postcss-import')
 const nesting = require('postcss-nesting')
 
@@ -8,8 +8,8 @@ module.exports = {
     mixins(),
     autoprefixer(),
     importer({
-      path: ["src/styles", "src/components"],
+      path: ['src/styles', 'src/components']
     }),
     nesting()
-  ],
-};
+  ]
+}

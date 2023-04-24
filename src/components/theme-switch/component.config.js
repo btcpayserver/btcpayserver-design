@@ -1,5 +1,3 @@
 module.exports = {
-  variants: [
-    'theme-switch.html'
-  ]
+  variants: ['theme-switch.html']
 }

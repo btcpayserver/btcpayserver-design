@@ -1,9 +1,3 @@
 module.exports = {
-  children: [
-    'colors',
-    'fonts',
-    'icons',
-    'spaces',
-    'variables'
-  ]
+  children: ['colors', 'fonts', 'icons', 'spaces', 'variables']
 }

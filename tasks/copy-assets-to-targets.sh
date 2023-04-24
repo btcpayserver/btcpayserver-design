@@ -14,9 +14,9 @@ if [ -d "$BTCPAY_TARGET" ]; then
   echo -e "$defaultRoot\n$(cat $defaultCSS)" > $defaultCSS
 
   # Update default-dark.css
-  rootDarkSelector=":root\[data-btcpay-theme=\"dark\"\] {[\s\S]*?}\n"
+  rootDarkSelector=":root\[data-btcpay-theme='dark'\] {[\s\S]*?}\n"
   defaultDarkCSS="$BTCPAY_TARGET/BTCPayServer/wwwroot/main/themes/default-dark.css"
-  defaultDarkRoot=$(cat dist/styles/btcpayserver-variables.css | grep -oPz "$rootDarkSelector" | sed "s/\[data-btcpay-theme=\"dark\"\]//g")
+  defaultDarkRoot=$(cat dist/styles/btcpayserver-variables.css | grep -oPz "$rootDarkSelector" | sed "s/\[data-btcpay-theme='dark'\]//g")
   perl -0777 -i -pe "s/$rootSelector//" $defaultDarkCSS
   echo -e "$defaultDarkRoot$(cat $defaultDarkCSS)" > $defaultDarkCSS
 

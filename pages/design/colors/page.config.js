@@ -13,7 +13,9 @@ const byCategory = colors.reduce((res, color) => {
 const tokens = Object.keys(byCategory).map(categoryName => ({
   type: 'category',
   name: categoryName,
-  tokens: byCategory[categoryName].map(color => Object.assign({}, color, { type: 'color' }))
+  tokens: byCategory[categoryName].map(color =>
+    Object.assign({}, color, { type: 'color' })
+  )
 }))
 
 module.exports = { tokens }

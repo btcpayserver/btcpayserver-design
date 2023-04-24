@@ -7,9 +7,9 @@ You can download the CSS files using the references below and copy them to the s
 Then use this HTML snippet inside the `<head>` section to integrate the stylesheets you want to use:
 
 ```html
-<link href="/styles/btcpayserver-variables.css" rel="stylesheet">
-<link href="/styles/btcpayserver-bootstrap.css" rel="stylesheet">
-<link href="/styles/btcpayserver-main.css" rel="stylesheet">
+<link href="/styles/btcpayserver-variables.css" rel="stylesheet" />
+<link href="/styles/btcpayserver-bootstrap.css" rel="stylesheet" />
+<link href="/styles/btcpayserver-main.css" rel="stylesheet" />
 ```
 
 ## Variables
@@ -28,9 +28,9 @@ They include the font references and setting for the light/dark color themes.
 
 The general approach regarding the themes is:
 
-* Light mode is the default
-* If the browser supports the [prefers-color-scheme media query](https://web.dev/prefers-color-scheme/), we use the users preference
-* Support an [explicit setting](/components/theme-switch/) saved in the browsers `localStorage`, that the user can change via a switch
+- Light mode is the default
+- If the browser supports the [prefers-color-scheme media query](https://web.dev/prefers-color-scheme/), we use the users preference
+- Support an [explicit setting](/components/theme-switch/) saved in the browsers `localStorage`, that the user can change via a switch
 
 📦 [btcpayserver-main.css](/styles/btcpayserver-main.css)
 
@@ -50,5 +50,5 @@ So the idea was to maintain this fork at a central place and use it as our custo
 
 We have deprecated these previous themes, but keep them here for reference:
 
-* [Classic](/styles/btcpayserver-theme-classic.css)
-* [Casa](/styles/btcpayserver-theme-casa.css)
+- [Classic](/styles/btcpayserver-theme-classic.css)
+- [Casa](/styles/btcpayserver-theme-casa.css)

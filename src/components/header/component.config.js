@@ -1,5 +1,3 @@
 module.exports = {
-  variants: [
-    'header.html'
-  ]
+  variants: ['header.html']
 }

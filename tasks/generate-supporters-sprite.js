@@ -2,10 +2,12 @@ const { readFileSync, writeFileSync } = require('fs')
 const { join, relative, resolve } = require('path')
 const { globSync } = require('glob')
 const svgstore = require('svgstore')
+const prettier = require('prettier')
+const { prettier: prettierOpts } = require('../package.json')
 
 const dir = resolve(__dirname, '../src/supporters')
-const dstTokens = resolve(__dirname,'../src/design/supporters.js')
-const dstSprite = resolve(__dirname,'../src/static/svg/supporters.svg')
+const dstTokens = resolve(__dirname, '../src/design/supporters.js')
+const dstSprite = resolve(__dirname, '../src/static/svg/supporters.svg')
 const slugify = str => str.toLowerCase().replace(/\W/gi, '-')
 
 const svgs = globSync(join(dir, '*.svg')).sort()
@@ -24,5 +26,16 @@ svgs.forEach(svg => {
   tokens.push({ id })
 })
 
-writeFileSync(dstSprite, sprite.toString().replace(/\n/g, '').replace(/<symbol /g, '\n<symbol ').replace('<svg ', '\n<svg ').replace('</svg', '\n</svg'))
-writeFileSync(dstTokens, `module.exports = ${JSON.stringify(tokens, null, 2)}`)
+writeFileSync(
+  dstSprite,
+  sprite
+    .toString()
+    .replace(/\n/g, '')
+    .replace(/<symbol /g, '\n<symbol ')
+    .replace('<svg ', '\n<svg ')
+    .replace('</svg', '\n</svg')
+)
+writeFileSync(
+  dstTokens,
+  prettier.format(`module.exports = ${JSON.stringify(tokens)}`, prettierOpts)
+)

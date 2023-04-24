@@ -1,5 +1,3 @@
 module.exports = {
-  variants: [
-    'kitchensink.html'
-  ]
+  variants: ['kitchensink.html']
 }

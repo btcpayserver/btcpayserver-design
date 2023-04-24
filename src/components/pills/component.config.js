@@ -1,6 +1,3 @@
 module.exports = {
-  variants: [
-    'labels.html',
-    'links.html'
-  ]
+  variants: ['labels.html', 'links.html']
 }

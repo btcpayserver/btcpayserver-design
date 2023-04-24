@@ -1,5 +1,3 @@
 module.exports = {
-  variants: [
-    'footer.html'
-  ]
+  variants: ['footer.html']
 }

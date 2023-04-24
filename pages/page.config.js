@@ -1,8 +1,3 @@
 module.exports = {
-  children: [
-    'design',
-    'components',
-    'resources',
-    'development'
-  ]
+  children: ['design', 'components', 'resources', 'development']
 }

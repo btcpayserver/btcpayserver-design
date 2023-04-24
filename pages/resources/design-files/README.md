@@ -8,10 +8,9 @@ You can [download the color palette for GIMP/Inkscape](./btcpay.gpl).
 
 You can [download the logo for Adobe Illustrator](./btcpay-logo.ai).
 
-
-| Image | Downloads |
-|-------|-----------|
-| ![](./btcpay-logo.svg) | [SVG](./btcpay-logo.svg) \| [PNG](./btcpay-logo.png) |
+| Image                            | Downloads                                                                |
+| -------------------------------- | ------------------------------------------------------------------------ |
+| ![](./btcpay-logo.svg)           | [SVG](./btcpay-logo.svg) \| [PNG](./btcpay-logo.png)                     |
 | ![](./btcpay-logo-black-txt.svg) | [SVG](./btcpay-logo-black-txt.svg) \| [PNG](./btcpay-logo-black-txt.png) |
 | ![](./btcpay-logo-white-txt.svg) | [SVG](./btcpay-logo-white-txt.svg) \| [PNG](./btcpay-logo-white-txt.png) |
 
