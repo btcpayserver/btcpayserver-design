@@ -27,3 +27,15 @@
     content: none;
   }
 }
+
+.dropdown-toggle.dropdown-toggle-custom-caret {
+  background-image: escape-svg($form-select-indicator);
+  background-repeat: no-repeat;
+  background-position: $form-select-bg-position;
+  background-size: $form-select-bg-size;
+
+  &::after {
+    border: none;
+    margin-left: var(--btcpay-space-s);
+  }
+}
