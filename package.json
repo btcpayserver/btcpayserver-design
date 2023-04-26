@@ -44,8 +44,8 @@
     "prettier": "prettier --write '**/*.{js,json,md}'"
   },
   "devDependencies": {
-    "@uiengine/adapter-html": "3.3.11",
-    "@uiengine/core": "3.3.11",
+    "@uiengine/adapter-html": "3.3.12",
+    "@uiengine/core": "3.3.12",
     "autoprefixer": "10.4.14",
     "bootstrap": "5.2.3",
     "color": "4.2.3",
