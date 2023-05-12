@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1683809159361,
+    "update": 1683898876326,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1117,6 +1117,12 @@
             },
             {
               "type": "icon",
+              "name": "drag",
+              "variable": "drag",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#drag\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "existing-wallet",
               "variable": "existing-wallet",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#existing-wallet\"/></svg>"
@@ -1345,6 +1351,12 @@
             },
             {
               "type": "icon",
+              "name": "trash",
+              "variable": "trash",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#trash\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "twitter",
               "variable": "twitter",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#twitter\"/></svg>"
@@ -1384,6 +1396,42 @@
               "name": "xpub",
               "variable": "xpub",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#xpub\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "forms",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "forms-checkbox",
+              "variable": "forms-checkbox",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#forms-checkbox\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "forms-date",
+              "variable": "forms-date",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#forms-date\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "forms-number",
+              "variable": "forms-number",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#forms-number\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "forms-select",
+              "variable": "forms-select",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#forms-select\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "forms-text",
+              "variable": "forms-text",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#forms-text\"/></svg>"
             }
           ]
         },
@@ -1616,6 +1664,12 @@
           "name": "coincards",
           "variable": "coincards",
           "value": "<svg role=\"img\"><use href=\"/svg/supporters.svg#coincards\"/></svg>"
+        },
+        {
+          "type": "icon",
+          "name": "esc",
+          "variable": "esc",
+          "value": "<svg role=\"img\"><use href=\"/svg/supporters.svg#esc\"/></svg>"
         },
         {
           "type": "icon",
