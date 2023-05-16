@@ -26,6 +26,7 @@ module.exports = [
   { id: 'invoice-expired', category: 'general' },
   { id: 'invoice', category: 'general' },
   { id: 'lightningterminal', category: 'general' },
+  { id: 'manage-plugins', category: 'general' },
   { id: 'mattermost', category: 'general' },
   { id: 'new-store', category: 'general' },
   { id: 'new-wallet', category: 'general' },
