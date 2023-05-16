@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1683898876326,
+    "update": 1684229970544,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1174,6 +1174,12 @@
               "name": "lightningterminal",
               "variable": "lightningterminal",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#lightningterminal\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "manage-plugins",
+              "variable": "manage-plugins",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#manage-plugins\"/></svg>"
             },
             {
               "type": "icon",
