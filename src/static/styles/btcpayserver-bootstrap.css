@@ -34,7 +34,7 @@
   --btcpay-border-radius-sm: var(--btcpay-border-radius);
   --btcpay-border-radius-lg: var(--btcpay-border-radius-l);
   --btcpay-border-radius-xl: var(--btcpay-border-radius-xl);
-  --btcpay-border-radius-xxl: 2rem;
+  --btcpay-border-radius-xxl: var(--btcpay-border-radius-xxl);
   --btcpay-border-radius-2xl: var(--btcpay-border-radius-xxl);
   --btcpay-border-radius-pill: 50rem;
   --btcpay-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
@@ -1762,7 +1762,7 @@ progress {
   --btcpay-table-color-state: initial;
   --btcpay-table-bg-state: initial;
   --btcpay-table-color: var(--btcpay-body-color);
-  --btcpay-table-bg: var(--btcpay-body-bg);
+  --btcpay-table-bg: transparent;
   --btcpay-table-border-color: var(--btcpay-border-color);
   --btcpay-table-accent-bg: transparent;
   --btcpay-table-striped-color: var(--btcpay-body-text);
@@ -8612,7 +8612,7 @@ fieldset:disabled .btn {
 
 .text-muted {
   --btcpay-text-opacity: 1;
-  color: var(--btcpay-secondary) !important;
+  color: var(--btcpay-body-text-muted) !important;
 }
 
 .text-black-50 {
@@ -8627,7 +8627,7 @@ fieldset:disabled .btn {
 
 .text-body-secondary {
   --btcpay-text-opacity: 1;
-  color: var(--btcpay-secondary) !important;
+  color: var(--btcpay-body-text-muted) !important;
 }
 
 .text-body-tertiary {

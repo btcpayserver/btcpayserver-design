@@ -184,6 +184,7 @@ const patch = css => {
     .replace(/-emphasis-color/gi, '-primary')
     .replace(/-secondary-color\)/gi, '-secondary)')
     .replace(/-secondary-color-rgb\)/gi, '-secondary)')
+    .replace(/color: var\(--btcpay-secondary\) !important/gi, `color: var(--btcpay-body-text-muted) !important`)
 }
 
 sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>

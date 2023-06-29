@@ -5,7 +5,7 @@ $enable-reduced-motion: false;
 $enable-dark-mode: false;
 
 // Bootstrap
-$variable-prefix: btcpay-;
+$prefix: btcpay-;
 
 $font-size-root: 16px;
 $font-size-base: .875rem;
@@ -35,11 +35,10 @@ $border-radius-sm: var(--btcpay-border-radius);
 $border-radius: var(--btcpay-border-radius);
 $border-radius-lg: var(--btcpay-border-radius-l);
 $border-radius-xl: var(--btcpay-border-radius-xl);
-$border-radius-2xl: var(--btcpay-border-radius-xxl);
+$border-radius-xxl: var(--btcpay-border-radius-xxl);
 
 $border-color: var(--btcpay-body-border-light);
 
-$text-muted: var(--btcpay-body-text-muted);
 $blockquote-footer-color: var(--btcpay-body-text-muted);
 $btn-link-disabled-color: var(--btcpay-body-text-muted);
 $input-placeholder-color: var(--btcpay-body-text-muted);
@@ -49,6 +48,7 @@ $nav-link-disabled-color: var(--btcpay-body-text-muted);
 $alert-padding-y: .75rem;
 $alert-link-font-weight: var(--btcpay-font-weight-normal);
 
+$table-bg: transparent;
 $table-striped-color: var(--btcpay-body-text);
 $table-striped-bg: var(--btcpay-body-bg-striped);
 $table-hover-color: var(--btcpay-body-text-hover);
@@ -56,6 +56,7 @@ $table-hover-bg: var(--btcpay-body-bg-hover);
 $table-active-color: var(--btcpay-body-text-active);
 $table-active-bg: var(--btcpay-body-bg-active);
 $table-group-separator-color: var(--btcpay-body-border-medium);
+$table-th-font-weight: var(--btcpay-font-weight-normal);
 
 $pagination-padding-x: var(--btcpay-space-s);
 $pagination-padding-y: var(--btcpay-space-s);
@@ -191,8 +192,6 @@ $toast-header-background-color: var(--btcpay-body-bg-light);
 $toast-header-border-color: $toast-header-background-color;
 
 $popover-border-color: var(--btcpay-body-border-medium);
-$popover-arrow-color: var(--btcpay-bg-tile);
-$popover-arrow-outer-color: $popover-border-color;
 $popover-header-bg: var(--btcpay-bg-tile);
 $popover-bg: var(--btcpay-bg-tile);
 
@@ -208,10 +207,6 @@ $kbd-bg: var(--btcpay-code-bg);
 
 $nav-link-color: var(--btcpay-nav-link);
 $nav-link-hover-color: var(--btcpay-nav-link-accent);
-
-$table-th-font-weight: var(--btcpay-font-weight-normal);
-
-$hr-height: 3px;
 
 $btn-close-color: var(--btcpay-body-text);
 $btn-close-bg: none;
