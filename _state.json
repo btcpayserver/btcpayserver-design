@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1688021611777,
+    "update": 1688103162674,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -257,10 +257,26 @@
               "type": "color"
             },
             {
+              "value": "248,249,250",
+              "category": "Neutral Light",
+              "name": "Neutral Light 100",
+              "variable": "--btcpay-neutral-light-100-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#e9ecef",
               "category": "Neutral Light",
               "name": "Neutral Light 200",
               "variable": "--btcpay-neutral-light-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "233,236,239",
+              "category": "Neutral Light",
+              "name": "Neutral Light 200",
+              "variable": "--btcpay-neutral-light-200-rgb",
               "reference": null,
               "type": "color"
             },
@@ -273,10 +289,26 @@
               "type": "color"
             },
             {
+              "value": "222,226,230",
+              "category": "Neutral Light",
+              "name": "Neutral Light 300",
+              "variable": "--btcpay-neutral-light-300-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#ced4da",
               "category": "Neutral Light",
               "name": "Neutral Light 400",
               "variable": "--btcpay-neutral-light-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "206,212,218",
+              "category": "Neutral Light",
+              "name": "Neutral Light 400",
+              "variable": "--btcpay-neutral-light-400-rgb",
               "reference": null,
               "type": "color"
             },
@@ -289,10 +321,26 @@
               "type": "color"
             },
             {
+              "value": "143,151,158",
+              "category": "Neutral Light",
+              "name": "Neutral Light 500",
+              "variable": "--btcpay-neutral-light-500-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#6c757d",
               "category": "Neutral Light",
               "name": "Neutral Light 600",
               "variable": "--btcpay-neutral-light-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "108,117,125",
+              "category": "Neutral Light",
+              "name": "Neutral Light 600",
+              "variable": "--btcpay-neutral-light-600-rgb",
               "reference": null,
               "type": "color"
             },
@@ -305,6 +353,14 @@
               "type": "color"
             },
             {
+              "value": "73,80,87",
+              "category": "Neutral Light",
+              "name": "Neutral Light 700",
+              "variable": "--btcpay-neutral-light-700-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#343a40",
               "category": "Neutral Light",
               "name": "Neutral Light 800",
@@ -313,10 +369,26 @@
               "type": "color"
             },
             {
+              "value": "52,58,64",
+              "category": "Neutral Light",
+              "name": "Neutral Light 800",
+              "variable": "--btcpay-neutral-light-800-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#292929",
               "category": "Neutral Light",
               "name": "Neutral Light 900",
               "variable": "--btcpay-neutral-light-900",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "41,41,41",
+              "category": "Neutral Light",
+              "name": "Neutral Light 900",
+              "variable": "--btcpay-neutral-light-900-rgb",
               "reference": null,
               "type": "color"
             },
@@ -342,10 +414,26 @@
               "type": "color"
             },
             {
+              "value": "240,246,252",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 100",
+              "variable": "--btcpay-neutral-dark-100-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#C9D1D9",
               "category": "Neutral Dark",
               "name": "Neutral Dark 200",
               "variable": "--btcpay-neutral-dark-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "201,209,217",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 200",
+              "variable": "--btcpay-neutral-dark-200-rgb",
               "reference": null,
               "type": "color"
             },
@@ -358,10 +446,26 @@
               "type": "color"
             },
             {
+              "value": "177,186,196",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 300",
+              "variable": "--btcpay-neutral-dark-300-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#8B949E",
               "category": "Neutral Dark",
               "name": "Neutral Dark 400",
               "variable": "--btcpay-neutral-dark-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "139,148,158",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 400",
+              "variable": "--btcpay-neutral-dark-400-rgb",
               "reference": null,
               "type": "color"
             },
@@ -374,10 +478,26 @@
               "type": "color"
             },
             {
+              "value": "110,118,129",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 500",
+              "variable": "--btcpay-neutral-dark-500-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#484F58",
               "category": "Neutral Dark",
               "name": "Neutral Dark 600",
               "variable": "--btcpay-neutral-dark-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "72,79,88",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 600",
+              "variable": "--btcpay-neutral-dark-600-rgb",
               "reference": null,
               "type": "color"
             },
@@ -390,6 +510,14 @@
               "type": "color"
             },
             {
+              "value": "48,54,61",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 700",
+              "variable": "--btcpay-neutral-dark-700-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#21262D",
               "category": "Neutral Dark",
               "name": "Neutral Dark 800",
@@ -398,10 +526,26 @@
               "type": "color"
             },
             {
+              "value": "33,38,45",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 800",
+              "variable": "--btcpay-neutral-dark-800-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#161B22",
               "category": "Neutral Dark",
               "name": "Neutral Dark 900",
               "variable": "--btcpay-neutral-dark-900",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "22,27,34",
+              "category": "Neutral Dark",
+              "name": "Neutral Dark 900",
+              "variable": "--btcpay-neutral-dark-900-rgb",
               "reference": null,
               "type": "color"
             },
@@ -427,10 +571,26 @@
               "type": "color"
             },
             {
+              "value": "199,230,193",
+              "category": "Primary",
+              "name": "Primary 100",
+              "variable": "--btcpay-primary-100-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#b5dead",
               "category": "Primary",
               "name": "Primary 200",
               "variable": "--btcpay-primary-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "181,222,173",
+              "category": "Primary",
+              "name": "Primary 200",
+              "variable": "--btcpay-primary-200-rgb",
               "reference": null,
               "type": "color"
             },
@@ -443,10 +603,26 @@
               "type": "color"
             },
             {
+              "value": "157,211,146",
+              "category": "Primary",
+              "name": "Primary 300",
+              "variable": "--btcpay-primary-300-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#7cc46e",
               "category": "Primary",
               "name": "Primary 400",
               "variable": "--btcpay-primary-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "124,196,110",
+              "category": "Primary",
+              "name": "Primary 400",
+              "variable": "--btcpay-primary-400-rgb",
               "reference": null,
               "type": "color"
             },
@@ -459,10 +635,26 @@
               "type": "color"
             },
             {
+              "value": "68,164,49",
+              "category": "Primary",
+              "name": "Primary 500",
+              "variable": "--btcpay-primary-500-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#389725",
               "category": "Primary",
               "name": "Primary 600",
               "variable": "--btcpay-primary-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "56,151,37",
+              "category": "Primary",
+              "name": "Primary 600",
+              "variable": "--btcpay-primary-600-rgb",
               "reference": null,
               "type": "color"
             },
@@ -475,6 +667,14 @@
               "type": "color"
             },
             {
+              "value": "46,138,27",
+              "category": "Primary",
+              "name": "Primary 700",
+              "variable": "--btcpay-primary-700-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#247d12",
               "category": "Primary",
               "name": "Primary 800",
@@ -483,10 +683,26 @@
               "type": "color"
             },
             {
+              "value": "36,125,18",
+              "category": "Primary",
+              "name": "Primary 800",
+              "variable": "--btcpay-primary-800-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#1c710b",
               "category": "Primary",
               "name": "Primary 900",
               "variable": "--btcpay-primary-900",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "28,113,11",
+              "category": "Primary",
+              "name": "Primary 900",
+              "variable": "--btcpay-primary-900-rgb",
               "reference": null,
               "type": "color"
             },
@@ -512,10 +728,26 @@
               "type": "color"
             },
             {
+              "value": "238,250,235",
+              "category": "Green",
+              "name": "Green 100",
+              "variable": "--btcpay-green-100-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#C7E8C0",
               "category": "Green",
               "name": "Green 200",
               "variable": "--btcpay-green-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "199,232,192",
+              "category": "Green",
+              "name": "Green 200",
+              "variable": "--btcpay-green-200-rgb",
               "reference": null,
               "type": "color"
             },
@@ -528,10 +760,26 @@
               "type": "color"
             },
             {
+              "value": "160,214,149",
+              "category": "Green",
+              "name": "Green 300",
+              "variable": "--btcpay-green-300-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#78C369",
               "category": "Green",
               "name": "Green 400",
               "variable": "--btcpay-green-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "120,195,105",
+              "category": "Green",
+              "name": "Green 400",
+              "variable": "--btcpay-green-400-rgb",
               "reference": null,
               "type": "color"
             },
@@ -544,10 +792,26 @@
               "type": "color"
             },
             {
+              "value": "81,177,62",
+              "category": "Green",
+              "name": "Green 500",
+              "variable": "--btcpay-green-500-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#419437",
               "category": "Green",
               "name": "Green 600",
               "variable": "--btcpay-green-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "65,148,55",
+              "category": "Green",
+              "name": "Green 600",
+              "variable": "--btcpay-green-600-rgb",
               "reference": null,
               "type": "color"
             },
@@ -560,6 +824,14 @@
               "type": "color"
             },
             {
+              "value": "48,118,48",
+              "category": "Green",
+              "name": "Green 700",
+              "variable": "--btcpay-green-700-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#205928",
               "category": "Green",
               "name": "Green 800",
@@ -568,10 +840,26 @@
               "type": "color"
             },
             {
+              "value": "32,89,40",
+              "category": "Green",
+              "name": "Green 800",
+              "variable": "--btcpay-green-800-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#0F3B21",
               "category": "Green",
               "name": "Green 900",
               "variable": "--btcpay-green-900",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "15,59,33",
+              "category": "Green",
+              "name": "Green 900",
+              "variable": "--btcpay-green-900-rgb",
               "reference": null,
               "type": "color"
             },
@@ -597,10 +885,26 @@
               "type": "color"
             },
             {
+              "value": "181,225,232",
+              "category": "Blue",
+              "name": "Blue 100",
+              "variable": "--btcpay-blue-100-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#9dd7e1",
               "category": "Blue",
               "name": "Blue 200",
               "variable": "--btcpay-blue-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "157,215,225",
+              "category": "Blue",
+              "name": "Blue 200",
+              "variable": "--btcpay-blue-200-rgb",
               "reference": null,
               "type": "color"
             },
@@ -613,10 +917,26 @@
               "type": "color"
             },
             {
+              "value": "124,202,215",
+              "category": "Blue",
+              "name": "Blue 300",
+              "variable": "--btcpay-blue-300-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#51b9c9",
               "category": "Blue",
               "name": "Blue 400",
               "variable": "--btcpay-blue-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "81,185,201",
+              "category": "Blue",
+              "name": "Blue 400",
+              "variable": "--btcpay-blue-400-rgb",
               "reference": null,
               "type": "color"
             },
@@ -629,10 +949,26 @@
               "type": "color"
             },
             {
+              "value": "23,162,184",
+              "category": "Blue",
+              "name": "Blue 500",
+              "variable": "--btcpay-blue-500-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#03899e",
               "category": "Blue",
               "name": "Blue 600",
               "variable": "--btcpay-blue-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "3,137,158",
+              "category": "Blue",
+              "name": "Blue 600",
+              "variable": "--btcpay-blue-600-rgb",
               "reference": null,
               "type": "color"
             },
@@ -645,6 +981,14 @@
               "type": "color"
             },
             {
+              "value": "0,125,145",
+              "category": "Blue",
+              "name": "Blue 700",
+              "variable": "--btcpay-blue-700-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#007284",
               "category": "Blue",
               "name": "Blue 800",
@@ -653,10 +997,26 @@
               "type": "color"
             },
             {
+              "value": "0,114,132",
+              "category": "Blue",
+              "name": "Blue 800",
+              "variable": "--btcpay-blue-800-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#006778",
               "category": "Blue",
               "name": "Blue 900",
               "variable": "--btcpay-blue-900",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "0,103,120",
+              "category": "Blue",
+              "name": "Blue 900",
+              "variable": "--btcpay-blue-900-rgb",
               "reference": null,
               "type": "color"
             },
@@ -682,10 +1042,26 @@
               "type": "color"
             },
             {
+              "value": "255,250,240",
+              "category": "Yellow",
+              "name": "Yellow 100",
+              "variable": "--btcpay-yellow-100-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#FFF2D9",
               "category": "Yellow",
               "name": "Yellow 200",
               "variable": "--btcpay-yellow-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "255,242,217",
+              "category": "Yellow",
+              "name": "Yellow 200",
+              "variable": "--btcpay-yellow-200-rgb",
               "reference": null,
               "type": "color"
             },
@@ -698,10 +1074,26 @@
               "type": "color"
             },
             {
+              "value": "255,227,172",
+              "category": "Yellow",
+              "name": "Yellow 300",
+              "variable": "--btcpay-yellow-300-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#FFCF70",
               "category": "Yellow",
               "name": "Yellow 400",
               "variable": "--btcpay-yellow-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "255,207,112",
+              "category": "Yellow",
+              "name": "Yellow 400",
+              "variable": "--btcpay-yellow-400-rgb",
               "reference": null,
               "type": "color"
             },
@@ -714,10 +1106,26 @@
               "type": "color"
             },
             {
+              "value": "255,192,67",
+              "category": "Yellow",
+              "name": "Yellow 500",
+              "variable": "--btcpay-yellow-500-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#BC8B2C",
               "category": "Yellow",
               "name": "Yellow 600",
               "variable": "--btcpay-yellow-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "188,139,44",
+              "category": "Yellow",
+              "name": "Yellow 600",
+              "variable": "--btcpay-yellow-600-rgb",
               "reference": null,
               "type": "color"
             },
@@ -730,6 +1138,14 @@
               "type": "color"
             },
             {
+              "value": "153,115,40",
+              "category": "Yellow",
+              "name": "Yellow 700",
+              "variable": "--btcpay-yellow-700-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#674D1B",
               "category": "Yellow",
               "name": "Yellow 800",
@@ -738,10 +1154,26 @@
               "type": "color"
             },
             {
+              "value": "103,77,27",
+              "category": "Yellow",
+              "name": "Yellow 800",
+              "variable": "--btcpay-yellow-800-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#543D10",
               "category": "Yellow",
               "name": "Yellow 900",
               "variable": "--btcpay-yellow-900",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "84,61,16",
+              "category": "Yellow",
+              "name": "Yellow 900",
+              "variable": "--btcpay-yellow-900-rgb",
               "reference": null,
               "type": "color"
             },
@@ -767,10 +1199,26 @@
               "type": "color"
             },
             {
+              "value": "255,239,237",
+              "category": "Red",
+              "name": "Red 100",
+              "variable": "--btcpay-red-100-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#FED7D2",
               "category": "Red",
               "name": "Red 200",
               "variable": "--btcpay-red-200",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "254,215,210",
+              "category": "Red",
+              "name": "Red 200",
+              "variable": "--btcpay-red-200-rgb",
               "reference": null,
               "type": "color"
             },
@@ -783,10 +1231,26 @@
               "type": "color"
             },
             {
+              "value": "241,153,142",
+              "category": "Red",
+              "name": "Red 300",
+              "variable": "--btcpay-red-300-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#E85C4A",
               "category": "Red",
               "name": "Red 400",
               "variable": "--btcpay-red-400",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "232,92,74",
+              "category": "Red",
+              "name": "Red 400",
+              "variable": "--btcpay-red-400-rgb",
               "reference": null,
               "type": "color"
             },
@@ -799,10 +1263,26 @@
               "type": "color"
             },
             {
+              "value": "225,25,0",
+              "category": "Red",
+              "name": "Red 500",
+              "variable": "--btcpay-red-500-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#AB1300",
               "category": "Red",
               "name": "Red 600",
               "variable": "--btcpay-red-600",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "171,19,0",
+              "category": "Red",
+              "name": "Red 600",
+              "variable": "--btcpay-red-600-rgb",
               "reference": null,
               "type": "color"
             },
@@ -815,6 +1295,14 @@
               "type": "color"
             },
             {
+              "value": "135,15,0",
+              "category": "Red",
+              "name": "Red 700",
+              "variable": "--btcpay-red-700-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#5A0A00",
               "category": "Red",
               "name": "Red 800",
@@ -823,10 +1311,26 @@
               "type": "color"
             },
             {
+              "value": "90,10,0",
+              "category": "Red",
+              "name": "Red 800",
+              "variable": "--btcpay-red-800-rgb",
+              "reference": null,
+              "type": "color"
+            },
+            {
               "value": "#420105",
               "category": "Red",
               "name": "Red 900",
               "variable": "--btcpay-red-900",
+              "reference": null,
+              "type": "color"
+            },
+            {
+              "value": "66,1,5",
+              "category": "Red",
+              "name": "Red 900",
+              "variable": "--btcpay-red-900-rgb",
               "reference": null,
               "type": "color"
             },

@@ -702,11 +702,11 @@ a:hover {
 }
 [data-btcpay-theme="dark"]:root .btcpay-theme-switch-dark {
     display: none;
-}
+  }
 @media (prefers-color-scheme: dark) {
-:root:not([data-btcpay-theme="dark"]) .btcpay-theme-switch-dark {
+    :root:not([data-btcpay-theme="dark"]) .btcpay-theme-switch-dark {
       display: inline-block;
-}
+    }
   }
 .btcpay-theme-switch-light {
   display: none;
@@ -714,11 +714,11 @@ a:hover {
 }
 [data-btcpay-theme="dark"]:root .btcpay-theme-switch-light {
     display: inline-block;
-}
+  }
 @media (prefers-color-scheme: dark) {
-:root:not([data-btcpay-theme="light"]) .btcpay-theme-switch-light {
+    :root:not([data-btcpay-theme="light"]) .btcpay-theme-switch-light {
       display: inline-block;
-}
+    }
   }
 .btcpay-footer {
   color: var(--btcpay-footer-text);
