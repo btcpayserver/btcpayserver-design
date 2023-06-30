@@ -39,12 +39,12 @@
   display: inline-block;
   stroke: var(--btcpay-theme-switch-dark-color);
 
-  @nest :root[data-btcpay-theme="dark"] & {
+  :root[data-btcpay-theme="dark"] & {
     display: none;
   }
 
   @media (prefers-color-scheme: dark) {
-    @nest :root:not([data-btcpay-theme="dark"]) & {
+    :root:not([data-btcpay-theme="dark"]) & {
       display: inline-block;
     }
   }
@@ -54,12 +54,12 @@
   display: none;
   stroke: var(--btcpay-theme-switch-light-color);
 
-  @nest :root[data-btcpay-theme="dark"] & {
+  :root[data-btcpay-theme="dark"] & {
     display: inline-block;
   }
 
   @media (prefers-color-scheme: dark) {
-    @nest :root:not([data-btcpay-theme="light"]) & {
+    :root:not([data-btcpay-theme="light"]) & {
       display: inline-block;
     }
   }

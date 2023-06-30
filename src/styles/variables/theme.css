@@ -30,7 +30,9 @@
   --btcpay-body-text-muted: var(--btcpay-neutral-500);
   --btcpay-body-text-rgb: 41, 41, 41;
   --btcpay-body-link: var(--btcpay-primary);
+  --btcpay-body-link-rgb: var(--btcpay-primary-rgb);
   --btcpay-body-link-accent: var(--btcpay-primary-accent);
+  --btcpay-body-link-accent-rgb: 30, 122, 68;
   --btcpay-body-shadow: rgba(25, 135, 84, 0.33);
 
   --btcpay-wizard-bg: var(--btcpay-body-bg);
@@ -193,7 +195,7 @@
   --btcpay-warning-dim-bg-active: var(--btcpay-yellow-300);
   --btcpay-warning-dim-border: var(--btcpay-warning-dim-bg);
   --btcpay-warning-dim-border-active: var(--btcpay-warning-dim-bg-active);
-  --btcpay-warning-dim-text: var(--btcpay-neutral-800);
+  --btcpay-warning-dim-text: var(--btcpay-warning-800);
   --btcpay-warning-dim-text-striped: var(--btcpay-warning-dim-text);
   --btcpay-warning-dim-text-hover: var(--btcpay-warning-dim-text);
   --btcpay-warning-dim-text-active: var(--btcpay-yellow-900);
@@ -291,7 +293,8 @@
   --btcpay-body-text: var(--btcpay-white);
   --btcpay-body-text-muted: var(--btcpay-neutral-600);
   --btcpay-body-text-rgb: 255, 255, 255;
-  --btcpay-body-link-accent: var(--btcpay-primary-300);
+  --btcpay-body-link-accent: var(--btcpay-primary-accent);
+  --btcpay-body-link-accent-rgb: var(--btcpay-primary-accent-rgb);
 
   --btcpay-form-bg: var(--btcpay-bg-dark);
   --btcpay-form-text: var(--btcpay-neutral-800);
@@ -304,6 +307,9 @@
   --btcpay-footer-link-accent: var(--btcpay-neutral-800);
   --btcpay-pre-bg: var(--btcpay-bg-dark);
 
+  --btcpay-primary-accent: rgb(var(--btcpay-primary-accent-rgb));;
+  --btcpay-primary-accent-rgb: var(--btcpay-primary-300);
+
   --btcpay-secondary: transparent;
   --btcpay-secondary-text-active: var(--btcpay-primary);
   --btcpay-secondary-rgb: 22, 27, 34;
@@ -312,7 +318,6 @@
   --btcpay-warning-text-hover: var(--btcpay-neutral-100);
   --btcpay-warning-text-active: var(--btcpay-neutral-100);
   --btcpay-warning-dim-text: var(--btcpay-neutral-200);
-  --btcpay-warning-dim-text-active: var(--btcpay-yellow-100);
 
   --btcpay-light-accent: var(--btcpay-black);
   --btcpay-light-dim-bg: var(--btcpay-neutral-50);
