@@ -82,8 +82,9 @@ $pagination-disabled-border-color: $pagination-border-color;
 
 $modal-content-color: var(--btcpay-body-text);
 $modal-content-bg: var(--btcpay-bg-tile);
-$modal-backdrop-bg: var(--btcpay-black);
-$modal-transition: transform .3s cubic-bezier(.175,.855,.32,1.275);
+$modal-content-border-color: var(--btcpay-border-color);
+$modal-backdrop-bg: $modal-content-bg;
+$modal-transition: transform var(--btcpay-transition-duration-default) cubic-bezier(.175,.855,.32,1.275);
 $modal-fade-transform: translate(0, -.5rem);
 $modal-backdrop-opacity: .85;
 
@@ -195,9 +196,6 @@ $popover-border-color: var(--btcpay-body-border-medium);
 $popover-header-bg: var(--btcpay-bg-tile);
 $popover-bg: var(--btcpay-bg-tile);
 
-$offcanvas-color: var(--btcpay-body-text);
-$offcanvas-bg-color: var(--btcpay-black);
-
 $link-decoration: none;
 $link-hover-decoration: none;
 
@@ -231,14 +229,12 @@ $badge-padding-y: .5em;
 $badge-padding-x: .75em;
 $badge-font-weight: var(--btcpay-font-weight-semibold);
 
-$offcanvas-backdrop-bg: $offcanvas-bg-color;
-$offcanvas-backdrop-opacity: 1;
-$offcanvas-border-width: 0;
+$offcanvas-bg-color: var(--btcpay-bg-tile);
 $offcanvas-padding-x: 0;
 $offcanvas-padding-y: .5rem;
-$offcanvas-horizontal-width: 100vw;
 $offcanvas-vertical-height: auto;
 $offcanvas-box-shadow: none;
+$offcanvas-transition-duration: var(--btcpay-transition-duration-default);
 
 $box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
 $box-shadow-sm: 0 1px 2px rgba(0, 0, 0, .08);
