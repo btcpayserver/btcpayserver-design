@@ -236,6 +236,15 @@ textarea.w-auto {
   flex-grow: 0 !important;
 }
 
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-select ~ label::after,
+.form-floating > :disabled ~ label::after
+{
+  background-color: transparent !important;
+}
+
 /* Prevent form zoom on mobile Safari */
 @supports (-webkit-overflow-scrolling: touch) {
   input.form-control,
