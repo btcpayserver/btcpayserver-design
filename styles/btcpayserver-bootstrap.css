@@ -5829,10 +5829,10 @@ fieldset:disabled .btn {
   --btcpay-tooltip-padding-y: 0.25rem;
   --btcpay-tooltip-margin: ;
   --btcpay-tooltip-font-size: 0.75rem;
-  --btcpay-tooltip-color: var(--btcpay-body-bg);
-  --btcpay-tooltip-bg: var(--btcpay-primary);
+  --btcpay-tooltip-color: var(--btcpay-body-text);
+  --btcpay-tooltip-bg: var(--btcpay-bg-tile);
   --btcpay-tooltip-border-radius: var(--btcpay-border-radius);
-  --btcpay-tooltip-opacity: 0.9;
+  --btcpay-tooltip-opacity: 0.95;
   --btcpay-tooltip-arrow-width: 0.8rem;
   --btcpay-tooltip-arrow-height: 0.4rem;
   z-index: var(--btcpay-tooltip-zindex);
@@ -12393,6 +12393,15 @@ select.w-auto,
 textarea.w-auto {
   max-width: 100%;
   flex-grow: 0 !important;
+}
+
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-select ~ label::after,
+.form-floating > :disabled ~ label::after
+{
+  background-color: transparent !important;
 }
 
 /* Prevent form zoom on mobile Safari */
