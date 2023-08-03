@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1689965694770,
+    "update": 1691067560097,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1717,6 +1717,12 @@
             },
             {
               "type": "icon",
+              "name": "nostr",
+              "variable": "nostr",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nostr\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "note",
               "variable": "note",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#note\"/></svg>"
@@ -2210,6 +2216,12 @@
           "name": "lunanode",
           "variable": "lunanode",
           "value": "<svg role=\"img\"><use href=\"/svg/supporters.svg#lunanode\"/></svg>"
+        },
+        {
+          "type": "icon",
+          "name": "opensats",
+          "variable": "opensats",
+          "value": "<svg role=\"img\"><use href=\"/svg/supporters.svg#opensats\"/></svg>"
         },
         {
           "type": "icon",
