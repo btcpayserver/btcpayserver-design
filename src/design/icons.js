@@ -32,6 +32,7 @@ module.exports = [
   { id: 'new-store', category: 'general' },
   { id: 'new-wallet', category: 'general' },
   { id: 'new', category: 'general' },
+  { id: 'nostr', category: 'general' },
   { id: 'note', category: 'general' },
   { id: 'notifications', category: 'general' },
   { id: 'notifications-invoice-failure', category: 'notifications' },
