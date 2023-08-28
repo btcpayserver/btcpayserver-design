@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1693227560731,
+    "update": 1693228488750,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1633,12 +1633,6 @@
             },
             {
               "type": "icon",
-              "name": "github",
-              "variable": "github",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#github\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "hardware-wallet",
               "variable": "hardware-wallet",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#hardware-wallet\"/></svg>"
@@ -1675,21 +1669,15 @@
             },
             {
               "type": "icon",
-              "name": "lightningterminal",
-              "variable": "lightningterminal",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#lightningterminal\"/></svg>"
+              "name": "key",
+              "variable": "key",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#key\"/></svg>"
             },
             {
               "type": "icon",
               "name": "manage-plugins",
               "variable": "manage-plugins",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#manage-plugins\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "mattermost",
-              "variable": "mattermost",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#mattermost\"/></svg>"
             },
             {
               "type": "icon",
@@ -1720,12 +1708,6 @@
               "name": "new",
               "variable": "new",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#new\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "nostr",
-              "variable": "nostr",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nostr\"/></svg>"
             },
             {
               "type": "icon",
@@ -1807,12 +1789,6 @@
             },
             {
               "type": "icon",
-              "name": "rtl",
-              "variable": "rtl",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#rtl\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "scan-qr",
               "variable": "scan-qr",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#scan-qr\"/></svg>"
@@ -1837,12 +1813,6 @@
             },
             {
               "type": "icon",
-              "name": "shopify",
-              "variable": "shopify",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#shopify\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "spark",
               "variable": "spark",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#spark\"/></svg>"
@@ -1855,21 +1825,9 @@
             },
             {
               "type": "icon",
-              "name": "telegram",
-              "variable": "telegram",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#telegram\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "trash",
               "variable": "trash",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#trash\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "twitter",
-              "variable": "twitter",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#twitter\"/></svg>"
             },
             {
               "type": "icon",
@@ -1947,6 +1905,48 @@
         },
         {
           "type": "category",
+          "name": "logo",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "logo-btcpay",
+              "variable": "logo-btcpay",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#logo-btcpay\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "logo-lightningterminal",
+              "variable": "logo-lightningterminal",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#logo-lightningterminal\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "logo-rtl",
+              "variable": "logo-rtl",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#logo-rtl\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "logo-shopify",
+              "variable": "logo-shopify",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#logo-shopify\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "logo-thunderhub",
+              "variable": "logo-thunderhub",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#logo-thunderhub\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "logo-tor",
+              "variable": "logo-tor",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#logo-tor\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "name": "notifications",
           "tokens": [
             {
@@ -2008,6 +2008,42 @@
               "name": "pos-static",
               "variable": "pos-static",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-static\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "social",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "social-github",
+              "variable": "social-github",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#social-github\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "social-mattermost",
+              "variable": "social-mattermost",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#social-mattermost\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "social-nostr",
+              "variable": "social-nostr",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#social-nostr\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "social-telegram",
+              "variable": "social-telegram",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#social-telegram\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "social-twitter",
+              "variable": "social-twitter",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#social-twitter\"/></svg>"
             }
           ]
         },
