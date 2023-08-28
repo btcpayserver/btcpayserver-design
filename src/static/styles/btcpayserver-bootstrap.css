@@ -1,5 +1,5 @@
 /*!
-   * Bootstrap  v5.3.0 (https://getbootstrap.com/)
+   * Bootstrap  v5.3.1 (https://getbootstrap.com/)
    * Copyright 2011-2023 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
@@ -425,8 +425,8 @@ legend + * {
 }
 
 [type="search"] {
-  outline-offset: -2px;
   -webkit-appearance: textfield;
+  outline-offset: -2px;
 }
 
 /* rtl:raw:
@@ -2033,12 +2033,12 @@ progress {
   font-weight: var(--btcpay-font-weight-normal);
   line-height: 1.6;
   color: var(--btcpay-form-text);
-  background-color: var(--btcpay-form-bg);
-  background-clip: padding-box;
-  border: var(--btcpay-border-width) solid var(--btcpay-form-border);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background-color: var(--btcpay-form-bg);
+  background-clip: padding-box;
+  border: var(--btcpay-border-width) solid var(--btcpay-form-border);
   border-radius: var(--btcpay-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2239,6 +2239,9 @@ textarea.form-control-lg {
   font-weight: var(--btcpay-font-weight-normal);
   line-height: 1.6;
   color: var(--btcpay-form-text);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: var(--btcpay-form-bg);
   background-image: var(--btcpay-form-select-bg-img), var(--btcpay-form-select-bg-icon, none);
   background-repeat: no-repeat;
@@ -2247,9 +2250,6 @@ textarea.form-control-lg {
   border: var(--btcpay-border-width) solid var(--btcpay-form-border);
   border-radius: var(--btcpay-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 .form-select:focus {
@@ -2319,15 +2319,15 @@ textarea.form-control-lg {
   height: 1.25em;
   margin-top: 0.175em;
   vertical-align: top;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: var(--btcpay-form-check-bg);
   background-image: var(--btcpay-form-check-bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   border: 2px solid var(--btcpay-form-border-check);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   -webkit-print-color-adjust: exact;
      color-adjust: exact;
           print-color-adjust: exact;
@@ -2435,10 +2435,10 @@ textarea.form-control-lg {
   width: 100%;
   height: calc(1rem + 4px);
   padding: 0;
-  background-color: transparent;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  background-color: transparent;
 }
 
 .form-range:focus {
@@ -2461,13 +2461,13 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
+  -webkit-appearance: none;
+          appearance: none;
   background-color: var(--btcpay-primary);
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-          appearance: none;
 }
 
 .form-range::-webkit-slider-thumb:active {
@@ -2487,13 +2487,13 @@ textarea.form-control-lg {
 .form-range::-moz-range-thumb {
   width: 1rem;
   height: 1rem;
+  -moz-appearance: none;
+       appearance: none;
   background-color: var(--btcpay-primary);
   border: 0;
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -moz-appearance: none;
-       appearance: none;
 }
 
 .form-range::-moz-range-thumb:active {
@@ -2633,11 +2633,13 @@ textarea.form-control-lg {
   border-width: var(--btcpay-border-width) 0;
 }
 
-.form-floating > :disabled ~ label {
+.form-floating > :disabled ~ label,
+.form-floating > .form-control:disabled ~ label {
   color: var(--btcpay-secondary);
 }
 
-.form-floating > :disabled ~ label::after {
+.form-floating > :disabled ~ label::after,
+.form-floating > .form-control:disabled ~ label::after {
   background-color: var(--btcpay-form-bg-disabled);
 }
 
@@ -3838,7 +3840,7 @@ fieldset:disabled .btn {
   box-shadow: 0 0 0 0.25rem rgba(var(--btcpay-primary-rgb), 0.25);
 }
 
-.nav-link.disabled {
+.nav-link.disabled, .nav-link:disabled {
   color: var(--btcpay-nav-link-disabled-color);
   pointer-events: none;
   cursor: default;
@@ -3867,12 +3869,6 @@ fieldset:disabled .btn {
   border-color: var(--btcpay-nav-tabs-link-hover-border-color);
 }
 
-.nav-tabs .nav-link.disabled, .nav-tabs .nav-link:disabled {
-  color: var(--btcpay-nav-link-disabled-color);
-  background-color: transparent;
-  border-color: transparent;
-}
-
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: var(--btcpay-nav-tabs-link-active-color);
@@ -3894,12 +3890,6 @@ fieldset:disabled .btn {
 
 .nav-pills .nav-link {
   border-radius: var(--btcpay-nav-pills-border-radius);
-}
-
-.nav-pills .nav-link:disabled {
-  color: var(--btcpay-nav-link-disabled-color);
-  background-color: transparent;
-  border-color: transparent;
 }
 
 .nav-pills .nav-link.active,
@@ -7250,7 +7240,7 @@ fieldset:disabled .btn {
 .vr {
   display: inline-block;
   align-self: stretch;
-  width: 1px;
+  width: var(--btcpay-border-width);
   min-height: 1em;
   background-color: currentcolor;
   opacity: 0.25;
