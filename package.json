@@ -24,7 +24,7 @@
     "build": "npm run clean && cross-env NODE_ENV=production run-p 'build:*'",
     "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts/bootstrap && :",
     "build:patternlib": "uiengine build",
-    "build:icons": "run-p build:icons:*",
+    "build:icons": "run-p 'build:icons:*' && :",
     "build:icons:class": "node tasks/generate-icon-class.js",
     "build:icons:sprite": "node tasks/generate-icon-sprite.js",
     "build:supporters": "node ./tasks/generate-supporters-sprite.js",
@@ -65,6 +65,7 @@
     "postcss-nesting": "12.0.1",
     "prettier": "2.8.8",
     "rimraf": "5.0.1",
+    "svgo": "3.0.2",
     "svgstore": "3.0.1"
   },
   "prettier": {
