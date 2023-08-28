@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1693226483207,
+    "update": 1693227560731,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1693,6 +1693,12 @@
             },
             {
               "type": "icon",
+              "name": "menu",
+              "variable": "menu",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#menu\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "minus",
               "variable": "minus",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#minus\"/></svg>"
@@ -1786,30 +1792,6 @@
               "name": "pointofsale",
               "variable": "pointofsale",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pointofsale\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "pos-cart",
-              "variable": "pos-cart",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-cart\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "pos-light",
-              "variable": "pos-light",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-light\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "pos-print",
-              "variable": "pos-print",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-print\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "pos-static",
-              "variable": "pos-static",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-static\"/></svg>"
             },
             {
               "type": "icon",
@@ -1996,6 +1978,54 @@
               "name": "notifications-payout",
               "variable": "notifications-payout",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-payout\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "pos",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "pos-cart",
+              "variable": "pos-cart",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-cart\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "pos-light",
+              "variable": "pos-light",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-light\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "pos-print",
+              "variable": "pos-print",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-print\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "pos-static",
+              "variable": "pos-static",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-static\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "themes",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "themes-dark",
+              "variable": "themes-dark",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#themes-dark\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "themes-light",
+              "variable": "themes-light",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#themes-light\"/></svg>"
             }
           ]
         }
