@@ -38,13 +38,9 @@ const extractCategoriesColors = css =>
     [category]: {
       '': css.match(`--btcpay-${category}: (.*?);`)[1],
       'rgb': css.match(`--btcpay-${category}-rgb: (.*?);`)[1],
-      'text-hover': css.match(`.link-${category}:focus \\{[^{]*?color: (.*?) !important;`)[1],
-      'text-emphasis': css.match(`--btcpay-${category}-text-emphasis: (.*?);`)[1],
       'border': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-border-color: (.*?);`)[1],
       'border-hover': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-hover-border-color: (.*?);`)[1],
       'border-active': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-active-border-color: (.*?);`)[1],
-      'dim-bg': css.match(`--btcpay-${category}-bg-subtle: (.*?);`)[1],
-      'dim-bg-hover': css.match(`--btcpay-${category}-border-subtle: (.*?);`)[1],
       'dim-border': css.match(`.table-${category} \\{[^{]*?--btcpay-table-border-color: (.*?);`)[1],
       'shadow': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-focus-shadow-rgb: (.*?);`)[1]
     }
@@ -52,9 +48,10 @@ const extractCategoriesColors = css =>
 
 // replace color values in css, but skips white and black as they are too generic
 String.prototype.replaceColor = function (colorOrForce, original, replacement) {
-  return SKIP_COLORS.includes(colorOrForce)
-    ? this
-    : this.replace(new RegExp(original, 'g'), replacement)
+  if (SKIP_COLORS.includes(colorOrForce)) return this
+  const regex = new RegExp(original, 'g')
+  if (this.match(regex) === null) console.warn('NO MATCHES:', original, ' — ', replacement)
+  return this.replace(regex, replacement)
 }
 
 // consumes the extracted category values and replaces them with the variable names
@@ -99,7 +96,6 @@ String.prototype.replaceCategoryColors = function (map) {
 
     // list group
     .replaceColor(true, `(\\.list-group-item-${category} \\{[^{]*?)( --btcpay-list-group-color: (.*?);)`, `$1 --btcpay-list-group-color: var(--btcpay-${category}-dim-text);`)
-    .replaceColor(true, `(\\.list-group-item-${category}.list-group-item-action.active \\{[^{]*?)( color: (.*?);)`, `$1 color: var(--btcpay-${category}-dim-text-active);`)
     .replaceColor(true, `(\\.list-group-item-${category} \\{[^{]*?)( --btcpay-list-group-action-hover-color: (.*?);)`, `$1 --btcpay-list-group-action-hover-color: var(--btcpay-${category}-dim-text-hover);`)
     .replaceColor(true, `(\\.list-group-item-${category} \\{[^{]*?)( --btcpay-list-group-action-active-color: (.*?);)`, `$1 --btcpay-list-group-action-active-color: var(--btcpay-${category}-dim-text-active);`)
 
@@ -110,15 +106,10 @@ String.prototype.replaceCategoryColors = function (map) {
     .replaceColor(values[''], `  --btcpay-${category}: ${values['']};\n[\s\S]*`, '')
     .replaceColor(values[''], `  --btcpay-${category}-rgb: ${values['rgb']};\n[\s\S]*`, '')
     .replaceColor(values['rgb'], `${values['rgb']}`, `var(--btcpay-${category}-rgb)`)
-    .replaceColor(values['text-hover'], ` color: ${values['text-hover']}`, ` color: var(--btcpay-${category}-text-hover)`)
     .replaceColor(values['border'], `border-color: ${values['border']}`, `border-color: var(--btcpay-${category}-border)`)
     .replaceColor(values['border-hover'], `border-color: ${values['border-hover']}`, `border-color: var(--btcpay-${category}-border-hover)`)
     .replaceColor(values['border-active'], `border-color: ${values['border-active']}`, `border-color: var(--btcpay-${category}-border-active)`)
-    .replaceColor(values['dim-bg'], `background-color: ${values['dim-bg']}`, `background-color: var(--btcpay-${category}-dim-bg)`)
-    .replaceColor(values['dim-bg-hover'], `background-color: ${values['dim-bg-hover']}`, `background-color: var(--btcpay-${category}-dim-bg-hover)`)
-    .replaceColor(values['dim-bg-active'], `background-color: ${values['dim-bg-active']}`, `background-color: var(--btcpay-${category}-dim-bg-active)`)
     .replaceColor(values['dim-border'], `border-color: ${values['dim-border']}`, `border-color: var(--btcpay-${category}-dim-border)`)
-    .replaceColor(values['dim-text'], `color: ${values['dim-text']}`, `color: var(--btcpay-${category}-dim-text)`)
     .replaceColor(true, values['shadow'].replace('(', '\\(').replace(')', '\\)').replace('.', '\\.'), `var(--btcpay-${category}-shadow)`)
 
     .replaceColor(values[''], `color: ${values['']}`, `color: var(--btcpay-${category})`)
@@ -138,13 +129,7 @@ const patch = css => {
     // neutral
     .replace(/#f8f9fa/gi, 'var(--btcpay-neutral-100)')
     .replace(/#e9ecef/gi, 'var(--btcpay-neutral-200)')
-    .replace(/#dee2e6/gi, 'var(--btcpay-neutral-300)')
-    .replace(/#ced4da/gi, 'var(--btcpay-neutral-400)')
     .replace(/#adb5bd/gi, 'var(--btcpay-neutral-500)')
-    .replace(/#6c757d/gi, 'var(--btcpay-neutral-600)')
-    .replace(/#495057/gi, 'var(--btcpay-neutral-700)')
-    .replace(/#343a40/gi, 'var(--btcpay-neutral-800)')
-    .replace(/#212529/gi, 'var(--btcpay-neutral-900)')
 
     // removals
     .replaceColor(true, `  --btcpay-white-rgb: (.*?);\n[\s\S]*`, '')
@@ -166,8 +151,6 @@ const patch = css => {
     .replaceColor(true, `  --btcpay-emphasis-color-rgb: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, `  --btcpay-secondary-color: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, `  --btcpay-secondary-color-rgb: (.*?);\n[\s\S]*`, '')
-    .replaceColor(true, `  --btcpay-body-color: (.*?);`, '  --btcpay-body-color: var(--btcpay-body-text);')
-
 
     // generic
     .replace(/#000;/gi, 'var(--btcpay-black);')
