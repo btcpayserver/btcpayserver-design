@@ -165,6 +165,7 @@ const patch = css => {
     .replace(/-secondary-color\)/gi, '-secondary)')
     .replace(/-secondary-color-rgb\)/gi, '-secondary)')
     .replace(/color: var\(--btcpay-secondary\) !important/gi, `color: var(--btcpay-body-text-muted) !important`)
+    .replace(/--btcpay-body-color/gi, '--btcpay-body-text')
 }
 
 sass.render({ file, outFile, outputStyle: 'expanded' }, (error, result) =>

@@ -66,7 +66,7 @@ body {
   font-size: var(--btcpay-body-font-size);
   font-weight: var(--btcpay-body-font-weight);
   line-height: var(--btcpay-body-line-height);
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   text-align: var(--btcpay-body-text-align);
   background-color: var(--btcpay-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -2134,7 +2134,7 @@ progress {
   padding: 0.5rem 0;
   margin-bottom: 0;
   line-height: 1.6;
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   background-color: transparent;
   border: solid transparent;
   border-width: var(--btcpay-border-width) 0;
@@ -2942,7 +2942,7 @@ textarea.form-control-lg {
   --btcpay-btn-font-size: 0.875rem;
   --btcpay-btn-font-weight: var(--btcpay-font-weight-semibold);
   --btcpay-btn-line-height: 1.6;
-  --btcpay-btn-color: var(--btcpay-body-color);
+  --btcpay-btn-color: var(--btcpay-body-text);
   --btcpay-btn-bg: transparent;
   --btcpay-btn-border-width: var(--btcpay-border-width);
   --btcpay-btn-border-color: transparent;
@@ -4409,7 +4409,7 @@ fieldset:disabled .btn {
   flex-direction: column;
   min-width: 0;
   height: var(--btcpay-card-height);
-  color: var(--btcpay-body-color);
+  color: var(--btcpay-body-text);
   word-wrap: break-word;
   background-color: var(--btcpay-card-bg);
   background-clip: border-box;
@@ -4581,7 +4581,7 @@ fieldset:disabled .btn {
 }
 
 .accordion {
-  --btcpay-accordion-color: var(--btcpay-body-color);
+  --btcpay-accordion-color: var(--btcpay-body-text);
   --btcpay-accordion-bg: transparent;
   --btcpay-accordion-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
   --btcpay-accordion-border-color: transparent;
@@ -5940,7 +5940,7 @@ fieldset:disabled .btn {
   --btcpay-popover-header-bg: var(--btcpay-bg-tile);
   --btcpay-popover-body-padding-x: 1rem;
   --btcpay-popover-body-padding-y: 1rem;
-  --btcpay-popover-body-color: var(--btcpay-body-color);
+  --btcpay-popover-body-color: var(--btcpay-body-text);
   --btcpay-popover-arrow-width: 1rem;
   --btcpay-popover-arrow-height: 0.5rem;
   --btcpay-popover-arrow-border: var(--btcpay-popover-border-color);
@@ -6349,7 +6349,7 @@ fieldset:disabled .btn {
   --btcpay-offcanvas-height: auto;
   --btcpay-offcanvas-padding-x: 0;
   --btcpay-offcanvas-padding-y: 0.5rem;
-  --btcpay-offcanvas-color: var(--btcpay-body-color);
+  --btcpay-offcanvas-color: var(--btcpay-body-text);
   --btcpay-offcanvas-bg: var(--btcpay-bg-tile);
   --btcpay-offcanvas-border-width: var(--btcpay-border-width);
   --btcpay-offcanvas-border-color: var(--btcpay-border-color);
