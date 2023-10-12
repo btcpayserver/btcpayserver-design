@@ -45,7 +45,7 @@ const extractCategoriesColors = css =>
       'border-active': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-active-border-color: (.*?);`)[1],
       'dim-bg': css.match(`--btcpay-${category}-bg-subtle: (.*?);`)[1],
       'dim-bg-hover': css.match(`--btcpay-${category}-border-subtle: (.*?);`)[1],
-      'dim-border': css.match(`--btcpay-${category}-border-subtle: (.*?);`)[1],
+      'dim-border': css.match(`.table-${category} \\{[^{]*?--btcpay-table-border-color: (.*?);`)[1],
       'shadow': css.match(`.btn-${category} \\{[^{]*?--btcpay-btn-focus-shadow-rgb: (.*?);`)[1]
     }
   }), {})
@@ -87,8 +87,7 @@ String.prototype.replaceCategoryColors = function (map) {
     .replaceColor(true, `(\\.btn-outline-light \\{[^{]*?)--btcpay-btn-color: (.*?);`, `$1--btcpay-btn-color: var(--btcpay-light-text);`)
 
     // table
-    .replaceColor(true, `(\\.table-${category} \\{[^{]*?)( border-color: (.*?);)`, `$1 border-color: var(--btcpay-table-border-color);`)
-    .replaceColor(true, `(\\.table-${category} \\{[^{]*?)( color: (.*?);)`, `$1 color: var(--btcpay-table-color);`)
+    .replaceColor(true, `(\\.table \\{[^{]*?)--btcpay-table-color: (.*?);`, `$1--btcpay-table-color: var(--btcpay-body-text);`)
     .replaceColor(true, `(\\.table-${category} \\{[^{]*?)--btcpay-table-color: (.*?);`, `$1--btcpay-table-color: var(--btcpay-${category}-dim-text);`)
     .replaceColor(true, `(\\.table-${category} \\{[^{]*?)--btcpay-table-striped-color: (.*?);`, `$1--btcpay-table-striped-color: var(--btcpay-${category}-dim-text-striped);`)
     .replaceColor(true, `(\\.table-${category} \\{[^{]*?)--btcpay-table-hover-color: (.*?);`, `$1--btcpay-table-hover-color: var(--btcpay-${category}-dim-text-hover);`)
@@ -129,9 +128,6 @@ String.prototype.replaceCategoryColors = function (map) {
 const patch = css => {
   const categoryColors = extractCategoriesColors(css)
   return css
-    // body
-    .replaceColor(true, `(:root \\{[^{]*?) --btcpay-body-color: .*?;`, `$1 --btcpay-body-color: var(--btcpay-body-text);`)
-
     // form
     .replaceColor(true, `(\\.form-range::(.*?):active \\{[^{]*?)( background-color: (#.*?);)`, `$1 background-color: var(--btcpay-form-border-active);`)
     .replaceColor(true, `(\\.form-floating > label \\{[^{]*?)( position: absolute;)`, `$1 position: absolute; color: var(--btcpay-form-text-addon);`)
@@ -156,6 +152,7 @@ const patch = css => {
     .replaceColor(true, `  --btcpay-border-radius: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, `  --btcpay-body-bg: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, `  --btcpay-body-bg-rgb: (.*?);\n[\s\S]*`, '')
+    .replaceColor(true, `  --btcpay-body-color: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, `  --btcpay-body-color-rgb: (.*?);\n[\s\S]*`, '')
     .replaceColor(true, '--btcpay-body-color-rgb', '--btcpay-body-text-rgb')
     .replaceColor(true, `  --btcpay-link-color: (.*?);\n[\s\S]*`, '')

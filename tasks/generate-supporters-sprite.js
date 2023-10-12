@@ -35,7 +35,7 @@ writeFileSync(
     .replace('<svg ', '\n<svg ')
     .replace('</svg', '\n</svg')
 )
-writeFileSync(
-  dstTokens,
-  prettier.format(`module.exports = ${JSON.stringify(tokens)}`, prettierOpts)
-)
+
+prettier
+  .format(`module.exports = ${JSON.stringify(tokens)}`, { ...prettierOpts, filepath: dstTokens })
+  .then(formatted => writeFileSync(dstTokens, formatted))
