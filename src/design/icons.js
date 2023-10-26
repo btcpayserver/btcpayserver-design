@@ -8,6 +8,7 @@ module.exports = [
   { id: 'checkmark', category: 'general' },
   { id: 'close', category: 'general' },
   { id: 'copy', category: 'general' },
+  { id: 'cross', category: 'general' },
   { id: 'crowdfund', category: 'general' },
   { id: 'docs', category: 'general' },
   { id: 'donate', category: 'general' },
