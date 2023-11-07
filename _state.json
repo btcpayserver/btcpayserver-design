@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1698066451852,
+    "update": 1699371114690,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1561,6 +1561,12 @@
             },
             {
               "type": "icon",
+              "name": "archive",
+              "variable": "archive",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#archive\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "back",
               "variable": "back",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#back\"/></svg>"
@@ -1597,6 +1603,12 @@
             },
             {
               "type": "icon",
+              "name": "cross",
+              "variable": "cross",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#cross\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "crowdfund",
               "variable": "crowdfund",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#crowdfund\"/></svg>"
@@ -1618,6 +1630,12 @@
               "name": "done",
               "variable": "done",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#done\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "dots",
+              "variable": "dots",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#dots\"/></svg>"
             },
             {
               "type": "icon",
@@ -1654,6 +1672,12 @@
               "name": "info",
               "variable": "info",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#info\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "invoice-2",
+              "variable": "invoice-2",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#invoice-2\"/></svg>"
             },
             {
               "type": "icon",
@@ -1795,9 +1819,21 @@
             },
             {
               "type": "icon",
+              "name": "search",
+              "variable": "search",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#search\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "seed",
               "variable": "seed",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#seed\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "send",
+              "variable": "send",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#send\"/></svg>"
             },
             {
               "type": "icon",
