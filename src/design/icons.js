@@ -78,6 +78,7 @@ module.exports = [
   { id: 'store', category: 'general' },
   { id: 'themes-dark', category: 'themes' },
   { id: 'themes-light', category: 'themes' },
+  { id: 'themes-system', category: 'themes' },
   { id: 'trash', category: 'general' },
   { id: 'wallet-file', category: 'general' },
   { id: 'wallet-lightning', category: 'general' },
