@@ -1,66 +1,45 @@
 .btcpay-theme-switch {
-  --btcpay-theme-switch-light-color: var(--btcpay-white);
-  --btcpay-theme-switch-dark-color: var(--btcpay-neutral-900);
-  --btcpay-theme-switch-icon-size: 1.25rem;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--btcpay-white);
-  background: none;
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-  border: 0;
-
-  & svg {
-    height: var(--btcpay-theme-switch-icon-size);
-    width: var(--btcpay-theme-switch-icon-size);
-  }
-
-  & path {
-    stroke-width: .5px;
-    fill: none;
-  }
-
-  &:hover,
-  &:focus {
-    & .btcpay-theme-switch-light {
-      fill: var(--btcpay-theme-switch-light-color);
-    }
-
-    & .btcpay-theme-switch-dark {
-      fill: var(--btcpay-theme-switch-dark-color);
-    }
-  }
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--btcpay-space-m);
 }
 
-.btcpay-theme-switch-dark {
-  display: inline-block;
-  stroke: var(--btcpay-theme-switch-dark-color);
-
-  :root[data-btcpay-theme="dark"] & {
-    display: none;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-btcpay-theme="dark"]) & {
-      display: inline-block;
-    }
-  }
+.btcpay-theme-switch-label {
+    font-weight: var(--btcpay-font-weight-semibold);
 }
 
-.btcpay-theme-switch-light {
-  display: none;
-  stroke: var(--btcpay-theme-switch-light-color);
+.btcpay-theme-switch-themes {
+    display: inline-flex;
+    gap: var(--btcpay-space-m);
+    align-items: center;
+}
 
-  :root[data-btcpay-theme="dark"] & {
-    display: inline-block;
-  }
+.btcpay-theme-switch-themes button {
+    --icon-size: 1.25rem !important;
+    background: none;
+    padding: 0;
+    border: 0;
+    color: var(--btcpay-body-text-muted);
+}
 
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-btcpay-theme="light"]) & {
-      display: inline-block;
-    }
-  }
+.btcpay-theme-switch-themes button:hover {
+    color: var(--btcpay-body-link);
+}
+
+.btcpay-theme-switch-themes button svg {
+    margin: 0 !important;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.btcpay-theme-switch:hover .btcpay-theme-switch-light,
+.btcpay-theme-switch:hover .btcpay-theme-switch-dark {
+    fill: currentColor;
+}
+
+:root:not([data-btcpay-theme]) .btcpay-theme-switch [data-theme="system"],
+:root[data-btcpay-theme="light"] .btcpay-theme-switch [data-theme="light"],
+:root[data-btcpay-theme="dark"] .btcpay-theme-switch [data-theme="dark"] {
+    color: var(--btcpay-body-link);
 }
