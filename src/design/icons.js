@@ -62,6 +62,7 @@ module.exports = [
   { id: 'pos-print', category: 'pos' },
   { id: 'pos-static', category: 'pos' },
   { id: 'pull-payments', category: 'general' },
+  { id: 'refresh', category: 'general' },
   { id: 'remove', category: 'general' },
   { id: 'scan-qr', category: 'general' },
   { id: 'search', category: 'general' },
