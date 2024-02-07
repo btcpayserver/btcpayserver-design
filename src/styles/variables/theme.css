@@ -89,7 +89,7 @@
   --btcpay-pre-bg: var(--btcpay-neutral-900);
 
   --btcpay-primary: var(--btcpay-brand-primary);
-  --btcpay-primary-accent: var(--btcpay-brand-tertiary);
+  --btcpay-primary-accent: var(--btcpay-primary-700);
   --btcpay-primary-text: var(--btcpay-white);
   --btcpay-primary-text-hover: var(--btcpay-white);
   --btcpay-primary-text-active: var(--btcpay-white);
@@ -112,7 +112,7 @@
   --btcpay-primary-rgb: 81, 177, 62;
 
   --btcpay-secondary: var(--btcpay-white);
-  --btcpay-secondary-accent: var(--btcpay-secondary);
+  --btcpay-secondary-accent: var(--btcpay-neutral-700);
   --btcpay-secondary-text: var(--btcpay-primary);
   --btcpay-secondary-text-hover: var(--btcpay-primary);
   --btcpay-secondary-text-active: var(--btcpay-brand-dark);
