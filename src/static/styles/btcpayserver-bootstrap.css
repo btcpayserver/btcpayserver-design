@@ -12308,6 +12308,44 @@ ul:not([class]) li {
   padding: 1rem;
 }
 
+/* Badges */
+.badge-translucent {
+  --btcpay-bg-opacity: .5;
+}
+.badge-translucent.text-bg-primary {
+  color: var(--btcpay-primary-accent);
+}
+.badge-translucent.text-bg-secondary {
+  color: var(--btcpay-secondary-accent);
+}
+.badge-translucent.text-bg-success {
+  color: var(--btcpay-success-accent);
+}
+.badge-translucent.text-bg-info {
+  color: var(--btcpay-info-accent);
+}
+.badge-translucent.text-bg-warning {
+  color: var(--btcpay-warning-accent);
+}
+.badge-translucent.text-bg-danger {
+  color: var(--btcpay-danger-accent);
+}
+.badge-translucent.text-bg-light {
+  color: var(--btcpay-dark-accent);
+}
+.badge-translucent.text-bg-dark {
+  color: var(--btcpay-light-accent);
+}
+.badge-translucent.text-bg-body {
+  color: var(--btcpay-body-accent);
+}
+.badge-translucent.text-bg-white {
+  color: var(--btcpay-black);
+}
+.badge-translucent.text-bg-black {
+  color: var(--btcpay-white);
+}
+
 /* Button */
 .btn-outline-secondary {
   --btcpay-btn-color: var(--btcpay-secondary-text);
