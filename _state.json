@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1709135658687,
+    "update": 1710399261500,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1804,6 +1804,12 @@
               "name": "pull-payments",
               "variable": "pull-payments",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pull-payments\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "qr-code",
+              "variable": "qr-code",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#qr-code\"/></svg>"
             },
             {
               "type": "icon",
