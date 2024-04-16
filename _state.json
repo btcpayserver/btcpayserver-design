@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1713295506792,
+    "update": 1713295592654,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -2113,9 +2113,9 @@
           "tokens": [
             {
               "type": "icon",
-              "name": "wallet-existing-wallet",
-              "variable": "wallet-existing-wallet",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-existing-wallet\"/></svg>"
+              "name": "wallet-existing",
+              "variable": "wallet-existing",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-existing\"/></svg>"
             },
             {
               "type": "icon",
