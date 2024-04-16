@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1710404924753,
+    "update": 1713295506792,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1545,14 +1545,68 @@
       "tokens": [
         {
           "type": "category",
-          "name": "general",
+          "name": "actions",
           "tokens": [
             {
               "type": "icon",
-              "name": "account",
-              "variable": "account",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#account\"/></svg>"
+              "name": "actions-add",
+              "variable": "actions-add",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-add\"/></svg>"
             },
+            {
+              "type": "icon",
+              "name": "actions-archive",
+              "variable": "actions-archive",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-archive\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-copy",
+              "variable": "actions-copy",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-copy\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-drag",
+              "variable": "actions-drag",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-drag\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-refresh",
+              "variable": "actions-refresh",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-refresh\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-remove",
+              "variable": "actions-remove",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-remove\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-search",
+              "variable": "actions-search",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-search\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-send",
+              "variable": "actions-send",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-send\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-trash",
+              "variable": "actions-trash",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-trash\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "general",
+          "tokens": [
             {
               "type": "icon",
               "name": "api",
@@ -1561,27 +1615,9 @@
             },
             {
               "type": "icon",
-              "name": "archive",
-              "variable": "archive",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#archive\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "back",
               "variable": "back",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#back\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "caret-down",
-              "variable": "caret-down",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#caret-down\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "caret-right",
-              "variable": "caret-right",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#caret-right\"/></svg>"
             },
             {
               "type": "icon",
@@ -1597,21 +1633,9 @@
             },
             {
               "type": "icon",
-              "name": "copy",
-              "variable": "copy",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#copy\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "cross",
               "variable": "cross",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#cross\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "crowdfund",
-              "variable": "crowdfund",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#crowdfund\"/></svg>"
             },
             {
               "type": "icon",
@@ -1639,75 +1663,9 @@
             },
             {
               "type": "icon",
-              "name": "drag",
-              "variable": "drag",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#drag\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "existing-wallet",
-              "variable": "existing-wallet",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#existing-wallet\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "hardware-wallet",
-              "variable": "hardware-wallet",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#hardware-wallet\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "home",
-              "variable": "home",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#home\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "hot-wallet",
-              "variable": "hot-wallet",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#hot-wallet\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "info",
               "variable": "info",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#info\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "invoice-2",
-              "variable": "invoice-2",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#invoice-2\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "invoice-expired",
-              "variable": "invoice-expired",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#invoice-expired\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "invoice",
-              "variable": "invoice",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#invoice\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "key",
-              "variable": "key",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#key\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "manage-plugins",
-              "variable": "manage-plugins",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#manage-plugins\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "menu",
-              "variable": "menu",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#menu\"/></svg>"
             },
             {
               "type": "icon",
@@ -1717,93 +1675,9 @@
             },
             {
               "type": "icon",
-              "name": "new-store",
-              "variable": "new-store",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#new-store\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "new-wallet",
-              "variable": "new-wallet",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#new-wallet\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "new",
-              "variable": "new",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#new\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "note",
-              "variable": "note",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#note\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "notifications",
-              "variable": "notifications",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "onion",
-              "variable": "onion",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#onion\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "pay-button",
-              "variable": "pay-button",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pay-button\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "payment-complete",
-              "variable": "payment-complete",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-complete\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "payment-requests",
-              "variable": "payment-requests",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-requests\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "payment-sent",
-              "variable": "payment-sent",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-sent\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "payouts",
-              "variable": "payouts",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payouts\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "plugin",
-              "variable": "plugin",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#plugin\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "plus",
               "variable": "plus",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#plus\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "pointofsale",
-              "variable": "pointofsale",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pointofsale\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "pull-payments",
-              "variable": "pull-payments",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pull-payments\"/></svg>"
             },
             {
               "type": "icon",
@@ -1813,105 +1687,57 @@
             },
             {
               "type": "icon",
-              "name": "refresh",
-              "variable": "refresh",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#refresh\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "remove",
-              "variable": "remove",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#remove\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "scan-qr",
               "variable": "scan-qr",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#scan-qr\"/></svg>"
             },
             {
               "type": "icon",
-              "name": "search",
-              "variable": "search",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#search\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "seed",
-              "variable": "seed",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#seed\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "send",
-              "variable": "send",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#send\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "server-settings",
-              "variable": "server-settings",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#server-settings\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "settings",
-              "variable": "settings",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#settings\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "spark",
-              "variable": "spark",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#spark\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "store",
-              "variable": "store",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#store\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "trash",
-              "variable": "trash",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#trash\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "wallet-file",
-              "variable": "wallet-file",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-file\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "wallet-lightning",
-              "variable": "wallet-lightning",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-lightning\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "wallet-onchain",
-              "variable": "wallet-onchain",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-onchain\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "warning",
               "variable": "warning",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#warning\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "caret",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "caret-down",
+              "variable": "caret-down",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#caret-down\"/></svg>"
             },
             {
               "type": "icon",
-              "name": "watchonly-wallet",
-              "variable": "watchonly-wallet",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#watchonly-wallet\"/></svg>"
+              "name": "caret-right",
+              "variable": "caret-right",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#caret-right\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "checkout",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "checkout-complete",
+              "variable": "checkout-complete",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#checkout-complete\"/></svg>"
             },
             {
               "type": "icon",
-              "name": "xpub",
-              "variable": "xpub",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#xpub\"/></svg>"
+              "name": "checkout-expired",
+              "variable": "checkout-expired",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#checkout-expired\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "checkout-sent",
+              "variable": "checkout-sent",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#checkout-sent\"/></svg>"
             }
           ]
         },
@@ -1995,6 +1821,150 @@
         },
         {
           "type": "category",
+          "name": "nav",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "nav-account",
+              "variable": "nav-account",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-account\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-back",
+              "variable": "nav-back",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-back\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-close",
+              "variable": "nav-close",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-close\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-crowdfund",
+              "variable": "nav-crowdfund",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-crowdfund\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-dashboard",
+              "variable": "nav-dashboard",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-dashboard\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-explore",
+              "variable": "nav-explore",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-explore\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-invoice",
+              "variable": "nav-invoice",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-invoice\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-invoices",
+              "variable": "nav-invoices",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-invoices\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-keypad",
+              "variable": "nav-keypad",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-keypad\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-lightning-address",
+              "variable": "nav-lightning-address",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-lightning-address\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-manage",
+              "variable": "nav-manage",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-manage\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-menu",
+              "variable": "nav-menu",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-menu\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-notifications",
+              "variable": "nav-notifications",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-notifications\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-pay-button",
+              "variable": "nav-pay-button",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-pay-button\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-payment-requests",
+              "variable": "nav-payment-requests",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-payment-requests\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-payouts",
+              "variable": "nav-payouts",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-payouts\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-plugin",
+              "variable": "nav-plugin",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-plugin\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-pointofsale",
+              "variable": "nav-pointofsale",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-pointofsale\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-pull-payments",
+              "variable": "nav-pull-payments",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-pull-payments\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-reporting",
+              "variable": "nav-reporting",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-reporting\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-server-settings",
+              "variable": "nav-server-settings",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-server-settings\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-settings",
+              "variable": "nav-settings",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-settings\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-store",
+              "variable": "nav-store",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-store\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
           "name": "notifications",
           "tokens": [
             {
@@ -2026,6 +1996,24 @@
               "name": "notifications-payout",
               "variable": "notifications-payout",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-payout\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "payment",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "payment-receive",
+              "variable": "payment-receive",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-receive\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "payment-send",
+              "variable": "payment-send",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-send\"/></svg>"
             }
           ]
         },
@@ -2116,6 +2104,66 @@
               "name": "themes-system",
               "variable": "themes-system",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#themes-system\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "wallet",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "wallet-existing-wallet",
+              "variable": "wallet-existing-wallet",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-existing-wallet\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-file",
+              "variable": "wallet-file",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-file\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-hardware",
+              "variable": "wallet-hardware",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-hardware\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-hot",
+              "variable": "wallet-hot",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-hot\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-key",
+              "variable": "wallet-key",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-key\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-new",
+              "variable": "wallet-new",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-new\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-seed",
+              "variable": "wallet-seed",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-seed\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-watchonly",
+              "variable": "wallet-watchonly",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-watchonly\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-xpub",
+              "variable": "wallet-xpub",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-xpub\"/></svg>"
             }
           ]
         }
