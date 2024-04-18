@@ -27,6 +27,16 @@ if [ -d "$BTCPAY_APP_WWWROOT" ]; then
   cp dist/styles/btcpayserver-bootstrap.css "$BTCPAY_APP_WWWROOT/bootstrap/bootstrap.css"
   cp dist/scripts/bootstrap/* "$BTCPAY_APP_WWWROOT/bootstrap/"
   cp dist/svg/icons.svg "$BTCPAY_APP_WWWROOT/img/icon-sprite.svg"
+  cp dist/svg/supporters.svg "$BTCPAY_APP_WWWROOT/img/supporter-sprite.svg"
 
   echo "Copied assets to $BTCPAY_APP_WWWROOT"
+fi
+
+if [ -d "$BTCPAY_APP_SERVER_WWWROOT" ]; then
+  cp dist/styles/btcpayserver-bootstrap.css "$BTCPAY_APP_SERVER_WWWROOT/main/bootstrap/bootstrap.css"
+  cp dist/scripts/bootstrap/* "$BTCPAY_APP_SERVER_WWWROOT/vendor/bootstrap/"
+  cp dist/svg/icons.svg "$BTCPAY_APP_SERVER_WWWROOT/img/icon-sprite.svg"
+  cp dist/svg/supporters.svg "$BTCPAY_APP_SERVER_WWWROOT/img/supporter-sprite.svg"
+
+  echo "Copied assets to $BTCPAY_APP_SERVER_WWWROOT"
 fi
