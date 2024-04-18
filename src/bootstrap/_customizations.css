@@ -162,7 +162,19 @@ ul:not([class]) li {
   padding: 1rem;
 }
 
+/* Icons */
+.icon {
+    display: inline-block;
+    width: var(--icon-size, 1rem);
+    height: var(--icon-size, 1rem);
+    flex-shrink: 0 !important;
+}
+
 /* Button */
+.btn .icon {
+  --icon-size: 1.25em;
+}
+
 .btn-outline-secondary {
   --btcpay-btn-color: var(--btcpay-secondary-text);
 }
@@ -174,12 +186,6 @@ ul:not([class]) li {
 
 .btn-outline-secondary:active {
   --btcpay-btn-color: var(--btcpay-secondary-text-active);
-}
-
-.btn .icon {
-  --btn-icon-size: 1.25em;
-  height: var(--btn-icon-size);
-  width: var(--btn-icon-size);
 }
 
 .btn.rounded-circle {
@@ -205,8 +211,8 @@ ul:not([class]) li {
   position: relative;
   top: -0.4rem;
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: var(--icon-size, 1rem);
+  height: var(--icon-size, 1rem);
 }
 
 .dropdown-toggle-split {

@@ -38,6 +38,7 @@ module.exports = [
   { id: 'nav-account', category: 'nav' },
   { id: 'nav-back', category: 'nav' },
   { id: 'nav-close', category: 'nav' },
+  { id: 'nav-contact', category: 'nav' },
   { id: 'nav-crowdfund', category: 'nav' },
   { id: 'nav-dashboard', category: 'nav' },
   { id: 'nav-explore', category: 'nav' },
