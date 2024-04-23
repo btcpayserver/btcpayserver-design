@@ -12257,7 +12257,7 @@ ul:not([class]) li {
   content: none;
 }
 
-.accordion-button svg.icon {
+.accordion-button .icon {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
@@ -12265,7 +12265,7 @@ ul:not([class]) li {
   transition: transform 0.2s ease-in-out;
 }
 
-.accordion-button:not(.collapsed) svg.icon {
+.accordion-button:not(.collapsed) .icon {
   transform: rotate(-180deg);
 }
 

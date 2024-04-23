@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1713445910988,
+    "update": 1713882633360,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1693,6 +1693,12 @@
             },
             {
               "type": "icon",
+              "name": "settings",
+              "variable": "settings",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#settings\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "warning",
               "variable": "warning",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#warning\"/></svg>"
@@ -1711,9 +1717,21 @@
             },
             {
               "type": "icon",
+              "name": "caret-left",
+              "variable": "caret-left",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#caret-left\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "caret-right",
               "variable": "caret-right",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#caret-right\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "caret-up",
+              "variable": "caret-up",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#caret-up\"/></svg>"
             }
           ]
         },
@@ -1831,18 +1849,6 @@
             },
             {
               "type": "icon",
-              "name": "nav-back",
-              "variable": "nav-back",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-back\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "nav-close",
-              "variable": "nav-close",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-close\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "nav-contact",
               "variable": "nav-contact",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-contact\"/></svg>"
@@ -1858,12 +1864,6 @@
               "name": "nav-dashboard",
               "variable": "nav-dashboard",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-dashboard\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "nav-explore",
-              "variable": "nav-explore",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-explore\"/></svg>"
             },
             {
               "type": "icon",
@@ -1891,15 +1891,9 @@
             },
             {
               "type": "icon",
-              "name": "nav-manage",
-              "variable": "nav-manage",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-manage\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "nav-menu",
-              "variable": "nav-menu",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-menu\"/></svg>"
+              "name": "nav-mobile-menu",
+              "variable": "nav-mobile-menu",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-mobile-menu\"/></svg>"
             },
             {
               "type": "icon",
@@ -1933,6 +1927,18 @@
             },
             {
               "type": "icon",
+              "name": "nav-plugins-explore",
+              "variable": "nav-plugins-explore",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-plugins-explore\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-plugins-manage",
+              "variable": "nav-plugins-manage",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-plugins-manage\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "nav-pointofsale",
               "variable": "nav-pointofsale",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-pointofsale\"/></svg>"
@@ -1957,9 +1963,9 @@
             },
             {
               "type": "icon",
-              "name": "nav-settings",
-              "variable": "nav-settings",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-settings\"/></svg>"
+              "name": "nav-store-settings",
+              "variable": "nav-store-settings",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-store-settings\"/></svg>"
             },
             {
               "type": "icon",
