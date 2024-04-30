@@ -11,10 +11,10 @@
     "BTCPay Server"
   ],
   "scripts": {
-    "clean": "rimraf dist generated && mkdir -p dist/styles dist/scripts/bootstrap generated",
+    "clean": "rimraf dist generated && mkdir -p dist/styles dist/scripts/bootstrap dist/svg/icons generated",
     "start": "cross-env NODE_ENV=development npm run clean && run-p 'start:*'",
     "start:build": "run-p 'build:* -- --serve --watch'",
-    "start:icons": "onchange -k 'src/icons/**/*.svg' 'tasks/generate-icon-sprite.js' 'tasks/generate-icon-class.js' -- npm run build:icons",
+    "start:icons": "onchange -k 'src/icons/**/*.svg' 'tasks/generate-icon-sprite.js' 'tasks/generate-icon-files.js' -- npm run build:icons",
     "start:supporters": "onchange -k 'src/supporters/**/*.svg' 'tasks/generate-supporters-sprite.js' -- npm run build:supporters",
     "start:static": "onchange -k 'src/static/**' -- npm run build:static",
     "start:styles": "run-p 'start:styles:*'",
@@ -25,7 +25,7 @@
     "build:static": "cp -r src/static/* dist && cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* dist/scripts/bootstrap && :",
     "build:patternlib": "uiengine build",
     "build:icons": "run-p 'build:icons:*' && :",
-    "build:icons:class": "node tasks/generate-icon-class.js",
+    "build:icons:files": "node tasks/generate-icon-files.js",
     "build:icons:sprite": "node tasks/generate-icon-sprite.js",
     "build:supporters": "node ./tasks/generate-supporters-sprite.js",
     "build:styles": "run-s 'build:styles:*' && :",
