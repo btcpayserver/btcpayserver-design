@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1715701322120,
+    "update": 1715847745783,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1561,6 +1561,12 @@
             },
             {
               "type": "icon",
+              "name": "actions-comment",
+              "variable": "actions-comment",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-comment\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "actions-copy",
               "variable": "actions-copy",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-copy\"/></svg>"
@@ -1621,6 +1627,12 @@
             },
             {
               "type": "icon",
+              "name": "calendar",
+              "variable": "calendar",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#calendar\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "checkmark",
               "variable": "checkmark",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#checkmark\"/></svg>"
@@ -1663,9 +1675,21 @@
             },
             {
               "type": "icon",
+              "name": "hide",
+              "variable": "hide",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#hide\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "info",
               "variable": "info",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#info\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "lock",
+              "variable": "lock",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#lock\"/></svg>"
             },
             {
               "type": "icon",
@@ -1696,6 +1720,18 @@
               "name": "settings",
               "variable": "settings",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#settings\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "show",
+              "variable": "show",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#show\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "time",
+              "variable": "time",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#time\"/></svg>"
             },
             {
               "type": "icon",
@@ -1849,6 +1885,12 @@
             },
             {
               "type": "icon",
+              "name": "nav-address",
+              "variable": "nav-address",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-address\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "nav-contact",
               "variable": "nav-contact",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-contact\"/></svg>"
@@ -1864,6 +1906,12 @@
               "name": "nav-dashboard",
               "variable": "nav-dashboard",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-dashboard\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-explore",
+              "variable": "nav-explore",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-explore\"/></svg>"
             },
             {
               "type": "icon",
@@ -1888,6 +1936,12 @@
               "name": "nav-lightning-address",
               "variable": "nav-lightning-address",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-lightning-address\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "nav-menu",
+              "variable": "nav-menu",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-menu\"/></svg>"
             },
             {
               "type": "icon",
@@ -1981,6 +2035,12 @@
           "tokens": [
             {
               "type": "icon",
+              "name": "notifications-account",
+              "variable": "notifications-account",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-account\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "notifications-invoice-failure",
               "variable": "notifications-invoice-failure",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-invoice-failure\"/></svg>"
@@ -2008,6 +2068,18 @@
               "name": "notifications-payout",
               "variable": "notifications-payout",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-payout\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "notifications-plugin-disabled",
+              "variable": "notifications-plugin-disabled",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-plugin-disabled\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "notifications-plugin-released",
+              "variable": "notifications-plugin-released",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#notifications-plugin-released\"/></svg>"
             }
           ]
         },
