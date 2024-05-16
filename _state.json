@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1715853812239,
+    "update": 1715877552933,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -114,6 +114,17 @@
       "type": "documentation",
       "content": "<h1 id=\"components\" tabindex=\"-1\">Components</h1>"
     },
+    "development": {
+      "childIds": [],
+      "id": "development",
+      "title": "Development",
+      "isTitleFromHeading": true,
+      "path": "development",
+      "sourcePath": "pages/development",
+      "readmeFile": "pages/development/README.md",
+      "type": "documentation",
+      "content": "<h1 id=\"development\" tabindex=\"-1\">Development</h1>\n<h2 id=\"setup\" tabindex=\"-1\">Setup</h2>\n<p>Dependencies are managed via npm.\nOnce you have cloned <a href=\"https://github.com/btcpayserver/btcpayserver-design/\">this repo</a>, you can setup the packages:</p>\n<pre class=\"hljs lang-bash\"><code>npm install\n</code></pre>\n<p>Create a build and rebuild on file change:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>This will bring up the dev server and pattern library on <a href=\"http://localhost:3000\">localhost:3000</a>.</p>\n<h2 id=\"how-to-create-a-component%3F\" tabindex=\"-1\">How to create a component?</h2>\n<p>To generate the basic files of a component you can use the <code>component</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID\n</code></pre>\n<p>This will also generate a default variant named after the component.\nIn case you want to directly add some variants, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID VARIANT_1 VARIANT_2 VARIANT_3\n</code></pre>\n<h2 id=\"how-to-create-a-variant%3F\" tabindex=\"-1\">How to create a variant?</h2>\n<p>A variant needs at least a file to render.\nYou create a variant by adding a file renderable by one of the configured adapters to the <code>variants</code> directory of a component.</p>\n<p>To render a variant, we also need a layout.\nThe <code>npx uiengine init</code> command created a basic html layout file in <code>src/templates/uiengine.html</code>.\nIt includes the <code>&lt;!-- uiengine:content --&gt;</code> comment, which will be replaced with the HTML of the rendered variant.\nYou can go ahead and extend the layout to fit your needs and include the correct HTML and style and script references.</p>\n<p>This layout file is just there to get you started.\nFeel free to change its content and use an other adapter to fit your projects needs.</p>\n<h2 id=\"how-to-create-a-page%3F\" tabindex=\"-1\">How to create a page?</h2>\n<p>To generate the basic files and folders of a page you can use the <code>page</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_ID\n</code></pre>\n<p>This generate a <code>README.md</code> and a <code>page.config.js</code> file inside the folder matching the page id in you pages source directory.\nIn case you want to directly add some pages, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_1_ID PAGE_2_ID PAGE_3_ID\n</code></pre>\n<p>Say you would like to create pages for grouping your components with the <a href=\"http://atomicdesign.bradfrost.com/chapter-2/\">Atomic Design Methodology</a>:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page atoms molecules organisms templates pages\n</code></pre>\n<h2 id=\"how-to-generate-the-project%3F\" tabindex=\"-1\">How to generate the project?</h2>\n<p>The site can be generated with the following command:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>It rebuilds files on change and spawns a server for the generated site.</p>\n<p>Under the hood <a href=\"https://www.browsersync.io/\">BrowserSync</a> is used to provide serving and watching the files.\nFor information on how to configure the server and pass additional options, see the <a href=\"https://uiengine.uix.space/basics/config/#BrowserSync\">configuration documentation</a>.</p>"
+    },
     "design": {
       "childIds": [
         "design/colors",
@@ -131,17 +142,6 @@
       "readmeFile": "pages/design/README.md",
       "type": "documentation",
       "content": "<h1 id=\"design\" tabindex=\"-1\">Design</h1>"
-    },
-    "development": {
-      "childIds": [],
-      "id": "development",
-      "title": "Development",
-      "isTitleFromHeading": true,
-      "path": "development",
-      "sourcePath": "pages/development",
-      "readmeFile": "pages/development/README.md",
-      "type": "documentation",
-      "content": "<h1 id=\"development\" tabindex=\"-1\">Development</h1>\n<h2 id=\"setup\" tabindex=\"-1\">Setup</h2>\n<p>Dependencies are managed via npm.\nOnce you have cloned <a href=\"https://github.com/btcpayserver/btcpayserver-design/\">this repo</a>, you can setup the packages:</p>\n<pre class=\"hljs lang-bash\"><code>npm install\n</code></pre>\n<p>Create a build and rebuild on file change:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>This will bring up the dev server and pattern library on <a href=\"http://localhost:3000\">localhost:3000</a>.</p>\n<h2 id=\"how-to-create-a-component%3F\" tabindex=\"-1\">How to create a component?</h2>\n<p>To generate the basic files of a component you can use the <code>component</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID\n</code></pre>\n<p>This will also generate a default variant named after the component.\nIn case you want to directly add some variants, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine component COMPONENT_ID VARIANT_1 VARIANT_2 VARIANT_3\n</code></pre>\n<h2 id=\"how-to-create-a-variant%3F\" tabindex=\"-1\">How to create a variant?</h2>\n<p>A variant needs at least a file to render.\nYou create a variant by adding a file renderable by one of the configured adapters to the <code>variants</code> directory of a component.</p>\n<p>To render a variant, we also need a layout.\nThe <code>npx uiengine init</code> command created a basic html layout file in <code>src/templates/uiengine.html</code>.\nIt includes the <code>&lt;!-- uiengine:content --&gt;</code> comment, which will be replaced with the HTML of the rendered variant.\nYou can go ahead and extend the layout to fit your needs and include the correct HTML and style and script references.</p>\n<p>This layout file is just there to get you started.\nFeel free to change its content and use an other adapter to fit your projects needs.</p>\n<h2 id=\"how-to-create-a-page%3F\" tabindex=\"-1\">How to create a page?</h2>\n<p>To generate the basic files and folders of a page you can use the <code>page</code> command:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_ID\n</code></pre>\n<p>This generate a <code>README.md</code> and a <code>page.config.js</code> file inside the folder matching the page id in you pages source directory.\nIn case you want to directly add some pages, you can list them like so:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page PAGE_1_ID PAGE_2_ID PAGE_3_ID\n</code></pre>\n<p>Say you would like to create pages for grouping your components with the <a href=\"http://atomicdesign.bradfrost.com/chapter-2/\">Atomic Design Methodology</a>:</p>\n<pre class=\"hljs lang-bash\"><code>npx uiengine page atoms molecules organisms templates pages\n</code></pre>\n<h2 id=\"how-to-generate-the-project%3F\" tabindex=\"-1\">How to generate the project?</h2>\n<p>The site can be generated with the following command:</p>\n<pre class=\"hljs lang-bash\"><code>npm start\n</code></pre>\n<p>It rebuilds files on change and spawns a server for the generated site.</p>\n<p>Under the hood <a href=\"https://www.browsersync.io/\">BrowserSync</a> is used to provide serving and watching the files.\nFor information on how to configure the server and pass additional options, see the <a href=\"https://uiengine.uix.space/basics/config/#BrowserSync\">configuration documentation</a>.</p>"
     },
     "resources": {
       "childIds": [
@@ -1579,6 +1579,12 @@
             },
             {
               "type": "icon",
+              "name": "actions-email",
+              "variable": "actions-email",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-email\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "actions-hide",
               "variable": "actions-hide",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-hide\"/></svg>"
@@ -1636,6 +1642,12 @@
               "name": "back",
               "variable": "back",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#back\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "block",
+              "variable": "block",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#block\"/></svg>"
             },
             {
               "type": "icon",
@@ -2982,6 +2994,15 @@
         null
       ]
     },
+    "development": {
+      "prevSiblingId": "resources",
+      "parentId": "index",
+      "id": "development",
+      "itemId": "development",
+      "path": "/development/",
+      "type": "documentation",
+      "title": "Development"
+    },
     "design": {
       "nextSiblingId": "components",
       "childIds": [
@@ -2998,15 +3019,6 @@
       "path": "/design/",
       "type": "documentation",
       "title": "Design"
-    },
-    "development": {
-      "prevSiblingId": "resources",
-      "parentId": "index",
-      "id": "development",
-      "itemId": "development",
-      "path": "/development/",
-      "type": "documentation",
-      "title": "Development"
     },
     "resources": {
       "prevSiblingId": "components",
