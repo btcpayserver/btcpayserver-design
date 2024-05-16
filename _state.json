@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1715848596398,
+    "update": 1715853812239,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1693,6 +1693,12 @@
             },
             {
               "type": "icon",
+              "name": "lightning",
+              "variable": "lightning",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#lightning\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "lock",
               "variable": "lock",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#lock\"/></svg>"
@@ -1882,12 +1888,6 @@
               "name": "nav-account",
               "variable": "nav-account",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-account\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "nav-address",
-              "variable": "nav-address",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#nav-address\"/></svg>"
             },
             {
               "type": "icon",
