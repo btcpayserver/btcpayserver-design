@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1715847745783,
+    "update": 1715848596398,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1579,6 +1579,12 @@
             },
             {
               "type": "icon",
+              "name": "actions-hide",
+              "variable": "actions-hide",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-hide\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "actions-refresh",
               "variable": "actions-refresh",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-refresh\"/></svg>"
@@ -1600,6 +1606,12 @@
               "name": "actions-send",
               "variable": "actions-send",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-send\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-show",
+              "variable": "actions-show",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-show\"/></svg>"
             },
             {
               "type": "icon",
@@ -1675,12 +1687,6 @@
             },
             {
               "type": "icon",
-              "name": "hide",
-              "variable": "hide",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#hide\"/></svg>"
-            },
-            {
-              "type": "icon",
               "name": "info",
               "variable": "info",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#info\"/></svg>"
@@ -1720,12 +1726,6 @@
               "name": "settings",
               "variable": "settings",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#settings\"/></svg>"
-            },
-            {
-              "type": "icon",
-              "name": "show",
-              "variable": "show",
-              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#show\"/></svg>"
             },
             {
               "type": "icon",
