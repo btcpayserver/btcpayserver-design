@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="4" y="5" width="16" height="15" rx="1.5" stroke="currentColor" stroke-width="1.75"/>
+<path d="M8 3V7" stroke="currentColor" stroke-width="1.75"/>
+<path d="M8 10V12" stroke="currentColor" stroke-width="2"/>
+<path d="M8 14V16" stroke="currentColor" stroke-width="2"/>
+<path d="M12 10V12" stroke="currentColor" stroke-width="2"/>
+<path d="M12 14V16" stroke="currentColor" stroke-width="2"/>
+<path d="M16 10V12" stroke="currentColor" stroke-width="2"/>
+<path d="M16 3V7" stroke="currentColor" stroke-width="1.75"/>
+</svg>

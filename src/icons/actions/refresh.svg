@@ -1,3 +1,5 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></g>
+<path d="M4.57495 13.0714C5.09484 16.706 8.22064 19.5 11.999 19.5C14.5477 19.5 16.7994 18.2287 18.1547 16.2857M19.423 10.9286C18.9032 7.29397 15.7774 4.5 11.999 4.5C9.22294 4.5 6.79915 6.00824 5.50237 8.25" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+<path d="M15.9097 15.2143H19.124V18.4286" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+<path d="M8.08826 8.78571L4.87397 8.78571L4.87397 5.57143" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
 </svg>
