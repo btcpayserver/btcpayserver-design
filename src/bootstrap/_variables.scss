@@ -48,6 +48,11 @@ $nav-link-disabled-color: var(--btcpay-body-text-muted);
 $alert-padding-y: .75rem;
 $alert-link-font-weight: var(--btcpay-font-weight-normal);
 
+$breadcrumb-margin-bottom: var(--btcpay-space-m);
+$breadcrumb-divider-color: var(--btcpay-body-text);
+$breadcrumb-active-color: var(--btcpay-body-text);
+$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#8F979E'/></svg>");
+
 $table-bg: transparent;
 $table-striped-color: var(--btcpay-body-text);
 $table-striped-bg: var(--btcpay-body-bg-striped);
