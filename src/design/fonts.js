@@ -16,17 +16,17 @@ const sizes = [
   },
   {
     name: 'L',
-    value: '18px',
+    value: '20px',
     variable: '--btcpay-font-size-l'
   },
   {
     name: 'XL',
-    value: '36px',
+    value: '28px',
     variable: '--btcpay-font-size-xl'
   },
   {
     name: 'XXL',
-    value: '45px',
+    value: '36px',
     variable: '--btcpay-font-size-xxl'
   }
 ]
