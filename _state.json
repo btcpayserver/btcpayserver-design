@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1716493540566,
+    "update": 1718092103691,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1378,17 +1378,17 @@
             },
             {
               "name": "L",
-              "value": "18px",
+              "value": "20px",
               "variable": "--btcpay-font-size-l"
             },
             {
               "name": "XL",
-              "value": "36px",
+              "value": "28px",
               "variable": "--btcpay-font-size-xl"
             },
             {
               "name": "XXL",
-              "value": "45px",
+              "value": "36px",
               "variable": "--btcpay-font-size-xxl"
             }
           ]
@@ -1432,9 +1432,9 @@
                     "10px",
                     "12px",
                     "14px",
-                    "18px",
-                    "36px",
-                    "45px"
+                    "20px",
+                    "28px",
+                    "36px"
                   ],
                   "text": "Chancellor on Brink of Second Bailout for Banks"
                 },
@@ -1448,9 +1448,9 @@
                     "10px",
                     "12px",
                     "14px",
-                    "18px",
-                    "36px",
-                    "45px"
+                    "20px",
+                    "28px",
+                    "36px"
                   ],
                   "text": "Chancellor on Brink of Second Bailout for Banks"
                 },
@@ -1464,9 +1464,9 @@
                     "10px",
                     "12px",
                     "14px",
-                    "18px",
-                    "36px",
-                    "45px"
+                    "20px",
+                    "28px",
+                    "36px"
                   ],
                   "text": "Chancellor on Brink of Second Bailout for Banks"
                 }
@@ -1486,9 +1486,9 @@
                     "10px",
                     "12px",
                     "14px",
-                    "18px",
-                    "36px",
-                    "45px"
+                    "20px",
+                    "28px",
+                    "36px"
                   ],
                   "text": "Chancellor on Brink of Second Bailout for Banks"
                 },
@@ -1502,9 +1502,9 @@
                     "10px",
                     "12px",
                     "14px",
-                    "18px",
-                    "36px",
-                    "45px"
+                    "20px",
+                    "28px",
+                    "36px"
                   ],
                   "text": "Chancellor on Brink of Second Bailout for Banks"
                 },
@@ -1518,9 +1518,9 @@
                     "10px",
                     "12px",
                     "14px",
-                    "18px",
-                    "36px",
-                    "45px"
+                    "20px",
+                    "28px",
+                    "36px"
                   ],
                   "text": "Chancellor on Brink of Second Bailout for Banks"
                 }
