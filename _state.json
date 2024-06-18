@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1718092198184,
+    "update": 1718692942239,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -2188,6 +2188,30 @@
               "name": "pos-static",
               "variable": "pos-static",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#pos-static\"/></svg>"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "name": "review",
+          "tokens": [
+            {
+              "type": "icon",
+              "name": "review-empty",
+              "variable": "review-empty",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#review-empty\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "review-full",
+              "variable": "review-full",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#review-full\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "review-half",
+              "variable": "review-half",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#review-half\"/></svg>"
             }
           ]
         },
