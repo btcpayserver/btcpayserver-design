@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1719427589218,
+    "update": 1719499422357,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1753,6 +1753,12 @@
             },
             {
               "type": "icon",
+              "name": "lightning-node",
+              "variable": "lightning-node",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#lightning-node\"/></svg>"
+            },
+            {
+              "type": "icon",
               "name": "lightning",
               "variable": "lightning",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#lightning\"/></svg>"
@@ -2314,6 +2320,12 @@
               "name": "wallet-seed",
               "variable": "wallet-seed",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-seed\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "wallet-wallet",
+              "variable": "wallet-wallet",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#wallet-wallet\"/></svg>"
             },
             {
               "type": "icon",
