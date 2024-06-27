@@ -44,6 +44,7 @@ module.exports = [
   { id: 'forms-text', category: 'forms' },
   { id: 'info', category: 'general' },
   { id: 'key', category: 'general' },
+  { id: 'lightning-node', category: 'general' },
   { id: 'lightning', category: 'general' },
   { id: 'lock', category: 'general' },
   { id: 'logo-btcpay', category: 'logo' },
@@ -113,6 +114,7 @@ module.exports = [
   { id: 'wallet-hot', category: 'wallet' },
   { id: 'wallet-new', category: 'wallet' },
   { id: 'wallet-seed', category: 'wallet' },
+  { id: 'wallet-wallet', category: 'wallet' },
   { id: 'wallet-watchonly', category: 'wallet' },
   { id: 'wallet-xpub', category: 'wallet' },
   { id: 'warning', category: 'general' }
