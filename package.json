@@ -7,6 +7,7 @@
   "homepage": "https://github.com/btcpayserver/btcpayserver-design/",
   "bugs": "https://github.com/btcpayserver/btcpayserver-design/issues",
   "repository": "btcpayserver/btcpayserver-design",
+  "packageManager": "yarn@4.3.1",
   "keywords": [
     "BTCPay Server"
   ],
@@ -46,14 +47,14 @@
     "prettier": "prettier --write '**/*.{js,json,md}'"
   },
   "devDependencies": {
-    "@uiengine/adapter-html": "3.3.14",
-    "@uiengine/core": "3.3.14",
+    "@uiengine/adapter-html": "3.3.15",
+    "@uiengine/core": "3.3.15",
     "autoprefixer": "10.4.19",
     "bootstrap": "5.3.3",
     "color": "4.2.3",
     "cross-env": "7.0.3",
     "csso-cli": "4.0.2",
-    "glob": "10.4.1",
+    "glob": "10.4.2",
     "import-fresh": "3.3.0",
     "node-sass": "9.0.0",
     "npm-run-all": "4.1.5",
