@@ -612,8 +612,7 @@ a:hover {
     color: var(--btcpay-header-link);
     text-decoration: none;
   }
-.btcpay-header a:focus,
-  .btcpay-header a:hover {
+.btcpay-header a:focus,.btcpay-header a:hover {
     color: var(--btcpay-header-link-accent);
   }
 .btcpay-header-columns {
@@ -713,8 +712,7 @@ a:hover {
     color: var(--btcpay-footer-link);
     text-decoration: none;
   }
-.btcpay-footer a:focus,
-  .btcpay-footer a:hover {
+.btcpay-footer a:focus,.btcpay-footer a:hover {
     color: var(--btcpay-footer-link-accent);
   }
 .btcpay-footer-columns {
@@ -726,9 +724,7 @@ a:hover {
     flex: 1 1 100%;
     margin-bottom: var(--btcpay-space-m);
   }
-.btcpay-footer-columns h4,
-  .btcpay-footer-columns h5,
-  .btcpay-footer-columns h6 {
+.btcpay-footer-columns h4,.btcpay-footer-columns h5,.btcpay-footer-columns h6 {
     margin: var(--btcpay-space-m) 0;
     font-weight: var(--btcpay-font-weight-bold);
   }
@@ -737,7 +733,7 @@ a:hover {
     padding: 0;
     list-style: none;
   }
-.btcpay-footer-columns ul li {
+:is(.btcpay-footer-columns ul) li {
       padding: var(--btcpay-space-xs) 0;
     }
 @media (min-width: 576px) {
