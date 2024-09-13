@@ -16,7 +16,7 @@
   cursor: pointer;
 }
 
-.btcpay-toggle:hover {
+.btcpay-toggle:not(:disabled):hover {
   background: var(--btcpay-toggle-bg-hover);
 }
 
@@ -31,8 +31,8 @@ input.btcpay-toggle:checked,
   background: var(--btcpay-toggle-bg-active);
 }
 
-input.btcpay-toggle:checked:hover,
-.btcpay-toggle.btcpay-toggle--active:hover {
+input.btcpay-toggle:not(:disabled):checked:hover,
+.btcpay-toggle.btcpay-toggle--active:not(:disabled):hover {
   background: var(--btcpay-toggle-bg-active-hover);
 }
 
