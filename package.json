@@ -47,8 +47,8 @@
     "prettier": "prettier --write '**/*.{js,json,md}'"
   },
   "devDependencies": {
-    "@uiengine/adapter-html": "3.3.16",
-    "@uiengine/core": "3.3.16",
+    "@uiengine/adapter-html": "3.3.17",
+    "@uiengine/core": "3.3.17",
     "autoprefixer": "10.4.20",
     "bootstrap": "5.3.3",
     "color": "4.2.3",
@@ -62,7 +62,7 @@
     "postcss": "8.4.47",
     "postcss-cli": "11.0.0",
     "postcss-import": "16.1.0",
-    "postcss-mixins": "11.0.1",
+    "postcss-mixins": "11.0.3",
     "postcss-nesting": "13.0.0",
     "prettier": "3.3.3",
     "rimraf": "6.0.1",
