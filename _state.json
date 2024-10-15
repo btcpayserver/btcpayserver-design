@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1727341150519,
+    "update": 1728972719427,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -2931,7 +2931,7 @@
           "componentId": "toggle",
           "title": "Simple",
           "extension": "html",
-          "raw": "<div class=\"form-group d-flex align-items-center\">\n  <input id=\"PayJoinEnabled\" type=\"checkbox\" class=\"btcpay-toggle me-2\" />\n  <label for=\"PayJoinEnabled\" class=\"form-label mb-0 me-1\">PayJoin enabled</label>\n</div>\n\n<div class=\"form-group d-flex align-items-center\">\n  <input id=\"PayJoinEnabledOn\" type=\"checkbox\" class=\"btcpay-toggle me-2\" checked />\n  <label for=\"PayJoinEnabledOn\" class=\"form-label mb-0 me-1\">PayJoin enabled</label>\n</div>\n\n<div class=\"form-group d-flex align-items-center mb-0\">\n  <input id=\"Disabled\" type=\"checkbox\" class=\"btcpay-toggle me-2\" disabled />\n  <label for=\"Disabled\" class=\"form-label mb-0 me-1\">Disabled</label>\n</div>"
+          "raw": "<div class=\"form-group d-flex align-items-center\">\n  <input id=\"PayJoinEnabled\" type=\"checkbox\" class=\"btcpay-toggle me-2\" />\n  <label for=\"PayJoinEnabled\" class=\"form-label mb-0 me-1\">PayJoin enabled</label>\n</div>\n\n<div class=\"form-group d-flex align-items-center\">\n  <input id=\"PayJoinEnabledOn\" type=\"checkbox\" class=\"btcpay-toggle me-2\" checked />\n  <label for=\"PayJoinEnabledOn\" class=\"form-label mb-0 me-1\">PayJoin enabled</label>\n</div>\n\n<div class=\"form-group d-flex align-items-center\">\n  <input id=\"Disabled\" type=\"checkbox\" class=\"btcpay-toggle me-2\" disabled />\n  <label for=\"Disabled\" class=\"form-label mb-0 me-1\">Disabled</label>\n</div>\n\n<div class=\"form-group d-flex align-items-center mb-0\">\n  <input id=\"Disabled\" type=\"checkbox\" class=\"btcpay-toggle me-2\" disabled checked />\n  <label for=\"Disabled\" class=\"form-label mb-0 me-1\">Disabled active</label>\n</div>"
         },
         {
           "file": "helptext.html",
