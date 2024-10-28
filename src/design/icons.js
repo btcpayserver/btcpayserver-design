@@ -45,6 +45,8 @@ module.exports = [
   { id: 'forms-text', category: 'forms' },
   { id: 'info', category: 'general' },
   { id: 'key', category: 'general' },
+  { id: 'keypad-clear', category: 'keypad' },
+  { id: 'keypad-plus', category: 'keypad' },
   { id: 'lightning-node', category: 'general' },
   { id: 'lightning', category: 'general' },
   { id: 'lock', category: 'general' },
