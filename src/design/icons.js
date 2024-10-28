@@ -3,6 +3,7 @@ module.exports = [
   { id: 'actions-archive', category: 'actions' },
   { id: 'actions-comment', category: 'actions' },
   { id: 'actions-copy', category: 'actions' },
+  { id: 'actions-download', category: 'actions' },
   { id: 'actions-drag', category: 'actions' },
   { id: 'actions-email', category: 'actions' },
   { id: 'actions-hide', category: 'actions' },
