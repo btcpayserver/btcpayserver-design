@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1729257466653,
+    "update": 1730099287193,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -1570,6 +1570,12 @@
               "name": "actions-copy",
               "variable": "actions-copy",
               "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-copy\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "actions-download",
+              "variable": "actions-download",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#actions-download\"/></svg>"
             },
             {
               "type": "icon",
