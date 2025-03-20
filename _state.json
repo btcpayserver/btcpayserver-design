@@ -2,7 +2,7 @@
   "config": {
     "name": "BTCPay Server Design System",
     "version": "0.1.0",
-    "update": 1732518574410,
+    "update": 1742464751282,
     "logo": "/resources/design-files/btcpay-logo.svg",
     "source": {
       "components": [
@@ -2189,6 +2189,18 @@
           "type": "category",
           "name": "payment",
           "tokens": [
+            {
+              "type": "icon",
+              "name": "payment-lightning",
+              "variable": "payment-lightning",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-lightning\"/></svg>"
+            },
+            {
+              "type": "icon",
+              "name": "payment-onchain",
+              "variable": "payment-onchain",
+              "value": "<svg role=\"img\"><use href=\"/svg/icons.svg#payment-onchain\"/></svg>"
+            },
             {
               "type": "icon",
               "name": "payment-receive",
